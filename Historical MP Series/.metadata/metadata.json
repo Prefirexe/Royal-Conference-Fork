@@ -1,13 +1,11 @@
 {
-  "name" : "Historical MP Series",
-  "id" : "HMPS",
-  "version" : "1.4",
-  "supported_game_version" : "1.8.*",
-  "short_description" : "HMPS Victoria 3",
-  "tags" : [
-		"Gameplay",
-		"Total Conversion"
-  ],
+  "name" : "Royal Conference",
+  "id" : "RC",
+  "version" : "3.0",
+  "supported_game_version" : "1.8.7",
+  "picture" : "thumbnail.png",
+  "short_description" : "RC Victoria 3",
+  "tags" : [],
   "relationships" : [],
   "game_custom_data" : {
     "multiplayer_synchronized" : true,
