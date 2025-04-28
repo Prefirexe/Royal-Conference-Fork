@@ -1,0 +1,293 @@
+﻿building_subsistence_china = {
+	building_group = bg_subsistence_agriculture
+	icon = "gfx/interface/icons/building_icons/building_subsistence_farm.dds"
+
+	production_method_groups = {
+		pmg_base_building_subsistence_china
+		pmg_home_workshops_building_subsistence_farms
+		pmg_serfdom_building_subsistence_farms
+	}
+	
+	buildable = no
+	expandable = no
+	downsizeable = no
+	min_raise_to_hire = 0.30
+	slaves_role = peasants
+	ownership_type = self
+	can_switch_owner = no
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
+}
+
+building_subsistence_japan = {
+	building_group = bg_subsistence_agriculture
+	icon = "gfx/interface/icons/building_icons/building_subsistence_farm.dds"
+
+	production_method_groups = {
+		pmg_base_building_subsistence_japan
+		pmg_home_workshops_building_subsistence_farms
+		pmg_serfdom_building_subsistence_farms
+	}
+	
+	buildable = no
+	expandable = no
+	downsizeable = no
+	min_raise_to_hire = 0.30
+	slaves_role = peasants
+	ownership_type = self
+	can_switch_owner = no
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
+}
+
+building_subsistence_east_asia = {
+	building_group = bg_subsistence_agriculture
+	icon = "gfx/interface/icons/building_icons/building_subsistence_farm.dds"
+
+	production_method_groups = {
+		pmg_base_building_subsistence_east_asia
+		pmg_home_workshops_building_subsistence_farms
+		pmg_serfdom_building_subsistence_farms
+	}
+	
+	buildable = no
+	expandable = no
+	downsizeable = no
+	min_raise_to_hire = 0.30
+	slaves_role = peasants
+	ownership_type = self
+	can_switch_owner = no
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
+}
+
+building_subsistence_south_east_asia = {
+	building_group = bg_subsistence_agriculture
+	icon = "gfx/interface/icons/building_icons/building_subsistence_farm.dds"
+
+	production_method_groups = {
+		pmg_base_building_subsistence_south_east_asia
+		pmg_home_workshops_building_subsistence_farms
+		pmg_serfdom_building_subsistence_farms
+	}
+	
+	buildable = no
+	expandable = no
+	downsizeable = no
+	min_raise_to_hire = 0.30
+	slaves_role = peasants
+	ownership_type = self
+	can_switch_owner = no
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
+}
+
+building_subsistence_india = {
+	building_group = bg_subsistence_agriculture
+	icon = "gfx/interface/icons/building_icons/building_subsistence_farm.dds"
+
+	production_method_groups = {
+		pmg_base_building_subsistence_india
+		pmg_home_workshops_building_subsistence_farms
+		pmg_serfdom_building_subsistence_farms
+	}
+	
+	buildable = no
+	expandable = no
+	downsizeable = no
+	min_raise_to_hire = 0.30
+	slaves_role = peasants
+	ownership_type = self
+	can_switch_owner = no
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
+}
+
+building_subsistence_central_asia = {
+	building_group = bg_subsistence_agriculture
+	icon = "gfx/interface/icons/building_icons/building_subsistence_farm.dds"
+
+	production_method_groups = {
+		pmg_base_building_subsistence_central_asia
+		pmg_home_workshops_building_subsistence_farms
+		pmg_serfdom_building_subsistence_farms
+	}
+	
+	buildable = no
+	expandable = no
+	downsizeable = no
+	min_raise_to_hire = 0.30
+	slaves_role = peasants
+	ownership_type = self
+	can_switch_owner = no
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
+}
+
+building_subsistence_russia = {
+	building_group = bg_subsistence_agriculture
+	icon = "gfx/interface/icons/building_icons/building_subsistence_farm.dds"
+
+	production_method_groups = {
+		pmg_base_building_subsistence_russia
+		pmg_home_workshops_building_subsistence_farms
+		pmg_serfdom_building_subsistence_farms
+	}
+	
+	buildable = no
+	expandable = no
+	downsizeable = no
+	min_raise_to_hire = 0.30
+	slaves_role = peasants
+	ownership_type = self
+	can_switch_owner = no
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
+}
+
+building_subsistence_mediterranean = {
+	building_group = bg_subsistence_agriculture
+	icon = "gfx/interface/icons/building_icons/building_subsistence_farm.dds"
+
+	production_method_groups = {
+		pmg_base_building_subsistence_mediterranean
+		pmg_home_workshops_building_subsistence_farms
+		pmg_serfdom_building_subsistence_farms
+	}
+	
+	buildable = no
+	expandable = no
+	downsizeable = no
+	min_raise_to_hire = 0.30
+	slaves_role = peasants
+	ownership_type = self
+	can_switch_owner = no
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
+}
+
+building_subsistence_european = {
+	building_group = bg_subsistence_agriculture
+	icon = "gfx/interface/icons/building_icons/building_subsistence_farm.dds"
+
+	production_method_groups = {
+		pmg_base_building_subsistence_european
+		pmg_home_workshops_building_subsistence_farms
+		pmg_serfdom_building_subsistence_farms
+	}
+	
+	buildable = no
+	expandable = no
+	downsizeable = no
+	min_raise_to_hire = 0.30
+	slaves_role = peasants
+	ownership_type = self
+	can_switch_owner = no
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
+}
+
+building_subsistence_north_america = {
+	building_group = bg_subsistence_agriculture
+	icon = "gfx/interface/icons/building_icons/building_subsistence_farm.dds"
+
+	production_method_groups = {
+		pmg_base_building_subsistence_north_america
+		pmg_home_workshops_building_subsistence_farms
+		pmg_serfdom_building_subsistence_farms
+	}
+	
+	buildable = no
+	expandable = no
+	downsizeable = no
+	min_raise_to_hire = 0.30
+	slaves_role = peasants
+	ownership_type = self
+	can_switch_owner = no
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
+}
+
+building_subsistence_tropical = {
+	building_group = bg_subsistence_agriculture
+	icon = "gfx/interface/icons/building_icons/building_subsistence_farm.dds"
+
+	production_method_groups = {
+		pmg_base_building_subsistence_tropical
+		pmg_home_workshops_building_subsistence_farms
+		pmg_serfdom_building_subsistence_farms
+	}
+	
+	buildable = no
+	expandable = no
+	downsizeable = no
+	min_raise_to_hire = 0.30
+	slaves_role = peasants
+	ownership_type = self
+	can_switch_owner = no
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
+}
+
+building_subsistence_arctic = {
+	building_group = bg_subsistence_agriculture
+	icon = "gfx/interface/icons/building_icons/building_subsistence_farm.dds"
+
+	production_method_groups = {
+		pmg_base_building_subsistence_arctic
+		pmg_home_workshops_building_subsistence_farms
+		pmg_serfdom_building_subsistence_farms
+	}
+	
+	buildable = no
+	expandable = no
+	downsizeable = no
+	min_raise_to_hire = 0.30
+	slaves_role = peasants
+	ownership_type = self
+	can_switch_owner = no
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
+}
+
+building_subsistence_dry = {
+	building_group = bg_subsistence_agriculture
+	icon = "gfx/interface/icons/building_icons/building_subsistence_farm.dds"
+
+	production_method_groups = {
+		pmg_base_building_subsistence_dry
+		pmg_home_workshops_building_subsistence_farms
+		pmg_serfdom_building_subsistence_farms
+	}
+	
+	buildable = no
+	expandable = no
+	downsizeable = no
+	min_raise_to_hire = 0.30
+	slaves_role = peasants
+	ownership_type = self
+	can_switch_owner = no
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
+}
+
+building_subsistence_middle_eastern = {
+	building_group = bg_subsistence_agriculture
+	icon = "gfx/interface/icons/building_icons/building_subsistence_farm.dds"
+
+	production_method_groups = {
+		pmg_base_building_subsistence_middle_eastern
+		pmg_home_workshops_building_subsistence_farms
+		pmg_serfdom_building_subsistence_farms
+	}
+	
+	buildable = no
+	expandable = no
+	downsizeable = no
+	min_raise_to_hire = 0.30
+	slaves_role = peasants
+	ownership_type = self
+	can_switch_owner = no
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
+}

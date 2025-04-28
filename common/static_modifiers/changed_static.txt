@@ -1,0 +1,43 @@
+﻿
+# Scales with how much population is under low pop threshold
+low_pop_state = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	state_birth_rate_mult = 0.65
+	state_migration_pull_mult = 1
+}
+
+high_pop_state = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	state_birth_rate_mult = -0.30
+	state_migration_pull_mult = -1
+}
+
+# Multiplies unemployment rate in state by this
+unemployment_birth_penalty_state = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	#state_birth_rate_mult = NOPE
+	state_migration_pull_mult = -2
+}
+
+literacy_penalty = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	state_birth_rate_mult = -0.05 	# scaled by pop literacy
+}
+
+starvation_penalty = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
+	state_birth_rate_mult = -0.2
+	state_mortality_mult = 0.1
+}
+
+severe_starvation_penalty = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
+	state_birth_rate_mult = -0.3
+	state_mortality_mult = 0.4
+}
+
+state_region_pollution_health = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	state_mortality_mult = 0.2
+	state_standard_of_living_add = -3
+}

@@ -1,0 +1,81 @@
+﻿# Plantations
+
+bg_trade = {
+	parent_group = bg_urban_facilities
+	
+	category = urban
+	
+	lens = trade
+
+	always_possible = yes	
+	
+	always_self_owning = yes
+	
+	created_by_trade_routes = yes
+	
+	auto_place_buildings = yes
+	
+	min_hiring_rate = 1.0
+	max_hiring_rate = 1.0
+	
+	ignores_productivity_when_hiring = yes
+	
+	proportionality_limit = 1.0
+	
+	economy_of_scale = no
+	
+	default_building = building_trade_center
+	
+	cash_reserves_max = 5000	
+	
+	urbanization = 0
+	
+	infrastructure_usage_per_level = 0.1
+	
+	fired_pops_become_radical = no
+	
+	should_auto_expand = {
+		always = no
+	}
+}
+
+# Canals
+bg_minor_canals = {
+	parent_group = bg_infrastructure
+	category = development
+	
+	is_government_funded = no
+	subsidized = yes
+	
+	always_possible = no
+	
+	lens = infrastructure
+
+	capped_by_resources = yes
+	
+	default_building = building_canal
+	
+	stateregion_max_level = yes
+}
+
+bg_technology = {
+	parent_group = bg_government
+	
+	economy_of_scale = no
+}
+
+bg_military = {
+	category = development
+
+	always_possible = yes
+	
+	is_military = yes
+	
+	is_government_funded = yes
+
+	infrastructure_usage_per_level = 0.2
+	
+	lens = military
+	
+	urbanization = 1
+}

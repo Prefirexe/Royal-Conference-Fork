@@ -1,0 +1,147 @@
+﻿state_trait_lorraine_iron = {
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_iron_mine_throughput_add = 0.5
+	}
+}
+
+state_trait_iron_range = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_iron_mine_throughput_add = 0.5
+	}
+}
+
+state_trait_anthracite = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_coal_mine_throughput_add = 1
+	}
+}
+
+state_trait_minas_gerais = {
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_iron_mine_throughput_add = 0.50
+	}
+}
+
+state_trait_baku = {
+    icon = "gfx/interface/icons/state_trait_icons/unused/rich_natural_resources.dds"
+	
+	modifier = {
+		building_group_bg_oil_extraction_throughput_add = 0.5
+	}
+}
+
+state_trait_rich_oil = {
+    icon = "gfx/interface/icons/state_trait_icons/unused/rich_natural_resources.dds"
+	
+	modifier = {
+		building_group_bg_oil_extraction_throughput_add = 0.5
+	}
+}
+
+state_trait_rich_rubber = {
+    icon = "gfx/interface/icons/state_trait_icons/tropical_climate.dds"
+	
+	modifier = {
+		building_rubber_plantation_throughput_add = 0.5
+	}
+}
+
+state_trait_salt_domes = {
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_sulfur_mine_throughput_add = 0.75
+	}
+}
+
+state_trait_new_world = {
+    icon = "gfx/interface/icons/state_trait_icons/tropical_climate.dds"
+	
+	modifier = {
+		state_migration_pull_add = 10
+		state_migration_pull_mult = 0.5
+		state_assimilation_mult = 1.0
+	}
+}
+
+state_trait_canal_system = {
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+	
+	modifier = {
+		state_market_access_price_impact = 0.05
+	}
+}
+
+state_trait_arctic_port = {
+	icon = "gfx/interface/icons/state_trait_icons/cold_climate.dds"
+	
+	modifier = {
+		building_port_throughput_add = -0.75
+		building_shipyards_throughput_add = -0.25 
+		building_military_shipyards_throughput_add = -0.25
+		state_building_port_max_level_add = -5
+		state_building_naval_base_max_level_add = -20
+	}
+}
+
+state_trait_subarctic_port = {
+	icon = "gfx/interface/icons/state_trait_icons/cold_climate.dds"
+	
+	modifier = {
+		building_port_throughput_add = -0.5
+		building_shipyards_throughput_add = -0.1 
+		building_military_shipyards_throughput_add = -0.1
+		state_building_port_max_level_add = -2
+		state_building_naval_base_max_level_add = -10
+	}
+}
+
+state_trait_sheep = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_grazing.dds"
+	
+	modifier = {
+		goods_output_fabric_mult = 0.5
+	}
+}
+
+state_trait_bananas = {
+	icon = "gfx/interface/icons/state_trait_icons/tropical_climate.dds"
+	
+	modifier = {
+		building_banana_plantation_throughput_add = 0.50
+	}
+}
+
+state_trait_taihu = {
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_add = 0.25
+		building_group_bg_fishing_throughput_add = 0.25
+	}
+}
+
+state_trait_deep_south = {
+	icon = "gfx/interface/icons/state_trait_icons/great_plains.dds"
+
+	modifier = {
+		building_cotton_plantation_throughput_add = 0.50
+	}
+}
+
+state_trait_intensive_agriculture = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_add = 0.50
+		building_group_bg_ranching_throughput_add = 0.50
+	}
+}

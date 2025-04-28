@@ -1,0 +1,269 @@
+﻿
+default_building_subsistence_china = {
+	texture = "gfx/interface/icons/production_method_icons/subsistence_farming.dds"
+	
+	building_modifiers = {
+		workforce_scaled = { 
+			goods_output_grain_add = 4.2
+			goods_output_meat_add = 0.6
+			goods_output_fruit_add = 0.6
+			
+			goods_output_fabric_add = 1.2
+			goods_output_wood_add = 1.3
+		}
+
+		level_scaled = {
+			building_employment_peasants_add = 20000
+		}
+	}
+}
+
+default_building_subsistence_east_asia = {
+	texture = "gfx/interface/icons/production_method_icons/subsistence_farming.dds"
+	
+	building_modifiers = {
+		workforce_scaled = { 
+			goods_output_grain_add = 4.2
+			goods_output_meat_add = 0.4
+			goods_output_fruit_add = 0.4
+			goods_output_fish_add = 0.4
+			
+			goods_output_fabric_add = 1.2
+			goods_output_wood_add = 1.3
+		}
+
+		level_scaled = {
+			building_employment_peasants_add = 20000
+		}
+	}
+}
+
+default_building_subsistence_japan = {
+	texture = "gfx/interface/icons/production_method_icons/subsistence_farming.dds"
+	
+	building_modifiers = {
+		workforce_scaled = { 
+			goods_output_grain_add = 4
+			goods_output_meat_add = 0.6
+			goods_output_fruit_add = 0.4
+			goods_output_fish_add = 1.2
+			
+			goods_output_fabric_add = 1.2
+			goods_output_wood_add = 1.3
+		}
+
+		level_scaled = {
+			building_employment_peasants_add = 20000
+		}
+	}
+}
+
+default_building_subsistence_south_east_asia = {
+	texture = "gfx/interface/icons/production_method_icons/subsistence_farming.dds"
+	
+	building_modifiers = {
+		workforce_scaled = { 
+			goods_output_grain_add = 2
+			goods_output_fish_add = 0.3
+			goods_output_fruit_add = 0.5
+			
+			goods_output_fabric_add = 0.3
+			goods_output_wood_add = 1.2
+		}
+
+		level_scaled = {
+			building_employment_peasants_add = 15000
+		}
+	}
+}
+
+default_building_subsistence_india = {
+	texture = "gfx/interface/icons/production_method_icons/subsistence_farming.dds"
+	
+	building_modifiers = {
+		workforce_scaled = { 
+			goods_output_grain_add = 4.2
+			goods_output_fruit_add = 0.8
+			
+			goods_output_fabric_add = 1.0
+			goods_output_wood_add = 1.1
+		}
+
+		level_scaled = {
+			building_employment_peasants_add = 20000
+		}
+	}
+}
+
+default_building_subsistence_central_asia = {
+	texture = "gfx/interface/icons/production_method_icons/subsistence_farming.dds"
+	
+	building_modifiers = {
+		workforce_scaled = { 
+			goods_output_grain_add = 1
+			goods_output_meat_add = 0.4
+			goods_output_fruit_add = 0.6
+			
+			goods_output_fabric_add = 0.8
+			goods_output_wood_add = 0.2	
+		}
+
+		level_scaled = {
+			building_employment_peasants_add = 10000
+		}
+		
+	}
+}
+
+
+default_building_subsistence_russia = {
+	texture = "gfx/interface/icons/production_method_icons/subsistence_farming.dds"
+	
+	building_modifiers = {
+		workforce_scaled = { 
+			goods_output_grain_add = 2
+			
+			goods_output_fabric_add = 0.4
+			goods_output_wood_add = 0.8
+		}
+
+		level_scaled = {
+			building_employment_peasants_add = 10000
+		}
+	}
+}
+
+
+default_building_subsistence_mediterranean = {
+	texture = "gfx/interface/icons/production_method_icons/subsistence_farming.dds"
+	
+	building_modifiers = {
+		workforce_scaled = { 
+			goods_output_grain_add = 2
+			
+			goods_output_fabric_add = 0.6
+			goods_output_wood_add = 0.4
+			goods_output_wine_add = 0.1
+		}
+
+		level_scaled = {
+			building_employment_peasants_add = 10000
+		}
+	}
+}
+
+
+default_building_subsistence_european = {
+	texture = "gfx/interface/icons/production_method_icons/subsistence_farming.dds"
+	
+	building_modifiers = {
+		workforce_scaled = { 
+			goods_output_grain_add = 2
+			
+			goods_output_fabric_add = 0.8
+			goods_output_wood_add = 0.8
+		}
+
+		level_scaled = {
+			building_employment_peasants_add = 10000
+		}
+		
+	}
+}
+
+
+default_building_subsistence_north_america = {
+	texture = "gfx/interface/icons/production_method_icons/subsistence_farming.dds"
+	
+	building_modifiers = {
+		workforce_scaled = { #170
+			goods_output_grain_add = 2
+			
+			goods_output_fabric_add = 0.8
+			goods_output_wood_add = 0.8
+		}
+
+		level_scaled = {
+			building_employment_peasants_add = 10000
+		}
+		
+	}
+}
+
+
+default_building_subsistence_tropical = {
+	texture = "gfx/interface/icons/production_method_icons/subsistence_farming.dds"
+	
+	building_modifiers = {
+		workforce_scaled = { #170
+			goods_output_grain_add = 0.6
+			goods_output_meat_add = 0.2
+			goods_output_fruit_add = 1
+			
+			goods_output_fabric_add = 0.1
+			goods_output_wood_add = 0.9
+			goods_output_hardwood_add = 0.1
+		}
+
+		level_scaled = {
+			building_employment_peasants_add = 10000
+		}
+	}
+}
+
+
+default_building_subsistence_arctic = {
+	texture = "gfx/interface/icons/production_method_icons/subsistence_farming.dds"
+	
+	building_modifiers = {
+		workforce_scaled = { 
+			goods_output_fish_add = 0.8
+			goods_output_meat_add = 0.5
+			
+			goods_output_fabric_add = 0.2
+			goods_output_wood_add = 0.2
+		}
+
+		level_scaled = {
+			building_employment_peasants_add = 10000
+		}
+	}
+}
+
+
+default_building_subsistence_dry = {
+	texture = "gfx/interface/icons/production_method_icons/subsistence_farming.dds"
+	
+	building_modifiers = {
+		workforce_scaled = { 
+			goods_output_meat_add = 0.5
+			goods_output_fruit_add = 0.8
+			goods_output_grain_add = 0.4
+			
+			goods_output_fabric_add = 0.8
+		}
+
+		level_scaled = {
+			building_employment_peasants_add = 10000
+		}
+	}
+}
+
+
+default_building_subsistence_middle_eastern = {
+	texture = "gfx/interface/icons/production_method_icons/subsistence_farming.dds"
+	
+	building_modifiers = {
+		workforce_scaled = { 
+			goods_output_grain_add = 2
+			
+			goods_output_fabric_add = 0.5
+			goods_output_wood_add = 0.4
+		}
+
+		level_scaled = {
+			building_employment_peasants_add = 10000
+		}
+	}
+}
+
