@@ -1,0 +1,15 @@
+﻿GLOBAL = {
+	cu:albanian = { add_cultural_obsession = tobacco }
+	cu:algonquian = { add_cultural_obsession = tobacco }	
+	cu:armenian = { add_cultural_obsession = tobacco }
+	cu:athabaskan = { add_cultural_obsession = tobacco }	
+	cu:bosniak = { add_cultural_obsession = tobacco }
+	cu:bulgarian = { add_cultural_obsession = tobacco }
+	cu:cherokee = { add_cultural_obsession = tobacco }
+	cu:croat = { add_cultural_obsession = tobacco }
+	cu:dixie = { add_cultural_obsession = tobacco }	
+	cu:inuit = { add_cultural_obsession = tobacco }	
+	cu:mayan = { add_cultural_obsession = tobacco }	
+	cu:muskogean = { add_cultural_obsession = tobacco }
+	cu:persian = { add_cultural_obsession = tobacco }
+}

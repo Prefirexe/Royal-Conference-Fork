@@ -1,0 +1,8 @@
+﻿GLOBAL = {
+	cu:bihari = { add_cultural_obsession = grain }
+	cu:iroquoian = { add_cultural_obsession = grain }
+	cu:sindi = { add_cultural_obsession = grain }
+	cu:south_andean = { add_cultural_obsession = grain }
+	cu:sudanese = { add_cultural_obsession = grain }
+	cu:telegu = { add_cultural_obsession = grain }	
+}

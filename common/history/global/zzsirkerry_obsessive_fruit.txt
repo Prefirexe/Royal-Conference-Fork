@@ -1,0 +1,7 @@
+﻿GLOBAL = {
+	cu:balinese = { add_cultural_obsession = fruit }
+	cu:bengali = { add_cultural_obsession = fruit }
+	cu:guarani = { add_cultural_obsession = fruit }
+	cu:malayalam = { add_cultural_obsession = fruit }
+	cu:polynesian = { add_cultural_obsession = fruit }
+}

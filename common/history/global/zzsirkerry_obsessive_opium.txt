@@ -1,0 +1,4 @@
+﻿GLOBAL = {
+	cu:baluchi = { add_cultural_obsession = opium }
+	cu:pashtun = { add_cultural_obsession = opium }
+}

@@ -1,0 +1,6 @@
+﻿GLOBAL = {
+	cu:flemish = { add_cultural_obsession = groceries }
+	cu:paraguayan = { add_cultural_obsession = groceries }
+	cu:quechua = { add_cultural_obsession = groceries }
+	cu:uruguayan = { add_cultural_obsession = groceries }	
+}

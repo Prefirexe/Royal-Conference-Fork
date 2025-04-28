@@ -1,0 +1,8 @@
+﻿GLOBAL = {
+	cu:basque = { add_cultural_obsession = wine }
+	cu:catalan = { add_cultural_obsession = wine }
+	cu:georgian = { add_cultural_obsession = wine }
+	cu:nordestino = { add_cultural_obsession = wine }	
+	cu:portuguese = { add_cultural_obsession = wine }
+	cu:romanian = { add_cultural_obsession = wine }	
+}
