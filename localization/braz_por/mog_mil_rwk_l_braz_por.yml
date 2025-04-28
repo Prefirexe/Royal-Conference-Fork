@@ -1,0 +1,127 @@
+﻿l_braz_por:
+  
+ # Production method groups 
+ pmg_arms_tools_demob: "Demobilised Tool Production"
+ pmg_arti_tools_demob: "Demobilised Tool Production"
+ pmg_munitions_explosives_demob: "Demobilised Explosives Production"
+  
+ pmg_automation_building_electronics: "Automação" #NT!
+ pmg_automation_building_explosives_factory: "Automação"
+ pmg_mil_shipyards_shiftwork: "Trabalho por turnos"
+  
+  # Production methods 
+ pm_extensive_tools_a_i: "Extensive"
+ pm_moderate_tools_a_i: "Moderate"
+ pm_limited_tools_a_i: "Limited"
+ pm_extensive_tools_a_s: "Extensive"
+ pm_moderate_tools_a_s: "Moderate"
+ pm_limited_tools_a_s: "Limited"
+ pm_extensive_tools_a_r: "Ext. Rubber"
+ pm_moderate_tools_a_r: "Mod. Rubber"
+ pm_limited_tools_a_r: "Ltd. Rubber"
+ pm_no_tools_a: "No Civilian Tooling"
+  
+ pm_extensive_tools_t_i: "Extensive"
+ pm_moderate_tools_t_i: "Moderate"
+ pm_limited_tools_t_i: "Limited"
+ pm_extensive_tools_t_s: "Extensive"
+ pm_moderate_tools_t_s: "Moderate"
+ pm_limited_tools_t_s: "Limited"
+ pm_extensive_tools_t_r: "Ext. Rubber"
+ pm_moderate_tools_t_r: "Mod. Rubber"
+ pm_limited_tools_t_r: "Ltd. Rubber"
+ pm_no_tools_t: "No Civilian Tooling"
+  
+ pm_extensive_ammo_le: "Extensive"
+ pm_moderate_ammo_le: "Moderate"
+ pm_limited_ammo_le: "Limited"
+ pm_extensive_ammo_ni: "Ext. Nitroglycerin"
+ pm_moderate_ammo_ni: "Mod. Nitroglycerin"
+ pm_limited_ammo_ni: "Ltd. Nitroglycerin"
+ pm_extensive_ammo_dy: "Extensive"
+ pm_moderate_ammo_dy: "Moderate"
+ pm_limited_ammo_dy: "Limited"
+ pm_extensive_ammo_br: "Ext. Electrolysis"
+ pm_moderate_ammo_br: "Mod. Electrolysis"
+ pm_limited_ammo_br: "Ltd. Electrolysis"
+ pm_no_self_explosives: "No Self-Produced Explosives"
+  
+ pm_limited_radios: "Some Radios"
+ pm_moderate_radios: "Plenty of Radios"
+ pm_extensive_radios: "Many Radios"
+  
+ pm_assembly_lines_building_electronics: "Linhas de montagem" #NT!
+ pm_full_process_automation_building_electronics: "Componentes pré-estampados" #NT!
+  
+ pm_ui_safety_a: "(Ignore This)"
+ pm_ui_safety_b: "(Ignore This)"
+ pm_ui_safety_c: "(Ignore isso)" #NT!
+ pm_ui_safety_d: "(Ignore isso)" #NT!
+  
+ pm_rotary_valve_engine_building_arti_foundry: "Motor de válvula rotativa"
+ pm_assembly_lines_building_arti_foundry: "Linhas de montagem"
+  
+ pm_mechanical_mixers_building_explosives_factory: "Misturadores Mecânicos"
+ pm_rotary_valve_engine_building_explosives_factory: "Motor de válvula rotativa"
+ pm_assembly_lines_building_explosives_factory: "Linhas de montagem"
+ pm_full_process_automation_building_explosives_factory: "Embalagem automatizada"
+  
+ pm_mil_shipyards_double_shifts_wooden: "Turnos Duplos" #NT!
+ pm_mil_shipyards_double_shifts: "Turnos Duplos"
+ pm_mil_shipyards_double_shifts_arc_weld: "Turnos Duplos"
+ pm_mil_shipyards_triple_shifts_wooden: "Turnos triplos" #NT!
+ pm_mil_shipyards_triple_shifts: "Turnos triplos"
+ pm_mil_shipyards_triple_shifts_arc_weld: "Turnos triplos"
+ pm_mil_shipyards_double_shifts_tts: "Turnos Duplos"
+ pm_mil_shipyards_double_shifts_tts_steel: "Turnos Duplos"
+ pm_mil_shipyards_double_shifts_tts_turbine: "Turnos Duplos"
+ pm_mil_shipyards_double_shifts_tts_arc_welding: "Turnos Duplos"
+ pm_mil_shipyards_triple_shifts_tts: "Turnos triplos"
+ pm_mil_shipyards_triple_shifts_tts_turbine: "Turnos triplos"
+ pm_mil_shipyards_triple_shifts_tts_arc_welding: "Turnos triplos"
+  
+ # Alerts 
+ alert_MIR_war_demob_arms_name: "At War with Demobilised Arms Industries"
+ alert_MIR_war_demob_arms_hint: "You are at war and your Arms Industries are producing a large amount of Tools instead of Small Arms."
+ alert_MIR_war_demob_arms_action: "Urban Building Panel"
+ MIR_war_demob_arms_setting_name: "Demobilised Arms Industry Warning - War"
+ alert_MIR_peace_mob_arms_name: "At Peace with Mobilised Arms Industries"
+ alert_MIR_peace_mob_arms_hint: "You are at peace and your Arms Industries are producing large amounts of Small Arms."
+ alert_MIR_peace_mob_arms_action: "Urban Building Panel"
+ MIR_peace_mob_arms_setting_name: "Mobilised Arms Industry Warning - Peace"
+  
+ alert_MIR_war_demob_arty_name: "At War with Demobilised Artillery Foundries"
+ alert_MIR_war_demob_arty_hint: "You are at war and your Artillery Foundries are producing a large amount of Tools instead of Artillery."
+ alert_MIR_war_demob_arty_action: "Urban Building Panel"
+ MIR_war_demob_arty_setting_name: "Demobilised Artillery Warning - War"
+ alert_MIR_peace_mob_arty_name: "At Peace with Mobilised Artillery Foundries"
+ alert_MIR_peace_mob_arty_hint: "You are at peace and your Artillery Foundries are producing large amounts of Artillery."
+ alert_MIR_peace_mob_arty_action: "Urban Building Panel"
+ MIR_peace_mob_arty_setting_name: "Mobilised Artillery Warning - Peace"
+  
+ alert_MIR_war_demob_ammo_name: "At War with Demobilised Munitions Plants"
+ alert_MIR_war_demob_ammo_hint: "You are at war and your Munitions Plants are producing a large amount of civilian explosives instead of military Ammunition."
+ alert_MIR_war_demob_ammo_action: "Urban Building Panel"
+ MIR_war_demob_ammo_setting_name: "Demobilised Munitions Warning - War"
+ alert_MIR_peace_mob_ammo_name: "At Peace with Mobilised Munitions Plants"
+ alert_MIR_peace_mob_ammo_hint: "You are at peace and your Munitions Plants are producing large amounts of military Ammunition."
+ alert_MIR_peace_mob_ammo_action: "Urban Building Panel"
+ MIR_peace_mob_ammo_setting_name: "Mobilised Munitions Warning - Peace"
+  
+ alert_MIR_war_demob_planes_name: "Em guerra com a produção limitada de aviões"
+ alert_MIR_war_demob_planes_hint: "Vocês estão em guerra e suas indústrias automobilísticas não estão produzindo muitos aviões."
+ alert_MIR_war_demob_planes_action: "Painel de Construção Urbana"
+ MIR_war_demob_planes_setting_name: "Aviso de Avião Desmobilizado - Guerra"
+ alert_MIR_peace_mob_planes_name: "Em paz com a produção extensiva de aviões"
+ alert_MIR_peace_mob_planes_hint: "Você está em paz e suas indústrias automobilísticas estão produzindo muitos aviões."
+ alert_MIR_peace_mob_planes_action: "Painel de Construção Urbana"
+ MIR_peace_mob_planes_setting_name: "Alerta de Avião Mobilizado - Paz"
+  
+ alert_MIR_war_demob_tanks_name: "Em guerra com a produção limitada de tanques"
+ alert_MIR_war_demob_tanks_hint: "Vocês estão em guerra e suas indústrias automobilísticas não estão produzindo muitos tanques."
+ alert_MIR_war_demob_tanks_action: "Painel de Construção Urbana"
+ MIR_war_demob_tanks_setting_name: "Aviso de tanques desmobilizados - Guerra"
+ alert_MIR_peace_mob_tanks_name: "Em paz com a produção extensiva de tanques"
+ alert_MIR_peace_mob_tanks_hint: "Você está em paz e suas indústrias automobilísticas estão produzindo muitos tanques."
+ alert_MIR_peace_mob_tanks_action: "Painel de Construção Urbana"
+ MIR_peace_mob_tanks_setting_name: "Aviso de tanques mobilizados - Paz"

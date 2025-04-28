@@ -1,0 +1,83 @@
+﻿# This file is primary military industries with demobilisation PM's
+
+# pmg_firearms_manufacturing = {														# Vanilla PMG untouched
+# Ref production_methods = { pm_muskets pm_rifles pm_repeaters pm_bolt_action_rifles }
+
+pmg_arms_tools_demob = {																# Modded PMG
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_extensive_tools_a_i
+		pm_moderate_tools_a_i
+		pm_limited_tools_a_i
+		pm_extensive_tools_a_s
+		pm_moderate_tools_a_s
+		pm_limited_tools_a_s
+		pm_extensive_tools_a_r
+		pm_moderate_tools_a_r
+		pm_limited_tools_a_r
+		pm_no_tools_a
+		pm_ui_safety_a
+	}
+}
+
+# pmg_foundries = {																		# Vanilla PMG untouched
+# Ref production_methods = { pm_cannons pm_smoothbores pm_breech_loaders pm_recoiled_barrels }
+
+pmg_arti_tools_demob = {																# Modded PMG
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_extensive_tools_t_i
+		pm_moderate_tools_t_i
+		pm_limited_tools_t_i
+		pm_extensive_tools_t_s
+		pm_moderate_tools_t_s
+		pm_limited_tools_t_s
+		pm_extensive_tools_t_r
+		pm_moderate_tools_t_r
+		pm_limited_tools_t_r
+		pm_no_tools_t
+		pm_ui_safety_b
+	}
+}
+
+# pmg_automation_building_arms_industry = {												# Vanilla PMG modded - shared with artillery foundry
+pmg_automation_building_arms_industry = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+	production_methods = {
+		pm_automation_disabled
+		pm_rotary_valve_engine_building_arms_industry
+		pm_rotary_valve_engine_building_arti_foundry
+		pm_assembly_lines_building_arms_industry
+		pm_assembly_lines_building_arti_foundry
+	}
+}
+# Ref production_methods = { pm_automation_disabled pm_rotary_valve_engine_building_arms_industry pm_assembly_lines_building_arms_industry }
+
+# pmg_base_building_munition_plants = {													# Vanilla PMG untouched
+# Ref production_methods = { pm_percussion_caps pm_explosive_shells }
+
+pmg_munitions_explosives_demob = {														# Modded PMG
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_extensive_ammo_le
+		pm_moderate_ammo_le
+		pm_limited_ammo_le
+		pm_extensive_ammo_ni
+		pm_moderate_ammo_ni
+		pm_limited_ammo_ni
+		pm_extensive_ammo_dy
+		pm_moderate_ammo_dy
+		pm_limited_ammo_dy
+		pm_extensive_ammo_br
+		pm_moderate_ammo_br
+		pm_limited_ammo_br
+		pm_no_self_explosives
+		pm_ui_safety_b
+#		pm_extensive_housewares
+#		pm_limited_housewares
+#		pm_no_housewares
+	}
+}
+
+# pmg_automation_building_munition_plants = {											# Vanilla PMG untouched
+# Ref production_methods = { pm_automation_disabled pm_rotary_valve_engine_building_munition_plants pm_assembly_lines_building_munition_plants }
