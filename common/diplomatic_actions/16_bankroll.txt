@@ -20,7 +20,14 @@
 		}
 	}
 	
-	possible = {}
+	possible = {		
+		scope:target_country = {
+            OR = {
+                is_at_war = no
+                is_diplomatic_play_ally_of = root
+            }
+		}
+	}
 	
 	pact = {	
 		cost = 100
