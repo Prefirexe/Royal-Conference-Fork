@@ -159,29 +159,6 @@ assign_early_warlords_penalty = {
 	}
 }
 
-force_single_market = {
-	if = {
-		limit = {
-			is_subject = yes
-			overlord = {
-				market = prev.market
-				NOT = {
-					has_diplomatic_pact = {
-						who = prev
-						type = grant_own_market
-					}
-				}
-			}
-		}
-		overlord = {
-			create_diplomatic_pact = {
-				country = prev
-				type = grant_own_market
-			}
-		}
-	}
-}
-
 calculate_tpg_reconstruction_law_progress = {
 	# From Laws
 	set_variable = { name = tpg_reconstruction_from_laws value = 0 }
