@@ -49,7 +49,7 @@ demand_conquest = {
 		ROOT = {
 			set_variable = {
 				name = war_goal_add_cooldown
-				months = 12
+				months = 1
 			}
 		}
 		if = {
