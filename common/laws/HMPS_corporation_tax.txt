@@ -154,15 +154,15 @@ law_high_corporation_tax = {
 	}
 
 	tax_modifier_very_low = {
-		tax_dividends_add = 0.225
+		tax_dividends_add = 0.24
 	}	
 	
 	tax_modifier_low = {
-		tax_dividends_add = 0.25
+		tax_dividends_add = 0.26
 	}
 	
 	tax_modifier_medium = {
-		tax_dividends_add = 0.275
+		tax_dividends_add = 0.28
 	}	
 	
 	tax_modifier_high = {
@@ -170,6 +170,6 @@ law_high_corporation_tax = {
 	}
 	
 	tax_modifier_very_high = {
-		tax_dividends_add = 0.325
+		tax_dividends_add = 0.32
 	}
 }
