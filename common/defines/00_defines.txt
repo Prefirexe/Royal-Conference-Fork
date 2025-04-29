@@ -882,10 +882,10 @@ NDiplomacy = {
 	WAR_GOAL_EXECUTION_PRIORITY_UNIFICATION = 200
 
 	DIPLOMATIC_PLAY_ABANDON_SUPPORT_RELATIONS_IMPACT = 50
-	DIPLOMATIC_PLAY_ESCALATION_DAILY = 1
-	DIPLOMATIC_PLAY_ESCALATION_PAUSE_FROM_ACTION = 5 # Number of days that escalation pauses when either side takes an action
-	DIPLOMATIC_PLAY_ESCALATION_PAUSE_MAX = 20 # Escalation pause can't be longer than this no matter how many actions are taken at once
-	DIPLOMATIC_PLAY_OPENING_PHASE_END = 21	# Before this, defender needs to set their wargoal and you can't join/sway
+	DIPLOMATIC_PLAY_ESCALATION_DAILY = 4
+	DIPLOMATIC_PLAY_ESCALATION_PAUSE_FROM_ACTION = 1 # Number of days that escalation pauses when either side takes an action
+	DIPLOMATIC_PLAY_ESCALATION_PAUSE_MAX = 1 # Escalation pause can't be longer than this no matter how many actions are taken at once
+	DIPLOMATIC_PLAY_OPENING_PHASE_END = 79	# Before this, defender needs to set their wargoal and you can't join/sway
 	DIPLOMATIC_PLAY_CLOSING_PHASE_START = 80 # After this, it isn't possible to join/sway further countries
 	DIPLOMATIC_PLAY_ESCALATION_WAR_BREAKOUT = 100
 
