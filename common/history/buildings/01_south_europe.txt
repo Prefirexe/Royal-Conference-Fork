@@ -2483,7 +2483,7 @@
 		}
 	}
 	s:STATE_NAVARRA={
-		region_state:SPA={
+		region_state:SPC={
 		
 			### Resources
 			
@@ -2492,7 +2492,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SPA"
+						country="c:SPC"
 						levels=1
 						region="STATE_NAVARRA"
 					}
@@ -2510,7 +2510,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SPA"
+						country="c:SPC"
 						levels=1
 						region="STATE_NAVARRA"
 					}
@@ -2523,7 +2523,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SPA"
+						country="c:SPC"
 						levels=4
 						region="STATE_NAVARRA"
 					}
@@ -2536,7 +2536,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SPA"
+						country="c:SPC"
 						levels=4
 						region="STATE_NAVARRA"
 					}
@@ -2572,7 +2572,7 @@
 		}
 	}
 	s:STATE_ARAGON={
-		region_state:SPA={
+		region_state:SPC={
 		
 			### Resources
 			
@@ -2581,7 +2581,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SPA"
+						country="c:SPC"
 						levels=5
 						region="STATE_ARAGON"
 					}
@@ -2594,7 +2594,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SPA"
+						country="c:SPC"
 						levels=6
 						region="STATE_ARAGON"
 					}
@@ -2606,7 +2606,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SPA"
+						country="c:SPC"
 						levels=4
 						region="STATE_ARAGON"
 					}
@@ -2619,7 +2619,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SPA"
+						country="c:SPC"
 						levels=4
 						region="STATE_ARAGON"
 					}
@@ -2644,7 +2644,7 @@
 		}
 	}
 	s:STATE_CATALONIA={
-		region_state:SPA={
+		region_state:SPC={
 		
 			### Resources
 			
@@ -2653,7 +2653,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SPA"
+						country="c:SPC"
 						levels=7
 						region="STATE_CATALONIA"
 					}
@@ -2665,7 +2665,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:SPA"
+						country="c:SPC"
 						levels=4
 						region="STATE_CATALONIA"
 					}
@@ -2678,7 +2678,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SPA"
+						country="c:SPC"
 						levels=5
 						region="STATE_CATALONIA"
 					}
@@ -2691,7 +2691,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SPA"
+						country="c:SPC"
 						levels=2
 						region="STATE_CATALONIA"
 					}
@@ -2704,7 +2704,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SPA"
+						country="c:SPC"
 						levels=2
 						region="STATE_CATALONIA"
 					}
@@ -2720,7 +2720,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:SPA"
+						country="c:SPC"
 						levels=3
 						region="STATE_CATALONIA"
 					}
@@ -2733,7 +2733,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:SPA"
+						country="c:SPC"
 						levels=3
 						region="STATE_CATALONIA"
 					}
