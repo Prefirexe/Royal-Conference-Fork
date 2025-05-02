@@ -7,8 +7,8 @@
 base_values = {
 	regime_change_allowed = 0
 	
-	country_weekly_innovation_add = 50
-	country_weekly_innovation_max_add = 50
+	country_weekly_innovation_add = 25
+	country_weekly_innovation_max_add = 25
 	country_tech_spread_add = 50
 	
 	country_loan_interest_rate_add = 0.2
