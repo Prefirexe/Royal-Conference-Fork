@@ -11,6 +11,16 @@ pm_unrefrigerated = {
 	}
 }
 
+pm_unrefrigerated_ranch = {
+	texture = "gfx/interface/icons/production_method_icons/no_refrigeration.dds"
+	
+	state_modifiers = {
+		workforce_scaled = {
+			building_food_industry_throughput_add = 0.005
+		}
+	}
+}
+
 # Ranches
 pm_refrigerated_storage_building_livestock_ranch = {
 	texture = "gfx/interface/icons/production_method_icons/refrigerated_storage.dds"
