@@ -1,0 +1,49 @@
+﻿## PRIVATIZED PORTS (replace regular ports)
+building_port = {
+	building_group = USU_bg_port_infrastructure
+	city_type = port
+	icon = "gfx/interface/icons/building_icons/building_port.dds"
+	
+	ai_nationalization_desire = 0.5 	# Copied from railways - AI is reluctant to privatize vital infrastructure
+	
+	has_max_level = yes
+	ignore_stateregion_max_level = yes
+	port = yes
+	
+	unlocking_technologies = { navigation }
+	
+	production_method_groups = {
+		pmg_base_building_port
+		pmg_logistics_services_port_coastal
+	}
+	
+	required_construction = construction_cost_medium
+	ownership_type = self
+	
+	terrain_manipulator = urban_port
+	
+	potential = {
+		is_coastal = yes
+	}
+	
+	ai_value = {		# scope is state the building is located in
+		value = 3000	# Ports are important - Just get it done, eh
+		
+		if = { # Make colonies happen
+			limit = {
+				# is_isolated_from_market = yes
+				# is_under_colonization = yes		# Honestly, the AI should be encouraged to have at least 1 port in every valid state anyway.
+				NOR = {
+					has_building = building_port
+					any_scope_building = {
+						is_building_type = building_port
+						is_under_construction = yes
+					}
+				}
+			}
+			add = 999999	# Yes uber priority for isolated colonies so the AI doesn't get stuck being dumb
+		}
+	}
+	
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+}

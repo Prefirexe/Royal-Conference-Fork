@@ -50,7 +50,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_handsewn_clothes""pm_traditional_looms" "pm_no_luxury_clothes" }
+				activate_production_methods={ "pm_handsewn_clothes""pm_traditional_looms" "pm_craftsman_sewing" }
 			}
 
 			
@@ -112,7 +112,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_handsewn_clothes""pm_traditional_looms" "pm_no_luxury_clothes" }
+				activate_production_methods={ "pm_handsewn_clothes""pm_traditional_looms" "pm_craftsman_sewing" }
 			}
 			
 			### Other
@@ -177,7 +177,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_handsewn_clothes""pm_traditional_looms" "pm_no_luxury_clothes" }
+				activate_production_methods={ "pm_handsewn_clothes""pm_traditional_looms" "pm_craftsman_sewing" }
 			}
 			
 			### Other
@@ -664,7 +664,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_handcrafted_furniture" "pm_no_luxuries" "pm_automation_disabled"  }
+				activate_production_methods={ "pm_handcrafted_furniture" "pm_luxury_furniture" "pm_automation_disabled"  }
 			}
 			
 			### Other
@@ -1471,7 +1471,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_handcrafted_furniture"  "pm_automation_disabled" "pm_no_luxuries" }
+				activate_production_methods={ "pm_handcrafted_furniture"  "pm_automation_disabled" "pm_luxury_furniture" }
 			}
 			
 			### Other

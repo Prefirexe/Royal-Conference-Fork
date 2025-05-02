@@ -1,0 +1,17 @@
+﻿BUILDINGS = {
+	if = { # Add top-up consecs to iron-potential states to make up for blanket downsize of consec sizes.
+		limit = { Grey_USU_is_active = yes }
+		every_state = {
+			limit = {
+				is_incorporated = yes
+				is_treaty_port = no
+				has_potential_resource = bg_iron_mining
+				owner ?= { NOT = { is_country_type = decentralized } }
+			}
+			create_building={
+				building="building_construction_sector"
+				level=2
+			}
+		}
+	}
+}

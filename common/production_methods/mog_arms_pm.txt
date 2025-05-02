@@ -113,7 +113,7 @@ pm_rifles = {
 	texture = "gfx/interface/icons/production_method_icons/rifles.dds"
 	
 	unlocking_technologies = {
-		rifling
+		shell_gun
 	}
 	
 	building_modifiers = {
@@ -141,7 +141,7 @@ pm_repeaters = {
 	texture = "gfx/interface/icons/production_method_icons/repeaters.dds"
 	
 	unlocking_technologies = {
-		repeaters
+		breech_loading_artillery
 	}
 	
 	building_modifiers = {
@@ -242,7 +242,7 @@ pm_bolt_action_rifles = {
 	texture = "gfx/interface/icons/production_method_icons/bolt_action_rifles.dds"
 	
 	unlocking_technologies = {
-		bolt_action_rifles
+		automatic_machine_guns
 	}
 	
 	building_modifiers = {

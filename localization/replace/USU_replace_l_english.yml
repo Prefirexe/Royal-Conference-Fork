@@ -1,0 +1,16 @@
+﻿l_english:
+ # WCA
+ alert_wasted_construction_name: "Has unused [concept_construction]"
+ alert_wasted_construction_hint: "Has unused [concept_construction]"
+ alert_wasted_construction_action: "Construction Panel"
+ wasted_construction_setting_name: "Unused Construction"
+ 
+ pm_electric_trains:0 "DC Electric Trains"
+ pm_electric_trains_principle_transport_3:0 "Joint DC Electric Trains"
+ pm_electric_streetlights:0 "Moonlight Towers"
+
+ pm_canal: "Steam Powered Locks"
+
+ pm_no_public_transport:0 "No Public Transportation"
+ pm_public_trams:0 "Horse-drawn Trams"
+ pm_public_motor_carriages:0 "City Busses"

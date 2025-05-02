@@ -2379,7 +2379,7 @@
 				building="building_textile_mills"
 				level=3
 				reserves=1
-				activate_production_methods={ "pm_handsewn_clothes""pm_traditional_looms" "pm_no_luxuries" }
+				activate_production_methods={ "pm_handsewn_clothes""pm_traditional_looms" "pm_luxury_furniture" }
 			}
 			
 			### Other
@@ -2735,7 +2735,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_handsewn_clothes""pm_traditional_looms" "pm_no_luxuries" }
+				activate_production_methods={ "pm_handsewn_clothes""pm_traditional_looms" "pm_luxury_furniture" }
 			}
 			
 			### Other

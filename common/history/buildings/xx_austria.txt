@@ -439,7 +439,7 @@
 			
 			create_building={
 				building="building_government_administration"
-				level=4
+				level=8
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
@@ -522,7 +522,7 @@
 			
 			create_building={
 				building="building_government_administration"
-				level=1
+				level=3
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
@@ -681,7 +681,7 @@
 			
 			create_building={
 				building="building_government_administration"
-				level=4
+				level=6
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
@@ -1050,7 +1050,7 @@
 		}
 	}
 	s:STATE_CROATIA={
-		region_state:AUS={
+		region_state:HUN={
 		
 			### Resources
 			
@@ -1071,7 +1071,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:AUS"
+						country="c:HUN"
 						levels=1
 						region="STATE_CROATIA"
 					}
@@ -1090,7 +1090,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:AUS"
+						country="c:HUN"
 						levels=1
 						region="STATE_CROATIA"
 					}
@@ -1109,7 +1109,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:AUS"
+						country="c:HUN"
 						levels=2
 						region="STATE_CROATIA"
 					}
@@ -1163,7 +1163,7 @@
 		}
 	}
 	s:STATE_SLAVONIA={
-		region_state:AUS={
+		region_state:HUN={
 		
 			### Resources
 			
@@ -1172,7 +1172,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:AUS"
+						country="c:HUN"
 						levels=2
 						region="STATE_AUSTRIA"
 					}
@@ -1198,7 +1198,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:AUS"
+						country="c:HUN"
 						levels=3
 						region="STATE_SLAVONIA"
 					}
@@ -1316,7 +1316,12 @@
 			
 			
 			### Other
-			
+			create_building={
+				building="building_government_administration"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
+			}
 		}
 		region_state:KRA={
 		
@@ -1366,7 +1371,6 @@
 			}
 			
 			### Other
-			
 			create_building={
 				building="building_university"
 				level=1
@@ -1389,11 +1393,16 @@
 			
 			
 			### Other
-	
+			create_building={
+				building="building_government_administration"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
+			}
 		}
 	}
 	s:STATE_CENTRAL_HUNGARY={
-		region_state:AUS={
+		region_state:HUN={
 		
 			### Resources
 			
@@ -1402,7 +1411,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:AUS"
+						country="c:HUN"
 						levels=5
 						region="STATE_CENTRAL_HUNGARY"
 					}
@@ -1421,7 +1430,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:AUS"
+						country="c:HUN"
 						levels=3
 						region="STATE_CENTRAL_HUNGARY"
 					}
@@ -1434,7 +1443,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:AUS"
+						country="c:HUN"
 						levels=1
 						region="STATE_CENTRAL_HUNGARY"
 					}
@@ -1446,7 +1455,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:AUS"
+						country="c:HUN"
 						levels=1
 						region="STATE_CENTRAL_HUNGARY"
 					}
@@ -1461,7 +1470,7 @@
 				add_ownership={
 					building={
 						type="building_food_industry"
-						country="c:AUS"
+						country="c:HUN"
 						levels=2
 						region="STATE_CENTRAL_HUNGARY"
 					}
@@ -1490,7 +1499,7 @@
 		}
 	}
 	s:STATE_BEKES={
-		region_state:AUS={
+		region_state:HUN={
 		
 			### Resources
 			
@@ -1531,7 +1540,7 @@
 		}
 	}
 	s:STATE_TRANSDANUBIA={
-		region_state:AUS={
+		region_state:HUN={
 		
 			### Resources
 			
@@ -1565,7 +1574,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:AUS"
+						country="c:HUN"
 						levels=3
 						region="STATE_TRANSDANUBIA"
 					}
@@ -1588,7 +1597,7 @@
 		}
 	}
 	s:STATE_DELVIDEK={
-		region_state:AUS={
+		region_state:HUN={
 		
 			### Resources
 			
@@ -1610,7 +1619,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:AUS"
+						country="c:HUN"
 						levels=2
 						region="STATE_DELVIDEK"
 					}
@@ -1629,7 +1638,7 @@
 		}
 	}
 	s:STATE_BANAT={
-		region_state:AUS={
+		region_state:HUN={
 		
 			### Resources
 			
@@ -1638,7 +1647,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:AUS"
+						country="c:HUN"
 						levels=3
 						region="STATE_AUSTRIA"
 					}
@@ -1670,7 +1679,7 @@
 		}
 	}
 	s:STATE_WEST_SLOVAKIA={
-		region_state:AUS={
+		region_state:HUN={
 		
 			### Resources
 			
@@ -1692,7 +1701,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:AUS"
+						country="c:HUN"
 						levels=1
 						region="STATE_WEST_SLOVAKIA"
 					}
@@ -1716,7 +1725,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:AUS"
+						country="c:HUN"
 						levels=4
 						region="STATE_WEST_SLOVAKIA"
 					}
@@ -1729,7 +1738,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:AUS"
+						country="c:HUN"
 						levels=3
 						region="STATE_WEST_SLOVAKIA"
 					}
@@ -1753,7 +1762,7 @@
 		}
 	}
 	s:STATE_EAST_SLOVAKIA={
-		region_state:AUS={
+		region_state:HUN={
 		
 			### Resources
 			
@@ -1762,7 +1771,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:AUS"
+						country="c:HUN"
 						levels=2
 						region="STATE_EAST_SLOVAKIA"
 					}
@@ -1788,7 +1797,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:AUS"
+						country="c:HUN"
 						levels=3
 						region="STATE_WEST_SLOVAKIA"
 					}
@@ -1807,7 +1816,7 @@
 		}
 	}
 	s:STATE_SOUTHERN_TRANSYLVANIA={
-		region_state:AUS={
+		region_state:HUN={
 		
 			### Resources
 			
@@ -1822,7 +1831,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:AUS"
+						country="c:HUN"
 						levels=4
 						region="STATE_AUSTRIA"
 					}
@@ -1842,7 +1851,7 @@
 		}
 	}
 	s:STATE_NORTHERN_TRANSYLVANIA={
-		region_state:AUS={
+		region_state:HUN={
 		
 			### Resources
 			
@@ -1851,7 +1860,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:AUS"
+						country="c:HUN"
 						levels=4
 						region="STATE_AUSTRIA"
 					}

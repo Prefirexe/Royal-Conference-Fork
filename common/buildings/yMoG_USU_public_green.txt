@@ -1,0 +1,20 @@
+﻿USU_building_public_green = {
+	building_group = USU_bg_public_greens
+	icon = "gfx/interface/icons/building_icons/USU_public_green.dds"
+	
+	unlocking_technologies = {
+		enclosure
+	}
+	
+	production_method_groups = {
+		USU_pmg_public_space_management
+		USU_pmg_public_parklands
+	}
+	
+	required_construction = construction_cost_low
+	
+	ownership_type = self
+	
+	# generates_residences = yes
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
+}
