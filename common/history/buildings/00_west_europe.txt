@@ -6457,7 +6457,7 @@
 			
 			create_building={
 				building="building_government_administration"
-				level=9
+				level=10
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
@@ -8119,7 +8119,7 @@
 			
 			create_building={
 				building="building_government_administration"
-				level=1
+				level=5
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
