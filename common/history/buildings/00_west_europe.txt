@@ -1135,7 +1135,7 @@
 			}				
 			create_building={
 				building="building_university"
-				level=8
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_philosophy_department" }
 			}
@@ -2005,7 +2005,7 @@
 			}			
 			create_building={
 				building="building_university"
-				level=8
+				level=2
 				reserves=1
 				activate_production_methods={ "pm_philosophy_department" }
 			}
@@ -2271,7 +2271,7 @@
 					building={
 						type="building_financial_district"
 						country="c:GBR"
-						levels=5
+						levels=2
 						region="STATE_LOWLANDS"
 					}
 				}

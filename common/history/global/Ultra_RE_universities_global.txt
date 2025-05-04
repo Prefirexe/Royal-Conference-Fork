@@ -328,7 +328,7 @@ GLOBAL = {
 		region_state:GBR={
 			create_building={
 				building="building_university"
-				level=9
+				level=1
 				reserves=1
 				activate_production_methods={ "pm_scholastic_education" }
 			}
@@ -339,7 +339,7 @@ GLOBAL = {
 		region_state:GBR={
 			create_building={
 				building="building_university"
-				level=6
+				level=1
 				reserves=1
 				activate_production_methods={ "pm_scholastic_education" }
 			}
@@ -361,7 +361,7 @@ GLOBAL = {
 		region_state:GBR={
 			create_building={
 				building="building_university"
-				level=6
+				level=1
 				reserves=1
 				activate_production_methods={ "pm_scholastic_education" }
 			}
@@ -374,7 +374,7 @@ GLOBAL = {
 		region_state:SPA={
 			create_building={
 				building="building_university"
-				level=2
+				level=1
 				reserves=1
 				activate_production_methods={ "pm_scholastic_education" }
 			}
@@ -387,7 +387,7 @@ GLOBAL = {
 		region_state:AUS={
 			create_building={
 				building="building_university"
-				level=2
+				level=1
 				reserves=1
 				activate_production_methods={ "pm_scholastic_education" }
 			}
