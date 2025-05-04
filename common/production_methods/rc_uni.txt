@@ -4,7 +4,6 @@ pm_scholastic_education = {
 	country_modifiers = {
 		workforce_scaled = { 
 			country_weekly_innovation_add = 1
-			country_tech_spread_add = 0.5
 		}
 	}
 	
@@ -38,7 +37,6 @@ pm_philosophy_department = {
 	country_modifiers = {
 		workforce_scaled = { 
 			country_weekly_innovation_add = 2
-			country_tech_spread_add = 1
 		}
 	}
 	
@@ -72,7 +70,6 @@ pm_analytical_philosophy_department = {
 	country_modifiers = {
 		workforce_scaled = { 
 			country_weekly_innovation_add = 3
-			country_tech_spread_add = 1.5
 		}
 	}
 	
