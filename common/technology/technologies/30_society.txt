@@ -57,7 +57,7 @@ urban_planning = {
 	modifier = {
 		state_infrastructure_from_population_add = 1
 		state_infrastructure_from_population_max_add = 20
-		country_max_weekly_construction_progress_add = 10
+		country_max_weekly_construction_progress_add = 5
 	}
 	
 	unlocking_technologies = {
@@ -77,7 +77,6 @@ rationalism = {
 	
 	modifier = {
 		country_institution_schools_max_investment_add = 1
-		state_education_access_wealth_add = 0.0025 #was 0.005
 	}
 	
 	ai_weight = {
@@ -475,7 +474,7 @@ modern_sewerage = {
 	modifier = {
 		state_infrastructure_from_population_add = 1
 		state_infrastructure_from_population_max_add = 20
-		country_max_weekly_construction_progress_add = 10
+		country_max_weekly_construction_progress_add = 5
 		state_pollution_reduction_health_mult = -0.1
 		state_urbanization_per_level_mult = -0.1
 		state_harvest_condition_flood_impact_mult = -0.1
@@ -948,7 +947,7 @@ steel_frame_buildings = {
 	modifier = {
 		state_infrastructure_from_population_add = 1
 		state_infrastructure_from_population_max_add = 20
-		country_max_weekly_construction_progress_add = 10
+		country_max_weekly_construction_progress_add = 5
 		state_urbanization_per_level_mult = -0.1
 		state_harvest_condition_flood_impact_mult = -0.05
 	}
@@ -1325,7 +1324,7 @@ elevator = {
 	modifier = {
 		state_infrastructure_from_population_add = 1
 		state_infrastructure_from_population_max_add = 20
-		country_max_weekly_construction_progress_add = 10
+		country_max_weekly_construction_progress_add = 5
 		state_urbanization_per_level_mult = -0.1
 	}	
 	
@@ -1692,7 +1691,6 @@ paved_roads = {
 	modifier = {
 		state_infrastructure_from_automobiles_consumption_add = 0.25
 		market_land_trade_capacity_add = 300
-		country_max_weekly_construction_progress_add = 10
 	}
 	
 	unlocking_technologies = {	
