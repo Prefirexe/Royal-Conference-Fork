@@ -49,7 +49,7 @@ je_meiji_restoration = {
 			is_in_government = no
 		}
 		OR = {
-			government_legitimacy >= 50
+			government_legitimacy >= 30
 			ig:ig_landowners = { is_marginal = yes }
 			has_revolution = yes						
 		}
