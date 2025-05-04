@@ -1,5 +1,23 @@
 ﻿### ERA 1
 
+terakoya = {
+	# Cheatcodes for historically literate Japan
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/empiricism.dds"
+	category = society
+	can_research = no
+	
+	modifier = {
+		country_institution_schools_max_investment_add = 1
+        state_education_access_wealth_add = 0.01
+		state_education_access_add = 0.05
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
 sahara_colonisation = {
 	era = era_1
 	texture = "gfx/interface/icons/invention_icons/quinine.dds"
@@ -59,7 +77,6 @@ rationalism = {
 	
 	modifier = {
 		country_institution_schools_max_investment_add = 1
-		state_education_access_wealth_add = 0.01
 	}
 	
 	ai_weight = {
@@ -238,7 +255,7 @@ academia = {
 	category = society
 	
 	modifier = {
-		state_education_access_wealth_add = 0.005
+		state_education_access_wealth_add = 0.0025 #was 0.005
 	}
 	
 	unlocking_technologies = {
@@ -375,7 +392,7 @@ empiricism = {
 	modifier = {
 		country_influence_mult = 0.1
 		country_institution_schools_max_investment_add = 1
-		state_education_access_wealth_add = 0.005
+		state_education_access_wealth_add = 0.0025 #was 0.005
 	}
 	
 	unlocking_technologies = {
@@ -639,7 +656,8 @@ dialectics = {
 	category = society
 	
 	modifier = {
-		country_institution_schools_max_investment_add = 1
+		#country_institution_schools_max_investment_add = 1
+		state_education_access_wealth_add = 0.0025 #was none
 	}
 	
 	unlocking_technologies = {
@@ -1222,6 +1240,7 @@ philosophical_pragmatism = {
 	modifier = {
 		country_influence_mult = 0.1
 		state_bureaucracy_population_base_cost_factor_mult = -0.05
+		state_education_access_wealth_add = 0.0025 #was none
 	}
 	
 	unlocking_technologies = {
@@ -1524,6 +1543,10 @@ analytical_philosophy = {
 	texture = "gfx/interface/icons/invention_icons/analytical_philosophy.dds"
 	category = society
 	
+	modifier = {
+		state_education_access_wealth_add = 0.0025 #was none
+	}
+
 	unlocking_technologies = {
 		philosophical_pragmatism
 	}
