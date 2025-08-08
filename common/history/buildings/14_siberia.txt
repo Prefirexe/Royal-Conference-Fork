@@ -25,16 +25,12 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts"  }
+				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
 		}
 	}
 	s:STATE_TOMSK={
 		region_state:RUS={
-		}
-	}
-	s:STATE_TUVA={
-		region_state:CHI={
 		}
 	}
 	s:STATE_TUVA={
@@ -50,10 +46,6 @@
 		}
 	}
 	s:STATE_OB={
-		region_state:RUS={
-		}
-	}
-	s:STATE_NENETSIA={
 		region_state:RUS={
 		}
 	}

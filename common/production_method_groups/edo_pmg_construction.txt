@@ -1,0 +1,59 @@
+﻿###Construction
+
+pmg_base_building_construction_sector = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_wooden_buildings
+		pm_lime_stone_buildings
+		pm_iron_frame_buildings
+		pm_steel_frame_buildings
+		pm_arc_welded_buildings
+	}
+}
+
+###Cement Factory
+
+pmg_cement_factory_main = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_lime_kiln
+		pm_vertical_shaft_kiln
+		pm_rotary_kiln
+		pm_internal_heat_exchanger
+	}
+}
+
+###Machine Parts
+
+pmg_machine_part_factory_main = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_craft_workshop
+		pm_interchangeable_parts
+		pm_machine_shops
+		pm_automated_assembly_lines
+	}
+}
+
+###Limestone Quarry
+
+pmg_quarry_limestone = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_chiselling_limestone
+		pm_pickaxes_limestone
+		pm_mining_drill_limestone
+		pm_excavator_limestone
+	}
+}
+
+pmg_explosives_building_limestone = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_no_explosives
+		pm_nitroglycerin_building_limestone
+		pm_dynamite_building_limestone
+	}
+}

@@ -1,0 +1,34 @@
+﻿# goods types, organized by category
+
+# prestige_factor							Base prestige for occupying the rank MIN_PRESTIGE_AWARD spot on the goods production leaderboard. x2 awarded for every rank above the minimum.
+
+##############
+# INDUSTRIAL #
+##############
+limestone = {
+	texture = "gfx/interface/icons/goods_icons/limestone.dds"
+	cost = 30
+	category = industrial
+	
+	prestige_factor = 3
+}
+
+cement = {
+	texture = "gfx/interface/icons/goods_icons/cement.dds"
+	cost = 40
+	category = industrial
+	
+	prestige_factor = 5
+	traded_quantity = 5 # 200
+}
+
+machine_part = {
+	texture = "gfx/interface/icons/goods_icons/machine_part.dds"
+	cost = 60
+	category = industrial
+	
+	prestige_factor = 6
+	
+	traded_quantity = 4 # 200
+	convoy_cost_multiplier = 1.5
+}

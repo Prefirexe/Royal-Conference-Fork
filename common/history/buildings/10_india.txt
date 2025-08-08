@@ -186,7 +186,7 @@
 					}
 				}
 				reserves = 1
-				activate_production_methods = { "pm_simple_forestry"  "pm_no_equipment" "pm_road_carts" }
+				activate_production_methods = { "pm_simple_forestry"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
 			}
 			create_building = {
 				building = "building_opium_plantation"
@@ -426,7 +426,7 @@
 					}
 				}
 				reserves = 1
-				activate_production_methods = { "pm_simple_forestry"  "pm_no_equipment" "pm_road_carts" }
+				activate_production_methods = { "pm_simple_forestry"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
 			}
 			create_building = {
 				building = "building_dye_plantation"
@@ -516,7 +516,7 @@
 					}
 				}
 				reserves = 1
-				activate_production_methods = { "pm_simple_forestry"  "pm_no_equipment" "pm_road_carts" }
+				activate_production_methods = { "pm_simple_forestry"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
 			}
 		}
 		region_state:ASM= {
@@ -555,7 +555,7 @@
 					}
 				}
 				reserves = 1
-				activate_production_methods = { "pm_simple_forestry"  "pm_no_equipment" "pm_road_carts" }
+				activate_production_methods = { "pm_simple_forestry"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
 			}
 		}
 	}
@@ -862,7 +862,7 @@
 					}
 				}
 				reserves = 1
-				activate_production_methods = { "pm_simple_forestry"  "pm_no_equipment" "pm_road_carts" }
+				activate_production_methods = { "pm_simple_forestry"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
 			}
 			create_building = {
 				building = "building_iron_mine"
@@ -1185,19 +1185,6 @@
 				activate_production_methods = { "pm_open_air_stockyards" "pm_simple_ranch" "pm_standard_fences" "pm_unrefrigerated" }
 			}
 		}
-		region_state:POR= {
-			create_building = {
-				building = "building_port"
-				add_ownership = {
-					country= {
-						country = "c:POR"
-						levels = 1
-					}
-				}
-				reserves = 1
-				activate_production_methods = { "pm_anchorage" }
-			}
-		}
 	}
 	s:STATE_BUNDELKHAND= {
 		region_state:BUN= {
@@ -1389,7 +1376,7 @@
 					}
 				}
 				reserves = 1
-				activate_production_methods = { "pm_simple_forestry"  "pm_no_equipment" "pm_road_carts" }
+				activate_production_methods = { "pm_simple_forestry"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
 			}
 			create_building = {
 				building = "building_livestock_ranch"
@@ -1533,6 +1520,19 @@
 				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled"  }
 			}
 			create_building = {
+				building = "building_wheat_farm"
+				add_ownership = {
+					building = {
+						type = "building_manor_house"
+						country = "c:PAN"
+						levels = 2
+						region = "STATE_PUNJAB"
+					}
+				}
+				reserves = 1
+				activate_production_methods = { "pm_simple_farming" "pm_citrus_orchards" "pm_tools_disabled" }
+			}
+			create_building = {
 				building = "building_logging_camp"
 				add_ownership = {
 					building = {
@@ -1543,7 +1543,7 @@
 					}
 				}
 				reserves = 1
-				activate_production_methods = { "pm_saw_mills" "pm_no_equipment" "pm_road_carts" }
+				activate_production_methods = { "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts" }
 			}
 			create_building = {
 				building = "building_tobacco_plantation"
@@ -1746,7 +1746,7 @@
 					}
 				}
 				reserves = 1
-				activate_production_methods = { "pm_simple_forestry"  "pm_no_equipment" "pm_road_carts" }
+				activate_production_methods = { "pm_simple_forestry"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
 			}
 		}
 		region_state:BAS= {
@@ -1839,6 +1839,19 @@
 				}
 				reserves = 1
 				activate_production_methods = { "pm_simple_fishing" "pm_unrefrigerated" }
+			}
+			create_building = {
+				building = "building_wheat_farm"
+				add_ownership = {
+					building = {
+						type = "building_manor_house"
+						country = "c:SIN"
+						levels = 1
+						region = "STATE_SINDH"
+					}
+				}
+				reserves = 1
+				activate_production_methods = { "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
 			}
 			create_building = {
 				building = "building_livestock_ranch"
@@ -2107,7 +2120,7 @@
 					}
 				}
 				reserves = 1
-				activate_production_methods = { "pm_basic_port" }
+				activate_production_methods = { "pm_anchorage" }
 			}
 			create_building = {
 				building = "building_logging_camp"
@@ -2120,7 +2133,7 @@
 					}
 				}
 				reserves = 1
-				activate_production_methods = { "pm_simple_forestry"  "pm_no_equipment" "pm_road_carts" }
+				activate_production_methods = { "pm_simple_forestry"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
 			}
 		}
 	}
@@ -2137,7 +2150,7 @@
 					}
 				}
 				reserves = 1
-				activate_production_methods = { "pm_simple_forestry"  "pm_no_equipment" "pm_road_carts" }
+				activate_production_methods = { "pm_simple_forestry"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
 			}
 		}
 		region_state:BIC = {
@@ -2443,7 +2456,7 @@
 					}
 				}
 				reserves = 1
-				activate_production_methods = { "pm_basic_port" }
+				activate_production_methods = { "pm_anchorage" }
 			}
 		}
 		region_state:BIC = {
@@ -2562,7 +2575,7 @@
 					}
 				}
 				reserves = 1
-				activate_production_methods = { "pm_simple_forestry"  "pm_no_equipment" "pm_road_carts" }
+				activate_production_methods = { "pm_simple_forestry"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
 			}
 			create_building = {
 				building = "building_fishing_wharf"
@@ -2802,7 +2815,7 @@
 				reserves=1
 				activate_production_methods={ "default_building_vineyard_plantation" "pm_road_carts"  }
 			}
-			
+
 			create_building = {
 				building = "building_cotton_plantation"
 				add_ownership = {
@@ -2910,7 +2923,7 @@
 					}
 				}
 				reserves = 1
-				activate_production_methods = { "pm_simple_forestry"  "pm_no_equipment" "pm_road_carts" }
+				activate_production_methods = { "pm_simple_forestry"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
 			}
 		}
 	}
