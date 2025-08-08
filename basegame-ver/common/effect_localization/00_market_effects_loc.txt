@@ -1,3 +1,0 @@
-﻿set_trade_center = {
-	global = SET_TRADE_CENTER
-}
