@@ -111,15 +111,15 @@ liberty_desire_weekly_change = {
 	add = {
 		if = {
 			limit = { root.first_country.infamy >= infamy_threshold:pariah }
-			add = 2.0
+			add = 0
 		}
 		else_if = {
 			limit = { root.first_country.infamy >= infamy_threshold:notorious }
-			add = 0.25
+			add = 0
 		}		
 		else_if = {
 			limit = { root.first_country.infamy >= infamy_threshold:infamous }
-			add = 0.1
+			add = 0
 		}		
 		
 		desc = "concept_infamy"
