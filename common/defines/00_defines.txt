@@ -46,10 +46,10 @@ NCountry = {
 	CONSTRUCTION_QUEUE_INCREMENT_SHIFT = 5  # Increment/Decrement used for buildings construction queue when holding down Shift
 	CONSTRUCTION_QUEUE_INCREMENT_CONTROL = 10 # Increment/Decrement used for buildings construction queue when holding down Ctrl
 	WEEKS_TO_STORE_LOYALIST_RADICAL_STATISTICS = 52 # Number of weeks of statistics for loyalists/radicals that is stored and shown
-	INCORPORATION_TIME_SAME_CULTURE = 4				# Years if the state is a Homeland of one of the country's primary cultures
-	INCORPORATION_TIME_SAME_HERITAGE = 8			# Years if the state is a Homeland of a culture that matches of one of the country's primary cultures' Heritage traits
-	INCORPORATION_TIME_SAME_TRAIT = 12				# Years if the state is a Homeland of a culture with any trait in common with a country's primary cultures
-	INCORPORATION_TIME_NO_MATCH = 24				# Years if the state's Homeland cultures have nothing in common with the country's primary cultures
+	INCORPORATION_TIME_SAME_CULTURE = 1				# Years if the state is a Homeland of one of the country's primary cultures
+	INCORPORATION_TIME_SAME_HERITAGE = 5			# Years if the state is a Homeland of a culture that matches of one of the country's primary cultures' Heritage traits
+	INCORPORATION_TIME_SAME_TRAIT = 10				# Years if the state is a Homeland of a culture with any trait in common with a country's primary cultures
+	INCORPORATION_TIME_NO_MATCH = 15				# Years if the state's Homeland cultures have nothing in common with the country's primary cultures
 	INCORPORATION_TIME_MIN_MULTIPLIER = 0.1			# Incorporation speed cannot be reduced below this by modifiers
 	JOURNAL_ENTRY_UPDATE_ACTIVE = 8					# Number of ticks between each update of Active (Possible) Journal Entries, can be overriden on journal entry type
 	JOURNAL_ENTRY_UPDATE_INACTIVE = 28				# Number of ticks between each update of Inactive Journal Entries, can be overriden on journal entry type
@@ -151,7 +151,7 @@ NPolitics = {
 	GOVERNMENT_RADICAL_PETITION_THRESHOLD = 100 
 
 	LAW_ENACTMENT_MIN_TOTAL_DAYS = 1		# Minimum number of total days that an enactment checkpoint can take [>=1]
-	LAW_ENACTMENT_DEFAULT_BASE_DAYS = 90	# Default number of base days required to reach an enactment checkpoint [>=1]
+	LAW_ENACTMENT_DEFAULT_BASE_DAYS = 75	# Default number of base days required to reach an enactment checkpoint [>=1]
 	LAW_ENACTMENT_COOLDOWN_DAYS = 730		# When an enactment fails, or is manually stopped after at least one checkpoint, that law can't be tried to be enacted for this many days [>=0]
 	LAW_ENACTMENT_ADVANCE_FACTOR = 2		# The _base_ advance chance is the success chance multiplied by this factor [>=1]
 	LAW_ENACTMENT_RULER_IDEOLOGY_EFFECT = 0.05 # Ruler ideology has this impact on a law's chance to pass or stall depending on relative approval
@@ -313,7 +313,7 @@ NPolitics = {
 }
 
 NEconomy = {
-	MIN_CONSTRUCTION_EFFICIENCY = 0.33					# Construction efficiency cannot go below this amount
+	MIN_CONSTRUCTION_EFFICIENCY = 0.5					# Construction efficiency cannot go below this amount
 
 	# The number of times the initializewealth function is run during setup
 	# The more times you run this the more accurate setup will be for Pop wealth compared to income
@@ -519,11 +519,11 @@ NEconomy = {
 	SLAVE_TRADE_OTHER_STATES_WEIGHT = 2			# Inverse weight (penalty) for having other slave import markers
 	SLAVE_TRADE_EXISTING_STATE_CULTURE_WEIGHT_MULT = 10 # Total score of state is multiplied by this if importing from states whose homeland cultures are already present in this state
 	SLAVE_TRADE_NUMBER_EVALUATED_STATES = 10	# Slave import marker is selected randomly from this many potential targets with highest weight
-	SLAVE_TRADE_BASE_SLAVES_PER_WEEK = 250		# Base number of slaves that will be traded per marker per week
-	SLAVE_TRADE_ARABLE_LAND_EFFECT = 1			# Slaves traded per week is increased by this for each arable land in the importing state
-	SLAVE_TRADE_ARABLE_LAND_EFFECT_MAX = 1000	# Maximum that arable land can increase slaves traded per week
+	SLAVE_TRADE_BASE_SLAVES_PER_WEEK = 500		# Base number of slaves that will be traded per marker per week
+	SLAVE_TRADE_ARABLE_LAND_EFFECT = 2			# Slaves traded per week is increased by this for each arable land in the importing state
+	SLAVE_TRADE_ARABLE_LAND_EFFECT_MAX = 1500	# Maximum that arable land can increase slaves traded per week
 	SLAVE_TRADE_RANDOM_MIN = 0.5				# Slaves traded per week is multiplied by a random number, minimum of this
-	SLAVE_TRADE_RANDOM_MAX = 1.5				# Slaves traded per week is multiplied by a random number, maximum of this
+	SLAVE_TRADE_RANDOM_MAX = 2.5				# Slaves traded per week is multiplied by a random number, maximum of this
 	SLAVE_TRADE_MIN_MARKET_ACCESS = 0.1			# Minimum market access multiplier for slave trade, i.e. even at a marker with 0 market access, this fraction of the base number will be traded
 
 	BUILDING_FAILED_HIRE_COOLDOWN_WEEKS_WITHOUT_WAGE_RAISE = 4		# If a building fails to hire, it waits this many weeks before trying again *unless* it has since raised wages or adjusted its hiring rate
@@ -1158,7 +1158,7 @@ NPowerBlocs = {
 	POWER_STRUGGLE_DURATION_FACTOR_FOR_FOUNDER = 0.75 	# Power struggle succeeds after this X POWER_STRUGGLE_DURATION_SUCCESS_MONTHS if the contender is the founder of the power bloc
 	COHESION_WEEKLY_DRIFT_MAX = 1		# At most, Cohesion will drift by +/- this value each week
 	COHESION_TARGET_MAX = 100			# The highest value Cohesion can reach
-	POWER_BLOC_INFLUENCE_COST = 400		# Cost in Influence to form / be the leader of a Power Bloc
+	POWER_BLOC_INFLUENCE_COST = 250		# Cost in Influence to form / be the leader of a Power Bloc
 	MAX_LEVERAGE = 1000					# How much "raw" Leverage can be split between parties (the country itself + each Power Bloc)
 	LEVERAGE_WEEKLY_DRIFT_FACTOR = 0.02	# The delta between current Leverage and Target Leverage will be multiplied by this to determine the weekly Leverage drift
 	LEVERAGE_WEEKLY_DRIFT_MIN = 1		# At minimum, Leverage will drift by +/- this value each week, up/down to the target
@@ -1204,12 +1204,12 @@ NPops = {
 	RADICALS_MAX_FROM_STARVATION_SEVERE = 0.75 # Food Security = 0
 	
 	ALLOW_ASSIMILATION_IN_HOMELANDS = yes		# Can pops assimilate when living in their homelands?
-	ALLOW_ASSIMILATION_ACROSS_HERITAGES = no 	# Can pops assimilate into pops of a different heritage?
+	ALLOW_ASSIMILATION_ACROSS_HERITAGES = yes 	# Can pops assimilate into pops of a different heritage?
 
-	ASSIMILATION_RATE = 0.0002					# Percentage of pops who will Assimilate into a different Culture each month, if eligible
+	ASSIMILATION_RATE = 0.005					# Percentage of pops who will Assimilate into a different Culture each month, if eligible
 	MIN_ASSIMILATION = 1						# If there is any assmiliation at least this many people will assimilate
 
-	CONVERSION_RATE = 0.001						# Percentage of pops who will Convert into a different Religion each month, if eligible
+	CONVERSION_RATE = 0.002						# Percentage of pops who will Convert into a different Religion each month, if eligible
 	CONVERSION_UNINCORPORATED_MULT = 0.35 		# CONVERSION_RATE is multiplied by this in unincorporated states
 	MIN_CONVERSION = 1							# If there is any conversion at least this many people will convert
 
@@ -1258,7 +1258,7 @@ NPops = {
 	MIGRATION_MIN_STATE_POPS = 20000											# A state with less population than this will not get emigration
 	MIGRATION_STATE_POPULATION_THRESHOLD = 100000								# States with less pops than this have reduced market emigration numbers to avoid total depopulation
 	MIGRATION_MAX_PER_STATE_BASE = 500											# No more than this amount of people can move from or to a state in a single week (base)
-	MIGRATION_MAX_PER_STATE_INFRASTRUCTURE = 3									# No more than this amount of people can move from or to a state in a single week (scales with infrastructure)
+	MIGRATION_MAX_PER_STATE_INFRASTRUCTURE = 5									# No more than this amount of people can move from or to a state in a single week (scales with infrastructure)
 	MIGRATION_MAX_EMIGRATION_AS_POPULATION_FRACTION = 0.005						# Max emigration per week is clamped to this fraction of a state's population
 	MIGRATION_MAX_PER_STATE_UNEMPLOYMENT_ORIGIN_FRACTION = 0.05					# The amount of unemployed workers in a state * this value is added to how many people can move from it (after clamping from MIGRATION_MAX_EMIGRATION_AS_POPULATION_FRACTION)
 	MIGRATION_MAX_PER_STATE_UNEMPLOYMENT_TARGET_FRACTION = 0.05					# The amount of unemployed workers in a state * this value is removed from how many people can move to it (after clamping from MIGRATION_MAX_EMIGRATION_AS_POPULATION_FRACTION)
@@ -1269,10 +1269,9 @@ NPops = {
 	# Acceptance #
 	MIN_ACCEPTANCE_VALUE = 0													# It is both the minimum acceptance value a pop can have as well as the explicit threshold scripted for the first acceptance status [any signed 32 bit value]
 	MAX_ACCEPTANCE_VALUE = 100													# It is both the maximum acceptance value a pop can have as well as the (implied) upper bound of the last acceptance status [> MIN_ACCEPTANCE_VALUE]
-	ACCEPTANCE_FROM_HOMELAND_COMMUNITY = 0
-	# The amount of acceptance a pop gets from living in their homeland, applied statically on their Cultural Community
+	ACCEPTANCE_FROM_HOMELAND_COMMUNITY = 10										# The amount of acceptance a pop gets from living in their homeland, applied statically on their Cultural Community
 	MIN_REQUIRED_ACCEPTANCE_FOR_MIGRATION = 40		 							# If a pop would have less than this much acceptance in a target state, they won't mass migrate there
-	EXPECTED_ACCEPTANCE_INCREASE_TO_MIGRATE = 20                                # A pop will look to increase their acceptance by this much when mass migrating, but might accept less if mass migration attraction difference is high enough
+	EXPECTED_ACCEPTANCE_INCREASE_TO_MIGRATE = 10                                # A pop will look to increase their acceptance by this much when mass migrating, but might accept less if mass migration attraction difference is high enough
 	MAX_ACCEPTANCE_RATIO_MULT_MIGRATION = 5										# A difference in acceptance between source and target in mass migrations will result in at most this much increased migration
 
 	# Cultural Communities #
@@ -1319,7 +1318,7 @@ NPops = {
 	MASS_MIGRATION_ORIGIN_MIN_TURMOIL = 0.15									# Must have at least this much turmoil in cultural homelands to create a migration target
 	MASS_MIGRATION_ORIGIN_MIN_EMIGRANTS = 100000								# A country must have at least this many possible migrants to trigger a mass migration
 	MASS_MIGRATION_TARGET_MAX_TURMOIL = 0.30									# Must have this or less turmoil among the culture for a country to be picked as a mass migration target
-	MASS_MIGRATION_TARGET_MIN_ARABLE_LAND = 1									# A state must have at least this much arable land to be a mass migration target
+	MASS_MIGRATION_TARGET_MIN_ARABLE_LAND = 0									# A state must have at least this much arable land to be a mass migration target
 	MASS_MIGRATION_STATE_MIN_MARKET_ACCESS = 0.7								# A state must have at least this much market access to their market to be a mass migration target or origin state
 	MASS_MIGRATION_SPAWN_CHANCE = 2 											# Per week for each potential mass migration, scales with turmoil (1 = 1%)
 	MASS_MIGRATION_SPAWN_CHANCE_STRUGGLING_FACTOR = 0.2 						# Chance increases by this for each point of SoL below 10 for a culture in a country
@@ -1420,16 +1419,16 @@ NPops = {
 
 ### Pop Growth Constants
 ## Base Values per month
-@min_birthrate = 0.00055			# Minimum base birthrate per month (at POP_GROWTH_STABLE_SOL)
+@min_birthrate = 0.00060			# Minimum base birthrate per month (at POP_GROWTH_STABLE_SOL)
 @max_birthrate = 0.00450			# Maximum base birthrate per month (at SOL = 0)
 @min_mortality = 0.00045			# Minimum base mortality per month (at POP_GROWTH_STABLE_SOL)
-@max_mortality = 0.00600			# Maximum base mortality per month (at SOL = 0)
+@max_mortality = 0.00550			# Maximum base mortality per month (at SOL = 0)
 
 ## SoL Thresholds
 @pop_growth_equilibrium_sol = 5		# Equilibrium is pops stop starving and where growth first becomes positive
 @pop_growth_transition_sol = 10     # Transition determines how long birthrate "lags" behind mortality before starting to drop. Setting to same as equilibrium leads to no "lag" (only matters for birthrate)
-@pop_growth_max_sol = 20			# Growth Max is where net growth generally is at it's highest (only matters for mortality)
-@pop_growth_stable_sol = 30			# Stable is where birthrate and mortality stop changing and hit their minimum values
+@pop_growth_max_sol = 15			# Growth Max is where net growth generally is at it's highest (only matters for mortality)
+@pop_growth_stable_sol = 25			# Stable is where birthrate and mortality stop changing and hit their minimum values
 
 ## Others
 @transition_birthrate_mult = 1 		# If you want the birthrate "lag" to go to a higher or lower value than max_birthrate. (you can also just change it directly below)
@@ -1643,9 +1642,9 @@ NBattle = {
 
 NWar = {
 	DEVASTATION_MAX = 100.0
-	DEVASTATION_INCREASE_RATE = 0.1 # Per day, scales with level of occupation
+	DEVASTATION_INCREASE_RATE = -0.05 # Per day, scales with level of occupation
 	DEVASTATION_DECAY_RATE = -0.05 # Per day, when there are no occupations
-	DEVASTATION_FROM_BATTLES = 2 # For each battle
+	DEVASTATION_FROM_BATTLES = 12.5 # For each battle
 
 	AUTO_CAPITULATE_WAR_SUPPORT = -100 # When war support is this low, the country will auto capitulate
 	DAYS_BETWEEN_WAR_EXHAUSTION = 28 # Every this many days war support will be reduced by the war exhaustion formula
