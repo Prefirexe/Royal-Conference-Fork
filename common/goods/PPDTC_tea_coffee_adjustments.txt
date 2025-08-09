@@ -1,0 +1,21 @@
+tea = {
+	texture = "gfx/interface/icons/goods_icons/tea.dds"
+	cost = 50
+	category = luxury
+
+	obsession_chance = 2
+	prestige_factor = 6
+	convoy_cost_multiplier = 0.75
+	traded_quantity = 5 # 250
+}
+
+coffee = {
+	texture = "gfx/interface/icons/goods_icons/coffee.dds"
+	cost = 50
+	category = luxury
+
+	obsession_chance = 2
+	prestige_factor = 6
+	convoy_cost_multiplier = 0.75
+	traded_quantity = 5 # 250
+}
