@@ -26,6 +26,19 @@
 				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms"  }
 			}
 			create_building={
+				building="building_maize_farm"
+				add_ownership={
+					building={
+						type="building_maize_farm"
+						country="c:UCA"
+						levels=1
+						region="STATE_SAN_SALVADOR"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
 					building={
@@ -63,6 +76,19 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_simple_organization" "pm_professional_bureaucrats" "pm_secular_bureaucrats" }
+			}
+			create_building={
+				building="building_maize_farm"
+				add_ownership={
+					building={
+						type="building_maize_farm"
+						country="c:UCA"
+						levels=2
+						region="STATE_GUATEMALA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -105,6 +131,19 @@
 	}
 	s:STATE_HONDURAS={
 		region_state:UCA={
+			create_building={
+				building="building_maize_farm"
+				add_ownership={
+					building={
+						type="building_maize_farm"
+						country="c:UCA"
+						levels=1
+						region="STATE_HONDURAS"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			}
 			create_building={
 				building="building_fishing_wharf"
 				add_ownership={
@@ -318,6 +357,19 @@
 				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated"  }
 			}
 			create_building={
+				building="building_rice_farm"
+				add_ownership={
+					building={
+						type="building_rice_farm"
+						country="c:HAI"
+						levels=1
+						region="STATE_HAITI"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+			create_building={
 				building="building_port"
 				add_ownership={
 					country={
@@ -357,6 +409,19 @@
 				}
 				reserves=1
 				activate_production_methods={ "default_building_banana_plantation" "pm_road_carts"  }
+			}
+			create_building={
+				building="building_rice_farm"
+				add_ownership={
+					building={
+						type="building_rice_farm"
+						country="c:HAI"
+						levels=1
+						region="STATE_SANTO_DOMINGO"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled"  }
 			}
 			create_building={
 				building="building_barracks"
@@ -709,14 +774,14 @@
 		}
 	}
 	s:STATE_CUBA={
-		region_state:SPA={
+		region_state:CUB={
 			create_building={
 				building="building_trade_center"
 				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:SPA"
+						country="c:CUB"
 						levels=2
 						region="STATE_CUBA"
 					}
@@ -730,11 +795,24 @@
 				reserves=1
 			}
 			create_building={
+				building="building_rice_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:CUB"
+						levels=5
+						region="STATE_CUBA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled"  }
+			}
+			create_building={
 				building="building_coffee_plantation"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SPA"
+						country="c:CUB"
 						levels=1
 						region="STATE_CUBA"
 					}
@@ -753,7 +831,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SPA"
+						country="c:CUB"
 						levels=2
 						region="STATE_CUBA"
 					}
@@ -772,7 +850,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:SPA"
+						country="c:CUB"
 						levels=5
 						region="STATE_CUBA"
 					}
@@ -790,7 +868,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:SPA"
+						country="c:CUB"
 						levels=5
 					}
 				}
@@ -801,7 +879,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:SPA"
+						country="c:CUB"
 						levels=2
 					}
 				}

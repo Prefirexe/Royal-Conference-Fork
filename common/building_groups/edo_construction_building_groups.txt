@@ -1,0 +1,23 @@
+﻿bg_machine_part_factory = {
+	parent_group = bg_heavy_industry
+	
+	default_building = building_machine_part_factory
+	
+	always_possible = yes
+
+}
+bg_cement_factory = {
+	parent_group = bg_heavy_industry
+	
+	default_building = building_cement_factory
+	
+	always_possible = yes
+}
+bg_limestone_quarry = {
+	parent_group = bg_mining
+	
+	default_building = building_limestone_quarry
+
+	can_use_slaves = yes
+	
+}

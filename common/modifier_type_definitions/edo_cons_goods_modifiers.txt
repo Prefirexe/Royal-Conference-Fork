@@ -1,0 +1,71 @@
+﻿### Goods label modifiers
+
+goods_input_limestone_add = {
+	decimals=1
+	color=bad
+	game_data={
+		ai_value=0
+	}
+}
+goods_output_limestone_add = {
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+goods_input_cement_add = {
+	decimals=1
+	color=bad
+	game_data={
+		ai_value=0
+	}
+}
+goods_output_cement_add = {
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+goods_input_machine_part_add = {
+	decimals=1
+	color=bad
+	game_data={
+		ai_value=0
+	}
+}
+goods_output_machine_part_add = {
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+building_machine_part_factory_throughput_add={
+	decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+building_cement_factory_throughput_add={
+	decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+building_limestone_quarry_throughput_add={
+	decimals=1
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}

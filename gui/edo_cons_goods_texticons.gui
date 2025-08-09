@@ -1,0 +1,32 @@
+
+texticon = {
+	icon = limestone
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/limestone.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+
+texticon = {
+	icon = cement
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/cement.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
+
+
+texticon = {
+	icon = machine_part
+	iconsize = {
+		texture = "gfx/interface/icons/goods_icons/machine_part.dds"
+		size = { 25 25 }
+		offset = { 0 7 }
+		fontsize = 18
+	}
+}
