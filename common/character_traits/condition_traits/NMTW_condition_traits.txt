@@ -1,4 +1,46 @@
-﻿### Conditions
+﻿grifter = {
+	type = condition
+	texture = "gfx/interface/icons/character_trait_icons/grifter.dds"
+
+	character_modifier = {
+		character_popularity_add = -25
+	}
+
+	command_modifier = {
+		unit_supply_consumption_mult = 0.05
+	}
+
+	country_modifier = {
+		state_tax_collection_mult = -0.01
+	}
+
+	agitator_modifier = {
+	}
+
+	interest_group_modifier = {
+	}
+
+	executive_modifier = {
+		building_cash_reserves_mult = -0.1
+	}
+
+	possible = {
+		age > define:NPortrait|GRACEFUL_AGING_START
+	}
+
+	weight = {
+		value = 10
+		if = {
+			limit = {
+				has_role = agitator
+			}
+			multiply = 0.25
+		}
+	}
+
+	replace = {
+	}
+}
 
 expensive_tastes = {
 	type = condition
@@ -9,7 +51,7 @@ expensive_tastes = {
 	}
 
 	country_modifier = {
-		state_tax_waste_add = 0.05
+		state_tax_collection_mult = -0.05
 		country_prestige_mult = 0.05
 	}
 
@@ -18,7 +60,7 @@ expensive_tastes = {
 
 	interest_group_modifier = {
 	}
-	
+
 	executive_modifier = {
 		building_cash_reserves_mult = -0.1
 	}
@@ -27,15 +69,16 @@ expensive_tastes = {
 	}
 
 	weight = {
-		value = 15
+		value = 20
 		if = {
 			limit = {
 				OR = {
 					is_ruler = yes
 					is_heir = yes
+					has_role = executive
 				}
 			}
-			multiply = 0.5
+			multiply = 2
 		}
 		if = {
 			limit = {
@@ -44,7 +87,7 @@ expensive_tastes = {
 					is_interest_group_type = ig_industrialists
 				}
 			}
-			multiply = 0.8
+			multiply = 2
 		}
 		if = {
 			limit = {

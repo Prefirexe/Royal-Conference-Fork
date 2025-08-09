@@ -454,8 +454,7 @@ efficient_bureaucracy = {
 # Insufficient BUR reduces tax & government dividends collected by 100% at 2x usage to production
 administrative_overburden = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
-	state_tax_waste_add = 0.9
-	country_government_dividends_waste_add = 0.9
+	state_tax_collection_mult = -1
 }
 
 # Excess AUT reduces enactment time by -25% at 2x production to usage
@@ -664,13 +663,55 @@ state_region_pollution_health = {
 # Scales with deficiency in tax capacity
 insufficient_tax_capacity = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
-	state_tax_collection_mult = -1
+	building_group_bg_service_tax_mult = -1
+	building_group_bg_agriculture_tax_mult = -1
+	building_group_bg_ranching_tax_mult = -1
+	building_group_bg_plantations_tax_mult = -1
+	building_group_bg_mining_tax_mult = -1
+	building_group_bg_logging_tax_mult = -1
+	building_group_bg_fishing_tax_mult = -1
+	building_group_bg_whaling_tax_mult = -1
+	building_group_bg_oil_extraction_tax_mult = -1
+	building_group_bg_manufacturing_tax_mult = -1
+	building_group_bg_government_tax_mult = -1
+	building_group_bg_infrastructure_tax_mult = -1
+	building_group_bg_power_tax_mult = -1
+	building_group_bg_urban_facilities_tax_mult = -1
+	building_group_bg_military_tax_mult = -1
+}
+
+poverty_relief_mod = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	state_tax_collection_mult = -0.15
+	state_lower_strata_standard_of_living_add = 1
+}
+
+caucasus_war_attacker = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
+	state_radicalism_increases_violent_hostility_mult = 0.20
+	state_radicalism_increases_cultural_erasure_mult = 0.20
+	state_radicalism_increases_open_prejudice_mult = 0.20
+	state_tax_collection_mult = -0.50
+	state_mortality_mult = 0.10
+	state_circassian_standard_of_living_add = -3
+	state_north_caucasian_standard_of_living_add = -2
+}
+
+modifier_kazakh_ungovernable_provinces = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
+	state_radicalism_increases_violent_hostility_mult = 0.2
+	state_radicalism_increases_cultural_erasure_mult = 0.2
+	state_radicalism_increases_open_prejudice_mult = 0.2
+	unit_provinces_captured_mult = -0.95
+	state_tax_collection_mult = -0.50
+	state_mortality_mult = 0.10
+	unit_morale_loss_mult = 0.25
 }
 
 # Applied if state is above 'in turmoil' threshold
 state_turmoil = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
-	state_tax_waste_add = 0.25
+	state_tax_collection_mult = -0.25
 	state_migration_pull_mult = -0.15
 	state_construction_mult = -0.33
 }
@@ -678,7 +719,7 @@ state_turmoil = {
 # Applied if state is above 'high turmoil' threshold
 state_turmoil_high = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
-	state_tax_waste_add = 0.5
+	state_tax_collection_mult = -0.5
 	state_migration_pull_mult = -0.25
 	state_construction_mult = -0.5
 }
@@ -686,7 +727,7 @@ state_turmoil_high = {
 # Applied if state is above 'extreme turmoil' threshold
 state_turmoil_extreme = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
-	state_tax_waste_add = 0.75
+	state_tax_collection_mult = -0.75
 	state_migration_pull_mult = -0.5
 	state_construction_mult = -0.75
 }
