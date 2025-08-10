@@ -234,22 +234,6 @@ canneries = {
 	}
 }
 
-watertube_boiler = {
-	# Unlocks Watertube Boiler PM in Furniture Manufacturies, Tooling Workshops, Paper Mills, Steel Mills, Motor Industry
-	# Unlocks Condensing Engine Pump in Coal Mines, Iron Mines, Lead Mines, Sulfur Mines
-	era = era_2
-	texture = "gfx/interface/icons/invention_icons/watertube_boiler.dds"
-	category = production
-	
-	unlocking_technologies = {
-		atmospheric_engine
-	}
-	
-	ai_weight = {
-		value = 1
-	}
-}
-
 atmospheric_engine = {
 	# Unlocks Motor Industry
 	# Unlocks Atmospheric Engine Pump PM in Coal Mine, Iron Mine, Lead Mine, Sulfur Mine
@@ -547,7 +531,23 @@ rotary_valve_engine = {
 	category = production
 	
 	unlocking_technologies = {	
-		watertube_boiler
+		atmospheric_engine
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+watertube_boiler = {
+	# Unlocks Watertube Boiler PM in Furniture Manufacturies, Tooling Workshops, Paper Mills, Steel Mills, Motor Industry
+	# Unlocks Condensing Engine Pump in Coal Mines, Iron Mines, Lead Mines, Sulfur Mines
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/watertube_boiler.dds"
+	category = production
+	
+	unlocking_technologies = {
+		rotary_valve_engine
 	}
 	
 	ai_weight = {
