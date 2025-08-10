@@ -1,0 +1,746 @@
+﻿state_trait_lorraine_ironfield = {#阿尔萨斯-洛林铁矿
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_iron_mine_throughput_add = 0.25
+	}
+}
+
+state_trait_great_lake_ironfield = {#五大湖铁矿
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_iron_mine_throughput_add = 0.15
+	}
+}
+
+state_trait_pittsburgh_ironfield = {#匹兹堡铁矿
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_iron_mine_throughput_add = 0.15
+	}
+}
+
+state_trait_pilbara_ironfield = {#皮尔巴拉铁矿
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_iron_mine_throughput_add = 0.25
+	}
+}
+
+state_trait_sishen_ironfield = {#席尔科普铁矿
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_iron_mine_throughput_add = 0.2
+	}
+}
+
+state_trait_itabira_ironfield = {#伊图比拉铁矿
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_iron_mine_throughput_add = 0.25
+	}
+}
+
+state_trait_alta_ironfield = {#阿尔塔米拉铁矿
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_iron_mine_throughput_add = 0.25
+	}
+}
+
+state_trait_val_daosta = {#瓦尔德奥斯塔
+	icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+
+	modifier = {
+		building_iron_mine_throughput_add = 0.1
+	}
+}
+
+state_trait_upper_silesia_ironfield = {#上西里西亚铁矿
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_iron_mine_throughput_add = 0.1
+	}
+}
+
+state_trait_bohemia_ironfield = {#波西米亚黄铜
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_iron_mine_throughput_add = 0.1
+	}
+}
+
+state_trait_lower_austria_ironfield = {#下奥地利铁矿
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_iron_mine_throughput_add = 0.1
+	}
+}
+
+state_trait_zonguldak_ironfield = {#扎福兰铁矿
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_iron_mine_throughput_add = 0.1
+	}
+}
+
+state_trait_singhbhum_ironfield = {#西姆德赫铁矿
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_iron_mine_throughput_add = 0.1
+	}
+}
+
+state_trait_keonjhar_ironfield = {#西姆德赫铁矿
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_iron_mine_throughput_add = 0.1
+	}
+}
+
+state_trait_anshan_ironfield = {#鞍山铁矿
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_iron_mine_throughput_add = 0.15
+	}
+}
+
+state_trait_maanshan_ironfield = {#马鞍山铁矿
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_iron_mine_throughput_add = 0.1
+	}
+}
+
+state_trait_svilengrad_ironfield = {#斯米利安铁矿
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_iron_mine_throughput_add = 0.15
+	}
+}
+
+state_trait_homs_ironfield = {#霍姆斯黄铜
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_iron_mine_throughput_add = 0.1
+	}
+}
+
+state_trait_elba_ironfield = {#伊尔瓦铁矿
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_iron_mine_throughput_add = 0.1
+	}
+}
+
+state_trait_kursk_ironfield = {#库尔斯克铁矿
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_iron_mine_throughput_add = 0.1
+	}
+}
+
+state_trait_saint_quentin_ironfield = {#苏蒙-圣康坦铁矿
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_iron_mine_throughput_add = 0.1
+	}
+}
+
+state_trait_harrisburg_coalfield = {#哈里斯堡煤田
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_coal_mine_throughput_add = 0.2
+	}
+}
+
+state_trait_powder_river_coalfield = {#普拉图河煤田
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_coal_mine_throughput_add = 0.25
+	}
+}
+
+state_trait_jingzhon_coalfield = {#晋中煤田
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_coal_mine_throughput_add = 0.2
+	}
+}
+
+state_trait_brunn_coalfield = {#布尔诺煤田
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_coal_mine_throughput_add = 0.1
+	}
+}
+
+state_trait_serbia_coalfield = {#塞尔维亚煤田
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_coal_mine_throughput_add = 0.1
+	}
+}
+
+state_trait_ternye_coalfield = {#特尔尼煤田
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_coal_mine_throughput_add = 0.1
+	}
+}
+
+state_trait_donbas_coalfield = {#顿巴斯煤田
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_coal_mine_throughput_add = 0.15
+	}
+}
+
+state_trait_kailuan_coalfield = {#开滦煤矿
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_coal_mine_throughput_add = 0.1
+	}
+}
+
+state_trait_fushun_coalfield = {#抚顺煤矿
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_coal_mine_throughput_add = 0.1
+	}
+}
+
+state_trait_tuscara_volcano_sulfurfield = {#图斯卡拉火山
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_sulfur_mine_throughput_add = 0.25
+	}
+}
+
+state_trait_tengchon_sulfurfield = {#腾冲火山
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_sulfur_mine_throughput_add = 0.2
+	}
+}
+
+state_trait_beppu_sulfurfield = {#别府硫矿
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_sulfur_mine_throughput_add = 0.15
+	}
+}
+
+state_trait_cornwall_leadfield = {#康沃尔铅矿床
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_lead_mine_throughput_add = 0.1
+	}
+}
+
+state_trait_lead_belt = {#密苏里铅带
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_lead_mine_throughput_add = 0.2
+	}
+}
+
+state_trait_toluca_leadfield = {#托卢卡铅矿床
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_lead_mine_throughput_add = 0.1
+	}
+}
+
+state_trait_newcastle_leadfield = {#纽卡斯尔矿床
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_lead_mine_throughput_add = 0.15
+	}
+}
+
+state_trait_iglesiente_leadfield = {#伊格莱西亚斯
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_lead_mine_throughput_add = 0.1
+	}
+}
+
+state_trait_la_carolina_linares_leadfield = {#拉卡罗利纳-利纳雷斯
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_lead_mine_throughput_add = 0.1
+	}
+}
+
+state_trait_krasnoyarsk_leadfield = {#克拉斯诺亚尔斯克铅矿
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_lead_mine_throughput_add = 0.15
+	}
+}
+
+state_trait_gulf_coast_oilfield = {#墨西哥湾油田
+    icon = "gfx/interface/icons/state_trait_icons/tropical_climate.dds"
+	
+	modifier = {
+		building_group_bg_oil_extraction_throughput_add = 0.2
+	}
+}
+
+state_trait_mojave_oilfield = {#莫哈维油田
+    icon = "gfx/interface/icons/state_trait_icons/tropical_climate.dds"
+	
+	modifier = {
+		building_group_bg_oil_extraction_throughput_add = 0.2
+	}
+}
+
+state_trait_cushing_oilfield = {#库欣油田
+    icon = "gfx/interface/icons/state_trait_icons/tropical_climate.dds"
+	
+	modifier = {
+		building_group_bg_oil_extraction_throughput_add = 0.15
+	}
+}
+
+state_trait_canada_great_plains_oilfield = {#加拿大大平原油田
+    icon = "gfx/interface/icons/state_trait_icons/tropical_climate.dds"
+	
+	modifier = {
+		building_group_bg_oil_extraction_throughput_add = 0.2
+	}
+}
+
+state_trait_sahara_oilfield = {#撒哈拉油田
+    icon = "gfx/interface/icons/state_trait_icons/tropical_climate.dds"
+	
+	modifier = {
+		building_group_bg_oil_extraction_throughput_add = 0.25
+	}
+}
+
+state_trait_ghawar_oilfield = {#乔拜尔油田
+    icon = "gfx/interface/icons/state_trait_icons/tropical_climate.dds"
+	
+	modifier = {
+		building_group_bg_oil_extraction_throughput_add = 0.25
+	}
+}
+
+state_trait_desert_oilfield = {#沙漠油田
+    icon = "gfx/interface/icons/state_trait_icons/tropical_climate.dds"
+	
+	modifier = {
+		building_group_bg_oil_extraction_throughput_add = 0.20
+	}
+}
+
+state_trait_burgan_oilfield = {#伯哈油田
+    icon = "gfx/interface/icons/state_trait_icons/tropical_climate.dds"
+	
+	modifier = {
+		building_group_bg_oil_extraction_throughput_add = 0.25
+	}
+}
+
+state_trait_rumaila_kirkuk_oilfield = {#鲁迈拉-卡尔库克油田
+    icon = "gfx/interface/icons/state_trait_icons/tropical_climate.dds"
+	
+	modifier = {
+		building_group_bg_oil_extraction_throughput_add = 0.20
+	}
+}
+
+state_trait_masjed_soleyman_oilfield = {#马赫-沙赫尔油田
+    icon = "gfx/interface/icons/state_trait_icons/tropical_climate.dds"
+	
+	modifier = {
+		building_group_bg_oil_extraction_throughput_add = 0.20
+	}
+}
+
+state_trait_zukhrat_asahd_oilfield = {#祖尔法-阿斯哈德油田
+    icon = "gfx/interface/icons/state_trait_icons/tropical_climate.dds"
+	
+	modifier = {
+		building_group_bg_oil_extraction_throughput_add = 0.25
+	}
+}
+
+state_trait_ahvaz_oilfield = {#阿赫瓦兹油田
+    icon = "gfx/interface/icons/state_trait_icons/tropical_climate.dds"
+	
+	modifier = {
+		building_group_bg_oil_extraction_throughput_add = 0.25
+	}
+}
+
+state_trait_daqing_oilfield = {#大庆油田
+    icon = "gfx/interface/icons/state_trait_icons/tropical_climate.dds"
+	
+	modifier = {
+		building_group_bg_oil_extraction_throughput_add = 0.1
+	}
+}
+
+state_trait_macksburg_oilfield = {#马克斯堡油田
+    icon = "gfx/interface/icons/state_trait_icons/tropical_climate.dds"
+	
+	modifier = {
+		building_group_bg_oil_extraction_throughput_add = 0.1
+	}
+}
+
+state_trait_baku_oilfield = {#巴库油田
+    icon = "gfx/interface/icons/state_trait_icons/tropical_climate.dds"
+	
+	modifier = {
+		building_group_bg_oil_extraction_throughput_add = 0.2
+	}
+}
+
+state_trait_ploiesti_oilfield = {#普鲁日油田
+    icon = "gfx/interface/icons/state_trait_icons/tropical_climate.dds"
+	
+	modifier = {
+		building_group_bg_oil_extraction_throughput_add = 0.2
+	}
+}
+
+state_trait_orinoco_oilfield = {#乌尔图瓦油田
+    icon = "gfx/interface/icons/state_trait_icons/tropical_climate.dds"
+	
+	modifier = {
+		building_group_bg_oil_extraction_throughput_add = 0.1
+	}
+}
+
+state_trait_north_sea_oilfield = {#北海油田
+    icon = "gfx/interface/icons/state_trait_icons/tropical_climate.dds"
+	
+	modifier = {
+		building_group_bg_oil_extraction_throughput_add = 0.05
+	}
+}
+
+state_trait_au_red_soil = {#澳洲红土
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_iron_mine_throughput_add = 0.15
+		building_coal_mine_throughput_add = 0.15
+	}
+}
+
+state_trait_ural_mine = {#乌拉尔山矿床
+	icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_iron_mine_throughput_add = 0.2
+		building_coal_mine_throughput_add = 0.2
+	}
+}
+
+state_trait_massif_central = {#中央山脉
+    icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
+	
+	modifier = {
+		state_construction_mult = -0.1
+		building_coal_mine_throughput_add = 0.1
+		building_sulfur_mine_throughput_add = 0.05
+		building_lead_mine_throughput_add = 0.05
+	}
+}
+
+state_trait_carpathian = {#喀尔巴阡山脉
+    icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
+	
+	modifier = {
+		state_construction_mult = -0.1
+		state_infrastructure_mult = -0.1
+		building_group_bg_agriculture_throughput_add = 0.05
+	}
+}
+
+state_trait_yunnan_guizhou_plateau = {#云贵高原
+    icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
+	
+	modifier = {
+		state_construction_mult = -0.1
+		state_infrastructure_mult = -0.1
+		building_group_bg_logging_throughput_add = 0.15
+	}
+}
+
+state_trait_anatolia_plateau = {#安纳托利亚高原
+    icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.1
+		building_group_bg_agriculture_throughput_add = -0.1
+		building_group_bg_plantations_throughput_add = -0.1
+	}
+}
+
+state_trait_deccan_plateau = {#德干高原
+    icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.1
+		building_group_bg_agriculture_throughput_add = 0.1
+		building_group_bg_plantations_throughput_add = 0.1
+	}
+}
+
+state_trait_pamir_plateau = {#帕米尔高原
+    icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
+	
+	modifier = {
+		state_construction_mult = -0.15
+		state_infrastructure_mult = -0.15
+	}
+}
+
+state_trait_balkh_plateau = {#巴尔赫高原
+    icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.1
+		state_construction_mult = -0.1
+	}
+}
+
+state_trait_persia_plateau = {#波斯高原
+    icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
+	
+	modifier = {
+		state_infrastructure_mult = -0.1
+	}
+}
+
+state_trait_hindu_kush_mountains = {#兴都库什山脉
+    icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
+	
+	modifier = {
+		state_construction_mult = -0.2
+		state_infrastructure_mult = -0.2
+	}
+}
+
+state_trait_balochistan_mountains = {#俾路支山脉
+    icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
+	
+	modifier = {
+		state_construction_mult = -0.15
+		state_infrastructure_mult = -0.15
+	}
+}
+
+state_trait_altai_mountains = {#阿尔泰山
+    icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
+	
+	modifier = {
+		state_construction_mult = -0.1
+		state_infrastructure_mult = -0.1
+		building_gold_mine_throughput_add = 0.25
+	}
+}
+
+state_trait_val_trompia = {#瓦尔特隆皮亚
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_coal_mine_throughput_add = 0.15
+	}
+}
+
+state_trait_saxony_mine = {#萨克森矿床
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_coal_mine_throughput_add = 0.15
+		building_iron_mine_throughput_add = 0.1
+		building_lead_mine_throughput_add = 0.1
+	}
+}
+
+state_trait_caucasus_mine = {#高加索矿床
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_iron_mine_throughput_add = 0.1
+		building_lead_mine_throughput_add = 0.1
+	}
+}
+
+state_trait_yakutia_goldmine = {#雅库茨克金矿
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_gold_mine_throughput_add = 0.25
+	}
+}
+
+state_trait_witwatersrand = {#金山
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_gold_mine_throughput_add = 0.25
+	}
+}
+
+state_trait_ashanti_goldmine = {#黄金海岸
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_gold_mine_throughput_add = 0.2
+	}
+}
+
+state_trait_sadiola_goldmine = {#卡比金矿
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_gold_mine_throughput_add = 0.15
+	}
+}
+
+state_trait_bulyanhulu_goldmine = {#巴盖特金矿
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_gold_mine_throughput_add = 0.25
+	}
+}
+
+state_trait_kalgoorlie_goldmine = {#卡尔古利金矿
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_gold_mine_throughput_add = 0.15
+	}
+}
+
+state_trait_carlin_trend_goldmine = {#卡尔顿金矿
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_gold_mine_throughput_add = 0.15
+	}
+}
+
+state_trait_alaska_goldmine = {#阿拉斯加金矿
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_gold_mine_throughput_add = 0.15
+	}
+}
+
+state_trait_yanacocha_goldmine = {#亚拉科查金矿
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_gold_mine_throughput_add = 0.2
+	}
+}
+
+state_trait_bajo_cauca_goldmine = {#波尔巴金矿
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_gold_mine_throughput_add = 0.15
+	}
+}
+
+state_trait_zhaoyuan_goldmine = {#招远金矿
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_gold_mine_throughput_add = 0.1
+	}
+}
+
+state_trait_raja_goldmine = {#拉贾金矿
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_gold_mine_throughput_add = 0.1
+	}
+}
+
+state_trait_red_river_delta = {#红河三角洲
+    icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_add = 0.15
+		building_group_bg_plantations_throughput_add = 0.15
+	}
+}
+
+state_trait_pearl_river_delta = {#珠江三角洲
+    icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_add = 0.15
+		building_group_bg_plantations_throughput_add = 0.15
+	}
+}
+
+state_trait_yangtze_river_delta = {#长江三角洲
+    icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_add = 0.25
+		building_group_bg_plantations_throughput_add = 0.25
+	}
+}
+
+state_trait_ili_river_delta = {#伊犁河谷
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		building_group_bg_plantations_throughput_add = 0.1
+		building_group_bg_agriculture_throughput_add = 0.1
+	}
+}
+
