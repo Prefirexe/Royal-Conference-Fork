@@ -531,7 +531,7 @@ rotary_valve_engine = {
 	category = production
 	
 	unlocking_technologies = {	
-		atmospheric_engine
+		watertube_boiler
 	}
 	
 	ai_weight = {
@@ -547,7 +547,7 @@ watertube_boiler = {
 	category = production
 	
 	unlocking_technologies = {
-		rotary_valve_engine
+		atmospheric_engine
 	}
 	
 	ai_weight = {
