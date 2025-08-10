@@ -1,18 +1,18 @@
-﻿STATE_DISTRICT_OF_COLUMBIA = {
-    id = 265
-    subsistence_building = "building_subsistence_farms"
-    provinces = { "x44578C" "x700080" }
-    city = "x700080"
-    port = "x700080"
-    farm = "x44578C"
-    arable_land = 30
-    arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tobacco_plantations" }
-    capped_resources = {
-        bg_fishing = 2
-        bg_monuments = 1
-    }
-    naval_exit_id = 3067
-}
+﻿# STATE_DISTRICT_OF_COLUMBIA = {
+#     id = 265
+#     subsistence_building = "building_subsistence_farms"
+#     provinces = { "x44578C" "x700080" }
+#     city = "x700080"
+#     port = "x700080"
+#     farm = "x44578C"
+#     arable_land = 30
+#     arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tobacco_plantations" }
+#     capped_resources = {
+#         bg_fishing = 2
+#         bg_monuments = 1
+#     }
+#     naval_exit_id = 3067
+# }
 
 STATE_LOUISIANA = {
     id = 266
@@ -708,36 +708,56 @@ STATE_WEST_VIRGINIA = {
     }
 }
 
-STATE_MARYLAND = {
-    id = 296
-    subsistence_building = "building_subsistence_farms"
-    provinces = { "x0E3435" "x16482D" "x3CC08F" "x576240" "x5E6C0F" "x708080" "x888194" "xAEB9F5" "xF08000" }
-    city = "x0E3435"
-    port = "x3CC08F"
-    farm = "x16482D"
-    mine = "x5E6C0F"
-    wood = "x708080"
-    arable_land = 37
-    arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tobacco_plantations" "bg_vineyard_plantations" }
-    capped_resources = {
-        bg_logging = 12
-        bg_fishing = 18
-    }
-    naval_exit_id = 3067
-}
+# STATE_MARYLAND = {
+#     id = 296
+#     subsistence_building = "building_subsistence_farms"
+#     provinces = { "x0E3435" "x16482D" "x3CC08F" "x576240" "x5E6C0F" "x708080" "x888194" "xAEB9F5" "xF08000" }
+#     city = "x0E3435"
+#     port = "x3CC08F"
+#     farm = "x16482D"
+#     mine = "x5E6C0F"
+#     wood = "x708080"
+#     arable_land = 37
+#     arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tobacco_plantations" "bg_vineyard_plantations" }
+#     capped_resources = {
+#         bg_logging = 12
+#         bg_fishing = 18
+#     }
+#     naval_exit_id = 3067
+# }
 
-STATE_DELAWARE = {
-    id = 1023
+# STATE_DELAWARE = {
+#     id = 1023
+#     subsistence_building = "building_subsistence_farms"
+#     provinces = { "x708000" "xEBA646" }
+#     city = "xEBA646"
+#     port = "xEBA646"
+#     farm = "xEBA646"
+#     arable_land = 22
+#     arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tobacco_plantations" "bg_vineyard_plantations" }
+#     capped_resources = {
+#         bg_logging = 8
+#         bg_fishing = 10
+#     }
+#     naval_exit_id = 3067
+# }
+
+STATE_GREATER_MARYLAND = {
+    id = 265
     subsistence_building = "building_subsistence_farms"
-    provinces = { "x708000" "xEBA646" }
-    city = "xEBA646"
-    port = "xEBA646"
-    farm = "xEBA646"
-    arable_land = 22
+    provinces = { "x44578C" "x700080" "x0E3435" "x16482D" "x3CC08F" "x576240" "x5E6C0F" "x708080" "x888194" "xAEB9F5" "xF08000" "x708000" "xEBA646" }
+    traits = { "state_trait_natural_harbors" } #HMPS CHANGE
+    ### Inherits the characteristics of state id = 265 (Washington DC)
+    ### Repeat of map items to ensure they appear ingame as usual
+    city = "x700080"
+    port = "x700080"
+    farm = "x44578C"
+    arable_land = 89
     arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tobacco_plantations" "bg_vineyard_plantations" }
     capped_resources = {
-        bg_logging = 8
-        bg_fishing = 10
+        bg_logging = 20
+        bg_fishing = 30
+        bg_monuments = 1
     }
     naval_exit_id = 3067
 }
@@ -820,116 +840,166 @@ STATE_ILLINOIS = {
     }
 }
 
-STATE_RHODE_ISLAND = {
-    id = 300
-    subsistence_building = "building_subsistence_fishing_villages"
-    provinces = { "x1A77EA" "x939ACE" "xC5CE93" }
-    traits = { "state_trait_new_england_whaling" "state_trait_american_chestnuts" }
-    city = "x939ACE"
-    port = "x939ACE"
-    farm = "x939ACE"
-    arable_land = 18
-    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_vineyard_plantations" }
-    capped_resources = {
-        bg_logging = 4
-        bg_whaling = 4
-        bg_fishing = 6
-    }
-    naval_exit_id = 3067
-}
+# STATE_RHODE_ISLAND = {
+#     id = 300
+#     subsistence_building = "building_subsistence_fishing_villages"
+#     provinces = { "x1A77EA" "x939ACE" "xC5CE93" }
+#     traits = { "state_trait_new_england_whaling" "state_trait_american_chestnuts" }
+#     city = "x939ACE"
+#     port = "x939ACE"
+#     farm = "x939ACE"
+#     arable_land = 18
+#     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_vineyard_plantations" }
+#     capped_resources = {
+#         bg_logging = 4
+#         bg_whaling = 4
+#         bg_fishing = 6
+#     }
+#     naval_exit_id = 3067
+# }
 
-STATE_CONNECTICUT = {
-    id = 301
-    subsistence_building = "building_subsistence_fishing_villages"
-    provinces = { "x3040C0" "x7DE678" "x9D3A73" }
-    traits = { "state_trait_new_england_whaling" "state_trait_american_chestnuts" }
-    city = "x7DE678"
-    port = "x7DE678"
-    farm = "x3040C0"
-    wood = "x9D3A73"
-    arable_land = 27
-    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_vineyard_plantations" }
-    capped_resources = {
-        bg_whaling = 6
-        bg_fishing = 10
-        bg_logging = 12
-        bg_iron_mining = 10
-    }
-    naval_exit_id = 3067
-}
+# STATE_CONNECTICUT = {
+#     id = 301
+#     subsistence_building = "building_subsistence_fishing_villages"
+#     provinces = { "x3040C0" "x7DE678" "x9D3A73" }
+#     traits = { "state_trait_new_england_whaling" "state_trait_american_chestnuts" }
+#     city = "x7DE678"
+#     port = "x7DE678"
+#     farm = "x3040C0"
+#     wood = "x9D3A73"
+#     arable_land = 27
+#     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_vineyard_plantations" }
+#     capped_resources = {
+#         bg_whaling = 6
+#         bg_fishing = 10
+#         bg_logging = 12
+#         bg_iron_mining = 10
+#     }
+#     naval_exit_id = 3067
+# }
 
-STATE_MASSACHUSETTS = {
+# STATE_MASSACHUSETTS = {
+#     id = 302
+#     subsistence_building = "building_subsistence_fishing_villages"
+#     provinces = { "x13444D" "x211ECF" "x382709" "x8D8744" "xA58ED2" "xB040C0" }
+#     traits = { "state_trait_new_england_whaling" "state_trait_american_chestnuts" "state_trait_natural_harbors" }
+#     city = "x211ECF"
+#     port = "x13444D"
+#     farm = "xB040C0"
+#     mine = "x8D8744"
+#     wood = "xB040C0"
+#     arable_land = 36
+#     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_vineyard_plantations" }
+#     capped_resources = {
+#         bg_logging = 28
+#         bg_whaling = 16
+#         bg_fishing = 20
+#     }
+#     naval_exit_id = 3067
+# }
+
+# STATE_NEW_HAMPSHIRE = {
+#     id = 303
+#     subsistence_building = "building_subsistence_farms"
+#     provinces = { "x1DC591" "x2B5499" "x30C040" "x3E6BAD" "x92CF0F" "xB16D83" "xBB7965" "xD871BE" "xDB930D" }
+#     traits = { "state_trait_new_england_whaling" "state_trait_american_chestnuts" }
+#     city = "x2B5499"
+#     port = "x30C040"
+#     farm = "x30C040"
+#     mine = "xB16D83"
+#     wood = "xDB930D"
+#     arable_land = 27
+#     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tobacco_plantations" }
+#     capped_resources = {
+#         bg_logging = 18
+#         bg_whaling = 4
+#         bg_fishing = 4
+#     }
+#     naval_exit_id = 3017
+# }
+
+# STATE_VERMONT = {
+#     id = 304
+#     subsistence_building = "building_subsistence_farms"
+#     provinces = { "x142566" "x30F1AF" "x34FFC4" "x38CCDA" "x3FA10D" "xB0C040" }
+#     traits = { "state_trait_american_chestnuts" }
+#     city = "x34FFC4"
+#     farm = "x3FA10D"
+#     mine = "x30F1AF"
+#     wood = "x34FFC4"
+#     arable_land = 45
+#     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tobacco_plantations" }
+#     capped_resources = {
+#         bg_logging = 12
+#     }
+# }
+
+# STATE_MAINE = {
+#     id = 305
+#     subsistence_building = "building_subsistence_fishing_villages"
+#     provinces = { "x1CA7B0" "x1E33E8" "x262924" "x441473" "x54816B" "x5806F4" "x59DEDF" "x6AE419" "x6B3A42" "x6E757B" "x7182E8" "x8243C0" "x8F9450" "x990681" "xA5DE9D" "xB04040" "xBD7C03" "xC2B02B" "xC4CDFC" "xD64964" "xD68A28" "xEFC355" "xF080C0" "xF2502E" "xFB9715" "xFBEDD6" "xFCFF52" }
+#     traits = { "state_trait_new_england_whaling" "state_trait_american_chestnuts" }
+#     city = "x6E757B"
+#     port = "x1CA7B0"
+#     farm = "xD64964"
+#     mine = "x8F9450"
+#     wood = "x54816B"
+#     arable_land = 36
+#     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
+#     capped_resources = {
+#         bg_logging = 34
+#         bg_whaling = 8
+#         bg_fishing = 16
+#     }
+#     resource = {
+#         type = "bg_sulfur_mining"
+#         undiscovered_amount = 10
+#         discovered_amount = 10
+#     }
+#     naval_exit_id = 3017
+# }
+
+STATE_GREATER_MASSACHUSETTS = {
     id = 302
     subsistence_building = "building_subsistence_fishing_villages"
-    provinces = { "x13444D" "x211ECF" "x382709" "x8D8744" "xA58ED2" "xB040C0" }
+    provinces = { "xA58ED2" "x211ECF" "x13444D" "x382709" "xB040C0" "x8D8744" "x1A77EA" "xC5CE93" "x939ACE" "x9D3A73" "x7DE678" "x3040C0" }
     traits = { "state_trait_new_england_whaling" "state_trait_american_chestnuts" "state_trait_natural_harbors" }
+    ### Inherits the characteristics of state id = 302 (Massachusetts)
+    ### Repeat of map items to ensure they appear ingame as usual
     city = "x211ECF"
     port = "x13444D"
     farm = "xB040C0"
     mine = "x8D8744"
     wood = "xB040C0"
-    arable_land = 36
+    arable_land = 81
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tobacco_plantations" "bg_vineyard_plantations" }
     capped_resources = {
-        bg_logging = 28
-        bg_whaling = 16
-        bg_fishing = 20
+        bg_logging = 44
+        bg_whaling = 26
+        bg_fishing = 36
+        bg_iron_mining = 10
     }
     naval_exit_id = 3067
 }
 
-STATE_NEW_HAMPSHIRE = {
-    id = 303
-    subsistence_building = "building_subsistence_farms"
-    provinces = { "x1DC591" "x2B5499" "x30C040" "x3E6BAD" "x92CF0F" "xB16D83" "xBB7965" "xD871BE" "xDB930D" }
-    traits = { "state_trait_new_england_whaling" "state_trait_american_chestnuts" }
-    city = "x2B5499"
-    port = "x30C040"
-    farm = "x30C040"
-    mine = "xB16D83"
-    wood = "xDB930D"
-    arable_land = 27
-    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tobacco_plantations" }
-    capped_resources = {
-        bg_logging = 18
-        bg_whaling = 4
-        bg_fishing = 4
-    }
-    naval_exit_id = 3017
-}
-
-STATE_VERMONT = {
-    id = 304
-    subsistence_building = "building_subsistence_farms"
-    provinces = { "x142566" "x30F1AF" "x34FFC4" "x38CCDA" "x3FA10D" "xB0C040" }
-    traits = { "state_trait_american_chestnuts" }
-    city = "x34FFC4"
-    farm = "x3FA10D"
-    mine = "x30F1AF"
-    wood = "x34FFC4"
-    arable_land = 45
-    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tobacco_plantations" }
-    capped_resources = {
-        bg_logging = 12
-    }
-}
-
-STATE_MAINE = {
+STATE_NEW_ENGLAND = {
     id = 305
     subsistence_building = "building_subsistence_fishing_villages"
-    provinces = { "x1CA7B0" "x1E33E8" "x262924" "x441473" "x54816B" "x5806F4" "x59DEDF" "x6AE419" "x6B3A42" "x6E757B" "x7182E8" "x8243C0" "x8F9450" "x990681" "xA5DE9D" "xB04040" "xBD7C03" "xC2B02B" "xC4CDFC" "xD64964" "xD68A28" "xEFC355" "xF080C0" "xF2502E" "xFB9715" "xFBEDD6" "xFCFF52" }
+    provinces = { "x6B3A42" "xF2502E" "x1CA7B0" "xBD7C03" "x6AE419" "xC2B02B" "xC4CDFC" "x8F9450" "xD68A28" "x990681" "x54816B" "xD64964" "xEFC355" "x7182E8" "xFBEDD6" "x8243C0" "x59DEDF" "xFB9715" "x262924" "x6E757B" "xFCFF52" "xF080C0" "xA5DE9D" "x441473" "x5806F4" "x1E33E8" "xB04040" "x30C040" "xD871BE" "x92CF0F" "xB0C040" "x3FA10D" "xBB7965" "x2B5499" "xB16D83" "xDB930D" "x38CCDA" "x30F1AF" "x34FFC4" "x142566" "x3E6BAD" "x1DC591" }
     traits = { "state_trait_new_england_whaling" "state_trait_american_chestnuts" }
+    ### Inherits the characteristics of state id = 305 (Maine)
+    ### Repeat of map items to ensure they appear ingame as usual
     city = "x6E757B"
     port = "x1CA7B0"
     farm = "xD64964"
     mine = "x8F9450"
     wood = "x54816B"
-    arable_land = 36
-    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
+    arable_land = 108
+    arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tobacco_plantations"}
     capped_resources = {
-        bg_logging = 34
-        bg_whaling = 8
-        bg_fishing = 16
+        bg_logging = 64
+        bg_whaling = 12
+        bg_fishing = 20
     }
     resource = {
         type = "bg_sulfur_mining"
