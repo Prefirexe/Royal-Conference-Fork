@@ -774,14 +774,14 @@
 		}
 	}
 	s:STATE_CUBA={
-		region_state:CUB={
+		region_state:SPA={
 			create_building={
 				building="building_trade_center"
 				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:CUB"
+						country="c:SPA"
 						levels=2
 						region="STATE_CUBA"
 					}
@@ -799,7 +799,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:CUB"
+						country="c:SPA"
 						levels=5
 						region="STATE_CUBA"
 					}
@@ -812,7 +812,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:CUB"
+						country="c:SPA"
 						levels=1
 						region="STATE_CUBA"
 					}
@@ -831,7 +831,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:CUB"
+						country="c:SPA"
 						levels=2
 						region="STATE_CUBA"
 					}
@@ -850,7 +850,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:CUB"
+						country="c:SPA"
 						levels=5
 						region="STATE_CUBA"
 					}
@@ -868,7 +868,7 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:CUB"
+						country="c:SPA"
 						levels=5
 					}
 				}
@@ -879,7 +879,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:CUB"
+						country="c:SPA"
 						levels=2
 					}
 				}

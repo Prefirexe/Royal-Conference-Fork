@@ -620,8 +620,6 @@ s:STATE_GREATER_MARYLAND={
 				activate_production_methods={ "pm_simple_forestry" "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
 			}
 		}
-		region_state:ATB={
-		}
 	}
 	s:STATE_WASHINGTON={
 		region_state:ORG={
@@ -2889,7 +2887,7 @@ s:STATE_NEW_ENGLAND={
 						type="building_financial_district"
 						country="c:USA"
 						levels=6
-						region="STATE_MASSACHUSETTS"
+						region="STATE_SOUTH_CAROLINA"
 					}
 				}
 				reserves=1
