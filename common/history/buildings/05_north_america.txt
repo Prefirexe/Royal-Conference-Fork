@@ -1,36 +1,148 @@
 ﻿BUILDINGS={
-	s:STATE_DISTRICT_OF_COLUMBIA={
-		region_state:USA={
-			create_building={
-				building="building_government_administration"
-				add_ownership={
-					country={
-						country="c:USA"
-						levels=6
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_secular_bureaucrats" "pm_professional_bureaucrats" "pm_horizontal_drawer_cabinets" }
-			}
-			create_building={
-				building="building_white_house"
-				level=1
-			}
-		}
-	}
-	if = {
-		limit = {
-			has_american_buildings_dlc_trigger = yes
-		}
-		s:STATE_DISTRICT_OF_COLUMBIA={
-			region_state:USA={
-				create_building={
-					building="building_capitol_hill"
-					level=1
-				}
-			}
-		}
-	}
+#	s:STATE_DISTRICT_OF_COLUMBIA={
+# 		region_state:USA={
+# 			create_building={
+# 				building="building_government_administration"
+# 				add_ownership={
+# 					country={
+# 						country="c:USA"
+# 						levels=6
+# 					}
+# 				}
+# 				reserves=1
+# 				activate_production_methods={ "pm_secular_bureaucrats" "pm_professional_bureaucrats" "pm_horizontal_drawer_cabinets" }
+# 			}
+# 			create_building={
+# 				building="building_white_house"
+# 				level=1
+# 			}
+# 		}
+# 	}
+# 	if = {
+# 		limit = {
+# 			has_american_buildings_dlc_trigger = yes
+# 		}
+# 		s:STATE_DISTRICT_OF_COLUMBIA={
+# 			region_state:USA={
+# 				create_building={
+# 					building="building_capitol_hill"
+# 					level=1
+# 				}
+# 			}
+# 		}
+# 	}
+s:STATE_GREATER_MARYLAND={
+    region_state:USA={
+        create_building={
+            building="building_government_administration"
+            add_ownership={
+                country={
+                    country="c:USA"
+                    levels= (1 + 1 + 6)  # Maryland(1) + Delaware(1) + DC(6) = 8 levels
+                }
+            }
+            reserves=1
+            activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_professional_bureaucrats" "pm_secular_bureaucrats" }
+        }
+        create_building={
+            building="building_trade_center"
+            activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+            add_ownership={
+                building={
+                    type="building_financial_district"
+                    country="c:USA"
+                    levels=2  # Only from Maryland
+                    region="STATE_GREATER_MARYLAND"
+                }
+            }
+            reserves=1
+        }
+        create_building={
+            building="building_glassworks"
+            add_ownership={
+                building={
+                    type="building_financial_district"
+                    country="c:USA"
+                    levels=1  # Only from Maryland
+                    region="STATE_GREATER_MARYLAND"
+                }
+            }
+            reserves=1
+            activate_production_methods={ "pm_leaded_glass" "pm_manual_glassblowing" "pm_ceramics" }
+        }
+        create_building={
+            building="building_fishing_wharf"
+            add_ownership={
+                building={
+                    type="building_fishing_wharf"
+                    country="c:USA"
+                    levels= (3 + 1 + 1)  # Maryland(3) + Delaware(1) + DC(1 from none, but none present so 0)
+                    region="STATE_GREATER_MARYLAND"
+                }
+            }
+            reserves=1
+            activate_production_methods={ "pm_fishing_trawlers" "pm_unrefrigerated" }
+        }
+        create_building={
+            building="building_tobacco_plantation"
+            add_ownership={
+                building={
+                    type="building_manor_house"
+                    country="c:USA"
+                    levels=4  # Only from Maryland
+                    region="STATE_GREATER_MARYLAND"
+                }
+            }
+            reserves=1
+            activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts" }
+        }
+        create_building={
+            building="building_port"
+            add_ownership={
+                country={
+                    country="c:USA"
+                    levels=2  # Only from Maryland
+                }
+            }
+            reserves=1
+            activate_production_methods={ "pm_basic_port" }
+        }
+        create_building={
+            building="building_livestock_ranch"
+            add_ownership={
+                building={
+                    type="building_livestock_ranch"
+                    country="c:USA"
+                    levels=1  # Only from Delaware
+                    region="STATE_GREATER_MARYLAND"
+                }
+            }
+            reserves=1
+            activate_production_methods={ "pm_sheep_farms" "pm_standard_fences" "pm_unrefrigerated" "pm_open_air_stockyards" }
+        }
+        create_building={
+            building="building_white_house"
+            level=1  # Only from DC
+        }
+        create_building={
+            building="building_capitol_hill"
+            level=1  # Only if American Buildings DLC present (conditional)
+        }
+    }
+    if = {
+        limit = {
+            has_american_buildings_dlc_trigger = yes
+        }
+        s:STATE_GREATER_MARYLAND={
+            region_state:USA={
+                create_building={
+                    building="building_capitol_hill"
+                    level=1
+                }
+            }
+        }
+    }
+}
 	s:STATE_LOUISIANA={
 		region_state:USA={
 			create_building={
@@ -1451,125 +1563,125 @@
 			}
 		}
 	}
-	s:STATE_MARYLAND={
-		region_state:USA={
-			create_building={
-				building="building_government_administration"
-				add_ownership={
-					country={
-						country="c:USA"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_professional_bureaucrats" "pm_secular_bureaucrats" }
-			}
-			create_building={
-				building="building_trade_center"
-				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:USA"
-						levels=2
-						region="STATE_MARYLAND"
-					}
-				}
-				reserves=1
-			}
-			create_building={
-				building="building_glassworks"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:USA"
-						levels=1
-						region="STATE_MARYLAND"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_leaded_glass"  "pm_manual_glassblowing" "pm_ceramics" }
-			}
-			create_building={
-				building="building_fishing_wharf"
-				add_ownership={
-					building={
-						type="building_fishing_wharf"
-						country="c:USA"
-						levels=3
-						region="STATE_MARYLAND"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_fishing_trawlers" "pm_unrefrigerated"  }
-			}
-			create_building={
-				building="building_tobacco_plantation"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:USA"
-						levels=4
-						region="STATE_MARYLAND"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts"  }
-			}
-			create_building={
-				building="building_port"
-				add_ownership={
-					country={
-						country="c:USA"
-						levels=2
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_basic_port" }
-			}
-		}
-	}
-	s:STATE_DELAWARE={
-		region_state:USA={
-			create_building={
-				building="building_government_administration"
-				add_ownership={
-					country={
-						country="c:USA"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_professional_bureaucrats" "pm_secular_bureaucrats" }
-			}
-			create_building={
-				building="building_fishing_wharf"
-				add_ownership={
-					building={
-						type="building_fishing_wharf"
-						country="c:USA"
-						levels=1
-						region="STATE_DELAWARE"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_fishing_trawlers" "pm_unrefrigerated"  }
-			}
-			create_building={
-				building="building_livestock_ranch"
-				add_ownership={
-					building={
-						type="building_livestock_ranch"
-						country="c:USA"
-						levels=1
-						region="STATE_DELAWARE"
-					}
-				}
-				reserves=1
-				activate_production_methods={  "pm_sheep_farms" "pm_standard_fences" "pm_unrefrigerated" "pm_open_air_stockyards" }
-			}
-		}
-	}
+	# s:STATE_MARYLAND={
+	# 	region_state:USA={
+	# 		create_building={
+	# 			building="building_government_administration"
+	# 			add_ownership={
+	# 				country={
+	# 					country="c:USA"
+	# 					levels=1
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 			activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_professional_bureaucrats" "pm_secular_bureaucrats" }
+	# 		}
+	# 		create_building={
+	# 			building="building_trade_center"
+	# 			activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+	# 			add_ownership={
+	# 				building={
+	# 					type="building_financial_district"
+	# 					country="c:USA"
+	# 					levels=2
+	# 					region="STATE_MARYLAND"
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 		}
+	# 		create_building={
+	# 			building="building_glassworks"
+	# 			add_ownership={
+	# 				building={
+	# 					type="building_financial_district"
+	# 					country="c:USA"
+	# 					levels=1
+	# 					region="STATE_MARYLAND"
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 			activate_production_methods={ "pm_leaded_glass"  "pm_manual_glassblowing" "pm_ceramics" }
+	# 		}
+	# 		create_building={
+	# 			building="building_fishing_wharf"
+	# 			add_ownership={
+	# 				building={
+	# 					type="building_fishing_wharf"
+	# 					country="c:USA"
+	# 					levels=3
+	# 					region="STATE_MARYLAND"
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 			activate_production_methods={ "pm_fishing_trawlers" "pm_unrefrigerated"  }
+	# 		}
+	# 		create_building={
+	# 			building="building_tobacco_plantation"
+	# 			add_ownership={
+	# 				building={
+	# 					type="building_manor_house"
+	# 					country="c:USA"
+	# 					levels=4
+	# 					region="STATE_MARYLAND"
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 			activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts"  }
+	# 		}
+	# 		create_building={
+	# 			building="building_port"
+	# 			add_ownership={
+	# 				country={
+	# 					country="c:USA"
+	# 					levels=2
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 			activate_production_methods={ "pm_basic_port" }
+	# 		}
+	# 	}
+	# }
+	# s:STATE_DELAWARE={
+	# 	region_state:USA={
+	# 		create_building={
+	# 			building="building_government_administration"
+	# 			add_ownership={
+	# 				country={
+	# 					country="c:USA"
+	# 					levels=1
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 			activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_professional_bureaucrats" "pm_secular_bureaucrats" }
+	# 		}
+	# 		create_building={
+	# 			building="building_fishing_wharf"
+	# 			add_ownership={
+	# 				building={
+	# 					type="building_fishing_wharf"
+	# 					country="c:USA"
+	# 					levels=1
+	# 					region="STATE_DELAWARE"
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 			activate_production_methods={ "pm_fishing_trawlers" "pm_unrefrigerated"  }
+	# 		}
+	# 		create_building={
+	# 			building="building_livestock_ranch"
+	# 			add_ownership={
+	# 				building={
+	# 					type="building_livestock_ranch"
+	# 					country="c:USA"
+	# 					levels=1
+	# 					region="STATE_DELAWARE"
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 			activate_production_methods={  "pm_sheep_farms" "pm_standard_fences" "pm_unrefrigerated" "pm_open_air_stockyards" }
+	# 		}
+	# 	}
+	# }
 	s:STATE_PENNSYLVANIA={
 		region_state:USA={
 			create_building={
@@ -1957,410 +2069,700 @@
 			}
 		}
 	}
-	s:STATE_RHODE_ISLAND={
-		region_state:USA={
-			create_building={
-				building="building_government_administration"
-				add_ownership={
-					country={
-						country="c:USA"
-						levels=1
-					}
+	# s:STATE_RHODE_ISLAND={
+	# 	region_state:USA={
+	# 		create_building={
+	# 			building="building_government_administration"
+	# 			add_ownership={
+	# 				country={
+	# 					country="c:USA"
+	# 					levels=1
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 			activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_professional_bureaucrats" "pm_secular_bureaucrats" }
+	# 		}
+	# 		create_building={
+	# 			building="building_glassworks"
+	# 			add_ownership={
+	# 				building={
+	# 					type="building_financial_district"
+	# 					country="c:USA"
+	# 					levels=1
+	# 					region="STATE_RHODE_ISLAND"
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 			activate_production_methods={ "pm_leaded_glass" "pm_ceramics" "pm_manual_glassblowing"  }
+	# 		}
+	# 		create_building={
+	# 			building="building_fishing_wharf"
+	# 			add_ownership={
+	# 				building={
+	# 					type="building_fishing_wharf"
+	# 					country="c:USA"
+	# 					levels=1
+	# 					region="STATE_RHODE_ISLAND"
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 			activate_production_methods={ "pm_fishing_trawlers" "pm_unrefrigerated"  }
+	# 		}
+	# 	}
+	# }
+	# s:STATE_CONNECTICUT={
+	# 	region_state:USA={
+	# 		create_building={
+	# 			building="building_government_administration"
+	# 			add_ownership={
+	# 				country={
+	# 					country="c:USA"
+	# 					levels=1
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 			activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_professional_bureaucrats" "pm_secular_bureaucrats" }
+	# 		}
+	# 		create_building={
+	# 			building="building_iron_mine"
+	# 			add_ownership={
+	# 				building={
+	# 					type="building_financial_district"
+	# 					country="c:USA"
+	# 					levels=2
+	# 					region="STATE_CONNECTICUT"
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 			activate_production_methods={ "pm_atmospheric_engine_pump_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+	# 		}
+	# 		create_building={
+	# 			building="building_port"
+	# 			add_ownership={
+	# 				country={
+	# 					country="c:USA"
+	# 					levels=1
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 			activate_production_methods={ "pm_basic_port" }
+	# 		}
+	# 	}
+	# }
+	# s:STATE_MASSACHUSETTS={
+	# 	region_state:USA={
+	# 		create_building={
+	# 			building="building_government_administration"
+	# 			add_ownership={
+	# 				country={
+	# 					country="c:USA"
+	# 					levels=1
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 			activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_professional_bureaucrats" "pm_secular_bureaucrats" }
+	# 		}
+	# 		create_building={
+	# 			building="building_trade_center"
+	# 			activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+	# 			add_ownership={
+	# 				building={
+	# 					type="building_financial_district"
+	# 					country="c:USA"
+	# 					levels=5
+	# 					region="STATE_MASSACHUSETTS"
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 		}
+	# 		create_building={
+	# 			building="building_construction_sector"
+	# 			add_ownership={
+	# 				country={
+	# 					country="c:USA"
+	# 					levels=1
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 			activate_production_methods={ "pm_iron_frame_buildings" }
+	# 		}
+	# 		create_building={
+	# 			building="building_university"
+	# 			add_ownership={
+	# 				country={
+	# 					country="c:USA"
+	# 					levels=2
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 			activate_production_methods={ "pm_scholastic_education" "pm_secular_academia" }
+	# 		}
+	# 		create_building={
+	# 			building="building_textile_mills"
+	# 			add_ownership={
+	# 				building={
+	# 					type="building_textile_mills"
+	# 					country="c:USA"
+	# 					levels=2
+	# 					region="STATE_MASSACHUSETTS"
+	# 				}
+	# 				building={
+	# 					type="building_financial_district"
+	# 					country="c:USA"
+	# 					levels=1
+	# 					region="STATE_MASSACHUSETTS"
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 			activate_production_methods={ "pm_dye_workshops" "pm_no_luxury_clothes" "pm_traditional_looms"  }
+	# 		}
+	# 		create_building={
+	# 			building="building_glassworks"
+	# 			add_ownership={
+	# 				building={
+	# 					type="building_financial_district"
+	# 					country="c:USA"
+	# 					levels=1
+	# 					region="STATE_MASSACHUSETTS"
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 			activate_production_methods={ "pm_leaded_glass" "pm_ceramics" "pm_manual_glassblowing"  }
+	# 		}
+	# 		create_building={
+	# 			building="building_shipyards"
+	# 			add_ownership={
+	# 				company={
+	# 					type=company_william_cramp
+	# 					country="c:USA"
+	# 					levels=2
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 			activate_production_methods={ "pm_basic_shipbuilding"  }
+	# 		}
+	# 		create_building={
+	# 			building="building_fishing_wharf"
+	# 			add_ownership={
+	# 				building={
+	# 					type="building_fishing_wharf"
+	# 					country="c:USA"
+	# 					levels=3
+	# 					region="STATE_MASSACHUSETTS"
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 			activate_production_methods={ "pm_fishing_trawlers" "pm_unrefrigerated"  }
+	# 		}
+	# 		create_building={
+	# 			building="building_whaling_station"
+	# 			add_ownership={
+	# 				building={
+	# 					type="building_financial_district"
+	# 					country="c:USA"
+	# 					levels=1
+	# 					region="STATE_MASSACHUSETTS"
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 			activate_production_methods={  "pm_unrefrigerated" "pm_wooden_whaling_ships" }
+	# 		}
+	# 		create_building={
+	# 			building="building_wheat_farm"
+	# 			add_ownership={
+	# 				building={
+	# 					type="building_wheat_farm"
+	# 					country="c:USA"
+	# 					levels=1
+	# 					region="STATE_MASSACHUSETTS"
+	# 				}
+	# 				building={
+	# 					type="building_manor_house"
+	# 					country="c:USA"
+	# 					levels=1
+	# 					region="STATE_MASSACHUSETTS"
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 			activate_production_methods={ "pm_soil_enriching_farming"  "pm_tools_disabled" "pm_citrus_orchards" }
+	# 		}
+	# 		create_building={
+	# 			building="building_port"
+	# 			add_ownership={
+	# 				country={
+	# 					country="c:USA"
+	# 					levels=3
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 			activate_production_methods={ "pm_basic_port" }
+	# 		}
+	# 		create_building={
+	# 			building="building_logging_camp"
+	# 			add_ownership={
+	# 				building={
+	# 					type="building_financial_district"
+	# 					country="c:USA"
+	# 					levels=2
+	# 					region="STATE_MASSACHUSETTS"
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 			activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
+	# 		}
+	# 	}
+	# }
+	# s:STATE_NEW_HAMPSHIRE={
+	# 	region_state:USA={
+	# 		create_building={
+	# 			building="building_government_administration"
+	# 			add_ownership={
+	# 				country={
+	# 					country="c:USA"
+	# 					levels=1
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 			activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_professional_bureaucrats" "pm_secular_bureaucrats" }
+	# 		}
+	# 		create_building={
+	# 			building="building_logging_camp"
+	# 			add_ownership={
+	# 				building={
+	# 					type="building_financial_district"
+	# 					country="c:USA"
+	# 					levels=1
+	# 					region="STATE_NEW_HAMPSHIRE"
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 			activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
+	# 		}
+	# 		create_building={
+	# 			building="building_livestock_ranch"
+	# 			add_ownership={
+	# 				building={
+	# 					type="building_livestock_ranch"
+	# 					country="c:USA"
+	# 					levels=1
+	# 					region="STATE_NEW_HAMPSHIRE"
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 			activate_production_methods={  "pm_sheep_farms" "pm_standard_fences" "pm_unrefrigerated" "pm_open_air_stockyards" }
+	# 		}
+	# 	}
+	# }
+	# s:STATE_VERMONT={
+	# 	region_state:USA={
+	# 		create_building={
+	# 			building="building_food_industry"
+	# 			add_ownership={
+	# 				building={
+	# 					type="building_food_industry"
+	# 					country="c:USA"
+	# 					levels=2
+	# 					region="STATE_VERMONT"
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 			activate_production_methods={ "pm_pot_stills" "pm_disabled_canning" "pm_bakery" "pm_manual_dough_processing"  }
+	# 		}
+	# 		create_building={
+	# 			building="building_logging_camp"
+	# 			add_ownership={
+	# 				building={
+	# 					type="building_financial_district"
+	# 					country="c:USA"
+	# 					levels=1
+	# 					region="STATE_VERMONT"
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 			activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
+	# 		}
+	# 		create_building={
+	# 			building="building_livestock_ranch"
+	# 			add_ownership={
+	# 				building={
+	# 					type="building_livestock_ranch"
+	# 					country="c:USA"
+	# 					levels=1
+	# 					region="STATE_VERMONT"
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 			activate_production_methods={  "pm_sheep_farms" "pm_standard_fences" "pm_unrefrigerated" "pm_open_air_stockyards" }
+	# 		}
+	# 	}
+	# }
+	# s:STATE_MAINE={
+	# 	region_state:USA={
+	# 		create_building={
+	# 			building="building_government_administration"
+	# 			add_ownership={
+	# 				country={
+	# 					country="c:USA"
+	# 					levels=1
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 			activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_professional_bureaucrats" "pm_secular_bureaucrats" }
+	# 		}
+	# 		create_building={
+	# 			building="building_furniture_manufacturies"
+	# 			add_ownership={
+	# 				building={
+	# 					type="building_furniture_manufacturies"
+	# 					country="c:USA"
+	# 					levels=1
+	# 					region="STATE_MAINE"
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 			activate_production_methods={ "pm_lathe" "pm_luxury_furniture" "pm_automation_disabled"  }
+	# 		}
+	# 		create_building={
+	# 			building="building_logging_camp"
+	# 			add_ownership={
+	# 				building={
+	# 					type="building_financial_district"
+	# 					country="c:USA"
+	# 					levels=3
+	# 					region="STATE_MAINE"
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 			activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
+	# 		}
+	# 		create_building={
+	# 			building="building_shipyards"
+	# 			add_ownership={
+	# 				company={
+	# 					type=company_william_cramp
+	# 					country="c:USA"
+	# 					levels=1
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 			activate_production_methods={ "pm_basic_shipbuilding"  }
+	# 		}
+	# 		create_building={
+	# 			building="building_fishing_wharf"
+	# 			add_ownership={
+	# 				building={
+	# 					type="building_fishing_wharf"
+	# 					country="c:USA"
+	# 					levels=3
+	# 					region="STATE_MAINE"
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 			activate_production_methods={ "pm_fishing_trawlers" "pm_unrefrigerated"  }
+	# 		}
+	# 		create_building={
+	# 			building="building_port"
+	# 			add_ownership={
+	# 				country={
+	# 					country="c:USA"
+	# 					levels=1
+	# 				}
+	# 			}
+	# 			reserves=1
+	# 			activate_production_methods={ "pm_basic_port" }
+	# 		}
+	# 	}
+	# }
+
+s:STATE_GREATER_MASSACHUSETTS={
+	region_state:USA={
+		create_building={
+			building="building_government_administration"
+			add_ownership={
+				country={
+					country="c:USA"
+					levels=3
 				}
-				reserves=1
-				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_professional_bureaucrats" "pm_secular_bureaucrats" }
 			}
-			create_building={
-				building="building_glassworks"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:USA"
-						levels=1
-						region="STATE_RHODE_ISLAND"
-					}
+			reserves=1
+			activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_professional_bureaucrats" "pm_secular_bureaucrats" }
+		}
+		create_building={
+			building="building_glassworks"
+			add_ownership={
+				building={
+					type="building_financial_district"
+					country="c:USA"
+					levels=2
+					region="STATE_GREATER_MASSACHUSETTS"
 				}
-				reserves=1
-				activate_production_methods={ "pm_leaded_glass" "pm_ceramics" "pm_manual_glassblowing"  }
 			}
-			create_building={
-				building="building_fishing_wharf"
-				add_ownership={
-					building={
-						type="building_fishing_wharf"
-						country="c:USA"
-						levels=1
-						region="STATE_RHODE_ISLAND"
-					}
+			reserves=1
+			activate_production_methods={ "pm_leaded_glass" "pm_ceramics" "pm_manual_glassblowing" }
+		}
+		create_building={
+			building="building_fishing_wharf"
+			add_ownership={
+				building={
+					type="building_fishing_wharf"
+					country="c:USA"
+					levels=4
+					region="STATE_GREATER_MASSACHUSETTS"
 				}
-				reserves=1
-				activate_production_methods={ "pm_fishing_trawlers" "pm_unrefrigerated"  }
 			}
+			reserves=1
+			activate_production_methods={ "pm_fishing_trawlers" "pm_unrefrigerated" }
+		}
+		create_building={
+			building="building_iron_mine"
+			add_ownership={
+				building={
+					type="building_financial_district"
+					country="c:USA"
+					levels=2
+					region="STATE_GREATER_MASSACHUSETTS"
+				}
+			}
+			reserves=1
+			activate_production_methods={ "pm_atmospheric_engine_pump_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+		}
+		create_building={
+			building="building_port"
+			add_ownership={
+				country={
+					country="c:USA"
+					levels=4
+				}
+			}
+			reserves=1
+			activate_production_methods={ "pm_basic_port" }
+		}
+		create_building={
+			building="building_trade_center"
+			activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+			add_ownership={
+				building={
+					type="building_financial_district"
+					country="c:USA"
+					levels=5
+					region="STATE_GREATER_MASSACHUSETTS"
+				}
+			}
+			reserves=1
+		}
+		create_building={
+			building="building_construction_sector"
+			add_ownership={
+				country={
+					country="c:USA"
+					levels=1
+				}
+			}
+			reserves=1
+			activate_production_methods={ "pm_iron_frame_buildings" }
+		}
+		create_building={
+			building="building_university"
+			add_ownership={
+				country={
+					country="c:USA"
+					levels=2
+				}
+			}
+			reserves=1
+			activate_production_methods={ "pm_scholastic_education" "pm_secular_academia" }
+		}
+		create_building={
+			building="building_textile_mills"
+			add_ownership={
+				building={
+					type="building_textile_mills"
+					country="c:USA"
+					levels=2
+					region="STATE_GREATER_MASSACHUSETTS"
+				}
+				building={
+					type="building_financial_district"
+					country="c:USA"
+					levels=1
+					region="STATE_GREATER_MASSACHUSETTS"
+				}
+			}
+			reserves=1
+			activate_production_methods={ "pm_dye_workshops" "pm_no_luxury_clothes" "pm_traditional_looms" }
+		}
+		create_building={
+			building="building_shipyards"
+			add_ownership={
+				company={
+					type=company_william_cramp
+					country="c:USA"
+					levels=2
+				}
+			}
+			reserves=1
+			activate_production_methods={ "pm_basic_shipbuilding" }
+		}
+		create_building={
+			building="building_whaling_station"
+			add_ownership={
+				building={
+					type="building_financial_district"
+					country="c:USA"
+					levels=1
+					region="STATE_GREATER_MASSACHUSETTS"
+				}
+			}
+			reserves=1
+			activate_production_methods={ "pm_unrefrigerated" "pm_wooden_whaling_ships" }
+		}
+		create_building={
+			building="building_wheat_farm"
+			add_ownership={
+				building={
+					type="building_wheat_farm"
+					country="c:USA"
+					levels=1
+					region="STATE_GREATER_MASSACHUSETTS"
+				}
+				building={
+					type="building_manor_house"
+					country="c:USA"
+					levels=1
+					region="STATE_GREATER_MASSACHUSETTS"
+				}
+			}
+			reserves=1
+			activate_production_methods={ "pm_soil_enriching_farming" "pm_tools_disabled" "pm_citrus_orchards" }
+		}
+		create_building={
+			building="building_logging_camp"
+			add_ownership={
+				building={
+					type="building_financial_district"
+					country="c:USA"
+					levels=2
+					region="STATE_GREATER_MASSACHUSETTS"
+				}
+			}
+			reserves=1
+			activate_production_methods={ "pm_saw_mills" "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
 		}
 	}
-	s:STATE_CONNECTICUT={
-		region_state:USA={
-			create_building={
-				building="building_government_administration"
-				add_ownership={
-					country={
-						country="c:USA"
-						levels=1
-					}
+}
+
+s:STATE_NEW_ENGLAND={
+	region_state:USA={
+		create_building={
+			# From NH (1) + ME (1) = 2 levels
+			building="building_government_administration"
+			add_ownership={
+				country={
+					country="c:USA"
+					levels=2
 				}
-				reserves=1
-				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_professional_bureaucrats" "pm_secular_bureaucrats" }
 			}
-			create_building={
-				building="building_iron_mine"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:USA"
-						levels=2
-						region="STATE_CONNECTICUT"
-					}
+			reserves=1
+			activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_professional_bureaucrats" "pm_secular_bureaucrats" }
+		}
+		create_building={
+			# From VT only (2 levels)
+			building="building_food_industry"
+			add_ownership={
+				building={
+					type="building_food_industry"
+					country="c:USA"
+					levels=2
+					region="STATE_NEW_ENGLAND"
 				}
-				reserves=1
-				activate_production_methods={ "pm_atmospheric_engine_pump_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
 			}
-			create_building={
-				building="building_port"
-				add_ownership={
-					country={
-						country="c:USA"
-						levels=1
-					}
+			reserves=1
+			activate_production_methods={ "pm_pot_stills" "pm_disabled_canning" "pm_bakery" "pm_manual_dough_processing" }
+		}
+		create_building={
+			# From NH (1) + VT (1) + ME (3) = 5 levels
+			building="building_logging_camp"
+			add_ownership={
+				building={
+					type="building_financial_district"
+					country="c:USA"
+					levels=5
+					region="STATE_NEW_ENGLAND"
 				}
-				reserves=1
-				activate_production_methods={ "pm_basic_port" }
 			}
+			reserves=1
+			activate_production_methods={ "pm_saw_mills" "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
+		}
+		create_building={
+			# From NH (1) + VT (1) = 2 levels
+			building="building_livestock_ranch"
+			add_ownership={
+				building={
+					type="building_livestock_ranch"
+					country="c:USA"
+					levels=2
+					region="STATE_NEW_ENGLAND"
+				}
+			}
+			reserves=1
+			activate_production_methods={ "pm_sheep_farms" "pm_standard_fences" "pm_unrefrigerated" "pm_open_air_stockyards" }
+		}
+		create_building={
+			# From ME only (1 level)
+			building="building_furniture_manufacturies"
+			add_ownership={
+				building={
+					type="building_furniture_manufacturies"
+					country="c:USA"
+					levels=1
+					region="STATE_NEW_ENGLAND"
+				}
+			}
+			reserves=1
+			activate_production_methods={ "pm_lathe" "pm_luxury_furniture" "pm_automation_disabled" }
+		}
+		create_building={
+			# From ME only (1 level)
+			building="building_shipyards"
+			add_ownership={
+				company={
+					type=company_william_cramp
+					country="c:USA"
+					levels=1
+				}
+			}
+			reserves=1
+			activate_production_methods={ "pm_basic_shipbuilding" }
+		}
+		create_building={
+			# From ME only (3 levels)
+			building="building_fishing_wharf"
+			add_ownership={
+				building={
+					type="building_fishing_wharf"
+					country="c:USA"
+					levels=3
+					region="STATE_NEW_ENGLAND"
+				}
+			}
+			reserves=1
+			activate_production_methods={ "pm_fishing_trawlers" "pm_unrefrigerated" }
+		}
+		create_building={
+			# From ME only (1 level)
+			building="building_port"
+			add_ownership={
+				country={
+					country="c:USA"
+					levels=1
+				}
+			}
+			reserves=1
+			activate_production_methods={ "pm_basic_port" }
 		}
 	}
-	s:STATE_MASSACHUSETTS={
-		region_state:USA={
-			create_building={
-				building="building_government_administration"
-				add_ownership={
-					country={
-						country="c:USA"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_professional_bureaucrats" "pm_secular_bureaucrats" }
-			}
-			create_building={
-				building="building_trade_center"
-				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:USA"
-						levels=5
-						region="STATE_MASSACHUSETTS"
-					}
-				}
-				reserves=1
-			}
-			create_building={
-				building="building_construction_sector"
-				add_ownership={
-					country={
-						country="c:USA"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_iron_frame_buildings" }
-			}
-			create_building={
-				building="building_university"
-				add_ownership={
-					country={
-						country="c:USA"
-						levels=2
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_scholastic_education" "pm_secular_academia" }
-			}
-			create_building={
-				building="building_textile_mills"
-				add_ownership={
-					building={
-						type="building_textile_mills"
-						country="c:USA"
-						levels=2
-						region="STATE_MASSACHUSETTS"
-					}
-					building={
-						type="building_financial_district"
-						country="c:USA"
-						levels=1
-						region="STATE_MASSACHUSETTS"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_dye_workshops" "pm_no_luxury_clothes" "pm_traditional_looms"  }
-			}
-			create_building={
-				building="building_glassworks"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:USA"
-						levels=1
-						region="STATE_MASSACHUSETTS"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_leaded_glass" "pm_ceramics" "pm_manual_glassblowing"  }
-			}
-			create_building={
-				building="building_shipyards"
-				add_ownership={
-					company={
-						type=company_william_cramp
-						country="c:USA"
-						levels=2
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_basic_shipbuilding"  }
-			}
-			create_building={
-				building="building_fishing_wharf"
-				add_ownership={
-					building={
-						type="building_fishing_wharf"
-						country="c:USA"
-						levels=3
-						region="STATE_MASSACHUSETTS"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_fishing_trawlers" "pm_unrefrigerated"  }
-			}
-			create_building={
-				building="building_whaling_station"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:USA"
-						levels=1
-						region="STATE_MASSACHUSETTS"
-					}
-				}
-				reserves=1
-				activate_production_methods={  "pm_unrefrigerated" "pm_wooden_whaling_ships" }
-			}
-			create_building={
-				building="building_wheat_farm"
-				add_ownership={
-					building={
-						type="building_wheat_farm"
-						country="c:USA"
-						levels=1
-						region="STATE_MASSACHUSETTS"
-					}
-					building={
-						type="building_manor_house"
-						country="c:USA"
-						levels=1
-						region="STATE_MASSACHUSETTS"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_soil_enriching_farming"  "pm_tools_disabled" "pm_citrus_orchards" }
-			}
-			create_building={
-				building="building_port"
-				add_ownership={
-					country={
-						country="c:USA"
-						levels=3
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_basic_port" }
-			}
-			create_building={
-				building="building_logging_camp"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:USA"
-						levels=2
-						region="STATE_MASSACHUSETTS"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
-			}
-		}
-	}
-	s:STATE_NEW_HAMPSHIRE={
-		region_state:USA={
-			create_building={
-				building="building_government_administration"
-				add_ownership={
-					country={
-						country="c:USA"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_professional_bureaucrats" "pm_secular_bureaucrats" }
-			}
-			create_building={
-				building="building_logging_camp"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:USA"
-						levels=1
-						region="STATE_NEW_HAMPSHIRE"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
-			}
-			create_building={
-				building="building_livestock_ranch"
-				add_ownership={
-					building={
-						type="building_livestock_ranch"
-						country="c:USA"
-						levels=1
-						region="STATE_NEW_HAMPSHIRE"
-					}
-				}
-				reserves=1
-				activate_production_methods={  "pm_sheep_farms" "pm_standard_fences" "pm_unrefrigerated" "pm_open_air_stockyards" }
-			}
-		}
-	}
-	s:STATE_VERMONT={
-		region_state:USA={
-			create_building={
-				building="building_food_industry"
-				add_ownership={
-					building={
-						type="building_food_industry"
-						country="c:USA"
-						levels=2
-						region="STATE_VERMONT"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_pot_stills" "pm_disabled_canning" "pm_bakery" "pm_manual_dough_processing"  }
-			}
-			create_building={
-				building="building_logging_camp"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:USA"
-						levels=1
-						region="STATE_VERMONT"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
-			}
-			create_building={
-				building="building_livestock_ranch"
-				add_ownership={
-					building={
-						type="building_livestock_ranch"
-						country="c:USA"
-						levels=1
-						region="STATE_VERMONT"
-					}
-				}
-				reserves=1
-				activate_production_methods={  "pm_sheep_farms" "pm_standard_fences" "pm_unrefrigerated" "pm_open_air_stockyards" }
-			}
-		}
-	}
-	s:STATE_MAINE={
-		region_state:USA={
-			create_building={
-				building="building_government_administration"
-				add_ownership={
-					country={
-						country="c:USA"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_professional_bureaucrats" "pm_secular_bureaucrats" }
-			}
-			create_building={
-				building="building_furniture_manufacturies"
-				add_ownership={
-					building={
-						type="building_furniture_manufacturies"
-						country="c:USA"
-						levels=1
-						region="STATE_MAINE"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_lathe" "pm_luxury_furniture" "pm_automation_disabled"  }
-			}
-			create_building={
-				building="building_logging_camp"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:USA"
-						levels=3
-						region="STATE_MAINE"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
-			}
-			create_building={
-				building="building_shipyards"
-				add_ownership={
-					company={
-						type=company_william_cramp
-						country="c:USA"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_basic_shipbuilding"  }
-			}
-			create_building={
-				building="building_fishing_wharf"
-				add_ownership={
-					building={
-						type="building_fishing_wharf"
-						country="c:USA"
-						levels=3
-						region="STATE_MAINE"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_fishing_trawlers" "pm_unrefrigerated"  }
-			}
-			create_building={
-				building="building_port"
-				add_ownership={
-					country={
-						country="c:USA"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_basic_port" }
-			}
-		}
-	}
+}
+
 	s:STATE_NORTH_CAROLINA={
 		region_state:USA={
 			create_building={

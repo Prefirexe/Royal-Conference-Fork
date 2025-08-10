@@ -2904,105 +2904,187 @@
 			}
 		}
 	}
-	s:STATE_RIO_GRANDE_DO_NORTE={
-		region_state:BRZ={
-			create_building={
-				building="building_maize_farm"
-				add_ownership={
-					building={
-						type="building_maize_farm"
-						country="c:BRZ"
-						levels=1
-						region="STATE_RIO_GRANDE_DO_NORTE"
-					}
+s:STATE_GREATER_RIO_GRANDE_DO_NORTE={
+	region_state:BRZ={
+		create_building={
+			building="building_textile_mills"
+			add_ownership={
+				building={
+					type="building_textile_mills"
+					country="c:BRZ"
+					levels=1
+					region="STATE_GREATER_RIO_GRANDE_DO_NORTE"
 				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
 			}
-			create_building={
-				building="building_logging_camp"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:BRZ"
-						levels=1
-						region="STATE_RIO_GRANDE_DO_NORTE"
-					}
+			reserves=1
+			activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" }
+		}
+		create_building={
+			building="building_tobacco_plantation"
+			add_ownership={
+				building={
+					type="building_manor_house"
+					country="c:BRZ"
+					levels=1
+					region="STATE_GREATER_RIO_GRANDE_DO_NORTE"
 				}
-				reserves=1
-				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
-			create_building={
-				building="building_fishing_wharf"
-				add_ownership={
-					building={
-						type="building_fishing_wharf"
-						country="c:BRZ"
-						levels=1
-						region="STATE_RIO_GRANDE_DO_NORTE"
-					}
+			reserves=1
+			activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts" }
+		}
+		create_building={
+			building="building_maize_farm"
+			add_ownership={
+				building={
+					type="building_maize_farm"
+					country="c:BRZ"
+					levels=4   # 1 (Paraiba) + 2 (Ceara) + 1 (Rio Grande do Norte)
+					region="STATE_GREATER_RIO_GRANDE_DO_NORTE"
 				}
-				reserves=1
-				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated"  }
 			}
+			reserves=1
+			activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
+		}
+		create_building={
+			building="building_cotton_plantation"
+			add_ownership={
+				building={
+					type="building_manor_house"
+					country="c:BRZ"
+					levels=1
+					region="STATE_GREATER_RIO_GRANDE_DO_NORTE"
+				}
+			}
+			reserves=1
+			activate_production_methods={ "default_building_cotton_plantation" "pm_road_carts" }
+		}
+		create_building={
+			building="building_logging_camp"
+			add_ownership={
+				building={
+					type="building_financial_district"
+					country="c:BRZ"
+					levels=3   # 2 (Ceara) + 1 (Rio Grande do Norte)
+					region="STATE_GREATER_RIO_GRANDE_DO_NORTE"
+				}
+			}
+			reserves=1
+			activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" }
+		}
+		create_building={
+			building="building_fishing_wharf"
+			add_ownership={
+				building={
+					type="building_fishing_wharf"
+					country="c:BRZ"
+					levels=2   # 1 (Ceara) + 1 (Rio Grande do Norte)
+					region="STATE_GREATER_RIO_GRANDE_DO_NORTE"
+				}
+			}
+			reserves=1
+			activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" }
 		}
 	}
-	s:STATE_CEARA={
-		region_state:BRZ={
-			create_building={
-				building="building_cotton_plantation"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:BRZ"
-						levels=1
-						region="STATE_CEARA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "default_building_cotton_plantation" "pm_road_carts"  }
-			}
-			create_building={
-				building="building_maize_farm"
-				add_ownership={
-					building={
-						type="building_maize_farm"
-						country="c:BRZ"
-						levels=2
-						region="STATE_CEARA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
-			}
-			create_building={
-				building="building_logging_camp"
-				add_ownership={
-					building={
-						type="building_financial_district"
-						country="c:BRZ"
-						levels=2
-						region="STATE_RIO_DE_JANEIRO"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
-			}
-			create_building={
-				building="building_fishing_wharf"
-				add_ownership={
-					building={
-						type="building_fishing_wharf"
-						country="c:BRZ"
-						levels=1
-						region="STATE_CEARA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated"  }
-			}
-		}
-	}
+}
+#	s:STATE_RIO_GRANDE_DO_NORTE={
+#		region_state:BRZ={
+#			create_building={
+#				building="building_maize_farm"
+#				add_ownership={
+#					building={
+#						type="building_maize_farm"
+#						country="c:BRZ"
+#						levels=1
+#						region="STATE_RIO_GRANDE_DO_NORTE"
+#					}
+#				}
+#				reserves=1
+#				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+#			}
+#			create_building={
+#				building="building_logging_camp"
+#				add_ownership={
+#					building={
+#						type="building_financial_district"
+#						country="c:BRZ"
+#						levels=1
+#						region="STATE_RIO_GRANDE_DO_NORTE"
+#					}
+#				}
+#				reserves=1
+#				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
+#			}
+#			create_building={
+#				building="building_fishing_wharf"
+#				add_ownership={
+#					building={
+#						type="building_fishing_wharf"
+#						country="c:BRZ"
+#						levels=1
+#						region="STATE_RIO_GRANDE_DO_NORTE"
+#					}
+#				}
+#				reserves=1
+#				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated"  }
+#			}
+#		}
+#	}
+#	s:STATE_CEARA={
+#		region_state:BRZ={
+#			create_building={
+#				building="building_cotton_plantation"
+#				add_ownership={
+#					building={
+#						type="building_manor_house"
+#						country="c:BRZ"
+#						levels=1
+#						region="STATE_CEARA"
+#					}
+#				}
+#				reserves=1
+#				activate_production_methods={ "default_building_cotton_plantation" "pm_road_carts"  }
+#			}
+#			create_building={
+#				building="building_maize_farm"
+#				add_ownership={
+#					building={
+#						type="building_maize_farm"
+#						country="c:BRZ"
+#						levels=2
+#						region="STATE_CEARA"
+#					}
+#				}
+#				reserves=1
+#				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+#			}
+#			create_building={
+#				building="building_logging_camp"
+#				add_ownership={
+#					building={
+#						type="building_financial_district"
+#						country="c:BRZ"
+#						levels=2
+#						region="STATE_RIO_DE_JANEIRO"
+#					}
+#				}
+#				reserves=1
+#				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
+#			}
+#			create_building={
+#				building="building_fishing_wharf"
+#				add_ownership={
+#					building={
+#						type="building_fishing_wharf"
+#						country="c:BRZ"
+#						levels=1
+#						region="STATE_CEARA"
+#					}
+#				}
+#				reserves=1
+#				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated"  }
+#			}
+#		}
+#	}
 	s:STATE_PIAUI={
 		region_state:BRZ={
 			create_building={
@@ -3033,49 +3115,49 @@
 			}
 		}
 	}
-	s:STATE_PARAIBA={
-		region_state:BRZ={
-			create_building={
-				building="building_textile_mills"
-				add_ownership={
-					building={
-						type="building_textile_mills"
-						country="c:BRZ"
-						levels=1
-						region="STATE_PARAIBA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms"  }
-			}
-			create_building={
-				building="building_tobacco_plantation"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:BRZ"
-						levels=1
-						region="STATE_PARAIBA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts"  }
-			}
-			create_building={
-				building="building_maize_farm"
-				add_ownership={
-					building={
-						type="building_maize_farm"
-						country="c:BRZ"
-						levels=1
-						region="STATE_PARAIBA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
-			}
-		}
-	}
+#	s:STATE_PARAIBA={
+#		region_state:BRZ={
+#			create_building={
+#				building="building_textile_mills"
+#				add_ownership={
+#					building={
+#						type="building_textile_mills"
+#						country="c:BRZ"
+#						levels=1
+#						region="STATE_PARAIBA"
+#					}
+#				}
+#				reserves=1
+#				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms"  }
+#			}
+#			create_building={
+#				building="building_tobacco_plantation"
+#				add_ownership={
+#					building={
+#						type="building_manor_house"
+#						country="c:BRZ"
+#						levels=1
+#						region="STATE_PARAIBA"
+#					}
+#				}
+#				reserves=1
+#				activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts"  }
+#			}
+#			create_building={
+#				building="building_maize_farm"
+#				add_ownership={
+#					building={
+#						type="building_maize_farm"
+#						country="c:BRZ"
+#						levels=1
+#						region="STATE_PARAIBA"
+#					}
+#				}
+#				reserves=1
+#				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+#			}
+#		}
+#	}
 	s:STATE_PERNAMBUCO={
 		region_state:BRZ={
 			create_building={
