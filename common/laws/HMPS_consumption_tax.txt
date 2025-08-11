@@ -111,7 +111,7 @@ law_high_consumption_tax = {
 	}
 
 	modifier = {
-		country_consumption_tax_cost_mult = -0.40
+		country_consumption_tax_cost_mult = -0.50
 		state_tax_capacity_mult = -0.1
 	}
 	
