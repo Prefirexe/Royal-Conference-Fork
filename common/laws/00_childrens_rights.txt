@@ -10,12 +10,13 @@ law_child_labor_allowed = {
 	progressiveness = -50
 
 	modifier = {
-		state_laborers_mortality_mult = 0.05
-		state_machinists_mortality_mult = 0.05
-		state_farmers_mortality_mult = 0.05
-		state_peasants_mortality_mult = 0.05
-		
+		state_laborers_mortality_mult = 0.1 #was 0.05
+		state_machinists_mortality_mult = 0.1 #was 0.05
+		state_farmers_mortality_mult = 0.1 #was 0.05
+		state_peasants_mortality_mult = 0.1 #was 0.05
+
 		state_dependent_wage_mult = 0.30
+		state_birth_rate_mult = 0.05 #Was none # Incentive for families to get more kids
 	}
 	
 	ai_will_do = {
@@ -47,13 +48,19 @@ law_restricted_child_labor = {
 	}
 	
 	modifier = {
-		state_laborers_mortality_mult = 0.02
-		state_farmers_mortality_mult = 0.02
-		state_peasants_mortality_mult = 0.02
-		
+		state_laborers_mortality_mult = 0.05 #was 0.02
+		state_farmers_mortality_mult = 0.05 #was 0.02
+		state_peasants_mortality_mult = 0.05 #was 0.02
+
 		state_dependent_wage_mult = 0.15
-		
+		state_birth_rate_mult = 0.025 #Was none # Incentive for families to get more kids
+
 		country_institution_schools_max_investment_add = 1
+	}
+
+    institution = institution_schools
+	institution_modifier = {
+		state_education_access_add = 0.025
 	}
 	
 	ai_will_do = {
@@ -99,6 +106,11 @@ law_compulsory_primary_school = {
 		country_institution_schools_max_investment_add = 2
 	}
 	
+    institution = institution_schools
+	institution_modifier = {
+		state_education_access_add = 0.05
+	}
+
 	ai_enact_weight_modifier = { #Petitions
 		value = 0
 		

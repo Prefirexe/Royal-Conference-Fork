@@ -1,5 +1,5 @@
 ﻿
-# Starting techs for the cutting edge Western powers - Britain, America, France, Belgium etc
+# Starting techs for the cutting edge Western powers - Britain, America, France, Belgium, Prussia etc
 
 effect_starting_technology_tier_1_tech = {
 	add_era_researched = era_1
@@ -10,25 +10,34 @@ effect_starting_technology_tier_1_tech = {
 	add_technology_researched = mechanical_tools
 	add_technology_researched = atmospheric_engine
 
-	# Military	
+	# Military
+	add_technology_researched = line_infantry
+	add_technology_researched = army_reserves
+	add_technology_researched = napoleonic_warfare
 	add_technology_researched = screw_frigate
-	add_technology_researched = general_staff
+	#add_technology_researched = general_staff
 	add_technology_researched = percussion_cap
+	add_technology_researched = rifling
+	add_technology_researched = shell_gun
 	add_technology_researched = power_of_the_purse
 
 	# Cultural
 	add_technology_researched = dialectics
-	add_technology_researched = law_enforcement
 	add_technology_researched = central_archives
 	add_technology_researched = central_banking
 	add_technology_researched = egalitarianism
 	add_technology_researched = corporate_charters
 }
 
-# Starting techs for advanced European and American powers - Austria, Prussia, Sweden etc
+# Starting techs for advanced European and American powers - Austria, Sweden etc
 
 effect_starting_technology_tier_2_tech = {
 	add_era_researched = era_1
+
+	# Military
+	add_technology_researched = line_infantry
+	add_technology_researched = army_reserves
+	add_technology_researched = napoleonic_warfare
 }
 
 # Starting techs for backwards European and American powers - Spain, Sicily, Russia
@@ -43,8 +52,8 @@ effect_starting_technology_tier_3_tech = {
 	add_technology_researched = steelworking
 	add_technology_researched = prospecting
 	add_technology_researched = cotton_gin
-	
-	# Military	
+
+	# Military
 	add_technology_researched = military_drill
 	add_technology_researched = standing_army
 	add_technology_researched = navigation
@@ -69,7 +78,10 @@ effect_starting_technology_tier_3_tech = {
 	add_technology_researched = currency_standards
 	add_technology_researched = colonization
 	add_technology_researched = urban_planning
+	add_technology_researched = law_enforcement
 	add_technology_researched = medical_degrees
+	add_technology_researched = mass_communication
+	add_technology_researched = early_nationalism
 }
 
 # Starting techs for most unrecognized nations and very backwards European powers (Ottomans, etc)
@@ -104,17 +116,17 @@ effect_starting_technology_tier_4_tech = {
 }
 
 # Very backwards centralized powers
-effect_starting_technology_tier_5_tech = {	
+effect_starting_technology_tier_5_tech = {
 	# Economic
 	add_technology_researched = enclosure
 	add_technology_researched = manufacturies
 	add_technology_researched = shaft_mining
-	
+
 	# Military
 	add_technology_researched = standing_army
 	add_technology_researched = military_drill
 	add_technology_researched = navigation
-	
+
 	# Cultural
 	add_technology_researched = urbanization
 	add_technology_researched = rationalism
@@ -122,13 +134,13 @@ effect_starting_technology_tier_5_tech = {
 }
 
 # Decentralized countries with organized armies, extremely backwards centralized powers
-effect_starting_technology_tier_6_tech = {	
+effect_starting_technology_tier_6_tech = {
 	# Economic
 	add_technology_researched = enclosure
-	
+
 	# Military
 	add_technology_researched = standing_army
-	
+
 	# Cultural
 	add_technology_researched = urbanization
 }

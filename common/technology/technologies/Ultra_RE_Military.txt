@@ -1,0 +1,74 @@
+﻿napoleonic_warfare = {
+	# Unlocks Mobile Artillery PM in Barracks
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/napoleonic_warfare.dds"
+	category = military
+
+	unlocking_technologies = {
+		line_infantry
+		artillery
+	}
+
+	ai_weight = {
+		value = 1.5 # Important tech in general
+
+		if = {
+			limit = { has_journal_entry = je_sick_man_army }
+			add = 100
+		}
+	}
+}
+
+army_reserves = {
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/army_reserves.dds"
+	category = military
+
+	modifier = {
+		state_conscription_rate_mult = 0.2
+	}
+
+	unlocking_technologies = {
+		line_infantry
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+line_infantry = {
+	# Unlocks Line Infantry PM in Barracks
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/line_infantry.dds"
+	category = military
+
+	unlocking_technologies = {
+		mandatory_service
+		military_drill
+	}
+
+	ai_weight = {
+		value = 2 # Important tech in general
+	}
+}
+
+
+
+
+
+
+general_staff = {
+	# Unlocks Skirmish Infantry PM in Barracks / Conscription Centers
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/general_staff.dds"
+	category = military
+
+	unlocking_technologies = {
+		army_reserves
+	}
+
+	ai_weight = {
+		value = 2 # Important tech in general
+	}
+}

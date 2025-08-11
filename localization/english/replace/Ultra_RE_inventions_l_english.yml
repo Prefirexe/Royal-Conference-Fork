@@ -1,0 +1,13 @@
+﻿l_english:
+ enlightenment:0 "Enlightenment Thought"
+ enlightenment_desc:1 "Enlightenment is man's emergence from his self-imposed nonage. Nonage is the inability to use one's own understanding without another's guidance."
+ terakoya:0 "Terakoya"
+ terakoya_desc:1 "With the government only communicating from a distance in writing, schooling becomes more important even for those in the villages."
+ early_nationalism:0 "National Identity"
+ early_nationalism_desc:0 ""Nation: word to describe a large quantity of people, who inhabit a defined part of one or many coutries, defined by certain limits and who obey the same government" - L'Encyclopédie of Diderot"
+
+## Repeaters tech name changed to represent breech-loading rifles instead
+
+ pm_repeaters:0 "Breech Loading Rifles"
+ repeaters:0 "Breech Loading Rifles"
+ repeaters_desc:0 "By changing the design to load the cartridge from the breech, rather than down the muzzle, it is possible to make a much more efficient weapons."

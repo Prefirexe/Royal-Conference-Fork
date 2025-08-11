@@ -5,11 +5,11 @@
 
 # Global Static Modifiers
 base_values = {	
-	country_weekly_innovation_add = 50
-	country_weekly_innovation_max_add = 50
-	country_tech_spread_add = 25
+	country_weekly_innovation_add = 25 #was 50
+	country_weekly_innovation_max_add = 50 #was 50
+	country_tech_spread_add = 25 #was 25
 	
-	country_loan_interest_rate_add = 0.2
+	country_loan_interest_rate_add = 0.5
 	
 	country_legitimacy_govt_size_add = 1
 	
@@ -33,11 +33,11 @@ base_values = {
 	state_upper_strata_expected_sol_add = 15
 	state_expected_sol_from_literacy = 5
 	
-	state_farmers_investment_pool_contribution_add = 0.1
+	state_farmers_investment_pool_contribution_add = 0.2
 	state_shopkeepers_investment_pool_contribution_add = 0.2
-	state_clergymen_investment_pool_contribution_add = 0.20
-	state_aristocrats_investment_pool_contribution_add = 0.20
-	state_capitalists_investment_pool_contribution_add = 0.30
+	state_clergymen_investment_pool_contribution_add = 0.2
+	state_aristocrats_investment_pool_contribution_add = 0.2
+	state_capitalists_investment_pool_contribution_add = 0.3
 	
 	country_acceptance_primary_culture_add = 10 # To Make decaying acceptance modifiers work better. (Will not ever result in moving a pop up or down a tier unless there is a decaying acceptance modifier)
 	country_acceptance_shared_heritage_and_cultural_trait_add = 10 # To Make decaying acceptance modifiers work better. (Will not ever result in moving a pop up or down a tier unless there is a decaying acceptance modifier)
@@ -60,9 +60,9 @@ base_values = {
 	country_company_throughput_bonus_add = 0.2
 	country_company_construction_efficiency_bonus_add = 0.5
 	
-	country_max_weekly_construction_progress_add = 20
+	country_max_weekly_construction_progress_add = 25
 	
-	military_formation_organization_gain_add = 0.5 # 200 days to get max organization
+	military_formation_organization_gain_add = 1 # 100 days to get max organization
 	
 	state_urbanization_per_level_add = 100
 	
@@ -599,26 +599,26 @@ country_rivalry = {
 infamy_reputable = {}
 
 infamy_infamous = {
-	country_radicals_from_conquest_mult = 0.1
-	country_loan_interest_rate_add = 0.05
-	country_loan_interest_rate_mult = 0.1
+	country_tech_spread_mult = -0.1
+	state_trade_advantage_mult = -0.25
+	state_turmoil_effects_mult = 0.25
+	political_movement_radicalism_add = 0.1
 }
 
 infamy_notorious = {
-	country_radicals_from_conquest_mult = 0.25
-	country_tech_spread_mult = -0.20
-	state_trade_advantage_mult = -0.30
+	country_tech_spread_mult = -0.25
+	state_trade_advantage_mult = -0.50
 	country_loan_interest_rate_mult = 0.25
-	country_loan_interest_rate_add = 0.1
+	state_turmoil_effects_mult = 0.50
+	political_movement_radicalism_add = 0.25
 }
 
 infamy_pariah = {
-	country_radicals_from_conquest_mult = 0.5
 	country_tech_spread_mult = -0.50
-	state_trade_advantage_mult = -0.60
+	state_trade_advantage_mult = -0.99
 	country_loan_interest_rate_mult = 0.5
-	country_loan_interest_rate_add = 0.1
 	state_turmoil_effects_mult = 0.75
+	political_movement_radicalism_add = 0.50
 }
 
 # Scales with devastation level
