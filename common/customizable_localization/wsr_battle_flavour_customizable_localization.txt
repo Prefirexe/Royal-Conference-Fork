@@ -1,0 +1,48 @@
+﻿wsr_battle_flavour_defeat = {
+    type = country
+    random_valid = yes
+    text = { localization_key = battle_flavour_defeat_1 }
+    text = { localization_key = battle_flavour_defeat_2 }
+    text = { localization_key = battle_flavour_defeat_3 }
+    text = { localization_key = battle_flavour_defeat_4 }
+    text = { localization_key = battle_flavour_defeat_5 }
+    text = { localization_key = battle_flavour_defeat_6 }
+    text = { localization_key = battle_flavour_defeat_7 }
+    text = { localization_key = battle_flavour_defeat_8 }
+    text = { localization_key = battle_flavour_defeat_9 }
+    text = { localization_key = battle_flavour_defeat_10 }
+    text = { localization_key = battle_flavour_defeat_11 }
+    text = { localization_key = battle_flavour_defeat_12 }
+}
+
+wsr_battle_flavour_victory = {
+    type = country
+    random_valid = yes
+    text = { localization_key = battle_flavour_victory_1 }
+    text = { localization_key = battle_flavour_victory_2 }
+    text = { localization_key = battle_flavour_victory_3 }
+    text = { localization_key = battle_flavour_victory_4 }
+    text = { localization_key = battle_flavour_victory_5 }
+    text = { localization_key = battle_flavour_victory_6 }
+    text = { localization_key = battle_flavour_victory_7 }
+    text = { localization_key = battle_flavour_victory_8 }
+    text = { localization_key = battle_flavour_victory_9 }
+    text = { localization_key = battle_flavour_victory_10 }
+    text = { localization_key = battle_flavour_victory_11 }
+    text = { localization_key = battle_flavour_victory_12 }
+}
+
+wsr_battle_flavour_defence = {
+    type = country
+    random_valid = yes
+    text = { localization_key = battle_flavour_defence_1 }
+    text = { localization_key = battle_flavour_defence_2 }
+    text = { localization_key = battle_flavour_defence_3 }
+    text = { localization_key = battle_flavour_defence_4 }
+    text = { localization_key = battle_flavour_defence_5 }
+    text = { localization_key = battle_flavour_defence_6 }
+    text = { localization_key = battle_flavour_defence_7 }
+    text = { localization_key = battle_flavour_defence_8 }
+    text = { localization_key = battle_flavour_defence_9 }
+    text = { localization_key = battle_flavour_defence_10 }
+}

@@ -1,0 +1,141 @@
+﻿namespace = wsr_letter_event
+
+wsr_letter_event.1 = {
+	type = country_event
+    placement = scope:state
+
+    title = wsr_letter_event.1.t
+    desc = wsr_letter_event.1.desc
+    flavor = wsr_letter_event.1.f
+
+	duration = 2
+
+    gui_window = com_event_window_letter_paper
+
+    option = {
+        name = wsr_letter_event.1.a
+        default_option = yes
+		hidden_effect = {
+			scope:soldier_character = { kill_character = yes }
+			scope:soldier_friend = { kill_character = yes }
+		}
+    }
+}
+
+wsr_letter_event.2 = {
+	type = country_event
+	placement = scope:state
+
+    title = wsr_letter_event.2.t
+    desc = wsr_letter_event.2.desc
+    flavor = wsr_letter_event.2.f
+
+	duration = 2
+
+    gui_window = com_event_window_letter_paper
+
+    option = {
+        name = wsr_letter_event.2.a
+        default_option = yes
+		hidden_effect = {
+			scope:soldier_character = { kill_character = yes }
+			scope:soldier_friend = { kill_character = yes }
+		}
+    }
+}
+
+wsr_letter_event.3 = {
+	type = country_event
+	placement = scope:state
+
+    title = wsr_letter_event.3.t
+    desc = wsr_letter_event.3.desc
+    flavor = wsr_letter_event.3.f
+
+	duration = 2
+
+    gui_window = com_event_window_letter_paper
+
+    option = {
+        name = wsr_letter_event.3.a
+        default_option = yes
+		hidden_effect = {
+			scope:soldier_character = { kill_character = yes }
+			scope:soldier_friend = { kill_character = yes }
+		}
+    }
+}
+
+wsr_letter_event.100 = {
+    placement = root
+	hidden = yes
+
+	immediate = {
+		random_scope_war = {
+			limit = {
+				any_scope_front = {
+					any_military_formation = {
+						owner = ROOT
+					}
+				}
+			}
+			set_local_variable = { name = war_support_temp value = war_support }
+			if = {
+				random_scope_front = {
+					limit = { any_military_formation = { owner = ROOT } }
+					save_scope_as = front
+					random_scope_state = {
+						save_scope_as = state
+					}
+					root = { set_variable = { name = test_letter_chance value = prev.wsr_letter_chance_value } }
+					random = {
+						chance = prev.wsr_letter_chance_value
+						random_combat_unit = {
+							limit = { owner = root }
+							root = {
+								create_character = {
+									culture = prev.culture
+									female = no
+									on_created = {
+										place_character_in_void = 10000
+									}
+									save_scope_as = soldier_character
+								}
+								create_character = {
+									culture = prev.culture
+									female = no
+									on_created = {
+										place_character_in_void = 10000
+									}
+									save_scope_as = soldier_friend
+								}
+
+								set_local_variable = { name = battle_date value = year }
+								set_variable = { name = soldier_friend value = scope:soldier_friend days = 65 }
+								if = {
+									limit = {
+										local_var:war_support_temp <= 25
+									}
+									trigger_event = { id = wsr_letter_event.2 }
+								}
+								if = {
+									limit = {
+										local_var:war_support_temp > 25
+										local_var:war_support_temp < 65
+									}
+									trigger_event = { id = wsr_letter_event.3 }
+								}
+								else_if = {
+									limit = {
+										local_var:war_support_temp >= 65
+									}
+									trigger_event = { id = wsr_letter_event.1 }								
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

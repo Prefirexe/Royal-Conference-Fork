@@ -1,0 +1,48 @@
+﻿#Most of these are from UHW - check Ultra Historical Warfare if you haven't - it's a great mod
+
+NWar = {
+	WAR_EXHAUSTION_MAX = 150
+
+	WAR_EXHAUSTION_BASE = 0.05 #was 0.25
+	WAR_EXHAUSTION_KIA_FACTOR = 40.0 #was 5.0 # Scaled by casualties compared to total manpower
+	WAR_EXHAUSTION_KIA_BASE_MULTIPLIER = 0.10 #was 0.25	# War Exhaustion from casualties is always multiplied by at least this
+	WAR_EXHAUSTION_KIA_BATTLES_LOST_MULTIPLIER = 0.66 	#was 0.75 # At 100% of battles lost by our side, War Exhaustion from casualties is further multiplied by this
+
+	DAYS_BETWEEN_WAR_EXHAUSTION = 14 #was 7 # Every this many days war support will be reduced by the war exhaustion formula
+
+	OCCUPATION_STATE_DEFENSIVE_BATTLE_VICTORY_SCORE = 10 #was 100 # How many occupation "points" each country receives after winning a defensive battle
+}
+
+NMilitary = {
+	MANPOWER_LOST_DUE_TO_ATTRITION_PER_WEEK_MIN = 0.02 #was 0.04 	# The minimum percentage of manpower a unit can lose each week due to attrition
+	MANPOWER_LOST_DUE_TO_ATTRITION_PER_WEEK_MAX = 0.06 #was 0.12	# The maximum percentage of manpower a unit can lose each week due to attrition
+
+	BATTLE_RAW_MANPOWER_INFLICTED_CASUALTY_RATIO = 0.15 #was 0.5		# applied to the number of casualties caused by raw number of troops, ie without considering Offense/Defense - increasing this makes CE less important and battles more lethal
+	BASE_MORALE_RECOVERED_PER_DAY = 0.02 #was 0.03			# Default morale recovered is 3% per day
+
+	BATTLE_BASE_MIN_PROVINCES_TAKEN = 3 #was 4
+	BATTLE_BASE_MAX_PROVINCES_TAKEN = 9 #was 12
+	BATTLE_PROVINCES_TAKEN_FRONT_PROVINCES_NUM_DIVISOR = 10 #was 5		# Attacker takes (num provinces in front) divided by this as extra, clamped to BATTLE_BASE_MIN_PROVINCES_TAKEN and BATTLE_BASE_MAX_PROVINCES_TAKEN
+	BATTLE_PROVINCES_TAKEN_THEATER_PROVINCES_NUM_DIVISOR = 100 #was 50	# Attacker takes (num provinces in theater) divided by this as extra, clamped to BATTLE_BASE_MIN_PROVINCES_TAKEN and BATTLE_BASE_MAX_PROVI
+	BATTLE_PROVINCES_TAKEN_MAX_DEPTH_MIN = 2 #was 2					# Maximum distance from battle provinces that provinces can be taken by attacker (minimum)
+	BATTLE_PROVINCES_TAKEN_MAX_DEPTH_MAX = 5 #was 10				# Maximum distance from battle provinces that provinces can be taken (maximum)
+	BATTLE_PROVINCES_TAKEN_MAX_DEPTH_FRONT_PROVINCES_NUM_DIVISOR = 100 #was 50	# Num provinces in front is divided by this and added to maximum depth attacker can take provinces at
+	BATTLE_PROVINCES_TAKEN_MAX_DEPTH_THEATER_PROVINCES_NUM_DIVISOR = 1000 #was 500	# Num provinces in theater is divided by this and added to maximum depth attacker can take provinces at 
+	BATTLE_PROVINCES_TAKEN_MAX_EXTRA = 2 #was 3                  		# If the selected provinces will cause split, capture the new theater as long as it has up to BATTLE_PROVINCES_TAKEN_MAX_EXTRA provinces. This might not respect the distance limit (BATTLE_PROVINCES_TAKEN_MAX_DEPTH).
+
+	CONVOY_RAIDING_DEFENSE_MULT = 0.3 #0.15					# How much is Convoy raiding strength reduced by patrolling flotillas  ( num flotillas * ce defense )
+	CONVOY_RAIDING_MAX_DEFENSE = 0.95						# Example: the defender can never block more than 90% of the convoy damage they're currently taking
+
+	## Convoy recovery rate after being raided is based on a global and a local rate, using whichever is lower
+	CONVOY_RAIDING_GLOBAL_RECOVERY_RATE = 0.005 #0.001		# The rate at which damaged convoys are replaced each day, relative to total number of produced convoys in the raided country
+
+	DEFENSIVE_PROVINCES_RETAKEN_MAX_DEPTH = 0 #was 1					# Maximum distance from battle provinces that provinces can be retaken in defensive battle
+
+	BASE_BATTALION_CONVOY_COST = 25							# Cost in convoys per Battalion for shipping lanes
+}
+
+NBattle = {
+	SURVIVAL_RATE = 0.75 #was 0.66
+	DEPENDENTS_ROLL_MIN_PERCENT = 0.02	#was 0.1			# min ...
+	DEPENDENTS_ROLL_MAX_PERCENT = 0.2	#was 0.3			# max percentage of Pops Size it can take as Dependents each roll
+}

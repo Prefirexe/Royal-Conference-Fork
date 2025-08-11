@@ -1,0 +1,130 @@
+﻿on_monthly_pulse = {
+	on_actions = {
+		wsr_on_monthly_check_casualties
+	}
+}
+
+on_yearly_pulse = {
+	on_actions = {
+		wsr_on_yearly_clear_garbage
+	}
+}
+
+on_diplo_play_war_start = {
+	on_actions = {
+		wsr_on_war_start_check_casualties
+	}
+}
+
+on_war_end = {
+	on_actions = {
+		wsr_on_war_end
+	}
+}
+
+on_battle_lost = {
+	on_actions = {
+		wsr_on_battle_lost
+	}
+}
+
+on_battle_won = {
+	on_actions = {
+		wsr_on_battle_won
+	}
+}
+
+on_monthly_pulse_country = {
+	on_actions = {
+		wsr_on_monthly_pulse_country
+	}
+}
+
+
+wsr_on_monthly_check_casualties = {
+    effect = {
+        every_country = {
+			limit = { is_at_war = yes }
+			trigger_event = { id = check_casualties.1 }
+			trigger_event = { id = check_casualties.2 days = 5 }
+		}
+    }
+}
+
+wsr_on_yearly_clear_garbage = {
+    effect = {
+        trigger_event = { id = check_casualties.3 }
+    }
+}
+
+wsr_on_war_start_check_casualties = {
+	effect = {
+		root = {
+			target ?= {
+				trigger_event = { id = check_casualties.1 }
+			}
+			initiator ?= {
+				trigger_event = { id = check_casualties.1 }
+			}
+			every_scope_target_ally ?= {
+				trigger_event = { id = check_casualties.1 }							
+			}
+			every_scope_initiator_ally ?= {
+				trigger_event = { id = check_casualties.1 }									
+			}
+		}
+	}
+}
+
+wsr_on_war_end = {
+	effect = {
+		target ?= {
+			set_local_variable = { name = current_war value = root.war }
+			remove_war_casualties = yes
+		}
+		initiator ?= {
+			set_local_variable = { name = current_war value = root.war }
+			remove_war_casualties = yes
+		}
+		every_scope_target_ally ?= {
+			set_local_variable = { name = current_war value = root.war }
+			remove_war_casualties = yes					
+		}
+		every_scope_initiator_ally ?= {
+			set_local_variable = { name = current_war value = root.war }
+			remove_war_casualties = yes							
+		}
+	}
+}
+
+wsr_on_battle_lost = {
+	trigger = {
+		root.country_rank >= rank_value:unrecognized_regional_power
+		not = { has_game_rule = wsr_events_disabled_rule }
+	}
+	events = {
+		war_support_battle.100
+	}
+}
+
+wsr_on_battle_won = {
+	trigger = {
+		root.country_rank >= rank_value:unrecognized_regional_power
+		not = { has_game_rule = wsr_events_disabled_rule }
+	}
+	events = {
+		war_support_battle.101
+	}
+}
+
+wsr_on_monthly_pulse_country = {
+	trigger = { 
+		is_player = yes
+		is_at_war = yes
+		not = { has_game_rule = wsr_flavor_events_disabled }
+		has_technology_researched = napoleonic_warfare
+	}
+	events = {
+		wsr_letter_event.100
+	}
+}

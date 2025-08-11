@@ -1,0 +1,451 @@
+﻿namespace = war_support_battle
+
+# Root = attacker or defender country
+# scope:enemy_country = enemy of root
+# scope:battle = battle
+# scope:attacker = attacking commander
+# scope:defender = defending commander
+# scope:state = location state
+
+war_support_battle.1 = {
+	type = country_event
+    placement = scope:state
+
+    title = war_support_battle.1.t
+    desc = war_support_battle.1.desc
+    flavor = war_support_battle.1.f
+
+	duration = 1
+
+	cooldown = { months = 6 }
+
+    event_image = { texture = "gfx/event_pictures/battles/battle_victory.dds" }
+
+	trigger = {
+		OR = {
+			NOT = { has_game_rule = wsr_events_player_only_rule }
+			is_player = yes
+		}
+	}
+
+	immediate = {
+		scope:battle = {
+			front = {
+				save_scope_as = front
+			}
+		}
+		random_scope_war = {
+			limit = { any_scope_front = { this = scope:front } }
+			save_scope_as = war
+		}
+	}
+
+    option = {
+        name = war_support_battle.1.a
+        default_option = yes
+		scope:war = {
+			add_war_war_support = {
+				target = root
+				value = 5
+			}
+		}
+		hidden_effect = {
+			scope:soldier_character = { kill_character = yes }
+		}
+		ai_chance = {
+			base = 0
+		}
+    }
+    option = {
+        name = war_support_battle.1.b
+		scope:war = {
+			add_war_war_support = {
+				target = root
+				value = 10
+			}
+		}
+		scope:attacker = {
+			add_modifier = { name = wsr_war_hero years = 1 }
+			interest_group = { 
+				add_modifier = { name = wsr_war_hero_ig years = 1}
+			}
+		}
+		hidden_effect = {
+			scope:soldier_character = { kill_character = yes }
+		}
+		ai_chance = {
+			base = 50
+		}
+    }
+    option = {
+        name = war_support_battle.1.c
+		scope:war = {
+			add_war_war_support = {
+				target = root
+				value = 10
+			}
+		}
+		add_treasury = wsr_money_amount_multiplier_small
+		hidden_effect = {
+			scope:soldier_character = { kill_character = yes }
+		}
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_normal = yes } add = 100 }
+		}
+    }
+}
+
+war_support_battle.2 = {
+	type = country_event
+    placement = scope:state
+
+    title = war_support_battle.2.t
+    desc = war_support_battle.2.desc
+    flavor = war_support_battle.2.f
+
+	duration = 1
+
+	cooldown = { months = 6 }
+
+    event_image = { texture = "gfx/event_pictures/battles/battle_defeat.dds" }
+
+	trigger = {
+		OR = {
+			NOT = { has_game_rule = wsr_events_player_only_rule }
+			is_player = yes
+		}
+	}
+
+	immediate = {
+		scope:battle = {
+			front = {
+				save_scope_as = front
+			}
+		}
+		random_scope_war = {
+			limit = { any_scope_front = { this = scope:front } }
+			save_scope_as = war
+		}
+	}
+
+    option = {
+        name = war_support_battle.2.a
+        default_option = yes
+		scope:war = {
+			add_war_war_support = {
+				target = root
+				value = -10
+			}
+		}
+		hidden_effect = {
+			scope:soldier_character = { kill_character = yes }
+		}
+		ai_chance = {
+			base = 0
+		}
+    }
+    option = {
+        name = war_support_battle.2.b
+		scope:war = {
+			add_war_war_support = {
+				target = root
+				value = -5
+			}
+		}
+		scope:attacker = {
+			add_modifier = { name = wsr_war_pariah years = 1 }
+			interest_group = { 
+				add_modifier = { name = wsr_war_pariah_ig years = 1}
+			}
+		}
+		hidden_effect = {
+			scope:soldier_character = { kill_character = yes }
+		}
+		ai_chance = {
+			base = 50
+		}
+    }
+    option = {
+        name = war_support_battle.2.c
+		scope:war = {
+			add_war_war_support = {
+				target = root
+				value = -5
+			}
+		}
+		add_treasury = wsr_money_amount_multiplier_small
+		hidden_effect = {
+			scope:soldier_character = { kill_character = yes }
+		}
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_normal = yes } add = 100 }
+		}
+    }
+}
+
+war_support_battle.3 = {
+	type = country_event
+    placement = scope:state
+
+    title = war_support_battle.3.t
+    desc = war_support_battle.3.desc
+    flavor = war_support_battle.3.f
+
+	duration = 1
+
+	cooldown = { months = 6 }
+
+    event_image = { texture = "gfx/event_pictures/battles/battle_defence_victory.dds" }
+
+	trigger = {
+		OR = {
+			NOT = { has_game_rule = wsr_events_player_only_rule }
+			is_player = yes
+		}
+	}
+
+	immediate = {
+		scope:battle = {
+			front = {
+				save_scope_as = front
+			}
+		}
+		random_scope_war = {
+			limit = { any_scope_front = { this = scope:front } }
+			save_scope_as = war
+		}
+	}
+
+    option = {
+        name = war_support_battle.3.a
+        default_option = yes
+		scope:war = {
+			add_war_war_support = {
+				target = root
+				value = 5
+			}
+		}
+		hidden_effect = {
+			scope:soldier_character = { kill_character = yes }
+		}
+		ai_chance = {
+			base = 0
+		}
+    }
+    option = {
+        name = war_support_battle.3.b
+		scope:war = {
+			add_war_war_support = {
+				target = root
+				value = 10
+			}
+		}
+		scope:defender = {
+			add_modifier = { name = wsr_war_hero years = 1 }
+			interest_group = { 
+				add_modifier = { name = wsr_war_hero_ig years = 1}
+			}
+		}
+		hidden_effect = {
+			scope:soldier_character = { kill_character = yes }
+		}
+		ai_chance = {
+			base = 50
+		}
+    }
+    option = {
+        name = war_support_battle.3.c
+		scope:war = {
+			add_war_war_support = {
+				target = root
+				value = 10
+			}
+		}
+		add_treasury = wsr_money_amount_multiplier_small
+		hidden_effect = {
+			scope:soldier_character = { kill_character = yes }
+		}
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_normal = yes } add = 100 }
+		}
+    }
+}
+
+war_support_battle.4 = {
+	type = country_event
+    placement = root
+
+    title = war_support_battle.4.t
+    desc = war_support_battle.4.desc
+    flavor = war_support_battle.4.f
+
+	duration = 1
+
+	cooldown = { months = 6 }
+
+    event_image = { video = "gfx/event_pictures/unspecific_military_parade.bk2" }
+
+	trigger = {
+		OR = {
+			NOT = { has_game_rule = wsr_events_player_only_rule }
+			is_player = yes
+		}
+	}
+
+    option = {
+        name = war_support_battle.4.a
+        default_option = yes
+		scope:war = {
+			add_war_war_support = {
+				target = root
+				value = 15
+			}
+		}
+    }
+}
+
+war_support_battle.5 = {
+	type = country_event
+    placement = root
+
+    title = war_support_battle.5.t
+    desc = war_support_battle.5.desc
+    flavor = war_support_battle.5.f
+
+	duration = 1
+
+	cooldown = { months = WAR_SUPPORT_STALEMATE_COOLDOWN }
+
+    event_image = { video = "gfx/event_pictures/unspecific_military_parade.bk2" }
+
+	trigger = {
+		OR = {
+			NOT = { has_game_rule = wsr_events_player_only_rule }
+			is_player = yes
+		}
+	}
+
+    option = {
+        name = war_support_battle.5.a
+        default_option = yes
+		scope:war = {
+			add_war_war_support = {
+				target = root
+				value = 15
+			}
+		}
+    }
+}
+
+#battle lost trigger
+war_support_battle.100 = {
+	placement = root
+	hidden = yes
+	
+	immediate = {
+		random_military_formation = {
+			limit = { 
+				is_army = yes 
+				any_scope_general = { this = scope:attacker }
+			}
+			random_combat_unit = { culture = { save_scope_as = soldier_culture } }
+		}
+		scope:battle = {
+			defender_side = { save_scope_as = battle_defender }
+			attacker_side = { save_scope_as = battle_attacker }
+
+			if = {
+				limit = { 
+					scope:attacker.owner = root
+					exists = scope:state
+				}
+
+				root = { 
+					random = {
+						chance = wsr_battle_defence_hype_calculator
+						create_character = {
+							culture = scope:soldier_culture
+							female = no
+							on_created = {
+								place_character_in_void = 10000
+							}
+							save_scope_as = soldier_character
+						}
+						set_local_variable = { name = battle_date value = year }
+						trigger_event = { id = war_support_battle.2 } 
+					}
+				}
+				
+				scope:enemy_country = {
+					random = {
+						chance = root.wsr_battle_defence_hype_calculator
+						create_character = {
+							culture = scope:soldier_culture
+							female = no
+							on_created = {
+								place_character_in_void = 10000
+							}
+							save_scope_as = soldier_character
+						}
+						set_local_variable = { name = battle_date value = year }
+						trigger_event = { id = war_support_battle.3 }
+					}					
+				}
+			}
+		}
+	}
+}
+
+#battle won trigger
+war_support_battle.101 = {
+	placement = root
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = {
+				any_military_formation = {
+					is_army = yes 
+					any_scope_general = { this = scope:attacker }
+				}
+			}
+			random_military_formation = {
+				limit = { 
+					is_army = yes 
+					any_scope_general = { this = scope:attacker }
+				}
+				random_combat_unit = { culture = { save_scope_as = soldier_culture } }
+			}
+			scope:battle = {
+				defender_side = { save_scope_as = battle_defender }
+				attacker_side = { save_scope_as = battle_attacker }
+
+				if = {
+					limit = { 
+						scope:attacker.owner = root
+						exists = scope:state
+					}
+					root = {
+						set_variable = { name = test_battle_hype value = wsr_battle_attack_hype_calculator }
+						random = {
+							chance = wsr_battle_attack_hype_calculator
+							create_character = {
+								culture = scope:soldier_culture
+								female = no
+								on_created = {
+									place_character_in_void = 10000
+								}
+								save_scope_as = soldier_character
+							}
+							set_local_variable = { name = battle_date value = year }
+							trigger_event = { id = war_support_battle.1 } 
+						}
+					}
+				}
+			}
+		}
+	}
+}

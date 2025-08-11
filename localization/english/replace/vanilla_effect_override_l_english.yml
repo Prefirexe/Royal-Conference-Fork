@@ -1,0 +1,4 @@
+﻿l_english:
+
+ADD_WAR_WAR_SUPPORT:1 "[Country.GetAdjectiveNoFormatting] [concept_war_support] in [War.GetName] increases by $VALUE|+$"
+ADD_WAR_WAR_SUPPORT_NEG:1 "[Country.GetAdjectiveNoFormatting] [concept_war_support] in [War.GetName] decreases by $VALUE|-$"

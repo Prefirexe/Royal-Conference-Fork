@@ -1,0 +1,16 @@
+﻿NAI = {
+	FRONT_MIN_ORGANIZATION_TO_ATTACK = 0					# vanilla 0.8 | As a fraction of formation's max organization
+
+	AI_PEACE_AGREEMENT_WAR_SUPPORT_FACTOR = -2	# Each point of war support affects peace acceptance by this amoun
+	AI_MONTHS_OF_REDUCED_PEACE_DESIRE = 12 #vanilla 10
+	AI_PEACE_AGREEMENT_WAR_SUPPORT_TO_HOLD_ON_TO_ACHIEVABLE_WARGOALS = -50
+
+	AI_PEACE_DESIRE_FROM_DEBT_LEVEL = 200 # vanilla 100
+	DIPLO_PLAY_NEUTRALITY_FROM_DEBT_LEVEL = 200 # vanilla 100
+	DIPLO_PLAY_CONFIDENCE_FROM_DEBT_LEVEL = -75		 # -25 At 100% debt level, subtract this amount of confidence
+	DIPLO_PLAY_CONFIDENCE_FROM_ENEMY_DEBT_LEVEL = 30	 # 10 At 100% debt level for enemy, add this amount of confidence
+
+	AI_CAPITULATE_PEACE_DESIRE_FACTOR = 0.7 # 0.5 Peace desire is multiplied by this when added to capitulation score
+
+	INVADE_STATE_WARGOAL_WEIGHT = 150 # 100
+}

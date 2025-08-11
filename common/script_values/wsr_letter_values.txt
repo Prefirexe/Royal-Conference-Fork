@@ -1,0 +1,25 @@
+﻿LETTER_LITERACY_MAX = 0.9
+
+LETTER_MAX_CHANCE = {
+	value = 0
+	if = { 
+		limit = { has_game_rule = wsr_flavor_events_enabled_low }
+		add = 5
+	}
+	else_if = { 
+		limit = { has_game_rule = wsr_flavor_events_enabled_medium }
+		add = 10
+	}
+	else_if = {
+		limit = { has_game_rule = wsr_flavor_events_enabled_high }
+		add = 15		
+	}
+}
+
+wsr_letter_chance_value = {
+	value = root.literacy_rate
+	divide = LETTER_LITERACY_MAX
+	multiply = LETTER_MAX_CHANCE
+	min = 0
+	max = LETTER_MAX_CHANCE
+}

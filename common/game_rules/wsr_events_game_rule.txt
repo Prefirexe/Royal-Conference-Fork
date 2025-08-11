@@ -1,0 +1,72 @@
+﻿wsr_events_rule = {
+	default = wsr_events_all_rule
+
+	wsr_events_disabled_rule = {
+	}
+
+	wsr_events_player_only_rule = {
+	}
+
+	wsr_events_all_rule = {
+	}
+}
+
+wsr_flavor_events_rule = {
+	default = wsr_flavor_events_disabled
+
+	wsr_flavor_events_disabled = {
+	}
+
+	wsr_flavor_events_enabled_low = {
+	}
+
+	wsr_flavor_events_enabled_medium = {
+	}
+
+	wsr_flavor_events_enabled_high = {
+	}
+}
+
+
+wsr_casualties_capital_lost_rule = {
+	default = wsr_casualties_capital_lost_enabled
+
+	wsr_casualties_capital_lost_disabled = { }
+	wsr_casualties_capital_lost_enabled = { }
+}
+
+wsr_casualties_modifier_player_rule = {
+	default = wsr_casualties_modifier_player_default
+
+	wsr_casualties_modifier_player_low = { }
+	wsr_casualties_modifier_player_default = { }
+	wsr_casualties_modifier_player_high = { }
+	wsr_casualties_modifier_player_very_high = { }
+}
+
+wsr_casualties_modifier_ai_rule = {
+	default = wsr_casualties_modifier_ai_default
+
+	wsr_casualties_modifier_ai_low = { }
+	wsr_casualties_modifier_ai_default = { }
+	wsr_casualties_modifier_ai_high = { }
+	wsr_casualties_modifier_ai_very_high = { }
+}
+
+wsr_stalemate_modifier_player_rule = {
+	default = wsr_stalemate_modifier_player_default
+
+	wsr_stalemate_modifier_player_low = { }
+	wsr_stalemate_modifier_player_default = { }
+	wsr_stalemate_modifier_player_high = { }
+	wsr_stalemate_modifier_player_very_high = { }
+}
+
+wsr_stalemate_modifier_ai_rule = {
+	default = wsr_stalemate_modifier_ai_default
+
+	wsr_stalemate_modifier_ai_low = { }
+	wsr_stalemate_modifier_ai_default = { }
+	wsr_stalemate_modifier_ai_high = { }
+	wsr_stalemate_modifier_ai_very_high = { }
+}

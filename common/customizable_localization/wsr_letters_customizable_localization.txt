@@ -1,0 +1,737 @@
+﻿wsr_letter = {
+    type = country
+    random_valid = yes
+    text = { localization_key = wsr_letter_1 }
+    text = { localization_key = wsr_letter_2 }
+    text = { localization_key = wsr_letter_3 }
+    text = { localization_key = wsr_letter_4 }
+    text = { localization_key = wsr_letter_5 }
+    text = { localization_key = wsr_letter_6 }
+    text = { localization_key = wsr_letter_7 }
+    text = { localization_key = wsr_letter_8 }
+    text = { localization_key = wsr_letter_9 }
+    text = { localization_key = wsr_letter_10 }
+}
+
+wsr_letter_receiver = {
+    type = country
+    random_valid = yes
+    text = { localization_key = wsr_receiver_1 }
+    text = { localization_key = wsr_receiver_2 }
+    text = { localization_key = wsr_receiver_3 }
+    text = { localization_key = wsr_receiver_4 }
+    text = { localization_key = wsr_receiver_5 }
+    text = { localization_key = wsr_receiver_6 }
+    text = { localization_key = wsr_receiver_7 }
+    text = { localization_key = wsr_receiver_8 }
+    text = { localization_key = wsr_receiver_9 }
+    text = { localization_key = wsr_receiver_10 }    
+}
+
+wsr_letter_intro = {
+    type = country
+    random_valid = yes
+    text = { localization_key = wsr_intro_1 }
+    text = { localization_key = wsr_intro_2 }
+    text = { localization_key = wsr_intro_3 }
+    text = { localization_key = wsr_intro_4 }
+    text = { localization_key = wsr_intro_5 }
+    text = { localization_key = wsr_intro_6 }
+    text = { localization_key = wsr_intro_7 }
+    text = { localization_key = wsr_intro_8 }
+    text = { localization_key = wsr_intro_9 }
+    text = { localization_key = wsr_intro_10 }    
+}
+
+wsr_letter_outro = {
+    type = country
+    random_valid = yes
+    text = { localization_key = wsr_outro_1 }
+    text = { localization_key = wsr_outro_2 }
+    text = { localization_key = wsr_outro_3 }
+    text = { localization_key = wsr_outro_4 }
+    text = { localization_key = wsr_outro_5 }
+    text = { localization_key = wsr_outro_6 }
+    text = { localization_key = wsr_outro_7 }
+    text = { localization_key = wsr_outro_8 }
+    text = { localization_key = wsr_outro_9 }
+    text = { localization_key = wsr_outro_10 }    
+}
+
+wsr_letter_tactics = {
+    type = country
+
+    text = { trigger = { has_technology_researched = trench_works} localization_key = wsr_tactics_trench}
+    text = { trigger = { not = { has_technology_researched = trench_works } } localization_key = wsr_tactics_early}
+}
+
+wsr_letter_early_tactics = {
+    type = country
+    random_valid = yes
+    text = { localization_key = wsr_overall_tactics_early_1 }
+    text = { localization_key = wsr_overall_tactics_early_2 }
+    text = { localization_key = wsr_overall_tactics_early_3 }
+    text = { localization_key = wsr_overall_tactics_early_4 }
+    text = { localization_key = wsr_overall_tactics_early_5 }
+    text = { localization_key = wsr_overall_tactics_early_6 }
+    text = { localization_key = wsr_overall_tactics_early_7 }
+    text = { localization_key = wsr_overall_tactics_early_8 }
+    text = { localization_key = wsr_overall_tactics_early_9 }
+    text = { localization_key = wsr_overall_tactics_early_10 }    
+}
+
+wsr_letter_trench_tactics = {
+    type = country
+    random_valid = yes
+    text = { localization_key = wsr_overall_tactics_trench_1 }
+    text = { localization_key = wsr_overall_tactics_trench_2 }
+    text = { localization_key = wsr_overall_tactics_trench_3 }
+    text = { localization_key = wsr_overall_tactics_trench_4 }
+    text = { localization_key = wsr_overall_tactics_trench_5 }
+    text = { localization_key = wsr_overall_tactics_trench_6 }
+    text = { localization_key = wsr_overall_tactics_trench_7 }
+    text = { localization_key = wsr_overall_tactics_trench_8 }
+    text = { localization_key = wsr_overall_tactics_trench_9 }
+    text = { localization_key = wsr_overall_tactics_trench_10 }    
+}
+
+wsr_letter_small_talk = {
+    type = country
+    random_valid = yes
+    text = { localization_key = wsr_small_talk_1 }
+    text = { localization_key = wsr_small_talk_2 }
+    text = { localization_key = wsr_small_talk_3 }
+    text = { localization_key = wsr_small_talk_4 }
+    text = { localization_key = wsr_small_talk_5 }
+    text = { localization_key = wsr_small_talk_6 }
+    text = { localization_key = wsr_small_talk_7 }
+    text = { localization_key = wsr_small_talk_8 }
+    text = { localization_key = wsr_small_talk_9 }
+    text = { localization_key = wsr_small_talk_10 }    
+}
+
+wsr_letter_small_talk_end = {
+    type = country
+    random_valid = yes
+    text = { localization_key = wsr_small_talk_end_1 }
+    text = { localization_key = wsr_small_talk_end_2 }
+    text = { localization_key = wsr_small_talk_end_3 }
+    text = { localization_key = wsr_small_talk_end_4 }
+    text = { localization_key = wsr_small_talk_end_5 }
+    text = { localization_key = wsr_small_talk_end_6 }
+    text = { localization_key = wsr_small_talk_end_7 }
+    text = { localization_key = wsr_small_talk_end_8 }
+    text = { localization_key = wsr_small_talk_end_9 }
+    text = { localization_key = wsr_small_talk_end_10 }    
+}
+
+
+wsr_gas_weapon_exists = {
+    type = country
+    
+    text = { 
+        trigger = { 
+            army_mobilization_option_fraction = {
+                target = mobilization_option:mobilization_option_chemical_weapons
+                value >= 0.5
+            }
+        }  
+        localization_key = wsr_gas_weapon_exist
+    }
+    text = { 
+        trigger = { 
+            not = {
+                army_mobilization_option_fraction = {
+                    target = mobilization_option:mobilization_option_chemical_weapons
+                    value >= 0.5
+                }
+            }
+        }  
+        localization_key = wsr_gas_weapon_null
+    }
+}
+
+wsr_gas_weapon = {
+    type = country
+    random_valid = yes
+    text = { localization_key = wsr_gas_weapon_1 }
+    text = { localization_key = wsr_gas_weapon_2 }
+    text = { localization_key = wsr_gas_weapon_3 }
+    text = { localization_key = wsr_gas_weapon_4 }
+    text = { localization_key = wsr_gas_weapon_5 }
+    text = { localization_key = wsr_gas_weapon_6 }
+    text = { localization_key = wsr_gas_weapon_7 }
+    text = { localization_key = wsr_gas_weapon_8 }
+    text = { localization_key = wsr_gas_weapon_9 }
+    text = { localization_key = wsr_gas_weapon_10 }    
+}
+
+wsr_machineguns_exists = {
+    type = country
+    
+    text = { 
+        trigger = { 
+            army_mobilization_option_fraction = {
+                target = mobilization_option:mobilization_option_machinegunners
+                value >= 0.5
+            }
+        }  
+        localization_key = wsr_machineguns_exist
+    }
+    text = { 
+        trigger = { 
+            not = {
+                army_mobilization_option_fraction = {
+                    target = mobilization_option:mobilization_option_machinegunners
+                    value >= 0.5
+                }
+            }
+        }  
+        localization_key = wsr_machineguns_null
+    }
+}
+
+wsr_machineguns = {
+    type = country
+    random_valid = yes
+    text = { localization_key = wsr_machineguns_1 }
+    text = { localization_key = wsr_machineguns_2 }
+    text = { localization_key = wsr_machineguns_3 }
+    text = { localization_key = wsr_machineguns_4 }
+    text = { localization_key = wsr_machineguns_5 }
+    text = { localization_key = wsr_machineguns_6 }
+    text = { localization_key = wsr_machineguns_7 }
+    text = { localization_key = wsr_machineguns_8 }
+    text = { localization_key = wsr_machineguns_9 }
+    text = { localization_key = wsr_machineguns_10 }    
+}
+
+wsr_planes_exists = {
+    type = country
+    
+    text = { 
+        trigger = { 
+            army_mobilization_option_fraction = {
+                target = mobilization_option:mobilization_option_aerial_recon
+                value >= 0.5
+            }
+        }  
+        localization_key = wsr_planes_exist
+    }
+    text = { 
+        trigger = { 
+            not = {
+                army_mobilization_option_fraction = {
+                    target = mobilization_option:mobilization_option_aerial_recon
+                    value >= 0.5
+                }
+            }
+        }  
+        localization_key = wsr_planes_null
+    }
+}
+
+wsr_planes = {
+    type = country
+    random_valid = yes
+    text = { localization_key = wsr_planes_1 }
+    text = { localization_key = wsr_planes_2 }
+    text = { localization_key = wsr_planes_3 }
+    text = { localization_key = wsr_planes_4 }
+    text = { localization_key = wsr_planes_5 }
+    text = { localization_key = wsr_planes_6 }
+    text = { localization_key = wsr_planes_7 }
+    text = { localization_key = wsr_planes_8 }
+    text = { localization_key = wsr_planes_9 }
+    text = { localization_key = wsr_planes_10 }    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+wsr_letter_bleak = {
+    type = country
+    random_valid = yes
+    text = { localization_key = wsr_bleak_letter_1 }
+    text = { localization_key = wsr_bleak_letter_2 }
+    text = { localization_key = wsr_bleak_letter_3 }
+    text = { localization_key = wsr_bleak_letter_4 }
+    text = { localization_key = wsr_bleak_letter_5 }
+    text = { localization_key = wsr_bleak_letter_6 }
+    text = { localization_key = wsr_bleak_letter_7 }
+    text = { localization_key = wsr_bleak_letter_8 }
+    text = { localization_key = wsr_bleak_letter_9 }
+    text = { localization_key = wsr_bleak_letter_10 }
+}
+
+wsr_letter_intro_bleak = {
+    type = country
+    random_valid = yes
+    text = { localization_key = wsr_bleak_intro_1 }
+    text = { localization_key = wsr_bleak_intro_2 }
+    text = { localization_key = wsr_bleak_intro_3 }
+    text = { localization_key = wsr_bleak_intro_4 }
+    text = { localization_key = wsr_bleak_intro_5 }
+    text = { localization_key = wsr_bleak_intro_6 }
+    text = { localization_key = wsr_bleak_intro_7 }
+    text = { localization_key = wsr_bleak_intro_8 }
+    text = { localization_key = wsr_bleak_intro_9 }
+    text = { localization_key = wsr_bleak_intro_10 }    
+}
+
+wsr_letter_outro_bleak = {
+    type = country
+    random_valid = yes
+    text = { localization_key = wsr_bleak_outro_1 }
+    text = { localization_key = wsr_bleak_outro_2 }
+    text = { localization_key = wsr_bleak_outro_3 }
+    text = { localization_key = wsr_bleak_outro_4 }
+    text = { localization_key = wsr_bleak_outro_5 }
+    text = { localization_key = wsr_bleak_outro_6 }
+    text = { localization_key = wsr_bleak_outro_7 }
+    text = { localization_key = wsr_bleak_outro_8 }
+    text = { localization_key = wsr_bleak_outro_9 }
+    text = { localization_key = wsr_bleak_outro_10 }    
+}
+
+wsr_letter_tactics_bleak = {
+    type = country
+    text = { trigger = { has_technology_researched = trench_works } localization_key = wsr_bleak_tactics_trench }
+    text = { trigger = { not = { has_technology_researched = trench_works } } localization_key = wsr_bleak_tactics_early }
+}
+
+wsr_letter_early_tactics_bleak = {
+    type = country
+    random_valid = yes
+    text = { localization_key = wsr_bleak_overall_tactics_early_1 }
+    text = { localization_key = wsr_bleak_overall_tactics_early_2 }
+    text = { localization_key = wsr_bleak_overall_tactics_early_3 }
+    text = { localization_key = wsr_bleak_overall_tactics_early_4 }
+    text = { localization_key = wsr_bleak_overall_tactics_early_5 }
+    text = { localization_key = wsr_bleak_overall_tactics_early_6 }
+    text = { localization_key = wsr_bleak_overall_tactics_early_7 }
+    text = { localization_key = wsr_bleak_overall_tactics_early_8 }
+    text = { localization_key = wsr_bleak_overall_tactics_early_9 }
+    text = { localization_key = wsr_bleak_overall_tactics_early_10 }    
+}
+
+wsr_letter_trench_tactics_bleak = {
+    type = country
+    random_valid = yes
+    text = { localization_key = wsr_bleak_overall_tactics_trench_1 }
+    text = { localization_key = wsr_bleak_overall_tactics_trench_2 }
+    text = { localization_key = wsr_bleak_overall_tactics_trench_3 }
+    text = { localization_key = wsr_bleak_overall_tactics_trench_4 }
+    text = { localization_key = wsr_bleak_overall_tactics_trench_5 }
+    text = { localization_key = wsr_bleak_overall_tactics_trench_6 }
+    text = { localization_key = wsr_bleak_overall_tactics_trench_7 }
+    text = { localization_key = wsr_bleak_overall_tactics_trench_8 }
+    text = { localization_key = wsr_bleak_overall_tactics_trench_9 }
+    text = { localization_key = wsr_bleak_overall_tactics_trench_10 }    
+}
+
+wsr_letter_small_talk_bleak = {
+    type = country
+    random_valid = yes
+    text = { localization_key = wsr_bleak_small_talk_1 }
+    text = { localization_key = wsr_bleak_small_talk_2 }
+    text = { localization_key = wsr_bleak_small_talk_3 }
+    text = { localization_key = wsr_bleak_small_talk_4 }
+    text = { localization_key = wsr_bleak_small_talk_5 }
+    text = { localization_key = wsr_bleak_small_talk_6 }
+    text = { localization_key = wsr_bleak_small_talk_7 }
+    text = { localization_key = wsr_bleak_small_talk_8 }
+    text = { localization_key = wsr_bleak_small_talk_9 }
+    text = { localization_key = wsr_bleak_small_talk_10 }    
+}
+
+wsr_letter_small_talk_end_bleak = {
+    type = country
+    random_valid = yes
+    text = { localization_key = wsr_bleak_small_talk_end_1 }
+    text = { localization_key = wsr_bleak_small_talk_end_2 }
+    text = { localization_key = wsr_bleak_small_talk_end_3 }
+    text = { localization_key = wsr_bleak_small_talk_end_4 }
+    text = { localization_key = wsr_bleak_small_talk_end_5 }
+    text = { localization_key = wsr_bleak_small_talk_end_6 }
+    text = { localization_key = wsr_bleak_small_talk_end_7 }
+    text = { localization_key = wsr_bleak_small_talk_end_8 }
+    text = { localization_key = wsr_bleak_small_talk_end_9 }
+    text = { localization_key = wsr_bleak_small_talk_end_10 }    
+}
+
+wsr_gas_weapon_exists_bleak = {
+    type = country
+    text = { 
+        trigger = { 
+            army_mobilization_option_fraction = {
+                target = mobilization_option:mobilization_option_chemical_weapons
+                value >= 0.5
+            }
+        }  
+        localization_key = wsr_gas_weapon_bleak_exist
+    }
+    text = { 
+        trigger = { 
+            not = {
+                army_mobilization_option_fraction = {
+                    target = mobilization_option:mobilization_option_chemical_weapons
+                    value >= 0.5
+                }
+            }
+        }  
+        localization_key = wsr_gas_weapon_null
+    }
+}
+
+wsr_gas_weapon_bleak = {
+    type = country
+    random_valid = yes
+    text = { localization_key = wsr_bleak_gas_weapon_1 }
+    text = { localization_key = wsr_bleak_gas_weapon_2 }
+    text = { localization_key = wsr_bleak_gas_weapon_3 }
+    text = { localization_key = wsr_bleak_gas_weapon_4 }
+    text = { localization_key = wsr_bleak_gas_weapon_5 }
+    text = { localization_key = wsr_bleak_gas_weapon_6 }
+    text = { localization_key = wsr_bleak_gas_weapon_7 }
+    text = { localization_key = wsr_bleak_gas_weapon_8 }
+    text = { localization_key = wsr_bleak_gas_weapon_9 }
+    text = { localization_key = wsr_bleak_gas_weapon_10 }    
+}
+
+wsr_machineguns_exists_bleak = {
+    type = country
+    text = { 
+        trigger = { 
+            army_mobilization_option_fraction = {
+                target = mobilization_option:mobilization_option_machinegunners
+                value >= 0.5
+            }
+        }  
+        localization_key = wsr_machineguns_bleak_exist
+    }
+    text = { 
+        trigger = { 
+            not = {
+                army_mobilization_option_fraction = {
+                    target = mobilization_option:mobilization_option_machinegunners
+                    value >= 0.5
+                }
+            }
+        }  
+        localization_key = wsr_machineguns_null
+    }
+}
+
+wsr_machineguns_bleak = {
+    type = country
+    random_valid = yes
+    text = { localization_key = wsr_bleak_machineguns_1 }
+    text = { localization_key = wsr_bleak_machineguns_2 }
+    text = { localization_key = wsr_bleak_machineguns_3 }
+    text = { localization_key = wsr_bleak_machineguns_4 }
+    text = { localization_key = wsr_bleak_machineguns_5 }
+    text = { localization_key = wsr_bleak_machineguns_6 }
+    text = { localization_key = wsr_bleak_machineguns_7 }
+    text = { localization_key = wsr_bleak_machineguns_8 }
+    text = { localization_key = wsr_bleak_machineguns_9 }
+    text = { localization_key = wsr_bleak_machineguns_10 }    
+}
+
+wsr_planes_exists_bleak = {
+    type = country
+    text = { 
+        trigger = { 
+            army_mobilization_option_fraction = {
+                target = mobilization_option:mobilization_option_aerial_recon
+                value >= 0.5
+            }
+        }  
+        localization_key = wsr_planes_bleak_exist
+    }
+    text = { 
+        trigger = { 
+            not = {
+                army_mobilization_option_fraction = {
+                    target = mobilization_option:mobilization_option_aerial_recon
+                    value >= 0.5
+                }
+            }
+        }  
+        localization_key = wsr_planes_null
+    }
+}
+
+wsr_planes_bleak = {
+    type = country
+    random_valid = yes
+    text = { localization_key = wsr_bleak_planes_1 }
+    text = { localization_key = wsr_bleak_planes_2 }
+    text = { localization_key = wsr_bleak_planes_3 }
+    text = { localization_key = wsr_bleak_planes_4 }
+    text = { localization_key = wsr_bleak_planes_5 }
+    text = { localization_key = wsr_bleak_planes_6 }
+    text = { localization_key = wsr_bleak_planes_7 }
+    text = { localization_key = wsr_bleak_planes_8 }
+    text = { localization_key = wsr_bleak_planes_9 }
+    text = { localization_key = wsr_bleak_planes_10 }    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+wsr_letter_neutral = {
+    type = country
+    random_valid = yes
+    text = { localization_key = wsr_neutral_letter_1 }
+    text = { localization_key = wsr_neutral_letter_2 }
+    text = { localization_key = wsr_neutral_letter_3 }
+    text = { localization_key = wsr_neutral_letter_4 }
+    text = { localization_key = wsr_neutral_letter_5 }
+    text = { localization_key = wsr_neutral_letter_6 }
+    text = { localization_key = wsr_neutral_letter_7 }
+    text = { localization_key = wsr_neutral_letter_8 }
+    text = { localization_key = wsr_neutral_letter_9 }
+    text = { localization_key = wsr_neutral_letter_10 }
+}
+
+wsr_letter_intro_neutral = {
+    type = country
+    random_valid = yes
+    text = { localization_key = wsr_neutral_intro_1 }
+    text = { localization_key = wsr_neutral_intro_2 }
+    text = { localization_key = wsr_neutral_intro_3 }
+    text = { localization_key = wsr_neutral_intro_4 }
+    text = { localization_key = wsr_neutral_intro_5 }
+    text = { localization_key = wsr_neutral_intro_6 }
+    text = { localization_key = wsr_neutral_intro_7 }
+    text = { localization_key = wsr_neutral_intro_8 }
+    text = { localization_key = wsr_neutral_intro_9 }
+    text = { localization_key = wsr_neutral_intro_10 }    
+}
+
+wsr_letter_outro_neutral = {
+    type = country
+    random_valid = yes
+    text = { localization_key = wsr_neutral_outro_1 }
+    text = { localization_key = wsr_neutral_outro_2 }
+    text = { localization_key = wsr_neutral_outro_3 }
+    text = { localization_key = wsr_neutral_outro_4 }
+    text = { localization_key = wsr_neutral_outro_5 }
+    text = { localization_key = wsr_neutral_outro_6 }
+    text = { localization_key = wsr_neutral_outro_7 }
+    text = { localization_key = wsr_neutral_outro_8 }
+    text = { localization_key = wsr_neutral_outro_9 }
+    text = { localization_key = wsr_neutral_outro_10 }    
+}
+
+wsr_letter_tactics_neutral = {
+    type = country
+    text = { trigger = { has_technology_researched = trench_works } localization_key = wsr_neutral_tactics_trench }
+    text = { trigger = { not = { has_technology_researched = trench_works } } localization_key = wsr_neutral_tactics_early }
+}
+
+wsr_letter_early_tactics_neutral = {
+    type = country
+    random_valid = yes
+    text = { localization_key = wsr_neutral_overall_tactics_early_1 }
+    text = { localization_key = wsr_neutral_overall_tactics_early_2 }
+    text = { localization_key = wsr_neutral_overall_tactics_early_3 }
+    text = { localization_key = wsr_neutral_overall_tactics_early_4 }
+    text = { localization_key = wsr_neutral_overall_tactics_early_5 }
+    text = { localization_key = wsr_neutral_overall_tactics_early_6 }
+    text = { localization_key = wsr_neutral_overall_tactics_early_7 }
+    text = { localization_key = wsr_neutral_overall_tactics_early_8 }
+    text = { localization_key = wsr_neutral_overall_tactics_early_9 }
+    text = { localization_key = wsr_neutral_overall_tactics_early_10 }    
+}
+
+wsr_letter_trench_tactics_neutral = {
+    type = country
+    random_valid = yes
+    text = { localization_key = wsr_neutral_overall_tactics_trench_1 }
+    text = { localization_key = wsr_neutral_overall_tactics_trench_2 }
+    text = { localization_key = wsr_neutral_overall_tactics_trench_3 }
+    text = { localization_key = wsr_neutral_overall_tactics_trench_4 }
+    text = { localization_key = wsr_neutral_overall_tactics_trench_5 }
+    text = { localization_key = wsr_neutral_overall_tactics_trench_6 }
+    text = { localization_key = wsr_neutral_overall_tactics_trench_7 }
+    text = { localization_key = wsr_neutral_overall_tactics_trench_8 }
+    text = { localization_key = wsr_neutral_overall_tactics_trench_9 }
+    text = { localization_key = wsr_neutral_overall_tactics_trench_10 }    
+}
+
+wsr_letter_small_talk_neutral = {
+    type = country
+    random_valid = yes
+    text = { localization_key = wsr_neutral_small_talk_1 }
+    text = { localization_key = wsr_neutral_small_talk_2 }
+    text = { localization_key = wsr_neutral_small_talk_3 }
+    text = { localization_key = wsr_neutral_small_talk_4 }
+    text = { localization_key = wsr_neutral_small_talk_5 }
+    text = { localization_key = wsr_neutral_small_talk_6 }
+    text = { localization_key = wsr_neutral_small_talk_7 }
+    text = { localization_key = wsr_neutral_small_talk_8 }
+    text = { localization_key = wsr_neutral_small_talk_9 }
+    text = { localization_key = wsr_neutral_small_talk_10 }    
+}
+
+wsr_letter_small_talk_end_neutral = {
+    type = country
+    random_valid = yes
+    text = { localization_key = wsr_neutral_small_talk_end_1 }
+    text = { localization_key = wsr_neutral_small_talk_end_2 }
+    text = { localization_key = wsr_neutral_small_talk_end_3 }
+    text = { localization_key = wsr_neutral_small_talk_end_4 }
+    text = { localization_key = wsr_neutral_small_talk_end_5 }
+    text = { localization_key = wsr_neutral_small_talk_end_6 }
+    text = { localization_key = wsr_neutral_small_talk_end_7 }
+    text = { localization_key = wsr_neutral_small_talk_end_8 }
+    text = { localization_key = wsr_neutral_small_talk_end_9 }
+    text = { localization_key = wsr_neutral_small_talk_end_10 }    
+}
+
+wsr_gas_weapon_exists_neutral = {
+    type = country
+    text = { 
+        trigger = { 
+            army_mobilization_option_fraction = {
+                target = mobilization_option:mobilization_option_chemical_weapons
+                value >= 0.5
+            }
+        }  
+        localization_key = wsr_gas_weapon_neutral_exist
+    }
+    text = { 
+        trigger = { 
+            not = {
+                army_mobilization_option_fraction = {
+                    target = mobilization_option:mobilization_option_chemical_weapons
+                    value >= 0.5
+                }
+            }
+        }  
+        localization_key = wsr_gas_weapon_null
+    }
+}
+
+wsr_gas_weapon_neutral = {
+    type = country
+    random_valid = yes
+    text = { localization_key = wsr_neutral_gas_weapon_1 }
+    text = { localization_key = wsr_neutral_gas_weapon_2 }
+    text = { localization_key = wsr_neutral_gas_weapon_3 }
+    text = { localization_key = wsr_neutral_gas_weapon_4 }
+    text = { localization_key = wsr_neutral_gas_weapon_5 }
+    text = { localization_key = wsr_neutral_gas_weapon_6 }
+    text = { localization_key = wsr_neutral_gas_weapon_7 }
+    text = { localization_key = wsr_neutral_gas_weapon_8 }
+    text = { localization_key = wsr_neutral_gas_weapon_9 }
+    text = { localization_key = wsr_neutral_gas_weapon_10 }    
+}
+
+wsr_machineguns_exists_neutral = {
+    type = country
+    text = { 
+        trigger = { 
+            army_mobilization_option_fraction = {
+                target = mobilization_option:mobilization_option_machinegunners
+                value >= 0.5
+            }
+        }  
+        localization_key = wsr_machineguns_neutral_exist
+    }
+    text = { 
+        trigger = { 
+            not = {
+                army_mobilization_option_fraction = {
+                    target = mobilization_option:mobilization_option_machinegunners
+                    value >= 0.5
+                }
+            }
+        }  
+        localization_key = wsr_machineguns_null
+    }
+}
+
+wsr_machineguns_neutral = {
+    type = country
+    random_valid = yes
+    text = { localization_key = wsr_neutral_machineguns_1 }
+    text = { localization_key = wsr_neutral_machineguns_2 }
+    text = { localization_key = wsr_neutral_machineguns_3 }
+    text = { localization_key = wsr_neutral_machineguns_4 }
+    text = { localization_key = wsr_neutral_machineguns_5 }
+    text = { localization_key = wsr_neutral_machineguns_6 }
+    text = { localization_key = wsr_neutral_machineguns_7 }
+    text = { localization_key = wsr_neutral_machineguns_8 }
+    text = { localization_key = wsr_neutral_machineguns_9 }
+    text = { localization_key = wsr_neutral_machineguns_10 }    
+}
+
+wsr_planes_exists_neutral = {
+    type = country
+    text = { 
+        trigger = { 
+            army_mobilization_option_fraction = {
+                target = mobilization_option:mobilization_option_aerial_recon
+                value >= 0.5
+            }
+        }  
+        localization_key = wsr_planes_neutral_exist
+    }
+    text = { 
+        trigger = { 
+            not = {
+                army_mobilization_option_fraction = {
+                    target = mobilization_option:mobilization_option_aerial_recon
+                    value >= 0.5
+                }
+            }
+        }  
+        localization_key = wsr_planes_null
+    }
+}
+
+wsr_planes_neutral = {
+    type = country
+    random_valid = yes
+    text = { localization_key = wsr_neutral_planes_1 }
+    text = { localization_key = wsr_neutral_planes_2 }
+    text = { localization_key = wsr_neutral_planes_3 }
+    text = { localization_key = wsr_neutral_planes_4 }
+    text = { localization_key = wsr_neutral_planes_5 }
+    text = { localization_key = wsr_neutral_planes_6 }
+    text = { localization_key = wsr_neutral_planes_7 }
+    text = { localization_key = wsr_neutral_planes_8 }
+    text = { localization_key = wsr_neutral_planes_9 }
+    text = { localization_key = wsr_neutral_planes_10 }    
+}

@@ -1,0 +1,1377 @@
+﻿namespace = war_support_very_good 
+
+war_support_very_good.1 = {
+	placement = root
+
+	title = war_support_very_good.1.t
+	desc = war_support_very_good.1.desc
+	flavor = war_support_very_good.1.f
+
+	duration = 1
+
+	event_image = {
+		video = "gfx/event_pictures/middleeast_battlefield_trenches.bk2"
+	}
+
+	option = {
+		name = war_support_very_good.1.a
+		default_option = yes
+		scope:war_from_struct = {
+			add_war_war_support = {
+				target = ROOT
+				value = 5
+			}			
+		}
+		add_modifier = { name = war_support_letters_home months = 2 }
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_bad = yes } add = 1000 }
+		}
+	}
+
+	option = {
+		name = war_support_very_good.1.b
+		default_option = yes
+		scope:war_from_struct = {
+			add_war_war_support = {
+				target = ROOT
+				value = 10
+			}			
+		}
+		add_modifier = { name = war_support_letters_wide months = 6 }
+		add_treasury = wsr_money_amount_multiplier_small
+		add_loyalists = {
+			value = 0.02
+			pop_type = soldiers
+		}
+		add_loyalists = {
+			value = 0.01
+			pop_type = officers
+		}
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_normal = yes } add = 100 }
+			modifier = { trigger = { wsr_check_war_support_bad = yes } add = 50 }
+		}
+	}
+}
+
+war_support_very_good.2 = {
+	placement = root
+
+	title = war_support_very_good.2.t
+	desc = war_support_very_good.2.desc
+	flavor = war_support_very_good.2.f
+
+	duration = 1
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_rich_and_poor.bk2"
+	}
+
+	option = {
+		name = war_support_very_good.2.a
+		default_option = yes
+		scope:war_from_struct = {
+			add_war_war_support = {
+				target = ROOT
+				value = 5
+			}			
+		}
+		add_modifier = { name = war_support_copper_patriotism months = 2 }
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_bad = yes } add = 1000 }
+		}
+	}
+
+	option = {
+		name = war_support_very_good.2.b
+		scope:war_from_struct = {
+			add_war_war_support = {
+				target = ROOT
+				value = 5
+			}			
+		}
+		add_modifier = { name = war_support_copper_patriotism months = 5 }
+		add_treasury = wsr_money_amount_multiplier_very_small
+
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_normal = yes } add = 100 }
+			modifier = { trigger = { wsr_check_war_support_bad = yes } add = 50 }
+		}
+	}
+}
+
+war_support_very_good.3 = {
+	placement = root
+
+	title = war_support_very_good.3.t
+	desc = war_support_very_good.3.desc
+	flavor = war_support_very_good.3.f
+
+	duration = 1
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_art_gallery.bk2"
+	}
+
+	option = {
+		name = war_support_very_good.3.a
+		default_option = yes
+		scope:war_from_struct = {
+			add_war_war_support = {
+				target = ROOT
+				value = 10
+			}			
+		}
+		add_modifier = { name = war_support_artists months = 2 }
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_bad = yes } add = 1000 }
+		}
+	}
+
+	option = {
+		name = war_support_very_good.3.b
+		scope:war_from_struct = {
+			add_war_war_support = {
+				target = ROOT
+				value = 10
+			}			
+		}
+		add_modifier = { name = war_support_artists months = 4 }
+		add_treasury = wsr_money_amount_multiplier_very_small
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_normal = yes } add = 100 }
+			modifier = { trigger = { wsr_check_war_support_bad = yes } add = 50 }
+		}
+	}
+}
+
+war_support_very_good.4 = {
+	placement = root
+
+	title = war_support_very_good.4.t
+	desc = war_support_very_good.4.desc
+	flavor = war_support_very_good.4.f
+
+	duration = 1
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_russian_serfs.bk2"
+	}
+
+	option = {
+		name = war_support_very_good.4.a
+		default_option = yes
+		scope:war_from_struct = {
+			add_war_war_support = {
+				target = ROOT
+				value = 10
+			}			
+		}
+		add_modifier = { name = war_support_farmers months = 2 }
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_bad = yes } add = 1000 }
+		}
+	}
+
+	option = {
+		name = war_support_very_good.4.b
+		scope:war_from_struct = {
+			add_war_war_support = {
+				target = ROOT
+				value = 10
+			}			
+		}
+		add_modifier = { name = war_support_farmers months = 4 }
+		add_treasury = wsr_money_amount_multiplier_very_small
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_normal = yes } add = 100 }
+			modifier = { trigger = { wsr_check_war_support_bad = yes } add = 50 }
+		}
+	}
+}
+
+war_support_very_good.5 = {
+	placement = root
+
+	title = war_support_very_good.5.t
+	desc = war_support_very_good.5.desc
+	flavor = war_support_very_good.5.f
+
+	duration = 1
+
+	event_image = {
+		video = "gfx/event_pictures/southamerica_christianity.bk2"
+	}
+
+	option = {
+		name = war_support_very_good.5.a
+		default_option = yes
+		scope:war_from_struct = {
+			add_war_war_support = {
+				target = ROOT
+				value = 10
+			}			
+		}
+		add_loyalists = { value = 0.02 interest_group = ig:ig_devout }
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_bad = yes } add = 1000 }
+		}
+	}
+
+	option = {
+		name = war_support_very_good.5.b
+		scope:war_from_struct = {
+			add_war_war_support = {
+				target = ROOT
+				value = 10
+			}			
+		}
+		add_loyalists = { value = 0.05 interest_group = ig:ig_devout }
+		add_modifier = { name = war_support_prayers months = 5 }
+		add_treasury = wsr_money_amount_multiplier_small
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_normal = yes } add = 100 }
+			modifier = { trigger = { wsr_check_war_support_bad = yes } add = 50 }
+		}
+	}
+}
+
+war_support_very_good.6 = {
+	placement = root
+
+	title = war_support_very_good.6.t
+	desc = war_support_very_good.6.desc
+	flavor = war_support_very_good.6.f
+
+	duration = 1
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_before_the_battle.bk2"
+	}
+
+	option = {
+		name = war_support_very_good.6.a
+		default_option = yes
+		scope:war_from_struct = {
+			add_war_war_support = {
+				target = ROOT
+				value = 10
+			}			
+		}
+		add_modifier = { name = war_support_stories months = 2 }
+		add_loyalists = {
+			value = 0.03
+			pop_type = soldiers
+		}
+		add_loyalists = {
+			value = 0.01
+			pop_type = officers
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				trigger = {
+					wsr_check_debt_bad = yes
+				}
+				add = 2000
+			}
+		}
+	}
+
+	option = {
+		name = war_support_very_good.6.b
+		scope:war_from_struct = {
+			add_war_war_support = {
+				target = ROOT
+				value = 10
+			}			
+		}
+		if = {
+			limit = { morgenrote_is_active = yes}
+			add_modifier = { name = war_support_stories_mgn months = 6  }
+		}
+		else = { add_modifier = { name = war_support_stories months = 6 } }
+		add_treasury = wsr_money_amount_multiplier_very_small
+		add_loyalists = {
+			value = 0.05
+			pop_type = soldiers
+		}
+		add_loyalists = {
+			value = 0.03
+			pop_type = officers
+		}
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_normal = yes } add = 100 }
+			modifier = { trigger = { wsr_check_war_support_bad = yes } add = 50 }
+			modifier = { trigger = { wsr_check_radicals_soldiers = yes } add = 100 }
+			modifier = { trigger = { wsr_check_radicals_officers = yes } add = 1000 }
+		}
+	}
+}
+
+namespace = war_support_good
+
+war_support_good.1 = {
+	placement = root
+
+	title = war_support_good.1.t
+	desc = war_support_good.1.desc
+	flavor = war_support_good.1.f
+
+	duration = 1
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	option = {
+		name = war_support_good.1.a
+		default_option = yes
+		scope:war_from_struct = {
+			add_war_war_support = {
+				target = ROOT
+				value = 5
+			}			
+		}
+	}
+
+	option = {
+		name = war_support_good.1.b
+		default_option = yes
+		scope:war_from_struct = {
+			add_war_war_support = {
+				target = ROOT
+				value = 5
+			}			
+		}
+		add_modifier = { name = war_support_proud_send days = 180 }
+		add_treasury = wsr_money_amount_multiplier_very_small
+	}
+}
+
+war_support_good.2 = {
+	placement = root
+
+	title = war_support_good.2.t
+	desc = war_support_good.2.desc
+	flavor = war_support_good.2.f
+
+	duration = 1
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	option = {
+		name = war_support_good.2.a
+		default_option = yes
+		scope:war_from_struct = {
+			add_war_war_support = {
+				target = ROOT
+				value = 10
+			}			
+		}
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_bad = yes } add = 1000 }
+		}
+	}
+
+	option = {
+		name = war_support_good.2.b
+		default_option = yes
+		scope:war_from_struct = {
+			add_war_war_support = {
+				target = ROOT
+				value = 5
+			}			
+		}
+		add_modifier = { name = war_support_proud_send days = 180 }
+		add_treasury = wsr_money_amount_multiplier_very_small
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_normal = yes } add = 100 }
+			modifier = { trigger = { wsr_check_war_support_bad = yes } add = 50 }
+		}
+	}
+}
+
+war_support_good.3 = {
+	placement = root
+
+	title = war_support_good.3.t
+	desc = war_support_good.3.desc
+	flavor = war_support_good.3.f
+
+	duration = 1
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	option = {
+		name = war_support_good.3.a
+		default_option = yes
+		scope:war_from_struct = {
+			add_war_war_support = {
+				target = ROOT
+				value = 5
+			}			
+		}
+		add_modifier = { name = war_support_volunteer_drive days = 90 }
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_bad = yes } add = 1000 }
+		}
+	}
+
+	option = {
+		name = war_support_good.3.b
+		default_option = yes
+		scope:war_from_struct = {
+			add_war_war_support = {
+				target = ROOT
+				value = 5
+			}			
+		}
+		add_modifier = { name = war_support_volunteer_drive days = 180 }
+		add_treasury = wsr_money_amount_multiplier_very_small
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_normal = yes } add = 100 }
+			modifier = { trigger = { wsr_check_war_support_bad = yes } add = 50 }
+		}
+	}
+}
+
+war_support_good.4 = {
+	placement = root
+
+	title = war_support_good.4.t
+	desc = war_support_good.4.desc
+	flavor = war_support_good.4.f
+
+	duration = 1
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	option = {
+		name = war_support_good.4.a
+		default_option = yes
+		add_treasury = { value = wsr_money_amount_multiplier_very_small multiply = -1 }
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_bad = yes } add = 1000 }
+		}
+	}
+
+	option = {
+		name = war_support_good.4.b
+		default_option = yes
+		add_loyalists = {
+			value = 0.02
+			pop_type = soldiers
+		}
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_normal = yes } add = 100 }
+			modifier = { trigger = { wsr_check_war_support_bad = yes } add = 50 }
+			modifier = { trigger = { wsr_check_radicals_soldiers = yes } add = 150 }
+		}
+	}
+}
+
+war_support_good.5 = {
+	placement = root
+
+	title = war_support_good.5.t
+	desc = war_support_good.5.desc
+	flavor = war_support_good.5.f
+
+	duration = 1
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_sick_in_hospital.bk2"
+	}
+
+	option = {
+		name = war_support_good.5.a
+		default_option = yes
+		scope:war_from_struct = {
+			add_war_war_support = {
+				target = ROOT
+				value = 5
+			}			
+		}
+		add_loyalists = {
+			value = 0.02
+			pop_type = soldiers
+		}
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_bad = yes } add = 1000 }
+		}
+	}
+
+	option = {
+		name = war_support_good.5.b
+		default_option = yes
+		add_treasury = wsr_money_amount_multiplier_very_small
+		scope:war_from_struct = {
+			add_war_war_support = {
+				target = ROOT
+				value = 10
+			}			
+		}
+		add_loyalists = {
+			value = 0.05
+			pop_type = soldiers
+		}
+		add_loyalists = {
+			value = 0.03
+			pop_type = officers
+		}
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_normal = yes } add = 100 }
+			modifier = { trigger = { wsr_check_war_support_bad = yes } add = 50 }
+			modifier = { trigger = { wsr_check_radicals_soldiers = yes } add = 100 }
+			modifier = { trigger = { wsr_check_radicals_officers = yes } add = 1000 }
+		}
+	}
+}
+
+war_support_good.6 = {
+	placement = root
+
+	title = war_support_good.6.t
+	desc = war_support_good.6.desc
+	flavor = war_support_good.6.f
+
+	duration = 1
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_rich_and_poor.bk2"
+	}
+
+	option = {
+		name = war_support_good.6.a
+		default_option = yes
+		add_loyalists = {
+			value = 0.01
+		}
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_bad = yes } add = 1000 }
+		}
+	}
+
+	option = {
+		name = war_support_good.6.b
+		default_option = yes
+		add_loyalists = {
+			value = 0.03
+		}
+		add_loyalists = {
+			value = 0.03
+			pop_type = soldiers
+		}
+		add_treasury = wsr_money_amount_multiplier_small
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_normal = yes } add = 100 }
+			modifier = { trigger = { wsr_check_war_support_bad = yes } add = 50 }
+			modifier = { trigger = { wsr_check_radicals_soldiers = yes } add = 100 }
+			modifier = { trigger = { wsr_check_radicals_all = yes } add = 1000 }
+		}
+	}
+}
+
+war_support_good.7 = {
+	placement = root
+
+	title = war_support_good.7.t
+	desc = war_support_good.7.desc
+	flavor = war_support_good.7.f
+
+	duration = 1
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_art_gallery.bk2"
+	}
+
+	option = {
+		name = war_support_good.7.a
+		default_option = yes
+		scope:war_from_struct = {
+			add_war_war_support = {
+				target = ROOT
+				value = 5
+			}			
+		}
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_bad = yes } add = 1000 }
+		}
+	}
+
+	option = {
+		name = war_support_good.7.b
+		default_option = yes
+		scope:war_from_struct = {
+			add_war_war_support = {
+				target = ROOT
+				value = 5
+			}
+		}
+		add_loyalists = {
+			value = 0.03
+			pop_type = academics
+		}
+		add_treasury = wsr_money_amount_multiplier_very_small
+		add_modifier = { name = war_support_poetry days = 120 }
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_normal = yes } add = 100 }
+			modifier = { trigger = { wsr_check_war_support_bad = yes } add = 50 }
+		}
+	}
+}
+
+namespace = war_support_bad
+
+war_support_bad.1 = {
+	placement = root
+
+	title = war_support_bad.1.t
+	desc = war_support_bad.1.desc
+	flavor = war_support_bad.1.f
+
+	duration = 1
+
+
+
+	event_image = {
+		video = "gfx/event_pictures/middleeast_battlefield_trenches.bk2"
+	}
+
+	option = {
+		name = war_support_bad.1.a
+		default_option = yes
+		scope:war_from_struct = {
+			add_war_war_support = {
+				target = ROOT
+				value = 5
+			}			
+		}
+
+		add_modifier = {
+			name = war_support_leave
+			days = 60
+		}
+		ai_chance = {
+			base = -50
+			modifier = { trigger = { wsr_check_war_support_bad = yes } add = 100 }
+		}
+
+	}
+
+	option = {
+		name = war_support_bad.1.b
+		scope:war_from_struct = {
+			add_war_war_support = {
+				target = ROOT
+				value = -5
+			}			
+		}
+
+		manage_mutinies = { days = 90 }
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_mutinies_bad = no } add = 50 }
+		}
+	}
+}
+
+war_support_bad.2 = {
+	placement = root
+
+	title = war_support_bad.2.t
+	desc = war_support_bad.2.desc
+	flavor = war_support_bad.2.f
+
+	duration = 1
+
+
+
+	event_image = {
+		video = "gfx/event_pictures/middleeast_battlefield_trenches.bk2"
+	}
+
+	option = {
+		name = war_support_bad.2.a
+		default_option = yes
+		scope:war_from_struct = {
+			add_war_war_support = {
+				target = ROOT
+				value = 10
+			}			
+		}
+
+		add_modifier = {
+			name = war_support_spoils
+			days = 90
+		}
+
+		add_loyalists = {
+			value = 0.05
+			pop_type = soldiers
+		}
+
+		change_infamy = 10
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_radicals_soldiers = yes } add = 100 }
+		}
+	}
+
+	option = {
+		name = war_support_bad.2.b
+		scope:war_from_struct = {
+			add_war_war_support = {
+				target = ROOT
+				value = -5
+			}			
+		}
+
+		add_radicals = {
+			value = 0.05
+			pop_type = soldiers
+		}
+	}
+}
+
+war_support_bad.3 = {
+	placement = root
+
+	title = war_support_bad.3.t
+	desc = war_support_bad.3.desc
+	flavor = war_support_bad.3.f
+
+	duration = 1
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_rich_and_poor.bk2"
+	}
+
+	option = {
+		name = war_support_bad.3.a
+		default_option = yes
+		add_treasury = wsr_money_amount_multiplier_small
+		add_loyalists = {
+			value = 0.01
+			pop_type = soldiers
+		}
+		add_loyalists = {
+			value = 0.01
+			pop_type = officers
+		}
+	}
+
+	option = {
+		name = war_support_bad.3.b
+		add_radicals = {
+			value = 0.02
+		}
+		scope:war_from_struct = {
+			add_war_war_support = {
+				target = ROOT
+				value = -5
+			}			
+		}
+	}
+}
+
+war_support_bad.4 = {
+	placement = root
+
+	title = war_support_bad.4.t
+	desc = war_support_bad.4.desc
+	flavor = war_support_bad.4.f
+
+	duration = 1
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_before_the_battle.bk2"
+	}
+
+	option = {
+		name = war_support_bad.4.a
+		default_option = yes
+		manage_mutinies = { days = 30 }
+		add_modifier = {
+			name = war_support_talks
+			months = 6
+			is_decaying = yes
+		}
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_radicals_soldiers = yes } add = 100 }
+			modifier = { trigger = { root.government_legitimacy >= 60 } add = 100 }
+		}
+	}
+
+	option = {
+		name = war_support_bad.4.b
+		scope:war_from_struct = {
+			add_war_war_support = {
+				target = ROOT
+				value = -5
+			}			
+		}
+		manage_mutinies = { days = 30 }
+		add_radicals = {
+			pop_type = soldiers
+			value = 0.02
+		}
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_radicals_soldiers = no } add = 150 }
+		}
+	}
+
+	option = {
+		name = war_support_bad.4.c
+		manage_mutinies = { days = 90 }
+		ai_chance = {
+			base = 150
+			modifier = { trigger = { wsr_check_mutinies_bad = no } add = 100 }
+		}
+	}
+}
+
+war_support_bad.5 = {
+    placement = root
+
+    title = war_support_bad.5.t
+    desc = war_support_bad.5.desc
+    flavor = war_support_bad.5.f
+
+	duration = 1
+
+    cooldown = { days = 120 }
+
+    event_image = { video = "gfx/event_pictures/middleeast_battlefield_trenches.bk2" }
+
+    option = {
+        name = war_support_bad.5.a
+        default_option = yes
+		add_treasury = wsr_money_amount_multiplier_small
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_normal = yes } add = 100 }
+			modifier = { trigger = { wsr_check_war_support_bad = yes } add = 50 }
+		}
+    }
+    option = {
+        name = war_support_bad.5.b
+        add_treasury = wsr_money_amount_multiplier_medium
+		scope:war_from_struct = {
+			add_war_war_support = {
+				target = ROOT
+				value = 5
+			}			
+		}
+		add_modifier = { name = war_support_pay months = 9 }
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_debt_normal = yes } add = 100 }
+			modifier = { trigger = { wsr_check_war_support_bad = yes } add = 200 }
+		}		
+    }
+    option = {
+        name = war_support_bad.5.c
+		manage_mutinies = { days = 90 }
+        add_radicals = {
+			value = 0.05
+			pop_type = soldiers
+		}
+        add_radicals = {
+			value = 0.03
+			pop_type = officers
+		}
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_mutinies_bad = no } add = 100 }
+			modifier = { trigger = { wsr_check_radicals_officers = no } add = 100 }
+			modifier = { trigger = { wsr_check_radicals_soldiers = no } add = 100 }
+		}	
+    }
+}
+
+war_support_bad.6 = {
+    placement = root
+
+    title = war_support_bad.6.t
+    desc = war_support_bad.6.desc
+    flavor = war_support_bad.6.f
+
+	duration = 1
+
+    cooldown = { days = 120 }
+
+    event_image = { video = "gfx/event_pictures/middleeast_battlefield_trenches.bk2" }
+
+    option = {
+        name = war_support_bad.6.a
+        default_option = yes
+		scope:war_from_struct = {
+			add_war_war_support = {
+				target = ROOT
+				value = 10
+			}			
+		}
+		add_modifier = { name = war_support_authority_lost days = 120 is_decaying = yes }
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_war_support_bad = yes } add = 100 }
+		}
+    }
+    option = {
+        name = war_support_bad.6.b
+        manage_mutinies = { days = 60 }
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_mutinies_bad = no } add = 100 }
+		}
+    }
+}
+
+war_support_bad.7 = {
+    placement = root
+
+    title = war_support_bad.7.t
+    desc = war_support_bad.7.desc
+    flavor = war_support_bad.7.f
+
+	duration = 1
+
+    cooldown = { days = 120 }
+
+    event_image = { video = "gfx/event_pictures/middleeast_battlefield_trenches.bk2" }
+
+    option = {
+        name = war_support_bad.7.a
+        default_option = yes
+        add_modifier = { name = war_support_demobilization days = 120 }
+		ai_chance = {
+			base = 50
+		}		
+    }
+    option = {
+        name = war_support_bad.7.b
+        manage_mutinies = { days = 120 }
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_mutinies_bad = no } add = 100 }
+		}
+    }
+}
+
+
+namespace = war_support_very_bad
+
+war_support_very_bad.1 = {
+	placement = root
+
+	title = war_support_very_bad.1.t
+	desc = war_support_very_bad.1.desc
+	flavor = war_support_very_bad.1.f
+
+	duration = 1
+
+	event_image = {
+		video = "gfx/event_pictures/middleeast_battlefield_trenches.bk2"
+	}
+
+	trigger = {
+		scope:war_from_struct = {
+			any_scope_front = {
+				any_scope_general = {
+					owner = root 
+					is_historical = no
+					exists = yes
+				}
+			}
+		}		
+	}
+
+	immediate = {
+		scope:war_from_struct = {
+			random_scope_front = {
+				limit = { 
+					any_scope_general = { 
+						owner = root 
+						is_historical = no 
+						exists = yes 
+					} 
+				}
+				random_scope_general = {
+					limit = { 
+						owner = root 
+						is_historical = no
+						exists = yes
+					}
+					save_scope_as = hated_general
+				}
+			}
+		}
+	}
+
+	option = {
+		name = war_support_very_bad.1.a
+		default_option = yes
+		scope:hated_general = {
+			remove_character_role = general
+		}
+
+		add_radicals = {
+			value = 0.05
+			pop_type = officers
+		}
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_radicals_officers = yes } add = 100 }
+		}
+	}
+
+	option = {
+		name = war_support_very_bad.1.b
+		scope:war_from_struct = {
+			add_war_war_support = {
+				target = ROOT
+				value = -2
+			}			
+		}
+		manage_mutinies = { days = 90 }
+		add_radicals = {
+			value = 0.03
+			pop_type = soldiers
+		}
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_radicals_soldiers = yes } add = 100 }
+		}
+	}
+}
+
+war_support_very_bad.2 = {
+    placement = root
+
+    title = war_support_very_bad.2.t
+    desc = war_support_very_bad.2.desc
+    flavor = war_support_very_bad.2.f
+
+	duration = 1
+
+    cooldown = { days = 120 }
+
+    event_image = { video = "gfx/event_pictures/middleeast_battlefield_trenches.bk2" }
+
+    option = {
+        name = war_support_very_bad.2.a
+        default_option = yes
+        add_radicals = {
+			value = 0.07
+		}
+    }
+    option = {
+        name = war_support_very_bad.2.b
+		scope:war_from_struct = {
+			add_war_war_support = {
+				target = ROOT
+				value = -10
+			}	
+		}
+		add_radicals = {
+			value = 0.04
+		}		
+    }
+}
+
+war_support_very_bad.3 = {
+    placement = root
+
+    title = war_support_very_bad.3.t
+    desc = war_support_very_bad.3.desc
+    flavor = war_support_very_bad.3.f
+
+	duration = 1
+
+    cooldown = { days = 120 }
+
+    event_image = { video = "gfx/event_pictures/middleeast_police_breaking_door.bk2" }
+
+    option = {
+        name = war_support_very_bad.3.a
+        default_option = yes
+       	add_radicals = {
+			value = 0.04
+		}
+		scope:war_from_struct = {
+			add_war_war_support = {
+				target = ROOT
+				value = -10
+			}			
+		}
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_radicals_all = yes } add = 100 }
+		}		
+    }
+    option = {
+        name = war_support_very_bad.3.b
+		add_modifier = { name = war_support_draft_dodge days = 120}
+		ai_chance = {
+			base = 50
+		}
+    }
+}
+
+war_support_very_bad.4 = {
+	placement = root
+
+	title = war_support_very_bad.4.t
+	desc = war_support_very_bad.4.desc
+	flavor = war_support_very_bad.4.f
+
+	duration = 1
+
+	cooldown = {
+		days = 360
+	}
+	
+	event_image = {
+		video = "gfx/event_pictures/middleeast_battlefield_trenches.bk2"
+	}
+
+	option = {
+		name = war_support_very_bad.4.a
+		default_option = yes
+		manage_mutinies = { days = 30 }
+		add_radicals = {
+			value = 0.03
+			pop_type = soldiers
+		}
+		ai_chance = {
+			base = 50
+			modifier = { trigger = { wsr_check_radicals_soldiers = yes } add = 100 }
+		}
+	}
+
+	option = {
+		name = war_support_very_bad.4.b
+		add_modifier = { name = war_support_low_morale months = 4 }
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_mutinies_bad = yes } add = 200 }
+		}
+	}
+}
+
+war_support_very_bad.5 = {
+    placement = root
+
+    title = war_support_very_bad.5.t
+    desc = war_support_very_bad.5.desc
+    flavor = war_support_very_bad.5.f
+
+	duration = 1
+
+    cooldown = { days = 120 }
+
+    event_image = { video = "gfx/event_pictures/unspecific_sick_in_hospital.bk2" }
+
+    option = {
+        name = war_support_very_bad.5.a
+        default_option = yes
+        add_radicals = {
+			value = 0.03
+			pop_type = soldiers
+		}
+		scope:war_from_struct = {
+			add_war_war_support = {
+				target = ROOT
+				value = -5
+			}		
+		}
+		add_modifier = { name = war_support_sick months = 2 }
+		ai_chance = {
+			base = 0
+			modifier = { trigger = { wsr_check_radicals_all = yes } add = 100 }
+		}
+    }
+    option = {
+        name = war_support_very_bad.5.b
+		add_modifier = { name = war_support_sick months = 6 }
+		ai_chance = {
+			base = 50
+		}
+    }
+}
+
+war_support_very_bad.6 = {
+    placement = root
+
+    title = war_support_very_bad.6.t
+    desc = war_support_very_bad.6.desc
+    flavor = war_support_very_bad.6.f
+
+	duration = 1
+
+    cooldown = { days = 120 }
+
+    event_image = { video = "gfx/event_pictures/unspecific_vandalized_storefront.bk2" }
+
+    option = {
+        name = war_support_very_bad.6.a
+        default_option = yes
+		capital = {
+			state_region = { add_devastation = 10 }
+			add_radicals_in_state = {
+				value = 0.05
+			}
+		} 
+		scope:war_from_struct = {
+			add_war_war_support = {
+				target = ROOT
+				value = -5
+			}			
+		}
+    }
+    option = {
+        name = war_support_very_bad.6.b
+		capital = {
+			state_region = { add_devastation = 5 }
+			add_modifier = { name = war_support_draft_dodge months = 6 }
+		}
+    }
+}
+
+
+namespace = war_support_entry
+
+war_support_entry.1 = {
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = {
+				OR = {
+					NOT = { has_game_rule = wsr_events_player_only_rule }
+					is_player = yes
+				}
+			}
+			
+			ordered_in_list = { #take only wars with casualties to avoid events on wars without fronts and such
+				variable = casualties_country_list
+				order_by = var:delta
+
+				max = 1
+
+				if = {
+					limit = {
+						var:delta >= 1000
+						exists = var:war_tag
+					}
+					var:war_tag = { save_scope_as = war_from_struct }
+				}
+			}
+			if = {
+				limit = { exists = scope:war_from_struct }
+				random_scope_war = {
+					limit = { 
+						this = scope:war_from_struct
+					}
+					root = { 
+						set_local_variable = { name = war_support_temp value = prev.war_support }
+						random_list = {
+							0 = { 
+								modifier = {
+									add = war_support_nothing_chance
+								}
+							}
+							0 = {
+								modifier = {
+									add = war_support_vg_chance
+								}
+								random_list = {
+									1 = { trigger_event = { id = war_support_very_good.1 popup = yes } }
+									1 = { trigger_event = { id = war_support_very_good.2 popup = yes } }
+									1 = { trigger_event = { id = war_support_very_good.3 popup = yes } }
+									1 = { trigger_event = { id = war_support_very_good.4 popup = yes } }
+									1 = { trigger_event = { id = war_support_very_good.5 popup = yes } }
+									1 = { trigger_event = { id = war_support_very_good.6 popup = yes } }
+								}											
+							}
+							0 = {
+								modifier = {
+									add = war_support_g_chance
+								}	
+								random_list = {
+									1 = { trigger_event = { id = war_support_good.1 popup = yes } }
+									1 = { trigger_event = { id = war_support_good.2 popup = yes } }
+									1 = { trigger_event = { id = war_support_good.3 popup = yes } }
+									1 = { trigger_event = { id = war_support_good.4 popup = yes } }
+									1 = { trigger_event = { id = war_support_good.5 popup = yes } }
+									1 = { trigger_event = { id = war_support_good.6 popup = yes } }
+									1 = { trigger_event = { id = war_support_good.7 popup = yes } }
+								}									
+							}
+							0 = {
+								modifier = {
+									add = war_support_b_chance
+								}
+								random_list = {
+									1 = { trigger_event = { id = war_support_bad.1 popup = yes } } 
+									1 = { trigger_event = { id = war_support_bad.2 popup = yes } } 
+									1 = { trigger_event = { id = war_support_bad.3 popup = yes } } 
+									1 = { trigger_event = { id = war_support_bad.4 popup = yes } } 
+									1 = { trigger_event = { id = war_support_bad.5 popup = yes } } 
+									1 = { trigger_event = { id = war_support_bad.6 popup = yes } } 
+									1 = { trigger_event = { id = war_support_bad.7 popup = yes } } 
+								}
+							}
+							0 = {
+								modifier = {
+									add = war_support_vb_chance
+								}	
+								random_list = {
+									1 = { trigger_event = { id = war_support_very_bad.1 popup = yes } }
+									1 = { trigger_event = { id = war_support_very_bad.2 popup = yes } }
+									1 = { trigger_event = { id = war_support_very_bad.3 popup = yes } }
+									1 = { trigger_event = { id = war_support_very_bad.4 popup = yes } }
+									1 = { trigger_event = { id = war_support_very_bad.5 popup = yes } }
+									1 = { trigger_event = { id = war_support_very_bad.6 popup = yes } }
+								}				
+							}
+						}
+					}
+				}
+			}	
+		}
+	}
+}

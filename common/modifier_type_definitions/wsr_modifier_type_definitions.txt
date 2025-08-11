@@ -1,0 +1,5 @@
+﻿war_support_exhastion_reduction_add = {
+	color=bad
+	percent = no
+	decimals = 0
+}

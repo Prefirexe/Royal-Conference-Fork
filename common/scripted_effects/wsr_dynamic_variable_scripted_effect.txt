@@ -1,0 +1,161 @@
+﻿manage_war_casualties = {
+	if = { limit = { exists = local_var:matched_struct } remove_local_variable = matched_struct }  
+	if = { 
+		limit = { has_variable_list = casualties_country_list } 
+		every_in_list = {
+			variable = casualties_country_list
+			limit = {
+				var:country_tag ?= $country_tag$
+				var:war_tag ?= $war_tag$
+			}
+
+			set_variable = is_wsr_struct
+			set_variable = { name = delta value = $casualties$ }
+			change_variable = { name = delta subtract = var:last_total }
+			set_variable = { name = last_total value = $casualties$ }
+			set_variable = { name = last_mobilized value = var:mobilized }
+			set_variable = { name = mobilized value = $pop_count$ }
+			set_variable = { name = last_all_pops value = var:all_pops }
+			set_variable = { name = all_pops value = $all_pops$ }
+			set_variable = { name = enemy_wargoal_contest_before value = var:enemy_wargoal_contest_current}
+			set_variable = { name = enemy_wargoal_contest_current value = $enemy_wargoal_contest$}
+			set_variable = { name = enemy_occupation_before value = var:enemy_occupation_current }
+			set_variable = { name = enemy_occupation_current value = $enemy_occupation$ }
+			change_variable = { name = war_duration add = 1}
+
+			set_local_variable = matched_struct
+		}
+	} 
+	if = {
+		limit = { NOT = { exists = local_var:matched_struct } }
+		create_struct = {
+			struct_scope = war_casualties
+			struct_type  = 1
+		}
+
+		scope:war_casualties = {
+			set_variable = is_wsr_struct
+			set_variable = { name = country_tag  value = $country_tag$ }
+			set_variable = { name = war_tag value = $war_tag$ }
+			set_variable = { name = last_total value = $casualties$ }
+			set_variable = { name = mobilized value = $pop_count$ }
+			set_variable = { name = last_mobilized value = $pop_count$ }
+			set_variable = { name = all_pops value = $all_pops$ }
+			set_variable = { name = last_all_pops value = $all_pops$ }
+			set_variable = { name = delta value = $casualties$ }
+			set_variable = { name = enemy_wargoal_contest_before value = $enemy_wargoal_contest$}
+			set_variable = { name = enemy_wargoal_contest_current value = $enemy_wargoal_contest$}
+			set_variable = { name = our_wargoal_contest_before value = 0 }
+			set_variable = { name = our_wargoal_contest_current value = 0 }
+			set_variable = { name = enemy_occupation_before value = 0 }
+			set_variable = { name = enemy_occupation_current value = 0 }
+			set_variable = { name = our_occupation_before value = 0 }
+			set_variable = { name = our_occupation_current value = 0 }
+			set_variable = { name = war_duration value = 0 }
+			set_variable = { name = stalemate_duration value = 0}
+
+			prev = { 
+				add_to_variable_list = {
+					name = casualties_country_list
+					target = prev
+				} 
+			}
+		}
+	}	
+}
+
+remove_war_casualties = {
+	every_in_list = {
+		variable = casualties_country_list
+		if = {
+			limit = { 
+				OR = {
+					var:war_tag ?= local_var:current_war 
+					NOT = { exists = var:war_tag }
+				}
+			}
+			set_local_variable = { name = char_to_process value = this }
+			destroy_struct = { struct = local_var:char_to_process }
+		}
+		if = { 
+			limit = { has_local_variable = char_to_process } 
+			prev = { remove_list_variable = { name = casualties_country_list target = local_var:char_to_process } }
+		}
+	}
+}
+
+manage_wargoal_contest = {
+	if = { 
+		limit = { has_variable_list = casualties_country_list } 
+		every_in_list = {
+			variable = casualties_country_list
+			limit = {
+				var:war_tag ?= $war_tag$
+			}
+			var:war_tag = { save_scope_as = war }
+
+			set_local_variable = { name = wargoal_temp value = var:our_wargoal_contest_current}
+			set_variable = { name = our_wargoal_contest_before value = local_var:wargoal_temp}
+			set_variable = { name = our_wargoal_contest_current value = $our_wargoal_contest_current$}
+
+			set_local_variable = { name = occ_temp value = var:our_occupation_current}
+			set_variable = { name = our_occupation_before value = local_var:occ_temp }
+			set_variable = { name = our_occupation_current value = $our_occupation_current$ }
+
+			if = { #if you're conquering your territory back = instant progress + event if you switched category
+				limit = {
+					var:progress_cooldown ?= 0
+					var:enemy_occupation_current < var:enemy_occupation_before
+				}
+				set_local_variable = { name = temp_occ value = var:enemy_occupation_before }
+				set_local_variable = { name = occ_before_category value = war_support_occupation_category}
+				set_local_variable = { name = temp_occ value = var:enemy_occupation_current }
+				set_local_variable = { name = occ_current_category value = war_support_occupation_category}
+				if = { 
+					limit = { local_var:occ_current_category < local_var:occ_before_category }
+					root = { trigger_event = { id = war_support_battle.5 } }
+					set_variable = { name = progress_cooldown value = WAR_SUPPORT_STALEMATE_COOLDOWN }	
+					set_variable = { name = stalemate_duration value = 0 }
+				}
+			}
+
+			if = {
+				limit = { var:war_duration > WAR_SUPPORT_LACK_OF_PROGRESS_MONTHS }
+
+				if = { #good positions already or progress
+					limit = { 
+						OR = {
+							var:our_wargoal_contest_current > var:our_wargoal_contest_before 
+							var:our_wargoal_contest_current = 1
+							root.war_support_monthly_occupation >= WAR_SUPPORT_MINIMAL_ADVANCE
+						}
+					}
+					root = {
+						random = {
+							chance = war_support_offensive_event_chance
+							trigger_event = { id = war_support_battle.4 } #offensive
+						}
+					}
+
+					set_variable = { name = stalemate_duration value = 0 }
+					set_variable = { name = progress_cooldown value = WAR_SUPPORT_STALEMATE_COOLDOWN }	
+				}
+				else_if = { #cooldown
+					limit = { var:progress_cooldown > 0 }
+					change_variable = { name = progress_cooldown add  = -1 }
+				}
+				else_if = { #worse positions or no progress
+					limit = {
+						OR = {
+							var:our_wargoal_contest_current <= var:our_wargoal_contest_before
+							root.war_support_monthly_occupation < WAR_SUPPORT_MINIMAL_ADVANCE
+						}
+						NOT = { var:our_wargoal_contest_current = 1 }
+					}
+					change_variable = { name = stalemate_duration add  = 1 }
+				}
+			}
+			else = { set_variable = { name = progress_cooldown value = 0 } }
+		}
+	} 
+}

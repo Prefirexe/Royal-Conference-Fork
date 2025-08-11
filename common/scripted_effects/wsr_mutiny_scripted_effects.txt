@@ -1,0 +1,53 @@
+﻿manage_mutinies = {
+	if = {
+		limit = { 
+			not = { 
+				OR = {
+					has_modifier = war_support_mutiny_minor 
+					has_modifier = war_support_mutiny_moderate
+					has_modifier = war_support_mutiny_major
+					has_modifier = war_support_mutiny_severe
+				}
+			} 
+		}
+		add_modifier = { name = war_support_mutiny_minor days = $days$ }
+	}
+	else_if = {
+		limit = { has_modifier = war_support_mutiny_minor }
+		remove_modifier = war_support_mutiny_minor
+		add_modifier = { name = war_support_mutiny_moderate days = $days$ }
+		add_radicals = {
+			value = 0.05
+			pop_type = soldiers
+		}
+	}
+	else_if = {
+		limit = { has_modifier = war_support_mutiny_moderate }
+		remove_modifier = war_support_mutiny_moderate
+		add_modifier = { name = war_support_mutiny_major days = $days$ }
+		add_radicals = {
+			value = 0.05
+			pop_type = soldiers
+		}
+		add_radicals = {
+			value = 0.05
+			pop_type = officers
+		}
+	}
+	else_if = {
+		limit = { has_modifier = war_support_mutiny_major }
+		remove_modifier = war_support_mutiny_major
+		add_modifier = { name = war_support_mutiny_severe days = $days$ }
+		add_radicals = {
+			value = 0.15
+			pop_type = soldiers
+		}
+		add_radicals = {
+			value = 0.1
+			pop_type = officers
+		}
+	}
+	else = {
+		add_modifier = { name = war_support_mutiny_severe days = 120 }
+	}
+}
