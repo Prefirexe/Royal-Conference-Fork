@@ -1,0 +1,9 @@
+﻿UHW_mog_artillery = {
+    icon   = "gfx/interface/icons/generic_icons/generic_concept_icon.dds"
+    weight = 101
+}
+
+UHW_mog_heavy_weapon_supply = {
+    icon   = "gfx/interface/icons/generic_icons/generic_concept_icon.dds"
+    weight = 99
+}

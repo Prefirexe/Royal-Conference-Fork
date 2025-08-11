@@ -91,7 +91,7 @@ forest_commander = {
 	texture = gfx/interface/icons/character_trait_icons/forest_commander.dds
 
 	command_modifier = {
-		unit_defense_forested_mult = 0.15
+		unit_defense_forested_mult = 0.25
 	}
 
 	possible = {
@@ -133,7 +133,7 @@ mountain_commander = {
 	texture = gfx/interface/icons/character_trait_icons/mountain_commander.dds
 
 	command_modifier = {
-		unit_defense_elevated_mult = 0.15
+		unit_defense_elevated_mult = 0.25
 	}
 
 	possible = {
@@ -154,10 +154,7 @@ basic_artillery_commander = {
 	texture = gfx/interface/icons/character_trait_icons/basic_artillery_commander.dds
 
  	command_modifier = {
- 		unit_combat_unit_type_siege_artillery_offense_mult = 0.05
-		unit_combat_unit_type_shrapnel_artillery_offense_mult = 0.05
-		unit_combat_unit_type_cannon_artillery_offense_mult = 0.05
-		unit_combat_unit_type_mobile_artillery_offense_mult = 0.05
+ 		unit_army_offense_mult = 0.05
  		character_battle_condition_aggressive_maneuver_mult = 1
  		character_battle_condition_mud_mult = 0.5
  	}
@@ -183,11 +180,10 @@ basic_artillery_commander = {
 						is_army = yes
 						any_scope_general = {
 							this = root
+							this.commander_military_formation = {
+								has_mobilization_option = mobilization_option:UHW_mo_cannon_artillery
+							}
 						}
-						formation_army_unit_type_fraction = {  
-							target = unit_type:combat_unit_type_cannon_artillery  
-							value >= 0.20  
-						}  
 					}
 				}
 			}
@@ -200,11 +196,10 @@ basic_artillery_commander = {
 						is_army = yes
 						any_scope_general = {
 							this = root
+							this.commander_military_formation = {
+								has_mobilization_option = mobilization_option:UHW_mo_mobile_artillery
+							}
 						}
-						formation_army_unit_type_fraction = {  
-							target = unit_type:combat_unit_type_mobile_artillery  
-							value >= 0.20  
-						}  
 					}
 				}
 			}
@@ -217,11 +212,10 @@ basic_artillery_commander = {
 						is_army = yes
 						any_scope_general = {
 							this = root
+							this.commander_military_formation = {
+								has_mobilization_option = mobilization_option:UHW_mo_shrapnel_artillery
+							}
 						}
-						formation_army_unit_type_fraction = {  
-							target = unit_type:combat_unit_type_shrapnel_artillery  
-							value >= 0.20  
-						}  
 					}
 				}
 			}
@@ -234,32 +228,14 @@ basic_artillery_commander = {
 						is_army = yes
 						any_scope_general = {
 							this = root
+							this.commander_military_formation = {
+								has_mobilization_option = mobilization_option:UHW_mo_rapid_fire_artillery
+							}
 						}
-						formation_army_unit_type_fraction = {  
-							target = unit_type:combat_unit_type_siege_artillery
-							value >= 0.20  
-						}  
 					}
 				}
 			}
 			multiply = 20
-		}
-		if = {
-			limit = {
-				owner = {
-					any_military_formation = {
-						is_army = yes
-						any_scope_general = {
-							this = root
-						}
-						formation_army_unit_type_fraction = {  
-							target = unit_type:combat_unit_type_heavy_tank
-							value >= 0.20  
-						}  
-					}
-				}
-			}
-			multiply = 50
 		}
  	}
 
@@ -275,10 +251,7 @@ experienced_artillery_commander = {
 	texture =gfx/interface/icons/character_trait_icons/experienced_artillery_commander.dds
 
 	command_modifier = {
-		unit_combat_unit_type_siege_artillery_offense_mult = 0.1
-		unit_combat_unit_type_shrapnel_artillery_offense_mult = 0.1
-		unit_combat_unit_type_cannon_artillery_offense_mult = 0.1
-		unit_combat_unit_type_mobile_artillery_offense_mult = 0.1
+		unit_army_offense_mult = 0.1
 		character_battle_condition_aggressive_maneuver_mult = 2
 		character_battle_condition_mud_mult = 0.5
 	}
@@ -289,7 +262,7 @@ experienced_artillery_commander = {
 	}
 
 	weight = {
-		value = 5
+ 		value = 5
 		if = {
 			limit = {
 				owner = {
@@ -297,11 +270,26 @@ experienced_artillery_commander = {
 						is_army = yes
 						any_scope_general = {
 							this = root
+							this.commander_military_formation = {
+								has_mobilization_option = mobilization_option:UHW_mo_cannon_artillery
+							}
 						}
-						formation_army_unit_type_fraction = {  
-							target = unit_type:combat_unit_type_mobile_artillery  
-							value >= 0.20  
-						}  
+					}
+				}
+			}
+			multiply = 2
+		}
+		if = {
+			limit = {
+				owner = {
+					any_military_formation = {
+						is_army = yes
+						any_scope_general = {
+							this = root
+							this.commander_military_formation = {
+								has_mobilization_option = mobilization_option:UHW_mo_mobile_artillery
+							}
+						}
 					}
 				}
 			}
@@ -314,11 +302,10 @@ experienced_artillery_commander = {
 						is_army = yes
 						any_scope_general = {
 							this = root
+							this.commander_military_formation = {
+								has_mobilization_option = mobilization_option:UHW_mo_shrapnel_artillery
+							}
 						}
-						formation_army_unit_type_fraction = {  
-							target = unit_type:combat_unit_type_shrapnel_artillery  
-							value >= 0.20  
-						}  
 					}
 				}
 			}
@@ -331,34 +318,16 @@ experienced_artillery_commander = {
 						is_army = yes
 						any_scope_general = {
 							this = root
+							this.commander_military_formation = {
+								has_mobilization_option = mobilization_option:UHW_mo_rapid_fire_artillery
+							}
 						}
-						formation_army_unit_type_fraction = {  
-							target = unit_type:combat_unit_type_siege_artillery
-							value >= 0.20  
-						}  
 					}
 				}
 			}
 			multiply = 20
 		}
-		if = {
-			limit = {
-				owner = {
-					any_military_formation = {
-						is_army = yes
-						any_scope_general = {
-							this = root
-						}
-						formation_army_unit_type_fraction = {  
-							target = unit_type:combat_unit_type_heavy_tank
-							value >= 0.20  
-						}  
-					}
-				}
-			}
-			multiply = 50
-		}
-	}
+ 	}
 
 	replace = {
 		basic_artillery_commander
@@ -372,10 +341,7 @@ expert_artillery_commander = {
 	texture =gfx/interface/icons/character_trait_icons/expert_artillery_commander.dds
 
 	command_modifier = {
-		unit_combat_unit_type_siege_artillery_offense_mult = 0.15
-		unit_combat_unit_type_shrapnel_artillery_offense_mult = 0.15
-		unit_combat_unit_type_cannon_artillery_offense_mult = 0.15
-		unit_combat_unit_type_mobile_artillery_offense_mult = 0.15
+		unit_army_offense_mult = 0.15
 		character_battle_condition_aggressive_maneuver_mult = 3
 		character_battle_condition_mud_mult = 0.5
 	}
@@ -386,7 +352,7 @@ expert_artillery_commander = {
 	}
 
 	weight = {
-		value = 5
+ 		value = 5
 		if = {
 			limit = {
 				owner = {
@@ -394,11 +360,42 @@ expert_artillery_commander = {
 						is_army = yes
 						any_scope_general = {
 							this = root
+							this.commander_military_formation = {
+								has_mobilization_option = mobilization_option:UHW_mo_cannon_artillery
+							}
 						}
-						formation_army_unit_type_fraction = {  
-							target = unit_type:combat_unit_type_shrapnel_artillery  
-							value >= 0.20  
-						}  
+					}
+				}
+			}
+			multiply = 2
+		}
+		if = {
+			limit = {
+				owner = {
+					any_military_formation = {
+						is_army = yes
+						any_scope_general = {
+							this = root
+							this.commander_military_formation = {
+								has_mobilization_option = mobilization_option:UHW_mo_mobile_artillery
+							}
+						}
+					}
+				}
+			}
+			multiply = 5
+		}
+		if = {
+			limit = {
+				owner = {
+					any_military_formation = {
+						is_army = yes
+						any_scope_general = {
+							this = root
+							this.commander_military_formation = {
+								has_mobilization_option = mobilization_option:UHW_mo_shrapnel_artillery
+							}
+						}
 					}
 				}
 			}
@@ -411,34 +408,16 @@ expert_artillery_commander = {
 						is_army = yes
 						any_scope_general = {
 							this = root
+							this.commander_military_formation = {
+								has_mobilization_option = mobilization_option:UHW_mo_rapid_fire_artillery
+							}
 						}
-						formation_army_unit_type_fraction = {  
-							target = unit_type:combat_unit_type_siege_artillery
-							value >= 0.20  
-						}  
 					}
 				}
 			}
 			multiply = 20
 		}
-		if = {
-			limit = {
-				owner = {
-					any_military_formation = {
-						is_army = yes
-						any_scope_general = {
-							this = root
-						}
-						formation_army_unit_type_fraction = {  
-							target = unit_type:combat_unit_type_heavy_tank
-							value >= 0.20  
-						}  
-					}
-				}
-			}
-			multiply = 50
-		}
-	}
+ 	}
 
 	replace = {
 		experienced_artillery_commander
@@ -470,7 +449,7 @@ stalwart_defender = {
 	weight = 10
 
 	replace = {
-		
+
 	}
 
 	value = 1
@@ -625,7 +604,7 @@ expert_offensive_planner = {
 	texture = "gfx/interface/icons/character_trait_icons/expert_offensive_planner.dds"
 
 	command_modifier = {
-		unit_offense_mult = 0.15
+		unit_offense_mult = 0.2
 		character_battle_condition_surprise_maneuver_mult = 1.5
 	}
 
@@ -648,7 +627,7 @@ basic_defensive_strategist = {
 	texture = "gfx/interface/icons/character_trait_icons/basic_defensive_strategist.dds"
 
 	command_modifier = {
-		unit_defense_mult = 0.05
+		unit_defense_mult = 0.1
 		character_battle_condition_dug_in_mult = 1
 		character_battle_condition_camouflaged_mult = 1
 	}
@@ -679,7 +658,7 @@ experienced_defensive_strategist = {
 	texture = "gfx/interface/icons/character_trait_icons/experienced_defensive_strategist.dds"
 
 	command_modifier = {
-		unit_defense_mult = 0.1
+		unit_defense_mult = 0.2
 		character_battle_condition_dug_in_mult = 2
 		character_battle_condition_camouflaged_mult = 2
 	}
@@ -703,7 +682,7 @@ expert_defensive_strategist = {
 	texture = "gfx/interface/icons/character_trait_icons/expert_defensive_strategist.dds"
 
 	command_modifier = {
-		unit_defense_mult = 0.15
+		unit_defense_mult = 0.3
 		character_battle_condition_dug_in_mult = 3
 		character_battle_condition_camouflaged_mult = 3
 	}
@@ -729,8 +708,8 @@ basic_naval_commander = {
 	texture = "gfx/interface/icons/character_trait_icons/basic_naval_commander.dds"
 
 	command_modifier = {
-		unit_offense_mult = 0.05
-		unit_defense_mult = 0.05
+		unit_offense_mult = 0.1
+		unit_defense_mult = 0.1
 	}
 
 	possible = {
@@ -759,10 +738,9 @@ experienced_naval_commander = {
 	texture = "gfx/interface/icons/character_trait_icons/experienced_naval_commander.dds"
 
 	command_modifier = {
-		unit_offense_mult = 0.1
-		unit_defense_mult = 0.1
+		unit_offense_mult = 0.2
+		unit_defense_mult = 0.2
 		character_battle_condition_rough_waters_mult = -0.25
-		character_blockade_mult = 0.1
 	}
 
 	possible = {
@@ -784,9 +762,10 @@ expert_naval_commander = {
 	texture = "gfx/interface/icons/character_trait_icons/expert_naval_commander.dds"
 
 	command_modifier = {
-		unit_offense_mult = 0.15
-		unit_defense_mult = 0.15
+		unit_offense_mult = 0.3
+		unit_defense_mult = 0.3
 		character_battle_condition_rough_waters_mult = -0.5
+		character_blockade_mult = 0.1
 	}
 
 	possible = {
@@ -850,7 +829,7 @@ experienced_convoy_raider = {
 
 	command_modifier = {
 		character_convoy_raiding_mult = 0.5
-		unit_combat_unit_type_submarine_offense_mult = 0.1
+		unit_combat_unit_type_submarine_offense_mult = 0.15
 	}
 
 	possible = {
@@ -1829,11 +1808,7 @@ literary = {
 
 	country_modifier = {
 		country_prestige_mult = 0.05
-		country_infamy_decay_mult = 0.1
-	}
-
-	executive_modifier = {
-		building_group_bg_arts_throughput_add = 0.1
+		country_infamy_decay_mult = 0.25
 	}
 
 	agitator_modifier = {
@@ -1844,6 +1819,10 @@ literary = {
 
 	interest_group_modifier = {
 		interest_group_pop_attraction_mult = 0.1
+	}
+
+	executive_modifier = {
+		building_group_bg_arts_throughput_add = 0.1
 	}
 
 	possible = {
@@ -1950,7 +1929,7 @@ master_bureaucrat = {
 		interest_group_pop_attraction_mult = -0.05
 		interest_group_pol_str_mult = 0.05
 	}
-	
+
 	executive_modifier = {
 		building_throughput_add = 0.05
 	}
@@ -2021,57 +2000,72 @@ political_appointee = {
 inept = {
 	type = skill
 	texture = "gfx/interface/icons/character_trait_icons/inept.dds"
+
 	character_modifier = {
 		character_popularity_add = -15
 	}
+
 	country_modifier = {
 		country_legitimacy_base_add = -5
 	}
+
 	agitator_modifier = {
 		political_movement_pop_attraction_mult = -0.1
 	}
+
 	command_modifier = {
 		unit_morale_recovery_mult = -0.25
 		unit_defense_mult = -0.1
 		unit_offense_mult = -0.1
 	}
+
 	interest_group_modifier = {
 		interest_group_pol_str_mult = -0.1
 	}
 
-	#executive_modifier = {
-	#	building_throughput_add = -0.05
-	#}
-	
+#	executive_modifier = {
+#		building_throughput_add = -0.05
+#	}
+
 	weight = {
 		value = 1
 	}
+
 	possible = {
 		NOT = { age < define:NCharacters|ADULT_AGE }
 	}
+
 	replace = {
 	}
 }
+
+
 inexperienced = {
 	type = skill
 	texture = "gfx/interface/icons/character_trait_icons/inexperienced.dds"
+
 	character_modifier = {
 		character_popularity_add = 10 # Has youthful energy
 	}
+
 	country_modifier = {
 		country_legitimacy_base_add = -5
 	}
+
 	agitator_modifier = {
 		political_movement_pop_attraction_mult = -0.05
 	}
+
 	command_modifier = {
 		unit_morale_recovery_mult = 0.10
 		unit_defense_mult = -0.05
 		unit_offense_mult = -0.05
 	}
+
 	interest_group_modifier = {
 		interest_group_pol_str_mult = -0.05
 	}
+
 	weight = {
 		value = 1
 		if = {
@@ -2099,33 +2093,42 @@ inexperienced = {
 			multiply = 5
 		}
 	}
+
 	possible = {
 		NOT = { age < define:NCharacters|ADULT_AGE }
 	}
+
 	replace = {
 	}
 }
+
 social_bandit = {
 	type = skill
 	texture = "gfx/interface/icons/character_trait_icons/social_banditry.dds"
+
 	character_modifier = {
 		character_popularity_add = 25
 	}
+
 	command_modifier = {
 		unit_morale_damage_mult = 0.1
 	}
+
 	agitator_modifier = {
 		political_movement_radicalism_add = 0.15
 	}
+
 	interest_group_modifier = {
 		interest_group_in_government_approval_add = 2
 		interest_group_in_opposition_approval_add = -2
 	}
+
 	country_modifier = {
 		country_prestige_mult = -0.05
 		country_infamy_decay_mult = -0.5
 		country_authority_add = 100
 	}
+
 	possible = {
 		NOT = { age < define:NCharacters|ADULT_AGE }
 		OR = {
@@ -2138,6 +2141,7 @@ social_bandit = {
 			}
 		}
 	}
+
 	weight = {
 		value = 0.25
 		if = {
@@ -2155,8 +2159,10 @@ social_bandit = {
 			multiply = 4
 		}
 	}
+
 	replace = {
 	}
+
 	value = 2
 }
 
@@ -2356,4 +2362,3 @@ expert_entrepreneur = {
 
 	value = 3
 }
-

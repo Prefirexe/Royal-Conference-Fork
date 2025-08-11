@@ -1,0 +1,12 @@
+﻿l_english:
+  goods_input_luxury_clothes_add:0      "@luxury_clothes! Luxury Clothes input per level"
+  goods_input_luxury_clothes_add_desc:0 "The amount of @luxury_clothes! Luxury Clothes consumed by buildings"
+
+  goods_input_sugar_mult:0 "@sugar! Sugar input per level"
+  goods_input_sugar_mult_desc:0 "The amount of @sugar! Sugar consumed by buildings"
+
+  goods_input_liquor_mult:0 "@liquor! Liquor input per level"
+  goods_input_liquor_mult_desc:0 "The amount of @liquor! Liquor consumed by buildings"
+
+  goods_input_automobiles_mult:0 "@automobiles! Automobiles input per level"
+  goods_input_automobiles_mult_desc:0 "The amount of @automobiles! Automobiles consumed by buildings"

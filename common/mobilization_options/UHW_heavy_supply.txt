@@ -1,0 +1,464 @@
+﻿UHW_mo_heavy_weapons_supply_I = {
+    texture = "gfx/interface/icons/production_method_icons/unused/wartime1.dds"
+    group   = UHW_mog_heavy_weapon_supply
+    
+    possible = {
+        scope:military_formation = {
+            has_mobilization_option = mobilization_option:UHW_mo_cannon_artillery
+            NOT = {
+                any_combat_unit = {
+                    has_unit_type = unit_type:combat_unit_type_irregular_infantry
+                }
+            }
+        }
+        OR = {
+            is_ai = no
+            AND = {
+                is_ai = yes
+                country_rank >= rank_value:major_power
+            }
+        }
+    }
+    
+    can_be_turned_off = {
+        scope:military_formation = {
+            NOR = {
+                has_mobilization_option = mobilization_option:UHW_mo_heavy_weapons_supply_II
+                has_mobilization_option = mobilization_option:UHW_mo_heavy_weapons_supply_III
+                has_mobilization_option = mobilization_option:UHW_mo_heavy_weapons_supply_IV
+                has_mobilization_option = mobilization_option:UHW_mo_heavy_weapons_supply_V
+                has_mobilization_option = mobilization_option:UHW_mo_heavy_weapons_supply_VI
+            }
+        }
+    }
+    
+    on_activate = {
+        if = { # Allow free changes during first week of game so AI can pick for themselves what they want
+            limit = { # b/c otherwise we have to overwrite vanilla military formation histories
+                game_date >= 1836.1.8
+            }
+            custom_tooltip = {
+                text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+                add_organization = {
+                    value = organization
+                    multiply = -0.5
+                }
+            }
+        }
+    }
+    
+    on_deactivate = {
+        custom_tooltip = {
+            text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+            add_organization = {
+                value = organization
+                multiply = -0.5
+            }
+        }
+    }
+    
+    unlocking_technologies = {
+        artillery
+    }
+    
+    upkeep_modifier_unscaled = {
+        goods_input_artillery_mult = 0.5
+		goods_input_ammunition_mult = 0.5
+        goods_input_radios_mult = 0.5
+        goods_input_automobiles_mult = 0.5
+        goods_input_tanks_mult = 0.5
+    }
+    
+    unit_modifier = {
+        unit_offense_mult  = 0.35
+        unit_defense_mult  = 0.25
+    }
+    
+    ai_weight = {
+        value = 0 # better not using it by default
+        if = {
+            limit = {
+                country_rank >= rank_value:major_power
+                GDP >= 500000000
+            }
+            add = 2
+        }
+    }
+}
+
+UHW_mo_heavy_weapons_supply_II = {
+    texture = "gfx/interface/icons/production_method_icons/unused/wartime2.dds"
+    group   = UHW_mog_heavy_weapon_supply
+    
+    possible = {
+        scope:military_formation = {
+            has_mobilization_option = mobilization_option:UHW_mo_heavy_weapons_supply_I
+            NOT = {
+                any_combat_unit = { 
+                    has_unit_type = unit_type:combat_unit_type_irregular_infantry
+                }
+            }
+        }
+        OR = {
+            is_ai = no
+            AND = {
+                is_ai = yes
+                country_rank >= rank_value:great_power
+            }
+        }
+    }
+    
+    can_be_turned_off = {
+        scope:military_formation = {
+            NOT = {
+                has_mobilization_option = mobilization_option:UHW_mo_heavy_weapons_supply_III
+            }
+        }
+    }
+    
+    on_activate = {
+        if = {
+            limit = {
+                game_date >= 1836.1.8
+            }
+            custom_tooltip = {
+                text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+                add_organization = {
+                    value = organization
+                    multiply = -0.5
+                }
+            }
+        }
+    }
+    
+    on_deactivate = {
+        custom_tooltip = {
+            text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+            add_organization = {
+                value = organization
+                multiply = -0.5
+            }
+        }
+    }
+    
+    unlocking_technologies = {
+        shell_gun
+    }
+    
+   upkeep_modifier_unscaled = {
+        goods_input_artillery_mult = 0.75
+		goods_input_ammunition_mult = 0.75
+        goods_input_radios_mult = 0.75
+        goods_input_automobiles_mult = 0.75
+        goods_input_tanks_mult = 0.75
+    }
+    
+    unit_modifier = {
+        unit_offense_mult  = 0.35
+        unit_defense_mult  = 0.25
+    }
+    
+    ai_weight = {
+        value = 0
+        if = {
+            limit = {
+                country_rank >= rank_value:great_power
+                GDP >= 1000000000
+            }
+            add = 2
+        }
+    }
+}
+
+UHW_mo_heavy_weapons_supply_III = {
+    texture = "gfx/interface/icons/production_method_icons/unused/wartime3.dds"
+    group   = UHW_mog_heavy_weapon_supply
+    
+    possible = {
+        scope:military_formation = {
+            has_mobilization_option = mobilization_option:UHW_mo_heavy_weapons_supply_II
+            NOT = {
+                any_combat_unit = {
+                    OR = {
+                        has_unit_type = unit_type:combat_unit_type_irregular_infantry
+                        has_unit_type = unit_type:combat_unit_type_line_infantry
+                    }
+                }
+            }
+        }
+        is_ai = no #cost starts to be prohibitive, from this point, it only works for specific player-based strategy 
+    }
+
+    can_be_turned_off = {
+        scope:military_formation = {
+            NOT = {
+                has_mobilization_option = mobilization_option:UHW_mo_heavy_weapons_supply_IV
+            }
+        }
+    }
+    
+    on_activate = {
+        if = {
+            limit = {
+                game_date >= 1836.1.8
+            }
+            custom_tooltip = {
+                text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+                add_organization = {
+                    value = organization
+                    multiply = -0.5
+                }
+            }
+        }
+    }
+    
+    on_deactivate = {
+        custom_tooltip = {
+            text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+            add_organization = {
+                value = organization
+                multiply = -0.5
+            }
+        }
+    }
+    
+    unlocking_technologies = {
+        breech_loading_artillery
+    }
+    
+    upkeep_modifier_unscaled = {
+        goods_input_artillery_mult = 1.13
+		goods_input_ammunition_mult = 1.13
+        goods_input_radios_mult = 1.13
+        goods_input_automobiles_mult = 1.13
+        goods_input_tanks_mult = 1.13
+    }
+    
+    unit_modifier = {
+        unit_offense_mult  = 0.35
+        unit_defense_mult  = 0.25
+    }
+    
+    ai_weight = {
+        value = 0
+    }
+}
+
+UHW_mo_heavy_weapons_supply_IV = {
+    texture = "gfx/interface/icons/production_method_icons/unused/wartime4.dds"
+    group   = UHW_mog_heavy_weapon_supply
+    
+    possible = {
+        scope:military_formation = {
+            has_mobilization_option = mobilization_option:UHW_mo_heavy_weapons_supply_III
+            NOT = {
+                any_combat_unit = {
+                    OR = {
+                        has_unit_type = unit_type:combat_unit_type_irregular_infantry
+                        has_unit_type = unit_type:combat_unit_type_line_infantry
+                        has_unit_type = unit_type:combat_unit_type_skirmish_infantry
+                    }
+                }
+            }
+        }
+        is_ai = no
+    }
+    
+    can_be_turned_off = {
+        scope:military_formation = {
+            NOT = {
+                has_mobilization_option = mobilization_option:UHW_mo_heavy_weapons_supply_V
+            }
+        }
+    }
+    
+    on_activate = {
+        if = {
+            limit = {
+                game_date >= 1836.1.8
+            }
+            custom_tooltip = {
+                text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+                add_organization = {
+                    value = organization
+                    multiply = -0.5
+                }
+            }
+        }
+    }
+    
+    on_deactivate = {
+        custom_tooltip = {
+            text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+            add_organization = {
+                value = organization
+                multiply = -0.5
+            }
+        }
+    }
+    
+    unlocking_technologies = {
+        breech_loading_artillery
+    }
+    
+    upkeep_modifier_unscaled = {
+        goods_input_artillery_mult = 1.68
+		goods_input_ammunition_mult = 1.68
+        goods_input_radios_mult = 1.68
+        goods_input_automobiles_mult = 1.68
+        goods_input_tanks_mult = 1.68
+    }
+    
+    unit_modifier = {
+        unit_offense_mult  = 0.35
+        unit_defense_mult  = 0.25
+    }
+    
+    ai_weight = {
+        value = 0
+    }
+}
+
+UHW_mo_heavy_weapons_supply_V = {
+    texture = "gfx/interface/icons/production_method_icons/unused/wartime5.dds"
+    group   = UHW_mog_heavy_weapon_supply
+    
+    possible = {
+        scope:military_formation = {
+            has_mobilization_option = mobilization_option:UHW_mo_heavy_weapons_supply_IV
+            NOT = {
+                any_combat_unit = {
+                    OR = {
+                        has_unit_type = unit_type:combat_unit_type_irregular_infantry
+                        has_unit_type = unit_type:combat_unit_type_line_infantry
+                        has_unit_type = unit_type:combat_unit_type_skirmish_infantry
+                        has_unit_type = unit_type:combat_unit_type_trench_infantry
+                    }
+                }
+            }
+        }
+        is_ai = no
+    }
+
+    can_be_turned_off = {
+        scope:military_formation = {
+            NOT = {
+                has_mobilization_option = mobilization_option:UHW_mo_heavy_weapons_supply_VI
+            }
+        }
+    }
+    
+    on_activate = {
+        if = {
+            limit = {
+                game_date >= 1836.1.8
+            }
+            custom_tooltip = {
+                text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+                add_organization = {
+                    value = organization
+                    multiply = -0.5
+                }
+            }
+        }
+    }
+    
+    on_deactivate = {
+        custom_tooltip = {
+            text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+            add_organization = {
+                value = organization
+                multiply = -0.5
+            }
+        }
+    }
+    
+    unlocking_technologies = {
+        breech_loading_artillery
+    }
+    
+    upkeep_modifier_unscaled = {
+        goods_input_artillery_mult = 2.53
+		goods_input_ammunition_mult = 2.53
+        goods_input_radios_mult = 2.53
+        goods_input_automobiles_mult = 2.53
+        goods_input_tanks_mult = 2.53
+    }
+    
+    unit_modifier = {
+        unit_offense_mult  = 0.35
+        unit_defense_mult  = 0.25
+    }
+    
+    ai_weight = {
+        value = 0
+    }
+}
+
+UHW_mo_heavy_weapons_supply_VI = {
+    texture = "gfx/interface/icons/production_method_icons/wartime6.dds"
+    group   = UHW_mog_heavy_weapon_supply
+    
+    possible = {
+        scope:military_formation = {
+            has_mobilization_option = mobilization_option:UHW_mo_heavy_weapons_supply_V
+            NOT = {
+                any_combat_unit = {
+                    OR = {
+                        has_unit_type = unit_type:combat_unit_type_irregular_infantry
+                        has_unit_type = unit_type:combat_unit_type_line_infantry
+                        has_unit_type = unit_type:combat_unit_type_skirmish_infantry
+                        has_unit_type = unit_type:combat_unit_type_trench_infantry
+                    }
+                }
+            }
+        }
+        is_ai = no
+    }
+    
+    on_activate = {
+        if = {
+            limit = {
+                game_date >= 1836.1.8
+            }
+            custom_tooltip = {
+                text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+                add_organization = {
+                    value = organization
+                    multiply = -0.5
+                }
+            }
+        }
+    }
+    
+    on_deactivate = {
+        custom_tooltip = {
+            text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+            add_organization = {
+                value = organization
+                multiply = -0.5
+            }
+        }
+    }
+    
+    unlocking_technologies = {
+        breech_loading_artillery
+    }
+    
+    upkeep_modifier_unscaled = {
+        goods_input_artillery_mult = 3.8
+		goods_input_ammunition_mult = 3.8
+        goods_input_radios_mult = 3.8
+        goods_input_automobiles_mult = 3.8
+        goods_input_tanks_mult = 3.8
+    }
+    
+    unit_modifier = {
+        unit_offense_mult  = 0.35
+        unit_defense_mult  = 0.25
+    }
+    
+    ai_weight = {
+        value = 0
+    }
+}

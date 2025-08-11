@@ -1,0 +1,7 @@
+﻿country_institution_conscription_max_investment_add = {
+	decimals = 0
+	color=good
+	game_data={
+		ai_value=0
+	}
+}

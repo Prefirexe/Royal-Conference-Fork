@@ -36,11 +36,11 @@
 				count = 1
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_POMERANIA
-				count = 1
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_mobile_artillery
+			#	state_region = s:STATE_POMERANIA
+			#	count = 1
+			#}
 
 			# III. Armee-Korps
 			combat_unit = {
@@ -73,11 +73,11 @@
 				count = 1
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_BRANDENBURG
-				count = 1
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_mobile_artillery
+			#	state_region = s:STATE_BRANDENBURG
+			#	count = 1
+			#}
 
 			# IV. Armee-Korps
 			combat_unit = {
@@ -98,11 +98,11 @@
 				count = 2
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_BRANDENBURG
-				count = 1
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_mobile_artillery
+			#	state_region = s:STATE_BRANDENBURG
+			#	count = 1
+			#}
 
 		}
 
@@ -142,11 +142,11 @@
 				count = 1
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_EAST_PRUSSIA
-				count = 1
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_mobile_artillery
+			#	state_region = s:STATE_EAST_PRUSSIA
+			#	count = 1
+			#}
 
 			# V. Armee-Korps
 			combat_unit = {
@@ -173,11 +173,11 @@
 				count = 1
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_POSEN
-				count = 1
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_mobile_artillery
+			#	state_region = s:STATE_POSEN
+			#	count = 1
+			#}
 
 			# VI. Armee-Korps
 			combat_unit = {
@@ -204,11 +204,11 @@
 				count = 1
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_SILESIA
-				count = 1
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_mobile_artillery
+			#	state_region = s:STATE_SILESIA
+			#	count = 1
+			#}
 
 			# Garde-Korps
 			combat_unit = {
@@ -241,11 +241,11 @@
 				count = 1
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_BRANDENBURG
-				count = 1
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_mobile_artillery
+			#	state_region = s:STATE_BRANDENBURG
+			#	count = 1
+			#}
 
 			save_scope_as = 2_Armee
 		}
@@ -263,7 +263,7 @@
 			}
 			save_scope_as = wilhem_gen
 		}
-		
+
 		scope:wilhem_gen = {
 			transfer_to_formation = scope:2_Armee
 		}
@@ -292,11 +292,11 @@
 				count = 2
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_RUHR
-				count = 1
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_mobile_artillery
+			#	state_region = s:STATE_RUHR
+			#	count = 1
+			#}
 			save_scope_as = main_Armee
 		}
 
@@ -352,11 +352,11 @@
 				count = 1
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_RUHR
-				count = 1
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_mobile_artillery
+			#	state_region = s:STATE_RUHR
+			#	count = 1
+			#}
 			save_scope_as = Elbe_Armee
 		}
 
@@ -373,7 +373,7 @@
 			}
 			save_scope_as = hans_ernst_gen
 		}
-		
+
 		scope:hans_ernst_gen = {
 			transfer_to_formation = scope:Elbe_Armee
 		}
@@ -388,16 +388,16 @@
 				state_region = s:STATE_POMERANIA
 				count = 1
 			}
-		}	
+		}
 
 		activate_production_method = {
 			building_type = building_naval_base
 			production_method = pm_power_of_the_purse
-		}	
+		}
 		activate_production_method = {
 			building_type = building_barracks
 			production_method = pm_general_training
-		}					
+		}
 	}
 
 	c:AUS ?= {
@@ -424,17 +424,11 @@
 				count = 10
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_STYRIA
-				count = 10
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_DALMATIA
-				count = 5
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_mobile_artillery
+			#	state_region = s:STATE_STYRIA
+			#	count = 10
+			#}
 			save_scope_as = i_korps
 		}
 
@@ -456,70 +450,6 @@
 		scope:josef_gen = {
 			transfer_to_formation = scope:i_korps
 		}
-
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_italy
-			name = III_Korpskommando
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_LOMBARDY
-				count = 15
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_VENETIA
-				count = 5
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_VENETIA
-				count = 5
-			}
-			save_scope_as = iii_korps
-		}
-
-		create_character = { # General
-			is_general = yes
-			first_name = Heinrich
-			last_name = von_Hess
-			historical = yes
-			birth_date = 1788.3.17
-			hq = region_danubia
-			traits = {
-				meticulous
-				resupply_commander
-			}
-			save_scope_as = heinr_gen
-		}
-
-		scope:heinr_gen = {
-			transfer_to_formation = scope:iii_korps
-		}
-
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_italy
-			name = K_K_Kriegsmarine
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_VENETIA
-				count = 4
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_ISTRIA
-				count = 6
-			}
-		}
-	}
-	
-	c:HUN ?= {
 
 		create_military_formation = {
 			type = army
@@ -562,17 +492,17 @@
 				count = 5
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_EAST_SLOVAKIA
-				count = 5
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_mobile_artillery
+			#	state_region = s:STATE_EAST_SLOVAKIA
+			#	count = 5
+			#}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_DELVIDEK
-				count = 5
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_mobile_artillery
+			#	state_region = s:STATE_DELVIDEK
+			#	count = 5
+			#}
 			save_scope_as = ii_korps
 		}
 
@@ -594,17 +524,13 @@
 			save_scope_as = karl_gen
 		}
 
-		scope:karl_gen = {
-			transfer_to_formation = scope:ii_korps
-		}
-
 		create_character = { # General
 			is_general = yes
 			first_name = Julius
 			last_name = von_Haynau
 			historical = yes
 			birth_date = 1786.10.14
-			hq = region_balkans
+			hq = region_poland
 			commander_rank = commander_rank_1
 			traits = {
 				wrathful
@@ -613,8 +539,55 @@
 			save_scope_as = haynau_gen
 		}
 
+		scope:karl_gen = {
+			transfer_to_formation = scope:ii_korps
+		}
+
 		scope:haynau_gen = {
 			transfer_to_formation = scope:ii_korps
+		}
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_italy
+			name = III_Korpskommando
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_LOMBARDY
+				count = 15
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_VENETIA
+				count = 5
+			}
+
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_mobile_artillery
+			#	state_region = s:STATE_VENETIA
+			#	count = 5
+			#}
+			save_scope_as = iii_korps
+		}
+
+		create_character = { # General
+			is_general = yes
+			first_name = Heinrich
+			last_name = von_Hess
+			historical = yes
+			birth_date = 1788.3.17
+			hq = region_danubia
+			traits = {
+				meticulous
+				resupply_commander
+			}
+			save_scope_as = heinr_gen
+		}
+
+		scope:heinr_gen = {
+			transfer_to_formation = scope:iii_korps
 		}
 
 		create_military_formation = {
@@ -629,10 +602,22 @@
 			}
 
 			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_DALMATIA
+				count = 5
+			}
+
+			combat_unit = {
 				type = unit_type:combat_unit_type_lancers
 				state_region = s:STATE_SLAVONIA
 				count = 5
 			}
+
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_mobile_artillery
+			#	state_region = s:STATE_SLOVENIA
+			#	count = 5
+			#}
 			save_scope_as = iiii_korps
 		}
 
@@ -645,7 +630,7 @@
 			interest_group = ig_armed_forces
 			ideology = ideology_royalist
 			birth_date = 1777.11.3
-			hq = region_balkans
+			hq = region_italy
 			traits = {
 				basic_offensive_planner
 				tactful
@@ -656,7 +641,24 @@
 		scope:laval_gen = {
 			transfer_to_formation = scope:iiii_korps
 		}
-	
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_italy
+			name = K_K_Kriegsmarine
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_VENETIA
+				count = 4
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_ISTRIA
+				count = 1
+			}
+		}
 	}
 
 	c:FRA ?= {
@@ -666,13 +668,13 @@
 			name = 1er_Corps_dArme
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_FRENCH_LOW_COUNTRIES
 				count = 20
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_RHONE
 				count = 15
 			}
@@ -683,11 +685,11 @@
 				count = 10
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_ORLEANS
-				count = 5
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_mobile_artillery
+			#	state_region = s:STATE_ORLEANS
+			#	count = 5
+			#}
 		}
 
 		create_military_formation = {
@@ -696,13 +698,13 @@
 			name = 2e_Corps_dArme
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_AUVERGNE_LIMOUSIN
 				count = 25
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_LANGUEDOC
 				count = 15
 			}
@@ -713,11 +715,11 @@
 				count = 15
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_PROVENCE
-				count = 5
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_mobile_artillery
+			#	state_region = s:STATE_PROVENCE
+			#	count = 5
+			#}
 
 			save_scope_as = secondcorpfra
 		}
@@ -739,13 +741,13 @@
 			name = 3e_Corps_dArme
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_ALSACE_LORRAINE
 				count = 15
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_BURGUNDY
 				count = 10
 			}
@@ -756,11 +758,11 @@
 				count = 5
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_FRANCHE_COMTE
-				count = 10
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_mobile_artillery
+			#	state_region = s:STATE_FRANCHE_COMTE
+			#	count = 10
+			#}
 			save_scope_as = thirdcorpfra
 		}
 
@@ -781,19 +783,19 @@
 			name = Arme_dAfrique
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_ALGIERS
 				count = 2
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_LORRAINE
 				count = 15
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_NORMANDY
 				count = 10
 			}
@@ -804,11 +806,11 @@
 				count = 5
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_CORSICA
-				count = 5
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_mobile_artillery
+			#	state_region = s:STATE_CORSICA
+			#	count = 5
+			#}
 
 			save_scope_as = africacorpfra
 		}
@@ -828,23 +830,23 @@
 			type = fleet
 			hq_region = sr:region_france
 			name = Escadre_du_Nord # Somewhat anachronistic formation
-		
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_FRENCH_LOW_COUNTRIES
-				count = 6
-			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_BRITTANY
+				state_region = s:STATE_FRENCH_LOW_COUNTRIES
 				count = 7
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
+				state_region = s:STATE_BRITTANY
+				count = 8
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_war
 				state_region = s:STATE_NORMANDY
-				count = 1
+				count = 2
 			}
 
 			combat_unit = {
@@ -856,25 +858,25 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_FRENCH_LOW_COUNTRIES
-				count = 10
+				count = 11
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_BRITTANY
-				count = 16
+				count = 18
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_NORMANDY
-				count = 5
+				count = 6
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_POITOU
-				count = 3
+				count = 5
 			}
 		}
 
@@ -882,11 +884,11 @@
 			type = fleet
 			hq_region = sr:region_occitania
 			name = Escadre_de_la_Mditerrane # Slightly anachronistic formation
-		
+
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
 				state_region = s:STATE_PROVENCE
-				count = 11
+				count = 9
 			}
 
 			combat_unit = {
@@ -898,13 +900,13 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
 				state_region = s:STATE_AQUITAINE
-				count = 4
+				count = 3
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_PROVENCE
-				count = 15
+				count = 11
 			}
 
 			combat_unit = {
@@ -916,7 +918,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_AQUITAINE
-				count = 12
+				count = 10
 			}
 
 			save_scope_as = fleetmedfra
@@ -932,15 +934,15 @@
 		scope:charles_gen = {
 			transfer_to_formation = scope:fleetmedfra
 		}
-		
+
 		activate_production_method = {
 			building_type = building_naval_base
 			production_method = pm_power_of_the_purse
-		}	
+		}
 		activate_production_method = {
 			building_type = building_barracks
 			production_method = pm_general_training
-		}		
+		}
 	}
 
 	c:GBR ?= {
@@ -950,37 +952,37 @@
 			name = Home_Army
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_HOME_COUNTIES
 				count = 1
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_EAST_ANGLIA
 				count = 2
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_WEST_COUNTRY
 				count = 2
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_WALES
 				count = 1
 			}
 			
 			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_LANCASHIRE
 				count = 1
 			}
 			
 			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_LOWLANDS
 				count = 5
 			}
@@ -1003,14 +1005,14 @@
 				count = 2
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_LANCASHIRE
-				count = 3
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_mobile_artillery
+			#	state_region = s:STATE_LANCASHIRE
+			#	count = 3
+			#}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_MIDLANDS
 				count = 3
 			}
@@ -1028,19 +1030,19 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_ULSTER
 				count = 5
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_LEINSTER
 				count = 5
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_HIGHLANDS
 				count = 5
 			}
@@ -1057,11 +1059,11 @@
 				count = 3
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_CONNAUGHT
-				count = 1
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_mobile_artillery
+			#	state_region = s:STATE_CONNAUGHT
+			#	count = 1
+			#}
 			save_scope_as = home_army_army
 		}
 
@@ -1081,22 +1083,22 @@
 			name = Army_of_the_Mediterranean
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_EAST_ANGLIA
 				count = 5
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_YORKSHIRE
 				count = 10
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_YORKSHIRE
-				count = 1
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_mobile_artillery
+			#	state_region = s:STATE_YORKSHIRE
+			#	count = 1
+			#}
 			save_scope_as = army_med_army
 		}
 
@@ -1115,34 +1117,34 @@
 			name = Army_of_the_West_Indies
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_WALES
 				count = 10
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_LANCASHIRE
 				count = 9
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_YORKSHIRE
 				count = 3
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_ULSTER
 				count = 6
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_ULSTER
-				count = 1
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_mobile_artillery
+			#	state_region = s:STATE_ULSTER
+			#	count = 1
+			#}
 			save_scope_as = west_indies_army
 		}
 
@@ -1161,25 +1163,25 @@
 			name = Army_of_India
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_LANCASHIRE
 				count = 5
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_HOME_COUNTIES
 				count = 3
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_LEINSTER
 				count = 4
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_HIGHLANDS
 				count = 5
 			}
@@ -1196,20 +1198,20 @@
 				count = 1
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_HOME_COUNTIES
-				count = 1
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_mobile_artillery
+			#	state_region = s:STATE_HOME_COUNTIES
+			#	count = 1
+			#}
+
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_HOME_COUNTIES
+			#	count = 1
+			#}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_HOME_COUNTIES
-				count = 1
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
+				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_LOWLANDS
 				count = 3
 			}
@@ -1264,7 +1266,7 @@
 			type = fleet
 			hq_region = sr:region_england
 			name = Plymouth_Station
-		
+
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
 				state_region = s:STATE_EAST_ANGLIA
@@ -1282,7 +1284,7 @@
 			type = fleet
 			hq_region = sr:region_italy
 			name = Mediterranean_Station
-		
+
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
 				state_region = s:STATE_HOME_COUNTIES
@@ -1323,13 +1325,13 @@
 
 		scope:thomas_adm = {
 			transfer_to_formation = scope:med_fleet_gbr
-		}	
+		}
 
 		create_military_formation = {
 			type = fleet
 			hq_region = sr:region_new_england
 			name = North_America_and_West_Indies_Station
-		
+
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
 				state_region = s:STATE_HOME_COUNTIES
@@ -1371,7 +1373,7 @@
 		scope:cockburn_adm = {
 			transfer_to_formation = scope:north_amer_fleet
 		}
-			
+
 		create_military_formation = {
 			type = fleet
 			hq_region = sr:region_madras
@@ -1385,7 +1387,7 @@
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_MALAYA
+				state_region = s:STATE_EAST_ANGLIA
 				count = 6
 			}
 
@@ -1415,11 +1417,11 @@
 		activate_production_method = {
 			building_type = building_naval_base
 			production_method = pm_power_of_the_purse
-		}	
+		}
 		activate_production_method = {
 			building_type = building_barracks
 			production_method = pm_general_training
-		}			
+		}
 	}
 
 	c:RUS ?= {
@@ -1458,17 +1460,17 @@
 				count = 2
 			}
 
-			combat_unit = { # L.-Gds. Horse Artillery
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_INGRIA
-				count = 2
-			}
+			#combat_unit = { # L.-Gds. Horse Artillery
+			#	type = unit_type:combat_unit_type_mobile_artillery
+			#	state_region = s:STATE_INGRIA
+			#	count = 2
+			#}
 
-			combat_unit = { # 1-3. L.-Gds. Artillery Brigade
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_INGRIA
-				count = 3
-			}
+			#combat_unit = { # 1-3. L.-Gds. Artillery Brigade
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_INGRIA
+			#	count = 3
+			#}
 
 			# Guards Cavalry
 			combat_unit = { # Chevalier Guards, L.-Gds. Horse, L.-Gds. Cuirassiers, Her Majesty’s Life-Cuirassiers, L.-Gds. Podolia Cuirassiers
@@ -1505,7 +1507,7 @@
 
 		scope:vorontsov_gen = {
 			transfer_to_formation = scope:gvardeyskiy_korpus_army
-		}		
+		}
 
 		create_military_formation = {
 			type = army
@@ -1548,16 +1550,16 @@
 			}
 
 			# 1st Artillery Division
-			combat_unit = { # 1st, 2nd, and 3rd Field Artillery Brigades
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_SMOLENSK
-				count = 3
-			}
-			combat_unit = { # 1st Horse-Artillery Brigade
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_SMOLENSK
-				count = 1
-			}
+			#combat_unit = { # 1st, 2nd, and 3rd Field Artillery Brigades
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_SMOLENSK
+			#	count = 3
+			#}
+			#combat_unit = { # 1st Horse-Artillery Brigade
+			#	type = unit_type:combat_unit_type_mobile_artillery
+			#	state_region = s:STATE_SMOLENSK
+			#	count = 1
+			#}
 
 			# 1st Reserve Cavalry Corps
 			combat_unit = { # Yekaterinoslav and His Imperial Highness the Grand Duke Michael Pavlovich’s Cuirassier Regiments
@@ -1571,11 +1573,11 @@
 				count = 2
 			}
 
-			combat_unit = { # 1st Horse-Artillery Division
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_ROSTOV
-				count = 1
-			}
+			#combat_unit = { # 1st Horse-Artillery Division
+			#	type = unit_type:combat_unit_type_mobile_artillery
+			#	state_region = s:STATE_ROSTOV
+			#	count = 1
+			#}
 
 			combat_unit = { # Tenginsk and Navaginsk Infantry, Kabarda and Kura Jägers
 				type = unit_type:combat_unit_type_line_infantry
@@ -1608,11 +1610,11 @@
 			}
 
 			# Caucasus Artillery Division
-			combat_unit = { # Caucasus Grenadier Artillery Brigade and the 21st and 22nd Field Artillery Brigades
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_GREATER_CAUCASUS
-				count = 3
-			}
+			#combat_unit = { # Caucasus Grenadier Artillery Brigade and the 21st and 22nd Field Artillery Brigades
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_GREATER_CAUCASUS
+			#	count = 3
+			#}
 
 			# Caucasian (Cossack) Line
 			combat_unit = { # Terek, Kizlyar, and Grebensk Line Cossack regiments
@@ -1687,16 +1689,16 @@
 			}
 
 			# 2nd Artillery Division
-			combat_unit = { # 4th, 5th, and 6th Field Artillery Brigades
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_SMOLENSK
-				count = 3
-			}
-			combat_unit = { # 2nd Horse-Artillery Brigade
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_SMOLENSK
-				count = 1
-			}
+			#combat_unit = { # 4th, 5th, and 6th Field Artillery Brigades
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_SMOLENSK
+			#	count = 3
+			#}
+			#combat_unit = { # 2nd Horse-Artillery Brigade
+			#	type = unit_type:combat_unit_type_mobile_artillery
+			#	state_region = s:STATE_SMOLENSK
+			#	count = 1
+			#}
 
 			# 2nd Reserve Cavalry Corps
 			combat_unit = { # Order and Starodub Cuirassier Regiments, Prince Albert of Prussia’s and Her Imperial Highness the Grand Duchess Helen Pavlovna’s Cuirassier Regments
@@ -1705,11 +1707,11 @@
 				count = 3
 			}
 
-			combat_unit = { # 2nd Horse-Artillery Division
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_ROSTOV
-				count = 1
-			}
+			#combat_unit = { # 2nd Horse-Artillery Division
+			#	type = unit_type:combat_unit_type_mobile_artillery
+			#	state_region = s:STATE_ROSTOV
+			#	count = 1
+			#}
 			save_scope_as = ii_pekhotniy_korpus
 		}
 
@@ -1764,16 +1766,16 @@
 			}
 
 			# 3rd Artillery Division
-			combat_unit = { # 7th, 8th, and 9th Field Artillery Brigades
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_SMOLENSK
-				count = 3
-			}
-			combat_unit = { # 3rd Horse-Artillery Brigade
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_SMOLENSK
-				count = 1
-			}
+			#combat_unit = { # 7th, 8th, and 9th Field Artillery Brigades
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_SMOLENSK
+			#	count = 3
+			#}
+			#combat_unit = { # 3rd Horse-Artillery Brigade
+			#	type = unit_type:combat_unit_type_mobile_artillery
+			#	state_region = s:STATE_SMOLENSK
+			#	count = 1
+			#}
 
 			# 3rd Reserve Cavalry Corps
 			combat_unit = { # Moscow and Kargopol Dragoon Regiments, Tver and Finland Dragoon Regiments
@@ -1782,11 +1784,11 @@
 				count = 3
 			}
 
-			combat_unit = { # 3rd Horse-Artillery Division
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_ROSTOV
-				count = 1
-			}
+			#combat_unit = { # 3rd Horse-Artillery Division
+			#	type = unit_type:combat_unit_type_mobile_artillery
+			#	state_region = s:STATE_ROSTOV
+			#	count = 1
+			#}
 			save_scope_as = iii_pekhotniy_korpus
 		}
 
@@ -1877,16 +1879,16 @@
 			}
 
 			# 4th Artillery Division
-			combat_unit = { # 10th, 11th, and 12th Field Artillery Brigades
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_KHARKOV
-				count = 3
-			}
-			combat_unit = { # 4th Horse-Artillery Brigade
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_KHARKOV
-				count = 1
-			}
+			#combat_unit = { # 10th, 11th, and 12th Field Artillery Brigades
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_KHARKOV
+			#	count = 3
+			#}
+			#combat_unit = { # 4th Horse-Artillery Brigade
+			#	type = unit_type:combat_unit_type_mobile_artillery
+			#	state_region = s:STATE_KHARKOV
+			#	count = 1
+			#}
 
 			# 1st Reserve Cavalry Corps
 			combat_unit = { # Belgorod and Chuguev Lancer Regiments, Borisoglebsk and Serpukhov Lancer Regiments
@@ -1966,16 +1968,16 @@
 			}
 
 			# 5th Artillery Division
-			combat_unit = { # 13th, 14th, and 15th Field Artillery Brigades
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_TARTARIA
-				count = 3
-			}
-			combat_unit = { # 5th Horse-Artillery Brigade
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_TARTARIA
-				count = 1
-			}
+			#combat_unit = { # 13th, 14th, and 15th Field Artillery Brigades
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_TARTARIA
+			#	count = 3
+			#}
+			#combat_unit = { # 5th Horse-Artillery Brigade
+			#	type = unit_type:combat_unit_type_mobile_artillery
+			#	state_region = s:STATE_TARTARIA
+			#	count = 1
+			#}
 
 			# 2nd Reserve Cavalry Corps
 			combat_unit = { # Ukraine and Novo-Arkhangelsk Lancer Regiments, Novo-Mirgorod and Yelisavetgrad Lancer Regiments
@@ -2049,16 +2051,16 @@
 			}
 
 			# Grenadier Artillery Division
-			combat_unit = { # 1st, 2nd, and 3rd Grenadier Artillery Brigades
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_MOSCOW
-				count = 3
-			}
-			combat_unit = { # 7th Horse-Artillery Brigade
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_MOSCOW
-				count = 1
-			}
+			#combat_unit = { # 1st, 2nd, and 3rd Grenadier Artillery Brigades
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_MOSCOW
+			#	count = 3
+			#}
+			#combat_unit = { # 7th Horse-Artillery Brigade
+			#	type = unit_type:combat_unit_type_mobile_artillery
+			#	state_region = s:STATE_MOSCOW
+			#	count = 1
+			#}
 
 			# 1st Reserve Cavalry Corps
 			combat_unit = { # Yekaterinoslav and His Imperial Highness the Grand Duke Michael Pavlovich’s Cuirassier Regiments
@@ -2145,7 +2147,7 @@
 			type = fleet
 			hq_region = sr:region_russia
 			name = Baltiyskiy_Flot
-		
+
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
 				state_region = s:STATE_INGRIA
@@ -2187,7 +2189,7 @@
 			type = fleet
 			hq_region = sr:region_dnieper
 			name = Chernomorskiy_Flot
-		
+
 			combat_unit = {
 				type = unit_type:combat_unit_type_man_o_war
 				state_region = s:STATE_CHERSON
@@ -2244,7 +2246,7 @@
 			type = fleet
 			hq_region = sr:region_east_siberia
 			name = Okhotskaya_Voyennaya_Flotiliya
-		
+
 			combat_unit = {
 				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_OKHOTSK
@@ -2252,7 +2254,7 @@
 			}
 			save_scope_as = rus_okhotsk_fleet
 		}
-		
+
 		create_character = {
 			template = RUS_vasily_zavoyko
 			save_scope_as = zavoyko_adm
@@ -2267,30 +2269,30 @@
 			type = army
 			hq_region = sr:region_caucasus
 
-			combat_unit = { # 
+			combat_unit = { #
 				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_NORTH_CAUCASUS
 				count = 3
 			}
-			
-			combat_unit = { # 
+
+			combat_unit = { #
 				type = unit_type:combat_unit_type_irregular_infantry
 				state_region = s:STATE_KUBAN
 				count = 6
 			}
 		}
-		
+
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_caucasus
 
-			combat_unit = { # 
+			combat_unit = { #
 				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_KUBAN
 				count = 3
 			}
-			
-			combat_unit = { # 
+
+			combat_unit = { #
 				type = unit_type:combat_unit_type_irregular_infantry
 				state_region = s:STATE_KUBAN
 				count = 6
@@ -2304,31 +2306,31 @@
 			hq_region = sr:region_caucasus
 			name = Murtazeki
 
-			combat_unit = { # 
+			combat_unit = { #
 				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_NORTH_CAUCASUS
 				count = 1
 			}
-			
-			combat_unit = { # 
+
+			combat_unit = { #
 				type = unit_type:combat_unit_type_irregular_infantry
 				state_region = s:STATE_NORTH_CAUCASUS
 				count = 3
 			}
 		}
-		
+
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_caucasus
 			name = Milishia
 
-			combat_unit = { # 
+			combat_unit = { #
 				type = unit_type:combat_unit_type_irregular_infantry
 				state_region = s:STATE_NORTH_CAUCASUS
 				count = 1
 			}
-			
-			combat_unit = { # 
+
+			combat_unit = { #
 				type = unit_type:combat_unit_type_irregular_infantry
 				state_region = s:STATE_DAGESTAN
 				count = 5
@@ -2354,11 +2356,11 @@
 				count = 3
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_BADEN
-				count = 2
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_BADEN
+			#	count = 2
+			#}
 		}
 	}
 
@@ -2386,11 +2388,11 @@
 				count = 2
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_WURTTEMBERG
-				count = 2
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_WURTTEMBERG
+			#	count = 2
+			#}
 		}
 	}
 
@@ -2424,17 +2426,17 @@
 				count = 2
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_SAXONY
-				count = 1
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_SAXONY
+			#	count = 1
+			#}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_SAXONY
-				count = 1
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_mobile_artillery
+			#	state_region = s:STATE_SAXONY
+			#	count = 1
+			#}
 		}
 	}
 
@@ -2468,11 +2470,11 @@
 				count = 4
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_BAVARIA
-				count = 1
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_BAVARIA
+			#	count = 1
+			#}
 		}
 
 		create_military_formation = {
@@ -2504,11 +2506,11 @@
 				count = 2
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_FRANCONIA
-				count = 1
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_FRANCONIA
+			#	count = 1
+			#}
 		}
 	}
 
@@ -2530,11 +2532,11 @@
 				count = 1
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_HESSE
-				count = 1
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_HESSE
+			#	count = 1
+			#}
 		}
 	}
 
@@ -2556,11 +2558,11 @@
 				count = 1
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_HESSE
-				count = 1
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_HESSE
+			#	count = 1
+			#}
 		}
 	}
 
@@ -2576,11 +2578,11 @@
 				count = 2
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_HESSE
-				count = 1
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_HESSE
+			#	count = 1
+			#}
 		}
 	}
 
@@ -2632,11 +2634,11 @@
 				count = 2
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_HANNOVER
-				count = 1
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_HANNOVER
+			#	count = 1
+			#}
 		}
 
 		create_military_formation = {
@@ -2670,11 +2672,11 @@
 				count = 2
 			}
 
-			combat_unit = { # Großherzoglich Mecklenburgisches Feldartillerie-Regiment
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_MECKLENBURG
-				count = 1
-			}
+			#combat_unit = { # Großherzoglich Mecklenburgisches Feldartillerie-Regiment
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_MECKLENBURG
+			#	count = 1
+			#}
 		}
 	}
 
@@ -2690,11 +2692,11 @@
 				count = 2
 			}
 
-			combat_unit = { # Großherzoglich Oldenburgische Artillerie-Kompanie
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_HANNOVER
-				count = 1
-			}
+			#combat_unit = { # Großherzoglich Oldenburgische Artillerie-Kompanie
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_HANNOVER
+			#	count = 1
+			#}
 		}
 	}
 
@@ -2786,7 +2788,7 @@
 				count = 2
 			}
 		}
-	}	
+	}
 
 	c:SWE ?= {
 		create_military_formation = {
@@ -2860,23 +2862,23 @@
 				count = 1
 			}
 
-			combat_unit = { # Göta artillerregemente
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_GOTALAND
-				count = 1
-			}
+			#combat_unit = { # Göta artillerregemente
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_GOTALAND
+			#	count = 1
+			#}
 
-			combat_unit = { # Wendes artilleriregemente
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_SVEALAND
-				count = 1
-			}
+			#combat_unit = { # Wendes artilleriregemente
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_SVEALAND
+			#	count = 1
+			#}
 
-			combat_unit = { # Svea artilleriregemente
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_SVEALAND
-				count = 1
-			}
+			#combat_unit = { # Svea artilleriregemente
+			#	type = unit_type:combat_unit_type_mobile_artillery
+			#	state_region = s:STATE_SVEALAND
+			#	count = 1
+			#}
 		}
 
 		create_military_formation = {
@@ -2889,13 +2891,13 @@
 				state_region = s:STATE_SVEALAND
 				count = 4
 			}
-			
+
 			combat_unit = { # Äran, Dristigheten, Fäderneslandet - should be man'o'wars, but this results in unbalanced fleet
 				type = unit_type:combat_unit_type_frigate
 				state_region = s:STATE_SVEALAND
 				count = 3
 			}
-			
+
 			combat_unit = { # Gustaf den Store, Manligheten, Prins Oscar
 				type = unit_type:combat_unit_type_man_o_war
 				state_region = s:STATE_SCANIA
@@ -2946,11 +2948,11 @@
 				count = 4
 			}
 
-			combat_unit = { # Danske Artilleribrigade
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_ZEALAND
-				count = 1
-			}
+			#combat_unit = { # Danske Artilleribrigade
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_ZEALAND
+			#	count = 1
+			#}
 
 			combat_unit = { # Fyneske regiment lette Dragoner, Dronningens Livregiment
 				type = unit_type:combat_unit_type_dragoons
@@ -3059,11 +3061,11 @@
 				count = 1
 			}
 
-			combat_unit = { # Holstenske Artilleribrigade
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_SCHLESWIG_HOLSTEIN
-				count = 1
-			}
+			#combat_unit = { # Holstenske Artilleribrigade
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_SCHLESWIG_HOLSTEIN
+			#	count = 1
+			#}
 		}
 	}
 
@@ -3097,11 +3099,11 @@
 				count = 1
 			}
 
-			combat_unit = { # Den kongelige norske Artilleribrigade
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_EASTERN_NORWAY
-				count = 1
-			}
+			#combat_unit = { # Den kongelige norske Artilleribrigade
+			#	type = unit_type:combat_unit_type_mobile_artillery
+			#	state_region = s:STATE_EASTERN_NORWAY
+			#	count = 1
+			#}
 		}
 
 		create_military_formation = {
@@ -3134,11 +3136,11 @@
 				state_region = s:STATE_UUSIMAA
 				count = 2
 			}
-			combat_unit = { # 19th Field Artillery Brigade
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_UUSIMAA
-				count = 1
-			}
+			#combat_unit = { # 19th Field Artillery Brigade
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_UUSIMAA
+			#	count = 1
+			#}
 		}
 
 		create_military_formation = {
@@ -3184,11 +3186,11 @@
 				count = 1
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_ATTICA
-				count = 1
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_ATTICA
+			#	count = 1
+			#}
 		}
 
 		create_military_formation = {
@@ -3222,11 +3224,11 @@
 				count = 1
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_NORTHERN_SERBIA
-				count = 1
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_NORTHERN_SERBIA
+			#	count = 1
+			#}
 		}
 	}
 
@@ -3317,13 +3319,13 @@
 				count = 2
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_CAMPANIA
-				count = 1
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_CAMPANIA
+			#	count = 1
+			#}
 		}
-		
+
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_italy
@@ -3409,11 +3411,11 @@
 				count = 1
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_PIEDMONT
-				count = 1
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_mobile_artillery
+			#	state_region = s:STATE_PIEDMONT
+			#	count = 1
+			#}
 		}
 
 		create_military_formation = {
@@ -3451,11 +3453,11 @@
 				count = 1
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_PIEDMONT
-				count = 1
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_mobile_artillery
+			#	state_region = s:STATE_PIEDMONT
+			#	count = 1
+			#}
 		}
 
 		create_military_formation = {
@@ -3513,11 +3515,11 @@
 				count = 1
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_LAZIO
-				count = 1
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_LAZIO
+			#	count = 1
+			#}
 		}
 
 		create_military_formation = {
@@ -3557,11 +3559,11 @@
 				count = 1
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_TUSCANY
-				count = 1
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_TUSCANY
+			#	count = 1
+			#}
 		}
 
 		create_military_formation = {
@@ -3636,46 +3638,54 @@
 			type = army
 			hq_region = sr:region_rhine
 			name = Koninklijk_Nederlands_Leger
+
 			combat_unit = { # Regiment Jagers, Regiment Grenadiers, 1-4 Regiment Infanterie
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_HOLLAND
 				count = 6
 			}
+
 			combat_unit = { # 5-7 Regiment Infanterie
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_FRIESLAND
 				count = 3
 			}
+
 			combat_unit = { # 8-10 Regiment Infanterie
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_GELRE
 				count = 3
 			}
+
 			combat_unit = { # 1-2 Regiment Lichte Dragonders
 				type = unit_type:combat_unit_type_dragoons
 				state_region = s:STATE_FRIESLAND
 				count = 2
 			}
+
 			combat_unit = { # 3-4 Regiment Lichte Dragonders
 				type = unit_type:combat_unit_type_dragoons
 				state_region = s:STATE_GELRE
 				count = 2
 			}
+
 			combat_unit = { # 1-2 Regiment Zware Dragonders
 				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_HOLLAND
 				count = 2
 			}
+
 			combat_unit = { # 1-2 Regiment Lansiers
 				type = unit_type:combat_unit_type_lancers
 				state_region = s:STATE_HOLLAND
 				count = 2
 			}
-			combat_unit = { # 1-4 Bataljon Veld Artillerie, Regiment Rijdende Artillerie
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_HOLLAND
-				count = 3
-			}
+
+			#combat_unit = { # 1-4 Bataljon Veld Artillerie, Regiment Rijdende Artillerie
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_HOLLAND
+			#	count = 3
+			#}
 		}
 		create_military_formation = {
 			type = fleet
@@ -3720,56 +3730,63 @@
 				count = 1
 			}
 		}
-		
+
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_rhine
 			name = Armee_Belge
+
 			combat_unit = { # 1-3 régiment de chasseurs à pied, 1-6 régiment de ligne
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_WALLONIA
 				count = 9
 			}
+
 			combat_unit = { # 7-12 régiment de ligne
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_FLANDERS
 				count = 6
 			}
+
 			combat_unit = { # 1-2 Régiment de Chasseurs à cheval
 				type = unit_type:combat_unit_type_dragoons
 				state_region = s:STATE_FLANDERS
 				count = 2
 			}
+
 			combat_unit = { # 1er régiment de cuirassiers
 				type = unit_type:combat_unit_type_cuirassiers
 				state_region = s:STATE_WALLONIA
 				count = 1
 			}
+
 			combat_unit = { # 1 Régiment de Guides
 				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_WALLONIA
 				count = 1
 			}
+
 			combat_unit = { # 1-2 Régiment de Lanciers
 				type = unit_type:combat_unit_type_lancers
 				state_region = s:STATE_WALLONIA
 				count = 2
 			}
-			combat_unit = { # 1-3 Régiment d'Artillerie
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_FLANDERS
-				count = 3
-			}
+
+			#combat_unit = { # 1-3 Régiment d'Artillerie
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_FLANDERS
+			#	count = 3
+			#}
 		}
-		
+
 		activate_production_method = {
 			building_type = building_naval_base
 			production_method = pm_power_of_the_purse
-		}			
+		}
 		activate_production_method = {
 			building_type = building_barracks
 			production_method = pm_general_training
-		}			
+		}
 	}
 
 	c:POR ?= {
@@ -3801,12 +3818,12 @@
 				state_region = s:STATE_BEIRA
 				count = 2
 			}
-				
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_ESTREMADURA
-				count = 1
-			}
+
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_ESTREMADURA
+			#	count = 1
+			#}
 		}
 
 		create_military_formation = {
@@ -3832,11 +3849,11 @@
 				count = 1
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_BEIRA
-				count = 1
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_BEIRA
+			#	count = 1
+			#}
 		}
 
 		create_military_formation = {
@@ -3882,38 +3899,6 @@
 		}
 	}
 
-	c:SPC ?= {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_iberia
-			name = Guardia_Real
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_CATALONIA
-				count = 1
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_CATALONIA
-				count = 7
-			}
-			
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_ARAGON
-				count = 2
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_CATALONIA
-				count = 2
-			}
-		}
-	}
-
 	c:SPA ?= {
 		create_military_formation = {
 			type = army
@@ -3932,11 +3917,11 @@
 				count = 4
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_CASTILE
-				count = 1
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_CASTILE
+			#	count = 1
+			#}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_dragoons
@@ -4022,17 +4007,17 @@
 				count = 3
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_TOLEDO
-				count = 2
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_TOLEDO
+			#	count = 2
+			#}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_GALICIA
-				count = 2
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_GALICIA
+			#	count = 2
+			#}
 
 			#combat_unit = {
 			#	type = unit_type:combat_unit_type_cannon_artillery
@@ -4046,23 +4031,23 @@
 			hq_region = sr:region_iberia
 			name = Ejercito_del_Centro
 
-			#combat_unit = {
-			#	type = unit_type:combat_unit_type_line_infantry
-			#	state_region = s:STATE_CATALONIA
-			#	count = 7
-			#}
-			#
-			#combat_unit = {
-			#	type = unit_type:combat_unit_type_line_infantry
-			#	state_region = s:STATE_ARAGON
-			#	count = 2
-			#}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_CATALONIA
+				count = 7
+			}
 
-			#combat_unit = {
-			#	type = unit_type:combat_unit_type_hussars
-			#	state_region = s:STATE_CATALONIA
-			#	count = 2
-			#}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ARAGON
+				count = 2
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_CATALONIA
+				count = 2
+			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_dragoons
@@ -4070,17 +4055,17 @@
 				count = 2
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_VALENCIA
-				count = 1
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_VALENCIA
+			#	count = 1
+			#}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_GRANADA
-				count = 2
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_GRANADA
+			#	count = 2
+			#}
 		}
 
 		create_military_formation = {

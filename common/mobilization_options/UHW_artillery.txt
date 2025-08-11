@@ -1,0 +1,459 @@
+﻿UHW_mo_cannon_artillery = {
+    texture = "gfx/interface/icons/production_method_icons/cannon_artillery.dds"
+    group   = UHW_mog_artillery
+    
+    possible = {
+        market ?= {
+            mg:artillery ?= {
+                has_potential_supply = yes
+            }
+        }
+    }
+    
+    can_be_turned_off = {
+        scope:military_formation = {
+            NOR = {
+                has_mobilization_option = mobilization_option:UHW_mo_mobile_artillery
+                has_mobilization_option = mobilization_option:UHW_mo_shrapnel_artillery
+                has_mobilization_option = mobilization_option:UHW_mo_rapid_fire_artillery
+                has_mobilization_option = mobilization_option:UHW_mo_siege_artillery
+                has_mobilization_option = mobilization_option:UHW_mo_advanced_artillery
+            }
+        }
+    }
+    
+    on_activate = {
+        if = { # Allow free changes during first week of game so AI can pick for themselves what they want
+            limit = { # b/c otherwise we have to overwrite vanilla military formation histories
+                game_date >= 1837.1.1
+            }
+            custom_tooltip = {
+                text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+                add_organization = {
+                    value = organization
+                    multiply = -0.5
+                }
+            }
+        }
+    }
+    
+    on_deactivate = {
+        custom_tooltip = {
+            text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+            add_organization = {
+                value = organization
+                multiply = -0.5
+            }
+        }
+    }
+    
+    unlocking_technologies = {
+        artillery
+    }
+    
+    upkeep_modifier = {
+        goods_input_artillery_add = 0.8
+    }
+    
+    unit_modifier = { # Cancel out effects of melee weapons and add 10
+        unit_offense_add  = 6.03
+        unit_defense_add  = 2.51
+        unit_kill_rate_add = 0.05
+    }
+    
+    ai_weight = {
+        value = 10 # Very important
+    }
+}
+
+UHW_mo_mobile_artillery = {
+    texture = "gfx/interface/icons/production_method_icons/mobile_artillery.dds"
+    group   = UHW_mog_artillery
+    
+    possible = {
+        scope:military_formation = {
+            has_mobilization_option = mobilization_option:UHW_mo_cannon_artillery
+            NOT = {
+                any_combat_unit = {
+                    has_unit_type = unit_type:combat_unit_type_irregular_infantry
+                }
+            }
+        }
+        market ?= {
+            mg:artillery ?= {
+                has_potential_supply = yes
+            }
+        }
+    }
+    
+    can_be_turned_off = {
+        scope:military_formation = {
+            NOT = {
+                has_mobilization_option = mobilization_option:UHW_mo_shrapnel_artillery
+            }
+        }
+    }
+    
+    on_activate = {
+        if = {
+            limit = {
+                game_date >= 1837.1.1
+            }
+            custom_tooltip = {
+                text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+                add_organization = {
+                    value = organization
+                    multiply = -0.5
+                }
+            }
+        }
+    }
+    
+    on_deactivate = {
+        custom_tooltip = {
+            text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+            add_organization = {
+                value = organization
+                multiply = -0.5
+            }
+        }
+    }
+    
+    unlocking_technologies = {
+        shell_gun
+    }
+    
+   upkeep_modifier = {
+        goods_input_artillery_add = 1.2
+    }
+    
+    unit_modifier = { # Cancel out effects of melee weapons and add 10
+        unit_offense_add  = 6.03
+        unit_defense_add  = 2.51
+        unit_kill_rate_add = 0.1
+    }
+    
+    ai_weight = {
+        value = 2
+    }
+}
+
+UHW_mo_shrapnel_artillery = {
+    texture = "gfx/interface/icons/production_method_icons/shrapnel_artillery.dds"
+    group   = UHW_mog_artillery
+    
+    possible = {
+        scope:military_formation = {
+            has_mobilization_option = mobilization_option:UHW_mo_mobile_artillery
+            NOT = {
+                any_combat_unit = {
+                    OR = {
+                        has_unit_type = unit_type:combat_unit_type_irregular_infantry
+                        has_unit_type = unit_type:combat_unit_type_line_infantry
+                    }
+                }
+            }
+        }
+        market ?= {
+            mg:artillery ?= {
+                has_potential_supply = yes
+            }
+        }
+        market ?= {
+            mg:ammunition ?= {
+                has_potential_supply = yes
+            }
+        }
+    }
+
+    can_be_turned_off = {
+        scope:military_formation = {
+            NOT = {
+                has_mobilization_option = mobilization_option:UHW_mo_rapid_fire_artillery
+            }
+        }
+    }
+    
+    on_activate = {
+        if = {
+            limit = {
+                game_date >= 1837.1.1
+            }
+            custom_tooltip = {
+                text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+                add_organization = {
+                    value = organization
+                    multiply = -0.5
+                }
+            }
+        }
+    }
+    
+    on_deactivate = {
+        custom_tooltip = {
+            text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+            add_organization = {
+                value = organization
+                multiply = -0.5
+            }
+        }
+    }
+    
+    unlocking_technologies = {
+        breech_loading_artillery
+    }
+    
+    upkeep_modifier = {
+        goods_input_artillery_add = 1.8
+        goods_input_ammunition_add = 0.70
+    }
+    
+    unit_modifier = { # Cancel out effects of melee weapons and add 10
+        unit_offense_add  = 7.5
+        unit_defense_add  = 5.63
+        unit_kill_rate_add = 0.15
+    }
+    
+    ai_weight = {
+        value = 2
+    }
+}
+
+UHW_mo_rapid_fire_artillery = {
+    texture = "gfx/interface/icons/production_method_icons/shrapnel_artillery.dds"
+    group   = UHW_mog_artillery
+    
+    possible = {
+        scope:military_formation = {
+            has_mobilization_option = mobilization_option:UHW_mo_shrapnel_artillery
+            NOT = {
+                any_combat_unit = {
+                    OR = {
+                        has_unit_type = unit_type:combat_unit_type_irregular_infantry
+                        has_unit_type = unit_type:combat_unit_type_line_infantry
+                        has_unit_type = unit_type:combat_unit_type_skirmish_infantry
+                    }
+                }
+            }
+        }
+        market ?= {
+            mg:artillery ?= {
+                has_potential_supply = yes
+            }
+        }
+        market ?= {
+            mg:ammunition ?= {
+                has_potential_supply = yes
+            }
+        }
+    }
+    
+    can_be_turned_off = {
+        scope:military_formation = {
+            NOT = {
+                has_mobilization_option = mobilization_option:UHW_mo_siege_artillery
+            }
+        }
+    }
+    
+    on_activate = {
+        if = {
+            limit = {
+                game_date >= 1837.1.1
+            }
+            custom_tooltip = {
+                text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+                add_organization = {
+                    value = organization
+                    multiply = -0.5
+                }
+            }
+        }
+    }
+    
+    on_deactivate = {
+        custom_tooltip = {
+            text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+            add_organization = {
+                value = organization
+                multiply = -0.5
+            }
+        }
+    }
+    
+    unlocking_technologies = {
+        trench_works
+    }
+    
+    upkeep_modifier_unscaled = {
+        goods_input_artillery_add = 3.6
+        goods_input_ammunition_add = 2.025
+    }
+    
+    unit_modifier = {
+        unit_offense_add   = 9
+        unit_defense_add   = 7.88
+        unit_kill_rate_add = 0.4
+    }
+    
+    ai_weight = {
+        value = 2
+    }
+}
+
+UHW_mo_siege_artillery = {
+    texture = "gfx/interface/icons/production_method_icons/siege_artillery.dds"
+    group   = UHW_mog_artillery
+    
+    possible = {
+        scope:military_formation = {
+            has_mobilization_option = mobilization_option:UHW_mo_rapid_fire_artillery
+            NOT = {
+                any_combat_unit = {
+                    OR = {
+                        has_unit_type = unit_type:combat_unit_type_irregular_infantry
+                        has_unit_type = unit_type:combat_unit_type_line_infantry
+                        has_unit_type = unit_type:combat_unit_type_skirmish_infantry
+                    }
+                }
+            }
+        }
+        market ?= {
+            mg:artillery ?= {
+                has_potential_supply = yes
+            }
+        }
+        market ?= {
+            mg:ammunition ?= {
+                has_potential_supply = yes
+            }
+        }
+    }
+
+    can_be_turned_off = {
+        scope:military_formation = {
+            NOT = {
+                has_mobilization_option = mobilization_option:UHW_mo_advanced_artillery
+            }
+        }
+    }
+    
+    on_activate = {
+        if = {
+            limit = {
+                game_date >= 1837.1.1
+            }
+            custom_tooltip = {
+                text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+                add_organization = {
+                    value = organization
+                    multiply = -0.5
+                }
+            }
+        }
+    }
+    
+    on_deactivate = {
+        custom_tooltip = {
+            text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+            add_organization = {
+                value = organization
+                multiply = -0.5
+            }
+        }
+    }
+    
+    unlocking_technologies = {
+        defense_in_depth
+    }
+    
+    upkeep_modifier_unscaled = {
+        goods_input_artillery_add = 7.2
+        goods_input_ammunition_add = 8.1
+    }
+    
+    unit_modifier = {
+        unit_offense_add   = 9
+        unit_defense_add   = 7.88
+        unit_kill_rate_add = 0.1
+    }
+    
+    ai_weight = {
+        value = 2
+    }
+}
+
+UHW_mo_standardized_artillery = {
+    texture = "gfx/interface/icons/production_method_icons/siege_artillery.dds"
+    group   = UHW_mog_artillery
+    
+    possible = {
+        scope:military_formation = {
+            has_mobilization_option = mobilization_option:UHW_mo_siege_artillery
+            NOT = {
+                any_combat_unit = {
+                    OR = {
+                        has_unit_type = unit_type:combat_unit_type_irregular_infantry
+                        has_unit_type = unit_type:combat_unit_type_line_infantry
+                        has_unit_type = unit_type:combat_unit_type_skirmish_infantry
+                        has_unit_type = unit_type:combat_unit_type_trench_infantry
+                    }
+                }
+            }
+        }
+        market ?= {
+            mg:artillery ?= {
+                has_potential_supply = yes
+            }
+        }
+        market ?= {
+            mg:ammunition ?= {
+                has_potential_supply = yes
+            }
+        }
+    }
+    
+    on_activate = {
+        if = {
+            limit = {
+                game_date >= 1837.1.1
+            }
+            custom_tooltip = {
+                text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+                add_organization = {
+                    value = organization
+                    multiply = -0.5
+                }
+            }
+        }
+    }
+    
+    on_deactivate = {
+        custom_tooltip = {
+            text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+            add_organization = {
+                value = organization
+                multiply = -0.5
+            }
+        }
+    }
+    
+    unlocking_technologies = {
+        concrete_fortifications
+    }
+    
+    upkeep_modifier_unscaled = {
+        goods_input_artillery_add = 10.8
+        goods_input_ammunition_add = 16.2
+    }
+    
+    unit_modifier = {
+        unit_offense_add   = 10.97
+        unit_defense_add   = 8.52
+        unit_kill_rate_add = 0.1
+    }
+    
+    ai_weight = {
+        value = 2
+    }
+}

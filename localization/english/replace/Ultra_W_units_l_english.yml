@@ -1,0 +1,73 @@
+﻿l_english:
+
+combat_unit_type_mechanized_infantry:0 "Motorized Infantry"
+
+aerial_support:0 "Aerial Support"
+aerial_support_desc:0 "Support from above, whether recon or direct support, is invaluable on a battlefield"
+
+mobilization_option_balloons:0 "Balloons"
+mobilization_option_balloons_desc:0 "Hydrogen balloons used as observation platforms."
+mobilization_option_zeppelins:0 "Zeppelins"
+mobilization_option_zeppelins_desc:0 "Zeppelins are more mobile than balloons, allowing for efficient reconnaissance"
+mobilization_option_air_support:0 "Direct Combat Support"
+mobilization_option_air_support_desc:0 "Progress in aviation allows aircraft to directly support troops on the battlefield, providing a tremendous advantage."
+
+## Repeaters tech name changed to represent breech-loading rifles instead
+
+pm_repeaters:0 "Breech Loading Rifles"
+repeaters:0 "Breech Loading Rifles"
+repeaters_desc:0 "By changing the design to load the cartridge from the breech, rather than down the muzzle, it is possible to make a much more efficient weapon."
+
+# Renamed ships
+
+combat_unit_type_battleship:0 "Super-Dreadnoughts"
+battleship_tech:0 "Super-Dreadnoughts"
+
+### Obsolete stuff
+
+pmg_small_arms:0 "Small Arms"
+
+pm_small_arms_personal_weapons:0 "Personal Weapons"
+pm_small_arms_muskets:0 "Muskets"
+pm_small_arms_rifles:0 "Rifled Muskets"
+pm_small_arms_repeating_rifles:0 "Breech Loading Rifles"
+pm_small_arms_bolt_action_rifles:0 "Bolt Action Rifles"
+
+pmg_support_weapons:0 "Support Weapons"
+
+pm_no_support_weapons:0 "No Support Weapons"
+pm_grenades:0 "Grenades"
+
+pmg_uniforms:0       "Uniforms"
+pmg_uniforms_consc:0 "$pmg_uniforms$"
+pmg_uniforms_navy:0  "$pmg_uniforms$"
+
+# Uniforms PMs
+pm_no_uniforms:0          "No Uniforms"
+pm_no_uniforms_navy:0     "$pm_no_uniforms$"
+pm_traditional_uniforms:0 "Traditional Garb"
+pm_full_dress:0           "Full Dress"
+pm_full_dress_consc:0     "$pm_full_dress$"
+pm_full_dress_navy:0      "$pm_full_dress$"
+pm_modern_uniform:0       "Helmets & Drab"
+pm_modern_uniform_consc:0 "$pm_modern_uniform$"
+pm_modern_uniform_navy:0  "Caps & Coats"
+
+combat_unit_type_cannon_artillery:0 "Line Infantry"
+combat_unit_type_cannon_artillery_desc:0 "Dev note : do not use it, it is a way to not confuse the AI after removal of vanilla artillery"
+
+combat_unit_type_mobile_artillery:0 "Skirmish Infantry"
+combat_unit_type_mobile_artillery_desc:0 "Dev note : do not use it, it is a way to not confuse the AI after removal of vanilla artillery"
+
+combat_unit_type_shrapnel_artillery:0 "Trench Infantry"
+combat_unit_type_shrapnel_artillery_desc:0 "Dev note : do not use it, it is a way to not confuse the AI after removal of vanilla artillery"
+
+combat_unit_type_siege_artillery:0 "Squad Infantry"
+combat_unit_type_siege_artillery_desc:0 "Dev note : do not use it, it is a way to not confuse the AI after removal of vanilla artillery"
+
+
+
+
+
+
+

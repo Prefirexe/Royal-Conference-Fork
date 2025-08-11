@@ -1,0 +1,7 @@
+﻿l_english:
+ 
+ institution_conscription:0 "Conscription"
+ institution_conscription_desc:0 "The mandatory conscription system, ensuring the defense of the Nation by its Citizens."
+
+ country_institution_conscription_max_investment_add:0 "Max $institution_conscription$ [concept_institution] Investment"
+ country_institution_conscription_max_investment_add_desc:0 "A bonus or penalty to the maximum investment level of the $institution_conscription$ [concept_institution]"

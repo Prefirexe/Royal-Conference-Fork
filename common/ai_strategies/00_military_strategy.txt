@@ -1,0 +1,202 @@
+﻿
+ai_military_strategy = {
+	# Set the weights for combat unit groups, this determines the ratio that the AI aims to have of each, and thus what unit types it adds to formations
+	# Using this value in other strategies will function additively
+	# root = country
+	# scope:military_formation = military formation
+	combat_unit_group_weights = {
+		combat_unit_group_infantry = {
+			value = 150
+		}
+		combat_unit_group_artillery = {
+			value = 0
+			#if = {
+			#	limit = { has_technology_researched = artillery }
+			#	add = 15
+			#}
+			#if = {
+			#	limit = { has_technology_researched = napoleonic_warfare }
+			#	add = 5
+			#}
+			#if = {
+			#	limit = { has_technology_researched = breech_loading_artillery }
+			#	add = 10
+			#}
+			#if = {
+			#	limit = { has_technology_researched = wargaming }
+			#	add = 10
+			#}
+			if = {
+				limit = { 
+					has_technology_researched = mobile_armor 
+					country_rank = rank_value:great_power
+				}
+				add = 10
+			}
+
+			#if = {
+			#	limit = { has_law = law_type:law_peasant_levies }
+			#	multiply = 0.5
+			#}
+			#else_if = {
+			#	limit = { has_law = law_type:law_national_militia }
+			#	multiply = 0.75
+			#}
+			#else_if = {
+			#	limit = { has_law = law_type:law_professional_army }
+			#	multiply = 1.25
+			#}
+			#else_if = {
+			#	limit = { has_law = law_type:law_mass_conscription }
+			#	multiply = 1.5
+			#}
+		}
+		combat_unit_group_cavalry = {
+			value = 10
+			if = {
+				limit = { has_technology_researched = mobile_armor }
+				add = 10
+			}
+
+			if = {
+				limit = { has_law = law_type:law_national_militia }
+				multiply = 0.5
+			}
+			else_if = {
+				limit = { has_law = law_type:law_mass_conscription }
+				multiply = 0.75
+			}
+			else_if = {
+				limit = { has_law = law_type:law_professional_army }
+				multiply = 1.25
+			}
+			else_if = {
+				limit = { has_law = law_type:law_peasant_levies }
+				multiply = 1.5
+			}
+		}
+		combat_unit_group_light_ship = {
+			value = 100
+		}
+		combat_unit_group_capital_ship = {
+			value = 0
+			if = {
+				limit = { country_rank = rank_value:great_power }
+				add = 30
+			}
+			if = {
+				limit = { country_rank = rank_value:major_power }
+				add = 10
+			}
+		}
+		combat_unit_group_support_ship = {
+			value = 0
+			if = {
+				limit = { has_technology_researched = submarine }
+				add = 10
+			}
+			if = {
+				limit = { has_technology_researched = carrier_tech }
+				add = 10
+			}
+		}
+	}
+
+	# How many conscript battalions should the AI aim to have for each regular battalion in a formation?
+	# root = country
+	# scope:military_formation = military formation
+	# Using this value in other strategies will function additively
+	conscript_battalion_ratio = {
+		value = 0.5
+		if = {
+			limit = { 
+				has_law = law_type:law_national_militia 
+				year > 1850
+			}
+			add = 2.5
+		}
+		else_if = {
+			limit = { has_law = law_type:law_peasant_levies }
+			add = 0.5
+		}
+		else_if = {
+			limit = { 
+				has_law = law_type:law_mass_conscription 
+				year > 1860
+			}
+			add = 2.5
+		}
+
+		if = {
+			limit = {
+				has_technology_researched = mandatory_service
+				year > 1840
+			}
+			multiply = 1.15
+		}
+		if = {
+			limit = {
+				has_technology_researched = army_reserves
+				year > 1850
+			}
+			multiply = 1.15
+		}
+		if = {
+			limit = {
+				has_technology_researched = logistics
+				year > 1860
+			}
+			multiply = 1.2
+		}
+		if = {
+			limit = {
+				has_technology_researched = enlistment_offices
+				year > 1870
+			}
+			multiply = 1.2
+		}
+		if = {
+			limit = {
+				has_technology_researched = war_propaganda
+				year > 1880
+			}
+			multiply = 1.25
+		}
+		if = {
+			limit = {
+				year < 1840
+			}
+			multiply = 0.1
+		}
+		else_if = {
+			limit = {
+				year < 1850
+			}
+			multiply = 0.15
+		}
+		else_if = {
+			limit = {
+				year < 1860
+			}
+			multiply = 0.25
+		}
+		else_if = {
+			limit = {
+				year < 1870
+				NOT = {
+					country_rank = rank_value:great_power
+				}
+			}
+			multiply = 0.5
+		}
+		else_if = {
+			limit = {
+				year < 1880
+				NOT = {
+					country_rank = rank_value:great_power
+				}
+			}
+			multiply = 0.75
+		}
+	}
+}

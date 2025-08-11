@@ -1,0 +1,38 @@
+﻿l_english:
+
+  # Mobilization option groups
+  UHW_mog_artillery:0 "Artillery"
+  UHW_mog_artillery_desc:0 "The design of Artillery Guns issued to the men in the $concept_army$."
+
+  UHW_mog_heavy_weapon_supply:0 "Heavy Weapon Supply"
+  UHW_mog_heavy_weapon_supply_desc:0 "Increasing the concentration of Heavy Weapons such as Artillery Guns increases the effectiveness of the $concept_army$ but with high diminushing returns."
+
+  #Arty MOs
+
+  UHW_mo_cannon_artillery:0 "Cannon Artillery"
+  UHW_mo_cannon_artillery_desc:0 "Large cannons that fire big projectiles at their enemy."
+  UHW_mo_mobile_artillery:0 "Mobile Artillery"
+  UHW_mo_mobile_artillery_desc:0 "Higher degree of mobility to allow quicker repositioning."
+  UHW_mo_shrapnel_artillery:0 "Shrapnel Artillery"
+  UHW_mo_shrapnel_artillery_desc:0 "The shrapnel shells these units fire wreak havoc among enemy infantry."
+  UHW_mo_rapid_fire_artillery:0 "Rapid Fire Artillery"
+  UHW_mo_rapid_fire_artillery_desc:0 "Faster rate of fire allows sustained destruction on ennemy's lines"
+  UHW_mo_siege_artillery:0 "Siege Artillery"
+  UHW_mo_siege_artillery_desc:0 "Using superior firepower to ensure destruction of enemy fortifications."
+  UHW_mo_standardized_artillery:0 "Standardized Artillery"
+  UHW_mo_standardized_artillery_desc:0 "Standardization allows more efficient use"
+
+  #Heavy Weapon Concentration MOs
+
+  UHW_mo_heavy_weapons_supply_I:0 "Additional Heavy Weapons Supplies I"
+  UHW_mo_heavy_weapons_supply_I_desc:0 "$UHW_mog_heavy_weapon_supply_desc$"
+  UHW_mo_heavy_weapons_supply_II:0 "Additional Heavy Weapons Supplies II"
+  UHW_mo_heavy_weapons_supply_II_desc:0 "$UHW_mog_heavy_weapon_supply_desc$"
+  UHW_mo_heavy_weapons_supply_III:0 "Additional Heavy Weapons Supplies III"
+  UHW_mo_heavy_weapons_supply_III_desc:0 "$UHW_mog_heavy_weapon_supply_desc$"
+  UHW_mo_heavy_weapons_supply_IV:0 "Additional Heavy Weapons Supplies IV"
+  UHW_mo_heavy_weapons_supply_IV_desc:0 "$UHW_mog_heavy_weapon_supply_desc$"
+  UHW_mo_heavy_weapons_supply_V:0 "Additional Heavy Weapons Supplies V"
+  UHW_mo_heavy_weapons_supply_V_desc:0 "$UHW_mog_heavy_weapon_supply_desc$"
+  UHW_mo_heavy_weapons_supply_VI:0 "Additional Heavy Weapons Supplies VI"
+  UHW_mo_heavy_weapons_supply_VI_desc:0 "$UHW_mog_heavy_weapon_supply_desc$"

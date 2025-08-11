@@ -1,0 +1,81 @@
+﻿# Goods
+goods_input_luxury_clothes_add = {
+    decimals = 2
+    color=neutral
+    percent = no
+    game_data={
+		ai_value=0
+	}
+}
+
+goods_input_clothes_add = {
+  decimals = 2
+  color=neutral
+  percent = no
+  game_data={
+  ai_value=0
+}
+}
+
+goods_input_grain_mult = {
+    decimals = 2
+    color=neutral
+    percent = yes
+    game_data={
+		ai_value=0
+	}
+}
+
+goods_input_meat_mult = {
+    decimals = 2
+    color=neutral
+    percent = yes
+    game_data={
+		ai_value=0
+	}
+}
+
+goods_input_groceries_mult = {
+    decimals = 2
+    color=neutral
+    percent = yes
+    game_data={
+		ai_value=0
+	}
+}
+
+goods_input_fruit_mult = {
+    decimals = 2
+    color=neutral
+    percent = yes
+    game_data={
+		ai_value=0
+	}
+}
+
+goods_input_sugar_mult = {
+    decimals = 2
+    color=neutral
+    percent = yes
+    game_data={
+		ai_value=0
+	}
+}
+
+goods_input_liquor_mult = {
+    decimals = 2
+    color=neutral
+    percent = yes
+    game_data={
+		ai_value=0
+	}
+}
+
+goods_input_automobiles_mult = {
+    decimals = 2
+    color=neutral
+    percent = yes
+    game_data={
+		ai_value=0
+	}
+}
