@@ -111,19 +111,6 @@ ukraine_free_territory = {
 	}
 }
 
-turkish_republic = {
-	color = "turkish_republic_red"
-
-	possible = {
-		exists = c:TUR
-		THIS = c:TUR
-		OR = {
-			has_law = law_type:law_republic
-			country_has_primary_culture = cu:mashriqi
-		}
-	}
-}
-
 purple_naples = {
 	color = "naples_purple"
 	possible = {
@@ -163,7 +150,7 @@ dark_khmer = {
 }
 
 austria_hungary = {
-	color = { 124 40 30 }
+	color = { 211  220  240 }
 
 	possible = {
 		exists = c:AUS

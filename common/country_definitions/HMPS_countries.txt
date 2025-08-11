@@ -1,5 +1,5 @@
 ﻿USA = {
-	color = { 69  157  208 }
+	color = { 50 120 255 }
 	
 	country_type = colonial
 	
@@ -155,7 +155,7 @@ GBR = {
 }
 
 RUS = {
-	color = { 0 86 63 }
+	color = {0 60 40}
 
 	country_type = recognized
 
@@ -376,8 +376,7 @@ NEN = {
 }
 
 SWE = {
-	color = { 0 106 167 }
-	
+	color = { 0 120 180 }	
 	country_type = recognized
 
 	tier = kingdom
@@ -386,7 +385,7 @@ SWE = {
 	capital = STATE_SVEALAND
 }
 TUR = {
-	color = { 126  203  120 }
+	color = { 96 3 0 }
 	
 	country_type = recognized
 
