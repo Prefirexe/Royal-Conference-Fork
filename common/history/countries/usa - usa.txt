@@ -5,13 +5,14 @@
 		set_tax_level = low
 		
 		effect_starting_technology_tier_1_tech = yes
-		effect_starting_per_capita_tax = yes
+		effect_starting_per_capita_tax = no
 		
 		set_market_capital = STATE_NEW_YORK
 		
 		set_variable = monroe_doctrine
 		
 		effect_starting_politics_liberal = yes
+		activate_law = law_no_income_taxes
 		activate_law = law_type:law_republic
 		activate_law = law_type:law_public_schools
 		activate_law = law_type:law_legacy_slavery
