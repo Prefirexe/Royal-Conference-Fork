@@ -28,6 +28,7 @@ law_ethnostate = {
 	
 	modifier = {
 		country_authority_add = 300
+		state_birth_rate_mult = 0.05
 		#state_assimilation_mult = 1.00
 		yearly_population_replacement = 0.005
 		#From this block, we only apply the highest value a Pop qualifies for
