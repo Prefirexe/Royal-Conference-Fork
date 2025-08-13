@@ -9,9 +9,6 @@
 		}
 		add_modifier = stigmatised_culture_jewish_group
 	}
-	c:TUR = {
-		add_modifier = secondary_culture_european_heritage
-	}
 	c:AUS = {
 		add_modifier = secondary_culture_czech
 	}
