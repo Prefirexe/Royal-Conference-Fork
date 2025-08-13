@@ -97,24 +97,6 @@ empiricism = {
 	}
 }
 
-enlightenment = {
-	# Cheatcodes for historically literate European Countries
-	era = era_1
-	texture = "gfx/interface/icons/invention_icons/human_rights.dds"
-	category = society
-	can_research = no
-	
-	modifier = {
-		#country_institution_schools_max_investment_add = 2
-        state_education_access_wealth_add = 0.005
-		state_education_access_add = 0.05
-	}
-	
-	ai_weight = {
-		value = 1
-	}
-}
-
 terakoya = {
 	# Cheatcodes for historically literate Japan
 	era = era_1
@@ -321,7 +303,6 @@ dialectics = {
 	category = society
 
 	modifier = {
-		#country_institution_schools_max_investment_add = 1 removed and moved to private or public school institutions
 		state_education_access_wealth_add = 0.0025 #was none
 	}
 

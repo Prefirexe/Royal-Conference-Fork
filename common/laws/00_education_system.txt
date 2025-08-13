@@ -186,6 +186,11 @@ law_public_schools = {
 		law_extraction_economy
 		law_the_company
 	}
+
+	modifier = {
+        country_institution_schools_max_investment_add = 1
+		country_institution_cost_institution_schools_mult = 0.25
+    }
 	
 	institution = institution_schools
 	institution_modifier = {
