@@ -33,7 +33,7 @@ law_charitable_health_system = {
 	}	
 	
 	modifier = {
-		country_institution_cost_institution_health_system_mult = -0.15
+		country_institution_cost_institution_health_system_mult = -0.25
 	}
 
 	institution = institution_health_system
@@ -72,7 +72,7 @@ law_private_health_insurance = {
 	}	
 	
 	modifier = {
-		country_institution_cost_institution_health_system_mult = -0.30
+		country_institution_cost_institution_health_system_mult = -0.50
 	}
 	
 	institution = institution_health_system
