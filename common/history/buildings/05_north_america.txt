@@ -437,7 +437,7 @@ s:STATE_GREATER_MARYLAND={
 				add_ownership={
 					country={
 						country="c:USA"
-						levels=2
+						levels=3
 					}
 				}
 				reserves=1
@@ -760,7 +760,7 @@ s:STATE_GREATER_MARYLAND={
 				add_ownership={
 					country={
 						country="c:USA"
-						levels=1
+						levels=2
 					}
 				}
 				reserves=1
@@ -847,7 +847,7 @@ s:STATE_GREATER_MARYLAND={
 				add_ownership={
 					country={
 						country="c:USA"
-						levels=2
+						levels=3
 					}
 				}
 				reserves=1
@@ -2479,7 +2479,7 @@ s:STATE_GREATER_MASSACHUSETTS={
 			add_ownership={
 				country={
 					country="c:USA"
-					levels=3
+					levels=5
 				}
 			}
 			reserves=1
@@ -2974,7 +2974,7 @@ s:STATE_NEW_ENGLAND={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_organization" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
 			}
 			create_building={
 				building="building_sugar_plantation"
@@ -3686,7 +3686,7 @@ s:STATE_NEW_ENGLAND={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_organization" "pm_religious_bureaucrats" "pm_professional_bureaucrats" }
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_religious_bureaucrats" "pm_professional_bureaucrats" }
 			}
 			create_building={
 				building="building_gold_mine"
@@ -3794,11 +3794,22 @@ s:STATE_NEW_ENGLAND={
 				add_ownership={
 					country={
 						country="c:MEX"
-						levels=7
+						levels=10
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_organization" "pm_professional_bureaucrats" "pm_religious_bureaucrats" }
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_professional_bureaucrats" "pm_religious_bureaucrats" }
+			}
+			create_building={
+				building="building_paper_mills"
+				add_ownership={
+					country={
+						country="c:MEX"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
 			}
 			create_building={
 				building="building_construction_sector"
@@ -4021,7 +4032,7 @@ s:STATE_NEW_ENGLAND={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_organization" "pm_professional_bureaucrats" "pm_religious_bureaucrats" }
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_professional_bureaucrats" "pm_religious_bureaucrats" }
 			}
 			create_building={
 				building="building_food_industry"
@@ -4101,7 +4112,7 @@ s:STATE_NEW_ENGLAND={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_organization" "pm_professional_bureaucrats" "pm_religious_bureaucrats" }
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_professional_bureaucrats" "pm_religious_bureaucrats" }
 			}
 			create_building={
 				building="building_maize_farm"
@@ -4155,7 +4166,7 @@ s:STATE_NEW_ENGLAND={
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_organization" "pm_professional_bureaucrats" "pm_religious_bureaucrats" }
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_professional_bureaucrats" "pm_religious_bureaucrats" }
 			}
 			create_building={
 				building="building_university"

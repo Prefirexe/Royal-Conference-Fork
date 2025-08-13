@@ -17,7 +17,7 @@
 				add_ownership = {
 					country= {
 						country = "c:BIC"
-						levels = 3
+						levels = 5
 					}
 				}
 				reserves = 1
@@ -113,7 +113,7 @@
 				add_ownership = {
 					country= {
 						country = "c:BIC"
-						levels = 10
+						levels = 15
 					}
 				}
 				reserves = 1
@@ -383,7 +383,7 @@
 				add_ownership = {
 					country= {
 						country = "c:BIC"
-						levels = 5
+						levels = 15
 					}
 				}
 				reserves = 1
@@ -480,7 +480,7 @@
 				add_ownership = {
 					country= {
 						country = "c:BIC"
-						levels = 1
+						levels = 5
 					}
 				}
 				reserves = 1
@@ -525,7 +525,7 @@
 				add_ownership = {
 					country= {
 						country = "c:ASM"
-						levels = 1
+						levels = 5
 					}
 				}
 				reserves = 1
@@ -566,7 +566,7 @@
 				add_ownership = {
 					country= {
 						country = "c:BIC"
-						levels = 1
+						levels = 5
 					}
 				}
 				reserves = 1
@@ -605,7 +605,7 @@
 				add_ownership = {
 					country= {
 						country = "c:MUG"
-						levels = 1
+						levels = 5
 					}
 				}
 				reserves = 1
@@ -658,11 +658,11 @@
 				add_ownership = {
 					country= {
 						country = "c:AWA"
-						levels = 2
+						levels = 5
 					}
 				}
 				reserves = 1
-				activate_production_methods = { "pm_simple_organization" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+				activate_production_methods = { "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
 			}
 			create_building = {
 				building = "building_opium_plantation"
@@ -813,11 +813,11 @@
 				add_ownership = {
 					country= {
 						country = "c:BIC"
-						levels = 3
+						levels = 5
 					}
 				}
 				reserves = 1
-				activate_production_methods = { "pm_simple_organization" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+				activate_production_methods = { "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
 			}
 			create_building={
 				building="building_trade_center"
@@ -936,11 +936,11 @@
 				add_ownership = {
 					country= {
 						country = "c:BIC"
-						levels = 1
+						levels = 5
 					}
 				}
 				reserves = 1
-				activate_production_methods = { "pm_simple_organization" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+				activate_production_methods = { "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
 			}
 			create_building = {
 				building = "building_textile_mills"
@@ -1040,11 +1040,11 @@
 				add_ownership = {
 					country= {
 						country = "c:BER"
-						levels = 1
+						levels = 5
 					}
 				}
 				reserves = 1
-				activate_production_methods = { "pm_simple_organization" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+				activate_production_methods = { "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
 			}
 			create_building = {
 				building = "building_furniture_manufacturies"
@@ -1341,7 +1341,7 @@
 					}
 				}
 				reserves = 1
-				activate_production_methods = { "pm_simple_organization" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+				activate_production_methods = { "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
 			}
 			create_building = {
 				building = "building_arms_industry"
@@ -1443,7 +1443,7 @@
 					}
 				}
 				reserves = 1
-				activate_production_methods = { "pm_simple_organization" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+				activate_production_methods = { "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
 			}
 			create_building = {
 				building = "building_arms_industry"
@@ -1625,7 +1625,7 @@
 					}
 				}
 				reserves = 1
-				activate_production_methods = { "pm_simple_organization" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+				activate_production_methods = { "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
 			}
 			create_building = {
 				building = "building_furniture_manufacturies"
@@ -2670,7 +2670,7 @@
 					}
 				}
 				reserves = 1
-				activate_production_methods = { "pm_simple_organization" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
+				activate_production_methods = { "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" "pm_religious_bureaucrats" }
 			}
 			create_building = {
 				building = "building_arms_industry"

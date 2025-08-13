@@ -2315,7 +2315,7 @@
 				add_ownership={
 					country={
 						country="c:GBR"
-						levels=3
+						levels=5
 					}
 				}
 				reserves=1
@@ -3238,7 +3238,7 @@
 				add_ownership={
 					country={
 						country="c:FRA"
-						levels=6
+						levels=10
 					}
 				}
 				reserves=1
@@ -3869,7 +3869,7 @@
 				add_ownership={
 					country={
 						country="c:FRA"
-						levels=3
+						levels=5
 					}
 				}
 				reserves=1
@@ -4595,7 +4595,7 @@
 				add_ownership={
 					country={
 						country="c:NET"
-						levels=3
+						levels=5
 					}
 				}
 				reserves=1
@@ -6801,7 +6801,7 @@
 				add_ownership={
 					country={
 						country="c:PRU"
-						levels=13
+						levels=15
 					}
 				}
 				reserves=1
