@@ -1080,7 +1080,7 @@ NDiplomacy = {
 	RELEASE_COUNTRY_AS_SUBJECT_RELATIONS_BOOST = 30
 	RELEASE_COUNTRY_AS_INDEPENDENT_RELATIONS_BOOST = 50
 
-	INTEREST_NUM_DAYS_CHANGE = 30
+	INTEREST_NUM_DAYS_CHANGE = 7
 
 	RELATION_PENALTY_OVERLORD_KICK_BACKER_SUBJECT = -30		# When an overlord joins a diplomatic play they will force any subjects of theirs to become neutral if they are supporting the other side, this is a penalty to relations between the subject and overlord when that happens
 
