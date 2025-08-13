@@ -136,52 +136,6 @@ release_as_puppet_events.2 = {
 	}
 
 	option = {
-		name = release_as_puppet_events.2b
-		trigger = {
-			root = {
-				NOT = {
-					is_country_type = unrecognized
-				}
-			}
-		}
-		root = {
-			create_diplomatic_pact = {
-				type = dominion
-				country = scope:target_vassal
-			}
-			create_incident = {
-				country = scope:target_vassal
-				value = liberate_as_subject_dom
-			}
-		}
-		hidden_effect = {
-			scope:target_vassal = {
-				remove_variable = potential_overlord
-			}
-			root = {
-				if = {
-					limit = {
-						any_country = {
-							NOT = {
-								this = scope:target_vassal
-							}
-							has_variable = potential_overlord
-							var:potential_overlord = root
-						}
-					}
-					trigger_event = {
-						id = release_as_puppet_events.2
-						popup = yes
-					}
-				}
-				else = {
-					remove_variable = pending_overlord_event
-				}	
-			}
-		}
-	}
-
-	option = {
 		name = release_as_puppet_events.2c
 		trigger = {
 			root = {
