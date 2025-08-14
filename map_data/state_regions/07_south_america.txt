@@ -172,6 +172,7 @@ STATE_ANTIOQUIA = {
     arable_land = 180
     arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_cotton_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
     capped_resources = {
+	bg_limestone_quarry = 10
         bg_logging = 26
         bg_fishing = 16
     }
@@ -224,6 +225,7 @@ STATE_CUNDINAMARCA = {
     arable_land = 75
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_cotton_plantations" "bg_dye_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" "bg_opium_plantations" }
     capped_resources = {
+	bg_limestone_quarry = 15
         bg_logging = 14
     }
     resource = {
@@ -251,6 +253,7 @@ STATE_CAUCA = {
     arable_land = 120
     arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_cotton_plantations" "bg_dye_plantations" "bg_tobacco_plantations" "bg_banana_plantations" }
     capped_resources = {
+	bg_limestone_quarry = 10
         bg_logging = 16
         bg_fishing = 12
         bg_whaling = 4

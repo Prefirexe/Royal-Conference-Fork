@@ -49,7 +49,7 @@ STATE_RIGA = {
     arable_land = 50
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-	bg_limestone_quarry = 5
+	bg_limestone_quarry = 15
         bg_logging = 14
         bg_fishing = 15
     }
@@ -116,6 +116,7 @@ STATE_KUOPIO = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     traits = { "state_trait_scandinavian_forests" }
     capped_resources = {
+	bg_limestone_quarry = 5
         bg_logging = 52
         bg_iron_mining = 18
     }
@@ -135,6 +136,7 @@ STATE_UUSIMAA = {
     arable_land = 32
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
+	bg_limestone_quarry = 10
         bg_lead_mining = 15
         bg_logging = 46
         bg_fishing = 14
@@ -160,6 +162,7 @@ STATE_WEST_KARELIA = {
     arable_land = 40
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
+	bg_limestone_quarry = 5
         bg_logging = 30
         bg_fishing = 2
     }
@@ -200,6 +203,7 @@ STATE_OSTROBOTHNIA = {
     arable_land = 30
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
+	bg_limestone_quarry = 5
         bg_logging = 30
         bg_fishing = 15
     }
@@ -225,6 +229,7 @@ STATE_OULU = {
     arable_land = 15
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
+	bg_limestone_quarry = 5
         bg_logging = 56
         bg_fishing = 10
     }
@@ -1378,6 +1383,7 @@ STATE_CHELYABINSK = {
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     traits = { "state_trait_ural_mine" }
     capped_resources = {
+	bg_limestone_quarry = 10
         bg_logging = 24
     }
     resource = {

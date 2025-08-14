@@ -387,6 +387,7 @@ STATE_SOUTHERN_TRANSYLVANIA = {
     arable_land = 100
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_silk_plantations" "bg_vineyard_plantations" }
     capped_resources = {
+	bg_limestone_quarry = 15
         bg_logging = 34
 	bg_lead_mining = 10
 	bg_sulfur_mining = 5
@@ -410,6 +411,7 @@ STATE_NORTHERN_TRANSYLVANIA = {
     arable_land = 100
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_vineyard_plantations" }
     capped_resources = {
+	bg_limestone_quarry = 15
         bg_logging = 26
     }
     resource = {
@@ -430,6 +432,7 @@ STATE_MOLDAVIA = {
     arable_land = 200
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_silk_plantations" "bg_cotton_plantations" "bg_vineyard_plantations" }
     capped_resources = {
+	bg_limestone_quarry = 10
         bg_logging = 28
     }
 }
@@ -446,7 +449,7 @@ STATE_WALLACHIA = {
     arable_land = 170
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_silk_plantations" "bg_cotton_plantations" "bg_vineyard_plantations" }
     capped_resources = {
-	bg_limestone_quarry = 5
+	bg_limestone_quarry = 15
 	bg_coal_mining = 10
         bg_logging = 16
     }
