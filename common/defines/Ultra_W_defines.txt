@@ -23,7 +23,7 @@
 
 	DEFENSIVE_PROVINCES_RETAKEN_MAX_DEPTH = 0 #was 1					# Maximum distance from battle provinces that provinces can be retaken in defensive battle
 
-	BASE_BATTALION_CONVOY_COST = 25							# Cost in convoys per Battalion for shipping lanes
+	BASE_BATTALION_CONVOY_COST = 15							# Cost in convoys per Battalion for shipping lanes
 }
 
 NBattle = {
