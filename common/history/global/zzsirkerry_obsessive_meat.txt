@@ -1,0 +1,13 @@
+﻿GLOBAL = {
+	cu:alemannic = { add_cultural_obsession = meat }
+	cu:argentine = { add_cultural_obsession = meat }	
+	cu:boer = { add_cultural_obsession = meat }
+	cu:hungarian = { add_cultural_obsession = meat }
+	cu:melanesian = { add_cultural_obsession = meat }
+	cu:mongol = { add_cultural_obsession = meat }
+	cu:north_andean = { add_cultural_obsession = meat }	
+	cu:north_german = { add_cultural_obsession = meat }
+	cu:platinean = { add_cultural_obsession = meat }	
+	cu:serb = { add_cultural_obsession = meat }
+	cu:south_german = { add_cultural_obsession = meat }
+}

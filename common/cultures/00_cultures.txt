@@ -129,7 +129,6 @@ south_german= {
 	
 	obsessions = {
 		liquor
-		coffee
 	}
 	
 	male_common_first_names = {
@@ -1332,7 +1331,6 @@ swedish= {
 	obsessions = {
 		fish
 		coffee
-		tobacco
 	}
 
 	male_common_first_names = {
@@ -12834,6 +12832,7 @@ yankee= {
 	
 	obsessions = {
 		coffee
+		small_arms
 	}
 	
 	male_common_first_names = {
@@ -12963,7 +12962,7 @@ dixie= {
 	traits = { anglophone european_heritage }
 	
 	obsessions = {
-		tea
+		small_arms
 	}
 	
 	male_common_first_names = {

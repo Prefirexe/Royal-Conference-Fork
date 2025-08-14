@@ -1,0 +1,7 @@
+﻿GLOBAL = {
+	cu:icelandic = { add_cultural_obsession = fish }
+	cu:japanese = { add_cultural_obsession = fish }
+	cu:norwegian = { add_cultural_obsession = fish }
+	cu:peruvian = { add_cultural_obsession = fish }	
+	cu:swedish = { add_cultural_obsession = fish }
+}

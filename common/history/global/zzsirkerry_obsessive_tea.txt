@@ -1,0 +1,14 @@
+﻿GLOBAL = {
+	cu:anglo_canadian = { add_cultural_obsession = tea }
+	cu:assamese = { add_cultural_obsession = tea }
+	cu:chilean = { add_cultural_obsession = tea }	
+	cu:danish = { add_cultural_obsession = tea }
+	cu:gujarati = { add_cultural_obsession = tea}
+	cu:maghrebi = { add_cultural_obsession = tea }	
+	cu:manchu = { add_cultural_obsession = tea }
+	cu:marathi = { add_cultural_obsession = tea }
+	cu:panjabi = { add_cultural_obsession = tea }
+	cu:rajput = { add_cultural_obsession = tea }
+	cu:sinhala = { add_cultural_obsession = tea }
+	cu:thai = { add_cultural_obsession = tea }	
+}

@@ -1,0 +1,20 @@
+﻿GLOBAL = {
+	cu:afro_american = { add_cultural_obsession = liquor }
+	cu:afro_caribbean = { add_cultural_obsession = liquor }
+	cu:australian = { add_cultural_obsession = liquor }
+	cu:byelorussian = { add_cultural_obsession = liquor }
+	cu:czech = { add_cultural_obsession = liquor }
+	cu:franco_canadian = { add_cultural_obsession = liquor }	
+	cu:irish = { add_cultural_obsession = liquor }
+	cu:korean = { add_cultural_obsession = liquor }
+	cu:lao = { add_cultural_obsession = liquor }
+	cu:lithuanian = { add_cultural_obsession = liquor }	
+	cu:mexican = { add_cultural_obsession = liquor }
+	cu:polish = { add_cultural_obsession = liquor }
+	cu:russian = { add_cultural_obsession = liquor }
+	cu:scottish = { add_cultural_obsession = liquor }
+	cu:slovak = { add_cultural_obsession = liquor }
+	cu:sorb = { add_cultural_obsession = liquor }
+	cu:spanish = { add_cultural_obsession = liquor }
+	cu:ukrainian = { add_cultural_obsession = liquor }
+}

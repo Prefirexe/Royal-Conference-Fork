@@ -1,0 +1,14 @@
+﻿GLOBAL = {
+	cu:afro_brazilian = { add_cultural_obsession = coffee }
+	cu:brazilian = { add_cultural_obsession = coffee }
+	cu:central_american = { add_cultural_obsession = coffee }
+	cu:dutch = { add_cultural_obsession = coffee }
+	cu:filipino = { add_cultural_obsession = coffee }
+	cu:finnish = { add_cultural_obsession = coffee }
+	cu:flemish = { add_cultural_obsession = coffee }
+	cu:malay = { add_cultural_obsession = coffee }
+	cu:sumatran = { add_cultural_obsession = coffee }
+	cu:vietnamese = { add_cultural_obsession = coffee }
+	cu:wallonian = { add_cultural_obsession = coffee }
+	cu:yankee = { add_cultural_obsession = coffee }
+}

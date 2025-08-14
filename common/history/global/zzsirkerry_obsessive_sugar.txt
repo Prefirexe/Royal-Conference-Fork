@@ -1,0 +1,5 @@
+﻿GLOBAL = {
+	cu:caribeno = { add_cultural_obsession = sugar }
+	cu:francoprovencal = { add_cultural_obsession = sugar }
+	cu:tamil = { add_cultural_obsession = sugar }	
+}
