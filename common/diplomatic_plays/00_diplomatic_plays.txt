@@ -294,6 +294,10 @@ dp_reduce_autonomy = {
 			}
 			has_technology_researched = civilizing_mission
 		}
+
+		NOT = {
+			scope:target_country = { country_rank = rank_value:major_power }
+		} 
 	}
 
 	on_weekly_pulse = {}

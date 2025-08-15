@@ -66,6 +66,7 @@ major_power = {
 		country_max_declared_interests_add = 3
 		country_agitator_slots_add = 2
 		country_leverage_resistance_add = 1000
+		country_liberty_desire_add = 0.25
 	}
 }
 

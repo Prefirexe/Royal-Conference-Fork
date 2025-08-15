@@ -1,6 +1,6 @@
 ﻿subject_type_protectorate = {
 	allow_change_country_flag = no
-	use_overlord_map_color = yes
+	use_overlord_map_color = no
 	use_overlord_ruler = no
 	annex_on_country_formation = no
 	can_start_own_diplomatic_plays = yes
@@ -45,6 +45,7 @@
 	}
 
 	valid_subject_ranks = {
+		major_power
 		minor_power
 		insignificant_power
 		unrecognized_regional_power
@@ -409,6 +410,7 @@ subject_type_personal_union = {
 	}
 
 	valid_subject_ranks = {
+		major_power
 		minor_power
 		insignificant_power
 		unrecognized_regional_power
