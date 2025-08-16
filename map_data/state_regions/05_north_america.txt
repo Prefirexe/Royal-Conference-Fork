@@ -86,7 +86,7 @@ STATE_VIRGINIA = {
     resource = {
         type = "bg_coal_mining"
         undiscovered_amount = 20
-        discovered_amount = 20
+        discovered_amount = 30
     }
     resource = {
         type = "bg_iron_mining"
@@ -406,7 +406,7 @@ STATE_MISSOURI = {
     resource = {
         type = "bg_sulfur_mining"
         undiscovered_amount = 15
-        discovered_amount = 10
+        discovered_amount = 15
     }
 }
 
@@ -443,7 +443,7 @@ STATE_MINNESOTA = {
     }
     resource = {
         type = "bg_iron_mining"
-        undiscovered_amount = 35
+        undiscovered_amount = 40
         discovered_amount = 80
     }
 }
@@ -465,8 +465,8 @@ STATE_WISCONSIN = {
     }
     resource = {
         type = "bg_iron_mining"
-        undiscovered_amount = 22
-        discovered_amount = 22
+        undiscovered_amount = 32
+        discovered_amount = 32
     }
 }
 
@@ -486,8 +486,8 @@ STATE_INDIANA = {
     }
     resource = {
         type = "bg_coal_mining"
-        undiscovered_amount = 43
-        discovered_amount = 43
+        undiscovered_amount = 50
+        discovered_amount = 50
     }
     resource = {
         type = "bg_oil_extraction"
@@ -664,8 +664,8 @@ STATE_FLORIDA = {
     }
     resource = {
         type = "bg_sulfur_mining"
-        undiscovered_amount = 25
-        discovered_amount = 28
+        undiscovered_amount = 35
+        discovered_amount = 38
     }
     naval_exit_id = 3060
 }
@@ -783,7 +783,7 @@ STATE_PENNSYLVANIA = {
     }
     resource = {
         type = "bg_coal_mining"
-        undiscovered_amount = 30
+        undiscovered_amount = 40
         discovered_amount = 60
     }
 }
@@ -834,7 +834,7 @@ STATE_ILLINOIS = {
     }
     resource = {
         type = "bg_sulfur_mining"
-        undiscovered_amount = 10
+        undiscovered_amount = 20
         discovered_amount = 20
     }
     resource = {
@@ -956,7 +956,7 @@ STATE_ILLINOIS = {
 #     }
 #     resource = {
 #         type = "bg_sulfur_mining"
-#         undiscovered_amount = 10
+#         undiscovered_amount = 20
 #         discovered_amount = 10
 #     }
 #     naval_exit_id = 3017
@@ -1810,6 +1810,7 @@ STATE_GUERRERO = {
     arable_resources = { "bg_maize_farms" "bg_livestock_ranches" "bg_coffee_plantations" "bg_dye_plantations" "bg_tobacco_plantations" "bg_sugar_plantations" "bg_banana_plantations" }
     capped_resources = {
 	bg_limestone_quarry = 30
+	bg_coal_mining = 20
         bg_logging = 16
         bg_fishing = 8
     }

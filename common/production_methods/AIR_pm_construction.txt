@@ -506,7 +506,7 @@ pm_craft_workshop = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_steel_add = 15
+			goods_input_steel_add = 10
 			goods_input_coal_add = 5
 			goods_input_tools_add = 5
 			
@@ -539,7 +539,7 @@ pm_interchangeable_parts = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_steel_add = 20
+			goods_input_steel_add = 15
 			goods_input_coal_add = 10
 			goods_input_tools_add = 10
 			
@@ -571,7 +571,7 @@ pm_machine_shops = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_steel_add = 30
+			goods_input_steel_add = 25
 			goods_input_coal_add = 15
 			goods_input_tools_add = 15
 			
@@ -603,7 +603,7 @@ pm_automated_assembly_lines = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_steel_add = 35
+			goods_input_steel_add = 30
 			goods_input_tools_add = 20
 			goods_input_electricity_add = 20
 			
