@@ -191,7 +191,7 @@ handcranked_machine_gun = {
 	category = military
 
 	modifier = {
-		unit_army_defense_add = 15 #was 5
+		unit_army_defense_add = 5 #was 5
 		unit_kill_rate_add = 0.05
 	}
 
