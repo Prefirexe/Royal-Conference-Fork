@@ -1,1 +1,0 @@
-﻿concept_progress_war_exhaustion = {}
