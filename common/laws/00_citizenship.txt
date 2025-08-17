@@ -267,7 +267,7 @@ law_language_discrimination = {
 	progressiveness = 0
 	
 	unlocking_technologies = {
-		civil_rights
+		egalitarianism
 	}
 
 	can_enact = {
@@ -394,7 +394,7 @@ law_racial_segregation = {
 	progressiveness = 0
 	
 	unlocking_technologies = {
-		egalitarianism
+		human_rights
 	}
 
 	can_enact = {
@@ -529,7 +529,7 @@ law_cultural_exclusion = {
 	}
 	
 	unlocking_technologies = {
-		human_rights
+		feminism
 	}
 	
 	unlocking_laws = {
