@@ -804,8 +804,8 @@ NDiplomacy = {
 	RELATIONS_THRESHOLD_POOR = -20
 	RELATIONS_THRESHOLD_COLD = -50
 	RELATIONS_THRESHOLD_HOSTILE = -80
-	REQUIRED_IMPROVE_RELATIONS_PROGRESS = 10		# How much change relations progress is needed to increase relations by 1 point
-	REQUIRED_DAMAGE_RELATIONS_PROGRESS = -10		# How much change relations progress is needed to decrease relations by 1 point
+	REQUIRED_IMPROVE_RELATIONS_PROGRESS = 100		# How much change relations progress is needed to increase relations by 1 point
+	REQUIRED_DAMAGE_RELATIONS_PROGRESS = -100		# How much change relations progress is needed to decrease relations by 1 point
 
 	INITIAL_LIBERTY_DESIRE = 50             							# Liberty Desire value which the Diplomatic Pact gets initialized to.
 	WEEKLY_LIBERTY_DESIRE_FROM_SUPPORT_INDEPENDENCE_TOTAL_MAX = 1		# Maximum weekly increase in liberty desire from all Support Independence targeting the country
