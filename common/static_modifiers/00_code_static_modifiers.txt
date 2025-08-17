@@ -9,7 +9,7 @@ base_values = {
 	country_weekly_innovation_max_add = 50 #was 50
 	country_tech_spread_add = 25 #was 25
 	
-	country_loan_interest_rate_add = 0.5
+	country_loan_interest_rate_add = 0.4
 	
 	country_legitimacy_govt_size_add = 1
 	
@@ -21,7 +21,7 @@ base_values = {
 	
 	country_law_enactment_max_setbacks_add = 3
 	
-	country_minting_add = 500
+	country_minting_add = 1000
 	country_government_dividends_efficiency_add = 0.25
 
 	state_tax_capacity_add = 100
@@ -181,7 +181,7 @@ declared_bankruptcy = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
 	country_prestige_mult = -0.75
 	country_leverage_generation_mult = -0.75
-	country_loan_interest_rate_mult = 0.5
+	country_loan_interest_rate_mult = 0.4
 	unit_offense_mult = -0.50
 	unit_defense_mult = -0.25
 	state_migration_pull_mult = -0.50
